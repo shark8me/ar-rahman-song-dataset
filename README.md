@@ -1,34 +1,15 @@
-# vani-jairam-qa
+# AR Rahman song dataset
 
-Explore Question answering on MusicBrainz data
-
-## Installation
-
-Download from http://example.com/FIXME.
+Generate a dataset of AR Rahman recordings and the singers on each recording
 
 ## Usage
 
-FIXME: explanation
+Open core.clj and evaluate
 
-    $ java -jar vani-jairam-qa-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
 
 ## License
+
+The dataset is licenced under the same license as MusicBrainz data.
 
 Copyright © 2024 FIXME
 
