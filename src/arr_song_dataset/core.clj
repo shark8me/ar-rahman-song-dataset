@@ -260,15 +260,16 @@
              (map (fn[[rec-id v]]
                     (let [ea (extract-artists v) ]
                       {rec-id (->> ea :artists (mapv :name))})))
-             (apply merge))]
-    (->> (remove-songs-with-identical-singers rtcsvmap recid-singers-maps)
-         (filter #(= "[\"Soundtrack\"]" (:rel-type %)))
-         (map #(map (fn[i] (% i))
-                    [:id :title :first-release-date :disambiguation :rel-title :rel-id :rel-type]))
-         ;;(take 5)
-         (map #(clojure.string/join "," %))
-         (clojure.string/join "\n")
-         (spit rec-wo-duplicates-csv))))
+             (apply merge))
+        cols [:id :title :first-release-date :rel-title :rel-id :rel-type]
+        table-data 
+        (->> (remove-songs-with-identical-singers rtcsvmap recid-singers-maps)
+             (filter #(= "[\"Soundtrack\"]" (:rel-type %)))
+             (map #(map (fn[i] (% i)) cols))
+             ;;(take 5)
+             (map #(clojure.string/join "," %))
+             (clojure.string/join "\n"))]
+    (spit rec-wo-duplicates-csv (str (clojure.string/join "," (map name cols)) "\n" table-data ))))
 
 ;;(save-recording-soundtracks "arrrecordingtable.csv" track-singers-fin "recordingtable_wo_dupl_singers2.csv")
 
@@ -280,19 +281,20 @@
              (map (fn[[rec-id v]]
                     (let [ea (extract-artists v) ]
                       {rec-id (->> ea :artists (map #(select-keys % [:id :name])))})))
-             (apply merge))]
-    (->> (clojure.string/split (slurp unique-recordings-csv ) #"\n")
-         (map parse-line-rtcsv )
-         (map #(let [rid (:id %)]
-                   (->> (recid-singers (keyword rid))
-                      (mapv :name )
-                      (mapv (fn[i](conj [rid] i ))))))
-         (reduce into [])
-         (map #(clojure.string/join "," %))
-         (clojure.string/join "\n")
-         (spit singers-csv ))))
+             (apply merge))
+        table-data 
+        (->> (clojure.string/split (slurp unique-recordings-csv ) #"\n")
+             (map parse-line-rtcsv )
+             (map #(let [rid (:id %)]
+                     (->> (recid-singers (keyword rid))
+                          (mapv :name )
+                          (mapv (fn[i](conj [rid] i ))))))
+             (reduce into [])
+             (map #(clojure.string/join "," %))
+             (clojure.string/join "\n"))]
+    (spit singers-csv (str (clojure.string/join "," ["id" "singer"]) "\n" table-data ))))
 
-;;download and save all releases 
+;;download and save all releases
 ;;(save-releases arr-artist-id "./arr-releases-5471.json")
 
 ;;(def arr-rel-list (json/read-str (slurp "./arr-releases-5471.json") :key-fn keyword))
@@ -308,8 +310,6 @@
 ;;(save-song-table track-singers-fin "songtable.csv")
 ;;(save-recordings-table arr-rel-list "arrrecordingtable.csv")
 
-;;(save-recording-soundtracks "arrrecordingtable.csv" track-singers-fin "recordingtable_wo_dupl_singers2.csv")
+;;(save-recording-soundtracks "arrrecordingtable.csv" track-singers-fin "data/recordings.csv")
 
-#_(save-singers-table track-singers-fin
-                    "recordingtable_wo_dupl_singers2.csv"
-                    "recording_singers2.csv")
+;;(save-singers-table track-singers-fin "data/recordings.csv" "data/singers.csv")
