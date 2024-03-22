@@ -130,13 +130,17 @@
 
 (defn save-recordings-table
   "remove duplicate recordings and songs"
-  [arr-rel-list csv-file]
+  [arr-rel-list json-file]
   (->> arr-rel-list
        (map #(let [release-id (:id %)
                    rel-title (:title %)
                    stype (-> % :release-group :secondary-types)
                    rel-area (-> % :release-events first :area :name)
-                   rel-evt-date (-> % :release-events first :date)]
+                   rel-evt-date (-> % :release-events first :date)
+                   sdf (new java.text.SimpleDateFormat "yyyy-MM-dd")
+                   rel-date (try (.parse sdf rel-evt-date)
+                                 (catch Exception e
+                                   (println " failed to parse " rel-evt-date " : " release-id )))]
                (->> (mapv :tracks (:media %))
                     (reduce into [])
                     (map :recording)
@@ -191,16 +195,18 @@
                                  (assoc acc kys ival)))
                          acc))))) {})
        ;;(take 2)
-       (map (fn[[k i]] (mapv #(i %)
+       #_(map (fn[[k i]] (mapv #(i %)
                              [:id :title :first-release-date :disambiguation
-                              :rel-title :rel-id :rel-type])))
-       (sort-by second)
-       (map #(clojure.string/join "," %))
-       (clojure.string/join "\n")
-       (spit csv-file)))
+                              :rel-evt-date :rel-title :rel-id :rel-type])))
+       (map (fn[[k v]] v))
+       (sort-by :title)
+       (json/write-str)
+       ;;(map #(clojure.string/join "," %))
+       ;;(clojure.string/join "\n")
+       (spit json-file)))
 
-;;(save-recordings-table arr-rel-list "arrrecordingtable.csv")
-
+;;(save-recordings-table arr-rel-list "arrrecordingtable.json")
+;;(-> arr-rel-list)
 ;;4696 recordings
 ;;3335 unique recordings
 ;;547 releases
@@ -248,10 +254,9 @@
   "remove recodings with identical singers, and only those marked as soundtracks"
   [recordings-table-csv track-singers rec-wo-duplicates-csv]
   (let [rtcsvmap
-        (->> (clojure.string/split (slurp recordings-table-csv) #"\n")
-             (map parse-line-rtcsv )
+        (->> (json/read-str (slurp recordings-table-csv) :key-fn keyword)
              (reduce (fn[acc i]
-                       (if (acc (:title i))
+                       (if (acc (.toLowerCase (:title i)))
                          (update-in acc [(:title i)] conj i)
                          (assoc acc (:title i) [i]))) {}))
         recid-singers-maps
@@ -261,17 +266,38 @@
                     (let [ea (extract-artists v) ]
                       {rec-id (->> ea :artists (mapv :name))})))
              (apply merge))
-        cols [:id :title :first-release-date :rel-title :rel-id :rel-type]
+      sdf (new java.text.SimpleDateFormat "yyyy-MM-dd")
+      sdf2 (new java.text.SimpleDateFormat "yyyy")
+      datefn (fn[i]
+               (let [dt (try (.parse sdf (:rel-evt-date i))
+                             (catch Exception e
+                               (try 
+                                 (.parse sdf2 (:rel-evt-date i))
+                                 (catch Exception e
+                                   (try
+                                     (.parse sdf (:first-release-date i))
+                                     (catch Exception e
+                                       (try 
+                                         (.parse sdf2 (:first-release-date i))
+                                         (catch Exception e
+                                           (do 
+                                             (println " failed to parse " (:rel-evt-date i)
+                                                      " : " (:first-release-date i)
+                                                      i  )
+                                             nil)))))))))]
+                 (assoc i :date (if dt (.format sdf dt) "-"))))
+        cols [:id :title :date :rel-title :rel-id]
         table-data 
         (->> (remove-songs-with-identical-singers rtcsvmap recid-singers-maps)
-             (filter #(= "[\"Soundtrack\"]" (:rel-type %)))
+             (filter #((set (:rel-type %)) "Soundtrack"))
+             (map datefn)
              (map #(map (fn[i] (% i)) cols))
              ;;(take 5)
              (map #(clojure.string/join "," %))
              (clojure.string/join "\n"))]
     (spit rec-wo-duplicates-csv (str (clojure.string/join "," (map name cols)) "\n" table-data ))))
 
-;;(save-recording-soundtracks "arrrecordingtable.csv" track-singers-fin "recordingtable_wo_dupl_singers2.csv")
+;;(save-recording-soundtracks "arrrecordingtable.json" track-singers-fin "recordingtable_wo_dupl_singers2.csv")
 
 (defn save-singers-table
   [track-singers unique-recordings-csv singers-csv]
@@ -282,7 +308,7 @@
                     (let [ea (extract-artists v) ]
                       {rec-id (->> ea :artists (map #(select-keys % [:id :name])))})))
              (apply merge))
-        table-data 
+        table-data
         (->> (clojure.string/split (slurp unique-recordings-csv ) #"\n")
              (map parse-line-rtcsv )
              (map #(let [rid (:id %)]
@@ -310,6 +336,6 @@
 ;;(save-song-table track-singers-fin "songtable.csv")
 ;;(save-recordings-table arr-rel-list "arrrecordingtable.csv")
 
-;;(save-recording-soundtracks "arrrecordingtable.csv" track-singers-fin "data/recordings.csv")
+;;(save-recording-soundtracks "arrrecordingtable.json" track-singers-fin "data/recordings.csv")
 
 ;;(save-singers-table track-singers-fin "data/recordings.csv" "data/singers.csv")
