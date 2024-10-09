@@ -57,29 +57,34 @@
 ;;(jdbc/execute! db "delete from songs where id > 1 ")
 ;;(jdbc/execute! db "delete from singers where song_id > 1 ")
 
-
+(def rahman "A. R. Rahman")
 (defn insert-songs
   "insert songs and singers into the DB"
   []
   (let [recordings  (get-rows "data/recordings.csv")
-        singers  (get-rows "data/singers.csv")]
-    (->>
-     (let [headers (mapv keyword (first recordings))]
-       (mapv #(zipmap headers %) (rest recordings)))
-     (map #(clojure.set/rename-keys % {:song-id :id :release-id :release_id :release-date :release_date}))
-     (map #(assoc % :release_date (try
-                                    (.format (SimpleDateFormat. "YYYY-MM-dd hh:mm:ss"  )
-                                             (parse-date (:release_date %)))
-                                    (catch Exception e
-                                      (println " caught exception parsing date " % )))))
-     ;;(map #(assoc % :release_date (str (:release_date %) " 00:00:00")))
-     (remove #(nil? (:release_date %)))
-     (map #(jdbc/insert! db :songs (assoc % :composer "A. R. Rahman"))))
-    (->> (let [headers (mapv keyword (first singers))]
-           (mapv #(zipmap headers %) (rest singers)))
-         (map #(clojure.set/rename-keys % {:song-id :song_id}))
-         (map #(jdbc/insert! db :singers %)))))
+        singers  (get-rows "data/singers.csv")
+        songs (->>
+               (let [headers (mapv keyword (first recordings))]
+                 (mapv #(zipmap headers %) (rest recordings)))
+               (map #(clojure.set/rename-keys % {:song-id :id :release-id :release_id :release-date :release_date}))
+               (map #(assoc % :release_date (try
+                                              (.format (SimpleDateFormat. "YYYY-MM-dd hh:mm:ss"  )
+                                                       (parse-date (:release_date %)))
+                                              (catch Exception e
+                                                (println " caught exception parsing date " % )))))
+               ;;(map #(assoc % :release_date (str (:release_date %) " 00:00:00")))
+               (remove #(nil? (:release_date %)))
+               (mapv #(jdbc/insert! db :songs (assoc % :composer rahman))))
+        singers (->> (let [headers (mapv keyword (first singers))]
+               (mapv #(zipmap headers %) (rest singers)))
+             (map #(clojure.set/rename-keys % {:song-id :song_id}))
+             (mapv #(jdbc/insert! db :singers %)))]
+    [songs singers]))
 
+(comment
+  (do (create-tables)
+      (insert-songs))
+  )
 ;;llama payload
 (def payload {:model "llama3.2"
               :stream false
@@ -170,3 +175,69 @@ Only use the included table schema to answer the question."}
 
 ;;(spit "query_type_response.csv" (get-query-response-type queries k1))
 ;;(spit "queryoutputs.txt" (get-query-response queries k1))
+
+;;how many songs has Rahman composed?
+(jdbc/query db [(str "select count(*) from songs where composer like '" rahman "'")])
+;;({:count(*) 2278})
+
+;;how many songs has Rahman composed in 2005?
+(jdbc/query db [(str "select count(distinct song) from songs where composer like '" rahman "' and strftime('%Y',release_date)='2005' ")])
+;;({:count(distinct song) 87})
+
+;;which year did Rahman compose the most songs
+(jdbc/query db [(str "select count(distinct song),strftime('%Y',release_date) from songs  where composer like '" rahman "' group by strftime('%Y',release_date) order by count(strftime('%Y',release_date)) desc limit 1")])
+;;({:count(distinct song) 129, :strftime('%y',release_date) "1999"})
+
+;;which year did Rahman compose the least songs
+(jdbc/query db [(str "select count(distinct song),strftime('%Y',release_date) from songs  where composer like '" rahman "' group by strftime('%Y',release_date) order by count(strftime('%Y',release_date)) asc limit 1")])
+;;({:count(distinct song) 11, :strftime('%y',release_date) "2024"})
+
+;;which year did Rahman compose the most movies
+(jdbc/query db [(str "select count(distinct movie),strftime('%Y',release_date) from songs  where composer like '" rahman "' group by strftime('%Y',release_date) order by count(strftime('%Y',release_date)) desc limit 1")])
+;;({:count(distinct movie) 16, :strftime('%y',release_date) "1999"})
+
+;;which year did Rahman compose the least movies
+(jdbc/query db [(str "select count(distinct movie),strftime('%Y',release_date) from songs  where composer like '" rahman "' group by strftime('%Y',release_date) order by count(strftime('%Y',release_date)) asc limit 1")])
+;;({:count(distinct movie) 3, :strftime('%y',release_date) "2024"})
+
+;;which movie had the most songs?
+(jdbc/query db [(str "select count(distinct song),movie from songs  where composer like '" rahman "' group by movie order by count(distinct song) desc limit 1")])
+;;({:count(distinct song) 63, :movie "Best of A.R. Rahman: Melody King"})
+
+;;which movie had the least songs?
+(jdbc/query db [(str "select count(distinct song),movie from songs  where composer like '" rahman "' group by movie order by count(distinct song) asc limit 1")])
+;;({:count(distinct song) 1, :movie "Aalaporaan Thamizhan (From \"Mersal\")"})
+
+;;how many movies has Rahman composed for?
+(jdbc/query db [(str "select count(distinct movie) from songs where composer like '" rahman "'")])
+;;({:count(distinct movie) 297})
+
+;;how many movies has Rahman composed in 2005?
+(jdbc/query db [(str "select count(distinct movie) from songs where composer like '" rahman "' and strftime('%Y',release_date)='2005' ")])
+;;({:count(distinct movie) 8})
+
+;;which movies did Rahman composed in 2005?
+(jdbc/query db [(str "select distinct movie from songs where composer like '" rahman "' and strftime('%Y',release_date)='2005' ")])
+;;({:movie "Netaji Subhas Chandra Bose: The Forgotten Hero"} {:movie "Water"} {:movie "Mangal Pandey: The Rising"} {:movie "Anbe Aaruyire"} {:movie "Kisna"} {:movie "Rang De Basanti"} {:movie "Kisna - The Warrior Poet"} {:movie "Ah Aah"})
+
+;;which year was Swades released?
+(jdbc/query db [(str "select strftime('%Y',release_date) from songs where composer like '" rahman "' and movie like 'Swades' limit 1")])
+;;({:strftime('%y',release_date) "2004"})
+
+;;list all the songs in the movie Swades 
+(jdbc/query db [(str "select song from songs where composer like '" rahman "' and movie like 'Swades'")])
+;;({:song "Aahista Aahista"} {:song "Dekho Na"} {:song "Pal Pal Hai Bhaari"} {:song "Pal Pal Hai Bhaari (instrumental)"} {:song "Saanwariya Saanwariya"} {:song "Yeh Jo Des Hai Tera (instrumental)"} {:song "Yeh Tara Woh Tara"})
+
+;;when the movie was Swades released?
+(jdbc/query db [(str "select release_date from songs where composer like '" rahman "' and movie like 'Swades' limit 1")])
+;;({:release_date "2004-09-24 12:00:00"})
+
+;;which movie is the song "Dheemi Dheemi" from?
+(jdbc/query db [(str "select movie from songs where composer like '" rahman "' and song like 'Dheemi Dheemi'")])
+;;({:movie "1947 Earth"})
+
+;;when was the the song "Dheemi Dheemi" released?
+(jdbc/query db [(str "select release_date from songs where composer like '" rahman "' and song like 'Dheemi Dheemi'")])
+;;({:release_date "1998-01-01 12:00:00"})
+
+
