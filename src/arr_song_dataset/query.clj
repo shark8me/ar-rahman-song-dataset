@@ -48,14 +48,15 @@
 
 (defn create-tables
   []
-  (jdbc/execute! db "create table songs (id uuid, song text,release_date date, movie text,release_id uuid, composer text)")
+  (jdbc/execute! db "create table songs (song_id uuid, song text,release_date date, movie text,release_id uuid, composer text)")
   (jdbc/execute! db "create table singers (song_id uuid, singer text)"))
 
 (comment
   (jdbc/query db ["select * from songs"])
   (jdbc/query db ["select * from singers"]))
 ;;(jdbc/execute! db "delete from songs where id > 1 ")
-;;(jdbc/execute! db "delete from singers where song_id > 1 ")
+;;(jdbc/execute! db "drop table songs")
+;;(jdbc/execute! db "drop table singers")
 
 (def rahman "A. R. Rahman")
 (defn insert-songs
@@ -66,7 +67,7 @@
         songs (->>
                (let [headers (mapv keyword (first recordings))]
                  (mapv #(zipmap headers %) (rest recordings)))
-               (map #(clojure.set/rename-keys % {:song-id :id :release-id :release_id :release-date :release_date}))
+               (map #(clojure.set/rename-keys % {:song-id :song_id :release-id :release_id :release-date :release_date}))
                (map #(assoc % :release_date (try
                                               (.format (SimpleDateFormat. "YYYY-MM-dd hh:mm:ss"  )
                                                        (parse-date (:release_date %)))
@@ -228,6 +229,10 @@ Only use the included table schema to answer the question."}
 (jdbc/query db [(str "select song from songs where composer like '" rahman "' and movie like 'Swades'")])
 ;;({:song "Aahista Aahista"} {:song "Dekho Na"} {:song "Pal Pal Hai Bhaari"} {:song "Pal Pal Hai Bhaari (instrumental)"} {:song "Saanwariya Saanwariya"} {:song "Yeh Jo Des Hai Tera (instrumental)"} {:song "Yeh Tara Woh Tara"})
 
+;;list 3 songs in the movie Swades
+(jdbc/query db [(str "select song from songs where composer like '" rahman "' and movie like 'Swades' limit 3")])
+;;({:song "Aahista Aahista"} {:song "Dekho Na"} {:song "Pal Pal Hai Bhaari"})
+
 ;;when the movie was Swades released?
 (jdbc/query db [(str "select release_date from songs where composer like '" rahman "' and movie like 'Swades' limit 1")])
 ;;({:release_date "2004-09-24 12:00:00"})
@@ -240,4 +245,31 @@ Only use the included table schema to answer the question."}
 (jdbc/query db [(str "select release_date from songs where composer like '" rahman "' and song like 'Dheemi Dheemi'")])
 ;;({:release_date "1998-01-01 12:00:00"})
 
+;;who sang the song Aaj ki raat
+(= '({:singer "Alisha Chinai"} {:singer "Mahalakshmi Iyer"} {:singer "Sonu Nigam"})
+   (jdbc/query db [(str "select si.singer from songs s inner join singers si on s.song_id = si.song_id where s.composer like '" rahman "' and s.song like 'Aaj ki raat'")]))
+
+;;how many singers sang in 'Aaj ki raat
+(jdbc/query db [(str "select count(si.singer) from songs s inner join singers si on s.song_id = si.song_id where s.composer like '" rahman "' and s.song like 'Aaj ki raat'")])
+;;({:count(si.singer) 3})
+
+;;how many song did Sonu nigam sing for rahman
+(jdbc/query db [(str "select count(distinct s.song) from songs s inner join singers si on s.song_id = si.song_id where s.composer like '" rahman "' and si.singer like 'Sonu Nigam'")])
+;;({:count(distinct s.song) 21})
+
+;;which songs did Sonu nigam sing for rahman?
+;;({:song "Aaj ki raat"} {:song "Desh Ki Mitti"} {:song "Ekla Chalo"} {:song "Gaya Gaya Dil"} {:song "Gaya Gaya Dil - Remix"} {:song "Gulfisha"} {:song "Gum Sum"} {:song "Guzarish"} {:song "Hawa Sun Hawa"} {:song "In Lamhon Ke Daaman Mein"} {:song "Main Badhiya Tu Bhi Badhiya"} {:song "Matam Mastam"} {:song "Offho Jalta Hai"} {:song "Raave Naa Chaliyaa"} {:song "Satrangi re"} {:song "Shabba Shabba"} {:song "Shanno"} {:song "Tu Fiza Hai"} {:song "Tu Fiza Hai - Remix"} {:song "Varayo Thozhi"} {:song "Yeh Dil To Mila Hai"})
+(jdbc/query db [(str "select distinct s.song from songs s inner join singers si on s.song_id = si.song_id where s.composer like '" rahman "' and si.singer like 'Sonu Nigam'")])
+
+;;which was the last song that Sonu nigam sang for Rahman
+;;({:song "Main Badhiya Tu Bhi Badhiya", :release_date "2018-06-29 12:00:00"})
+(jdbc/query db [(str "select distinct s.song,s.release_date from songs s inner join singers si on s.song_id = si.song_id where s.composer like '" rahman "' and si.singer like 'Sonu Nigam' order by s.release_date desc limit 1")])
+
+;;which was the first song that Sonu nigam sang for Rahman
+;;({:singer "A. R. Rahman", :count(si.singer) 700} {:singer "S. P. Balasubrahmanyam", :count(si.singer) 134} {:singer "K. S. Chithra", :count(si.singer) 99} {:singer "Sujatha", :count(si.singer) 69} {:singer "Hariharan", :count(si.singer) 63} {:singer "Srinivas", :count(si.singer) 57} {:singer "Swarnalatha", :count(si.singer) 54} {:singer "Mano", :count(si.singer) 54} {:singer "Shreya Ghoshal", :count(si.singer) 49} {:singer "Karthik", :count(si.singer) 48})
+(jdbc/query db [(str "select si.singer,count(si.singer) from songs s inner join singers si on s.song_id = si.song_id where s.composer like '" rahman "' group by si.singer order by count(si.singer) desc limit 10")])
+
+;;how many singers has rahman  used so far?
+;;({:count(distinct si.singer) 527})
+(jdbc/query db [(str "select count(distinct si.singer) from songs s inner join singers si on s.song_id = si.song_id where s.composer like '" rahman "' ")])
 
