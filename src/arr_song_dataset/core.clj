@@ -61,10 +61,18 @@
         ikeys [:title :first-release-date :id :artist-credit]]
     song))
 
+(defn remove-compilations
+  "remove albums that are marked as compilations"
+  [rel-list]
+  (let [filt-fn (fn[rel] (some #(= "compilation" %)
+                               (map #(.toLowerCase %) (-> rel :release-group :secondary-types))))]
+    (vec (remove filt-fn rel-list))))
+
 (defn get-tracks-in-media
   "get all the tracks in all :media entries"
   [rel-list]
   (->> rel-list
+       remove-compilations
        (map #(mapv :tracks (:media %)))
        (reduce into [])
        (reduce into [])))
@@ -271,23 +279,23 @@
       datefn (fn[i]
                (let [dt (try (.parse sdf (:rel-evt-date i))
                              (catch Exception e
-                               (try 
+                               (try
                                  (.parse sdf2 (:rel-evt-date i))
                                  (catch Exception e
                                    (try
                                      (.parse sdf (:first-release-date i))
                                      (catch Exception e
-                                       (try 
+                                       (try
                                          (.parse sdf2 (:first-release-date i))
                                          (catch Exception e
-                                           (do 
+                                           (do
                                              (println " failed to parse " (:rel-evt-date i)
                                                       " : " (:first-release-date i)
                                                       i  )
                                              nil)))))))))]
                  (assoc i :date (if dt (.format sdf dt) "-"))))
         cols [:id :title :date :rel-title :rel-id]
-        table-data 
+        table-data
         (->> (remove-songs-with-identical-singers rtcsvmap recid-singers-maps)
              (filter #((set (:rel-type %)) "Soundtrack"))
              (map datefn)
@@ -295,7 +303,9 @@
              ;;(take 5)
              (map #(clojure.string/join "," %))
              (clojure.string/join "\n"))]
-    (spit rec-wo-duplicates-csv (str (clojure.string/join "," (map name cols)) "\n" table-data ))))
+    (spit rec-wo-duplicates-csv
+          (str (clojure.string/join ","
+                                    (map name [:song_id :title :date :movie :release_id])) "\n" table-data ))))
 
 ;;(save-recording-soundtracks "arrrecordingtable.json" track-singers-fin "recordingtable_wo_dupl_singers2.csv")
 
@@ -318,7 +328,7 @@
              (reduce into [])
              (map #(clojure.string/join "," %))
              (clojure.string/join "\n"))]
-    (spit singers-csv (str (clojure.string/join "," ["id" "singer"]) "\n" table-data ))))
+    (spit singers-csv (str (clojure.string/join "," ["song_id" "singer"]) "\n" table-data ))))
 
 ;;download and save all releases
 ;;(save-releases arr-artist-id "./arr-releases-5471.json")

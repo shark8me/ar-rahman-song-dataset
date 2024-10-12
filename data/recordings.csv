@@ -1,4 +1,4 @@
-song-id,song,release-date,movie,release-id
+song_id,title,date,movie,release_id
 77171abc-f704-436f-8acf-7a1e8802296f,"Chakori",2016-11-11,Sahasam Swasaga Sagipo,13845d50-d73f-4ddb-ab49-61d19d2a9507
 bb64365c-cd6c-438c-9e8a-c8aba0c58314,"Kannulla Munde",2016-11-11,Sahasam Swasaga Sagipo,13845d50-d73f-4ddb-ab49-61d19d2a9507
 e4ecd5ab-ac67-4dfd-891d-6eb5d69fd7a0,"Shokilla",2016-11-11,Sahasam Swasaga Sagipo,13845d50-d73f-4ddb-ab49-61d19d2a9507
