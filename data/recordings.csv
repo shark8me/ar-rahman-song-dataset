@@ -8,7 +8,7 @@ df86ad2d-9412-43e9-a2c7-fcfb15947c9e,24 Carat,2016-01-01,24,8f1ef1d0-2834-4771-a
 b8a61399-95de-464e-a4d2-bc53d25f3d4a,A Close Call,2023-02-20,Kochadaiiyaan (Original Background Score),016ca44e-dc18-4a4f-858c-1201e5f69048
 a2666d5c-4b82-4ac0-9711-d47f087ad4be,A La Hassan de Paris,2014-08-12,The Hundred-Foot Journey,a79f4760-c30c-4eb6-a1eb-1864a78d9800
 794f7c8e-da8b-4b13-ab6d-9be32949b265,A Mother’s Advice To Her Son,2015-12-23,Muhammad: The Messenger of God,4d039b40-5113-41ef-ab8b-75b5bd3b35bd
-58161c4f-2dda-4ec8-8bf2-571f300a3f17,Aa Jaane Tamanna,-,Lagaan: Once Upon a Time in India,69362552-df20-4393-a168-196411777252
+58161c4f-2dda-4ec8-8bf2-571f300a3f17,Aa Jaane Tamanna,2001-04-03,Lagaan: Once Upon a Time in India,69362552-df20-4393-a168-196411777252
 cd03c8e7-3ecb-4c1c-a65e-d1f32286faa6,Aa Siggu Eggulenthavarku,1994-01-01,Gangmaster,b8a8864a-2abe-4923-b9da-8018c97676da
 2ea7839b-5e1b-42ba-9c18-b6492441b0b2,Aabhi Jaa,2014-09-29,Raunaq,095bedad-a605-438c-b29f-e7d4a8c5dc08
 a514fcec-365c-4f62-a1f0-49acdd0b4f83,Aadhukonadam Vrathami,1997-01-01,Iddaru,53cbba51-cf7a-479d-9416-59c425cf954c
@@ -154,8 +154,8 @@ b8a4633a-9917-4320-8658-4decc4db2359,Askava,2003-01-01,Nee Manasu Naaku Telusu,5
 580c5df7-0a9f-47d9-89a8-4393f9b38b08,Aur Ho,2011-10-01,Rockstar,1eb706d2-eb60-46fa-8a62-586def81760b
 3c20f172-287b-452d-9de9-e3c34bf98449,Aval Parandhu Ponaaley,2022-02-14,Navarasa,7d6179f4-0de2-4dd8-a1c6-2cb93e1db4f7
 50b05f99-4fe7-4d45-a28c-5f7e2ad155f6,Avalum Naanum,2016-06-17,Achcham Yenbadhu Madamaiyada,f59f8600-d2be-4136-9833-d1187e234af6
-0793ba65-831e-439f-bac0-9a39b163b92e,Awaara Bhanwara,-,Saathiya,8e1fb5da-b481-4cde-b9b0-4a2980a70818
-084b522b-6bbc-4aa3-9167-71dd73e62879,Awaara Bhanwra,-,Saathiya,bf062fd3-6397-4596-b346-ecc7d9ed2be1
+0793ba65-831e-439f-bac0-9a39b163b92e,Awaara Bhanwara,2002-10-18,Saathiya,8e1fb5da-b481-4cde-b9b0-4a2980a70818
+084b522b-6bbc-4aa3-9167-71dd73e62879,Awaara Bhanwra,2002-10-18,Saathiya,bf062fd3-6397-4596-b346-ecc7d9ed2be1
 684f5ccf-dee8-453c-8b69-f70f94cefb32,Ay Hairathe,2006-11-18,Guru,51aa5693-2320-4ba4-838c-37e531db1e4f
 0464191d-9294-4b55-beb8-268e57647eea,Ay Sakhi,2013-06-11,Raanjhanaa,7a08dd2b-1acd-4556-8f39-fca9d81d097b
 65334080-4a74-4af9-9d9a-b6aa5f9b09b0,Ayalaa Ayalaa,2024-01-10,Ayalaan,6ce54692-0a26-40f7-8564-b18b3559956f
@@ -246,13 +246,13 @@ dce26e60-c567-4e4a-8737-e10af2e84973,Bombay Dreams,2002-06-17,Bombay Dreams,eb84
 ff8fa191-ffff-4fea-b489-57959f15ec01,Bombay Theme,1995-01-01,Bombay,1727b374-d150-40c1-9d74-a8909ac38d40
 6a9b6df1-d252-46bf-a3dd-527bea9dadaa,Bombay Theme Finale & Radha's Soul,1996-01-01,Fire,b3124cba-eee1-4e98-8167-d494997fe9e6
 91fa589c-e4ac-4bc5-989e-be81ed1a3ffb,Bombay Theme Intro,1996-01-01,Fire,b3124cba-eee1-4e98-8167-d494997fe9e6
-9b24b309-a1d1-49f4-bfe6-febeffca5ad4,Bombay Theme Music,-,Saathiya,bf062fd3-6397-4596-b346-ecc7d9ed2be1
+9b24b309-a1d1-49f4-bfe6-febeffca5ad4,Bombay Theme Music,2002-10-18,Saathiya,bf062fd3-6397-4596-b346-ecc7d9ed2be1
 4ca695ff-4070-447a-92be-c5023490019a,Boogie Night,1991-01-01,Set Me Free,4be22373-e8b2-4697-9c44-b6731e4606b4
 dbb7435a-9de9-47b9-989f-2fdce826ffed,Boom Boom,2003-06-28,Boys,630187c2-a534-400d-b573-889d99568e3d
 ba1356ba-bec5-4558-85dd-7b4fd491e3a1,Boom Boom Robo Da,2010-01-01,Robo,3f845de4-8a7a-4d02-80d0-4876bb853a89
 e75a78c4-3de5-4d45-b875-1413467c0be4,Boondon Se Baaten,2000-01-01,Zubediaa & Thakshak,62094293-83f4-4e28-bfeb-330382e15fca
 c348d68e-8099-4f19-9b7d-66f5f8970137,Botal Tod De,2001-01-01,Laagan,3ee55cfa-64a8-497d-b07a-f1806ad4940c
-44748f24-0ffd-48e0-bcfc-b22646c1e740,Botal Tod Di,-,Saathiya,bf062fd3-6397-4596-b346-ecc7d9ed2be1
+44748f24-0ffd-48e0-bcfc-b22646c1e740,Botal Tod Di,2002-10-18,Saathiya,bf062fd3-6397-4596-b346-ecc7d9ed2be1
 394db7b1-143e-4312-876d-eb50970312b5,Breakfast for Mom / Just Be People,2012-06-19,People Like Us,cac0277f-d522-4252-9a0c-0ee9fc797102
 648b8a5a-4c48-4569-b76b-aa461077925f,Broken Promises,2012-01-04,Ekk Deewana Tha,3ddc7b2e-b8ae-4e1d-b316-dedb37e688e8
 df0e2fb6-805b-4fb3-a1db-b2f2f9e8d09f,Buddha's Remains,2004-05-04,Warriors of Heaven and Earth,907c611a-2de7-4051-a1be-61a3796f1ac0
@@ -278,7 +278,7 @@ a37348a0-6764-4ed8-99b6-fddbf01f3f8d,Chakka Chakalathi,2021-12-24,Galatta Kalyaa
 9453991f-9602-4a5f-8018-2256dda28edf,Chal Kahin Door,2017-06-27,Mom,4791e31d-86c7-42e0-89d1-d5f7ac3564b0
 f4bce3cd-a212-4489-841d-395383b00f65,Chal Kheva Re Kheva,1998-10-16,Doli Saja Ke Rakhna,0337d260-6efe-4fe9-8cec-905d78fd5e76
 15d77a6d-ce78-4137-83f0-9299a94201a9,Chale Chalo,2001-01-01,Lagaan,6dabfc01-c6fb-47e3-999a-65f1694e2e94
-4fab3b56-aefe-4f3e-9f3e-e6261ae5fcae,Chale Charo,-,Lagaan: Once Upon a Time in India,69362552-df20-4393-a168-196411777252
+4fab3b56-aefe-4f3e-9f3e-e6261ae5fcae,Chale Charo,2001-04-03,Lagaan: Once Upon a Time in India,69362552-df20-4393-a168-196411777252
 dfdabe59-76ae-4052-8685-ce3c4a42ea48,Chali Kahani,2015-10-16,Tamasha,d52fd102-1c87-465e-b4b9-22334e7a10ee
 11eefd68-369f-46de-82a8-2e3177d97119,Challa,2012-10-09,Jab Tak Hai Jaan,0b3f1ed0-6732-480b-a969-f61bf20c926c
 c2aeb0c0-3446-4f9b-aed6-b81b0c1a1268,Chalo Chale Mitwa,2001-09-07,Nayak,882484f1-df3c-4696-8209-41222e98bf6a
@@ -295,7 +295,7 @@ b385627d-3bb9-4fc1-b28e-70cfdac0d9cc,Chanduruni Takinadi,1997-01-01,Rakshakudu,d
 0f001433-303b-425a-aa84-b1208e23392a,Cheliya Kushalama,2001-01-01,Paravasam,79bd7a2c-c1b2-4752-bc18-52621e5138b9
 795f502e-b4a5-4ae1-be8b-f5efcc559593,Cheliya Kushalama (Reprise),2001-01-01,Paravasam,79bd7a2c-c1b2-4752-bc18-52621e5138b9
 4623210e-0b07-486b-a0b9-d710bfaabab8,Chella Rangi,2024-01-10,Ayalaan,6ce54692-0a26-40f7-8564-b18b3559956f
-2bbb7bda-ff6d-4e5c-9814-a75c9eedef09,Chhalka Chhalka,-,Saathiya,8e1fb5da-b481-4cde-b9b0-4a2980a70818
+2bbb7bda-ff6d-4e5c-9814-a75c9eedef09,Chhalka Chhalka,2002-10-18,Saathiya,8e1fb5da-b481-4cde-b9b0-4a2980a70818
 da74a84d-c41b-4a66-bed5-0edbc20e90cf,Chhalka Chhalka Re,2002-10-18,Saathiya,5e7eee49-532a-48c5-8697-6dd6f63ac5c5
 9434baee-f72f-4a64-8531-92b631c0af79,Chhod Chala Nirmohi,1995-01-01,Muthu Maharaja,f26d863b-d7b6-42fc-9fd8-6eb5ca949a3a
 e16d9606-a43b-4f88-afb1-2f40009b6522,Chhodo More Baiyyan,2000-09-08,Zubeidaa,65fd0255-17d1-4e22-a473-a5efe5aba9a9
@@ -338,7 +338,7 @@ a3e4644a-ca12-4f72-a785-ae2c85f45b99,Chittu Kuruvi,2003-01-01,Parasuram,87b3ad58
 3b0d845b-28f6-4367-95c0-2c974b27f21c,Cholappenne,2022-01-01,Malayankunju,a72ff0ed-1cca-4a45-85d5-5c103b3363eb
 f513e7a3-02af-4381-a168-57c7506d02a1,Choodham Aakasam Antham,2014-03-09,Vikramasimha,5cdba26f-fc92-4429-897a-03899c6d93da
 b0cdad38-17aa-4183-8e62-23cd4b6ab43d,Chor Chor,1993-11-08,Chor Chor,69a3220c-5ab3-43f5-a580-634ceb90d6fa
-371a6e57-6645-4e28-af1c-2aa3ca92a9ed,Chori Pe Chori,-,Saathiya,8e1fb5da-b481-4cde-b9b0-4a2980a70818
+371a6e57-6645-4e28-af1c-2aa3ca92a9ed,Chori Pe Chori,2002-10-18,Saathiya,8e1fb5da-b481-4cde-b9b0-4a2980a70818
 3c0d3716-3c30-41dc-bdd0-ba35069e258a,Chori Se Chupke Chupke,1992-09-03,Dharam Yoddha,716747c4-9943-42c1-af59-62f1827da12e
 8751b305-c948-4081-b3a5-18d0745ef909,Choti Si Chiraiya,2021-07-21,Mimi,db1ab094-3b9b-435a-be3d-4c41a135c012
 06f33e7b-4c0f-48e3-898f-b2bfa41f3716,Chotta Chotta Nenaiyudhu,1999-11-07,Taj Mahal,2dc52531-1e1c-4807-8403-941397056652
@@ -379,7 +379,7 @@ fbd0cd27-9c9a-4d0c-8757-609b5b5c0b61,Daud,1997-01-01,Daud,5fcf1d26-5daa-43af-a77
 4d12d664-346e-442d-a77d-0ce95dd4a054,Daud (Bhangra),1997-01-01,Daud,5fcf1d26-5daa-43af-a774-7359b83575c5
 70571016-6e5a-4c96-b4aa-6a1b96ee78e5,Death Sentence,2023-02-20,Kochadaiiyaan (Original Background Score),016ca44e-dc18-4a4f-858c-1201e5f69048
 6ee3e672-4280-4d65-a556-04e7fc59eacb,Deen Valarkkum,2014-08-31,Deen Isaimaalai,8ac06bea-365d-47ee-a416-05c61aa112d9
-37de2c7c-3068-4ce1-a073-196097da7cf2,Deewane Dil,-,Lagaan: Once Upon a Time in India,69362552-df20-4393-a168-196411777252
+37de2c7c-3068-4ce1-a073-196097da7cf2,Deewane Dil,2001-04-03,Lagaan: Once Upon a Time in India,69362552-df20-4393-a168-196411777252
 1fa32630-7546-4742-adf1-bd7e05c9cff4,Deham Thiri,2004-01-01,Yuva,1bd395c4-f9e3-46f2-87ad-5a514947ebf2
 7f5e2b47-da87-4278-a7ac-f845a11adf2c,Deivam Raasina Kavitha,2016-01-01,24,a0304d4a-b480-4e46-bd48-4065e5384d95
 f85f4151-e543-4463-a612-4b985d17ed09,Dekho Na,2004-09-24,Swades,748be199-4dd1-4ddf-8e3c-9d1f2c53519c
@@ -415,7 +415,7 @@ cafdeb62-bcfb-4373-b0c2-e1789bedc93b,Dil Bechara,2020-07-10,Dil Bechara (Origina
 24b8ee5b-5ee2-4132-b7dd-5097a1bb3d52,Dil Hai Sanam Dil,1993-11-08,Chor Chor,69a3220c-5ab3-43f5-a580-634ceb90d6fa
 e3f6ea8a-f883-44c6-955b-5c3d613b65fb,Dil Ka Raja,1995-01-01,Tu Hi Mera Dil,12a3e193-e9be-45a5-b7f4-0c29d3c40139
 1aa08728-07a1-4203-93a9-022fed83e893,Dil Ka Rishta,2008-11-21,Yuvvraaj,e0a2967c-817d-455c-a75d-4137a9e6ed3d
-bc74c29b-f9dc-4bd8-958b-ec337e614f51,Dil Lagaane Ki Sazaa,-,Lagaan: Once Upon a Time in India,69362552-df20-4393-a168-196411777252
+bc74c29b-f9dc-4bd8-958b-ec337e614f51,Dil Lagaane Ki Sazaa,2001-04-03,Lagaan: Once Upon a Time in India,69362552-df20-4393-a168-196411777252
 64cc5cd6-87f2-4cdc-8f9a-689ef031e6a9,Dil Lagana Ki Saza,2001-01-01,Laagan,3ee55cfa-64a8-497d-b07a-f1806ad4940c
 90850c35-3ac8-4209-8aaf-45540ce7a451,Dil Maaka Dina,1996-01-01,Duniya Dilwalon Ki,4b841121-b275-4534-b490-122e23b83a8e
 2eacc600-0486-4f75-b878-220d3a112fe6,Dil Ne Dil Se Ikrar Kiya (Haqeeqat),1996-01-01,Hindustani,4468a1b4-0c2d-4af1-af79-20b336b0f198
@@ -605,9 +605,9 @@ d7aec73e-8153-41a7-94b4-32455a606e24,Gori Godh Bhari,2020-03-20,99 Songs,0a30892
 846126c1-3788-4ba5-ac06-8886585770e2,Gum Sum,2008-01-01,Ada .....A Way of Life,6601302d-d177-4c36-8605-4556631246af
 a7e4238c-8182-458f-8bc7-049c948148fb,Gundey Lo Ne Ppundiley,2009-01-01,Blue,ee078ce1-3ea9-4009-aab5-ca19a8696653
 d03cb8a6-b04b-4283-b74b-8453aced16fc,Gunzukunnaa,2016-12-26,Kadali,22154b4f-4e03-44fc-9853-d5a196a21b88
-979cf981-aa89-4161-8b20-ee45eecb6bc6,Gup Chup Baatein,-,Lagaan: Once Upon a Time in India,69362552-df20-4393-a168-196411777252
+979cf981-aa89-4161-8b20-ee45eecb6bc6,Gup Chup Baatein,2001-04-03,Lagaan: Once Upon a Time in India,69362552-df20-4393-a168-196411777252
 4425aea6-0b85-441c-9416-48d97e568faf,Gurus of Peace,1997-12-09,Vande Mātaram,0b164343-da63-47f8-bb83-f4b4db2a3887
-34ef6bef-3cfb-495c-be32-076d05353619,Gurus of Peace (Repeat),-,Vande Mātaram,d696b6a5-5baf-4f70-8fac-c95c91063685
+34ef6bef-3cfb-495c-be32-076d05353619,Gurus of Peace (Repeat),1997-12-09,Vande Mātaram,d696b6a5-5baf-4f70-8fac-c95c91063685
 84c0460c-c419-4487-a859-ef99516bc143,Guzarish,2008-01-01,Ghajini,5410c3ae-b6bb-492e-a8e5-d79a660fc176
 42cdc0b6-5d67-4f2d-9fc5-3ff5ba5679ec,Hai Dard,2008-01-01,Ada .....A Way of Life,6601302d-d177-4c36-8605-4556631246af
 31fe6b78-9c2c-49eb-8539-6c4a98a4336f,Hai Jaana... Hai Jaana,1999-01-01,Pukar,10122e90-0cdb-4f57-9d87-cb24cd0eff5b
@@ -866,7 +866,7 @@ b4c04d6d-03cf-4d0d-a638-827fb8fc48f8,Kadhalikkum Pennin,1994-01-01,Kadhalan,640e
 5773b1e6-0bf1-4b20-9825-f8af371ed5e0,Kadhile Nadiche,2000-01-01,Rhythm,7a41c641-9020-4c8e-b7ff-3e67fdc6e2d7
 a6427dc2-1be0-47c7-834b-2246e895963a,Kahaan Hoon Main,2014-01-25,Highway,9a379086-4288-4e3f-8a0d-5a42f44d89e8
 3d1bbfa5-87ac-49b5-8b53-64a0c6fe0e2a,Kahe Ujadi Mori Neend,2005-01-21,Kisna - The Warrior Poet,9a715aec-22d6-4dbe-b0bb-c805412deba8
-bc37822c-53e4-45c9-b017-b4054dd252cd,Kahin Aaag Lage Lag Jai,-,Taal,d081bdcb-08b5-414d-8a25-bb189beaf8f4
+bc37822c-53e4-45c9-b017-b4054dd252cd,Kahin Aaag Lage Lag Jai,1999-08-13,Taal,d081bdcb-08b5-414d-8a25-bb189beaf8f4
 1d2b01f1-79a0-43af-a133-eeb53015b7fb,Kahin Aag Lage,2006-01-01,Taal: A Subhash Ghai Film,334868cb-4b1e-4043-ad08-ef230f80824c
 1abd53d4-b038-4aa8-a0b2-cb7c2b04494d,Kahin To...,2008-05-20,Jaane Tu Ya Jaane Na,9aa17de3-9496-421c-a97a-1cba83969815
 29bbe62e-9e77-4c55-93fe-88e8b0cf142b,Kai Thatti Thatti,1999-04-19,Jodi,3b29a4f6-ec73-402b-9fa7-20283a937f5e
@@ -1019,7 +1019,7 @@ b69915f9-7ba1-4b87-a880-2372d4115891,Kucchi Kucchi Rakkamma,1995-01-01,Bombay,ba
 030e2470-3c50-4e93-8cef-5cdc937dc2e4,Kuchi Kuchi,1995-01-01,Bombay,1727b374-d150-40c1-9d74-a8909ac38d40
 9c3ee242-7f85-4e33-bdce-65c89dbc1da5,Kuchi Kuchi Koonamma,1995-01-01,Bombay,19d7afd0-233f-45ba-b04e-6aae0ef24a02
 d7b988aa-fbd7-4d15-9d32-29c3c7bb4ce3,Kuchi Kuchi Rakkamma,2021-07-25,Bombay,87178c45-b325-4064-8444-4ed825441055
-222e64d9-280c-4ff1-9f7c-b042731fc4b8,Kudiyan Shaher Diyan,-,Taal,d081bdcb-08b5-414d-8a25-bb189beaf8f4
+222e64d9-280c-4ff1-9f7c-b042731fc4b8,Kudiyan Shaher Diyan,1999-08-13,Taal,d081bdcb-08b5-414d-8a25-bb189beaf8f4
 532415f7-3853-4047-93f9-62efd990a06e,Kulicha Kuthaalam,1994-05-20,Duet,24f4cdd2-ec24-4c5b-8cc3-48f9e98c83d2
 5c48f12f-a307-4879-9676-94496729026e,Kulichaa Kuthaalam,2016-11-15,Duet,1e618263-d88c-4dea-accd-65a7043131fe
 1cc2b5c4-3d6b-4d25-8ed7-5b604dd5b69c,Kuliruthu Kuliruthu,1999-11-07,Taj Mahal,2dc52531-1e1c-4807-8403-941397056652
@@ -1040,7 +1040,7 @@ ce0e0f7f-386c-4d24-bc40-2615fd41635c,Kya Hai Mohabbat,2012-01-04,Ekk Deewana Tha
 cb2bfc9b-6781-4f73-994e-665414afb115,Kya Kare Kya Na Kare,1995-05-14,Rangeela,a7670df6-10a2-48e9-af92-4da40c925052
 8b74cc91-e540-42d6-9eab-392cdf676d3f,Laadli,2014-09-29,Raunaq,095bedad-a605-438c-b29f-e7d4a8c5dc08
 0e59a5a4-7c82-4757-bfec-6df92a213786,Laagan,2001-01-01,Lagaan,6dabfc01-c6fb-47e3-999a-65f1694e2e94
-e289929a-e3fc-479d-96c1-bc0678dc95d1,Laal Chunariya,-,Lagaan: Once Upon a Time in India,69362552-df20-4393-a168-196411777252
+e289929a-e3fc-479d-96c1-bc0678dc95d1,Laal Chunariya,2001-04-03,Lagaan: Once Upon a Time in India,69362552-df20-4393-a168-196411777252
 0c0851b2-07fb-4622-8c43-c58e692b8846,Laali Laali (Female),1995-01-01,Indira,414900ee-be57-41d9-91f3-39edf3e64a7c
 fc2b74aa-a9a8-4348-951c-454ab056c3d4,Laali Laali (Male),1995-01-01,Indira,414900ee-be57-41d9-91f3-39edf3e64a7c
 7f5252fb-11a8-4d93-8b67-26e1ffd738b8,Laalijo,2016-01-01,24,a0304d4a-b480-4e46-bd48-4065e5384d95
@@ -1253,7 +1253,7 @@ f698f5b1-4742-458c-a306-0a608d540a75,Mera Gham,2014-03-13,Kochadaiiyaan (Origina
 5ab83886-593f-4c09-9945-37eb7f1cc15e,Mera Naam Kizie,2020-07-10,Dil Bechara (Original Motion Picture Soundtrack),605f89ff-26f9-42bc-95cb-0c017d3c68c5
 d9a2f4c2-abad-4ed1-9ce4-e3fb26e62fc5,Mera Rang De Basanti,2002-01-01,The Legend of Bhagat Singh,f9b4b325-b8b0-4621-8790-d3e9123e9298
 307936bf-56ea-45bf-bf45-1663b5c0432a,Mera Yaar Mila De,2002-10-18,Saathiya,5e7eee49-532a-48c5-8697-6dd6f63ac5c5
-6178f021-d1ae-4f10-ad7a-d7a0a7dbdca8,Mera Yaat Mila De,-,Saathiya,8e1fb5da-b481-4cde-b9b0-4a2980a70818
+6178f021-d1ae-4f10-ad7a-d7a0a7dbdca8,Mera Yaat Mila De,2002-10-18,Saathiya,8e1fb5da-b481-4cde-b9b0-4a2980a70818
 d1ed5e52-7f7e-452c-b738-24999c840c76,Mercury Pookkal,1997-10-30,Ratchagan,c0579a9e-1a9e-41a2-8ff8-0105e26f17a0
 b3183738-b27a-409a-9161-9a37e2cdfb66,Mercury Poolu,1997-01-01,Rakshakudu,d9e87c70-e2cc-4d9c-8329-a9603c3a063e
 b0beb7cf-0d5d-43dc-972a-0d9426ac4a9a,Mere Dil Ka Wo Shehzaada,1997-01-01,Kabhi Na Kabhi,44071ddb-ec94-40e1-aadc-4eb1cf16e06e
@@ -1309,9 +1309,9 @@ b74eb624-cb47-4fbf-bde3-09f68ad2d808,Mr. Kadam,2014-08-12,The Hundred-Foot Journ
 b6e366f6-2604-4830-9bb9-58a7edfe42b2,Mudhal Mutham,1994-01-01,Fantasy (Andhi Malai),eb591138-4a34-40a6-a325-e9874898891f
 94f31920-8e20-4977-8072-95266211530e,Mudhalvanae,1999-03-31,Mudhalvan,b9683866-a962-46e8-ab0a-3147214ee97d
 bb621f87-12f8-45d8-a8ce-4830025f9cb7,Mudinepalli,1993-01-01,Gentleman,c56b0f7b-b5a3-4124-ba9a-767af21f72bd
-9db11a56-8b63-4422-8355-c1148853e428,Muhje Rang De,-,Saathiya,bf062fd3-6397-4596-b346-ecc7d9ed2be1
+9db11a56-8b63-4422-8355-c1148853e428,Muhje Rang De,2002-10-18,Saathiya,bf062fd3-6397-4596-b346-ecc7d9ed2be1
 a8a41e2c-7fb6-41f3-83de-6f5dc7ffd11d,Mujhe Chaand Pe Le Chalo,2018-06-29,Sanju (Original Motion Picture Soundtrack),7673f9c3-83f2-41d5-ace3-3eb5a3c094ef
-4f796ec8-df6e-4d9f-9074-2ae0c1548c7d,Mujhe Rang De,-,Saathiya,8e1fb5da-b481-4cde-b9b0-4a2980a70818
+4f796ec8-df6e-4d9f-9074-2ae0c1548c7d,Mujhe Rang De,2002-10-18,Saathiya,8e1fb5da-b481-4cde-b9b0-4a2980a70818
 d234616a-8d9b-4135-a989-b574545d61fe,Mujhko Yeh Lagtaa Hai,1992-09-03,Dharam Yoddha,716747c4-9943-42c1-af59-62f1827da12e
 98a7a3e3-8a16-45af-b7c3-c783a7e63a0e,Mujhpe Toofan Uthaaye,2003-01-01,Tehzeeb,0f9cd4eb-531b-4bd9-ad7a-adecf76b3e83
 71a502bd-6f75-4e6e-9781-f269b9195978,Mukambe Mukambe,1994-01-01,Super Police,fc61ba70-7e6b-48d1-94e3-4b1825b51fc1
@@ -1389,7 +1389,7 @@ d0e1a812-1d36-4575-9ce7-68a5570d5dac,Nagumomu Nagma,1994-01-01,Gangmaster,b8a886
 558902de-5a06-43ea-ad22-912ca14b841a,Nahin Samne,1999-08-13,Taal,7cf52b48-10a3-4e2a-8273-927177ee774a
 b08e69ea-3444-42e4-aeba-05d74753b35c,Nahin Samne Tu,2006-01-01,Taal: A Subhash Ghai Film,334868cb-4b1e-4043-ad08-ef230f80824c
 a115b601-9997-46d9-b9b3-52ce8dc99e4e,Naina Milaike,2002-10-18,Saathiya,5e7eee49-532a-48c5-8697-6dd6f63ac5c5
-595e1b38-80c9-4d3e-8673-f2b031a94b5f,Naina Milake,-,Saathiya,8e1fb5da-b481-4cde-b9b0-4a2980a70818
+595e1b38-80c9-4d3e-8673-f2b031a94b5f,Naina Milake,2002-10-18,Saathiya,8e1fb5da-b481-4cde-b9b0-4a2980a70818
 bdfea37d-cac8-4096-9640-41a27c8c895e,Naina Miley,2010-01-01,Robot,1588fecc-62d3-4a10-a6d9-eca5f931db46
 4f9f6b17-e13a-45a1-bef4-51073b5b6023,Naina Neer Baha,2005-12-13,Water,0aa1c156-9ed3-4cef-be93-d7e0922d25db
 039e3336-c4cf-4425-b4bd-80b4157cf55e,Nallai Allai,2017-03-21,Kaatru Veliyidai,1c322b06-6ebe-4bc0-a78a-bcddf7e7702a
@@ -1479,7 +1479,7 @@ a9b6a7a0-3bb3-4b79-b121-f5a3302fcca8,Noor,2009-01-14,Delhi-6,dc1b43c8-1ad3-4b8f-
 f437c6ed-eb11-4070-9c95-ed656dc7d92e,Nuvvu Leka,2016-11-18,Guru Kanth,2b20748e-c811-4cbb-b6bf-29ea3bde32ea
 b11f4327-b2ee-44a7-a768-bd0eae9b9aaf,Nuvvunte Naa Jathagaa,2014-01-01,I - Manoharudu,90454f43-4e2f-4231-8832-8e7a79479a99
 95d3f5bd-30fb-4c5b-bdcb-c6ac38b4da75,Nuvvunte Naa Jathagaa (Reprise),2014-01-01,I - Manoharudu,90454f43-4e2f-4231-8832-8e7a79479a99
-296d5d29-6676-4b4e-87d3-f248144bc8d9,O 'Rei Chhori,-,Lagaan: Once Upon a Time in India,69362552-df20-4393-a168-196411777252
+296d5d29-6676-4b4e-87d3-f248144bc8d9,O 'Rei Chhori,2001-04-03,Lagaan: Once Upon a Time in India,69362552-df20-4393-a168-196411777252
 2b5f3fba-9758-4c96-ad8f-ff5a4eedfa6e,O Aashiqa,2020-03-20,99 Songs,0a30892b-1e65-4011-8254-ea3358df73bb
 a497c2d1-2871-45dc-841e-79d462b3580b,O Bhavre,1999-01-01,Taal,e9a5cfbb-0d61-441e-85dc-eb51c26b95c2
 2e686cbc-5df5-419d-b7f2-00d706f2d692,O Bhavre (Remix),1997-06-06,Daud: Original Motion Picture Soundtrack,7bf0d308-0c1b-412e-b285-7e570f8ce569
@@ -1491,7 +1491,7 @@ f7ca19e4-899f-40e5-b03c-baff83d66234,O Humdum Suniyo Re,2002-10-18,Saathiya,5e7e
 27de33a5-136e-448e-8325-9edea89235dd,O Mera Chand,2020-03-20,99 Songs,0a30892b-1e65-4011-8254-ea3358df73bb
 c47a6f7b-08a1-4430-8485-176e4e9f4758,O Meri Jaan,1996-01-01,Duniya Dilwalon Ki,4b841121-b275-4534-b490-122e23b83a8e
 de2df665-b58e-4c1a-a3c7-85cb6cf6a4ab,O Naye Insaan,2010-01-01,Robot,1588fecc-62d3-4a10-a6d9-eca5f931db46
-4559b1ab-1b98-41f0-9626-73802b4536e4,O Paalanhare,-,Lagaan: Once Upon a Time in India,69362552-df20-4393-a168-196411777252
+4559b1ab-1b98-41f0-9626-73802b4536e4,O Paalanhare,2001-04-03,Lagaan: Once Upon a Time in India,69362552-df20-4393-a168-196411777252
 9cad15a0-0d6a-4caa-a057-e43a70f49f3a,O Priyathama,1998-01-01,Prematho,edb0f115-5bd0-4923-9596-6215667595f3
 fabb7343-4e72-416a-b524-6793f826cc9e,O Rey Chhori,2001-01-01,Lagaan,6dabfc01-c6fb-47e3-999a-65f1694e2e94
 db1b41d4-5dc2-4787-8fdb-104fff4cbcf7,O Silku Papa,1994-07-29,Palnati Pourusham,0e0aaf3e-b4d4-4c58-a78d-9925b42d2bd2
@@ -1688,7 +1688,7 @@ ea8a9bb1-40e2-4ebe-bddf-b3014e12b606,Punnagai Maayai,2021-03-25,99 Songs (Tamil)
 cfd06ac6-dde6-44ec-ab84-9a1f247e8982,Putham Puthu Bhoomi,1993-07-13,Thiruda Thiruda,3f59ad63-9378-4066-b29a-4acdeb8ced5e
 15220111-4b8d-4e3c-b5c5-5b0e74c1a77e,Pyaara Sa Gaon,2000-09-08,Zubeidaa,65fd0255-17d1-4e22-a473-a5efe5aba9a9
 3d8c3bb0-f895-4b50-86c6-83f3fb665dd8,Pyar Kabhi Na Todenge,1993-11-08,Chor Chor,69a3220c-5ab3-43f5-a580-634ceb90d6fa
-36e56a42-de1b-4e12-8c7d-50be51e25137,Pyar Koi Khel Nahin,-,Taal,d081bdcb-08b5-414d-8a25-bb189beaf8f4
+36e56a42-de1b-4e12-8c7d-50be51e25137,Pyar Koi Khel Nahin,1999-08-13,Taal,d081bdcb-08b5-414d-8a25-bb189beaf8f4
 67e728a4-d3d5-4fb2-bdf9-229783b30792,Pyar Ye Jaane Kaisa,1995-05-14,Rangeela,a7670df6-10a2-48e9-af92-4da40c925052
 8162c2bf-c39a-4a2d-9cb5-16be227ff9ea,Pyare Panchi Baahon Mein,1996-01-01,Hindustani,4468a1b4-0c2d-4af1-af79-20b336b0f198
 e98c381f-3b0e-433f-8a8a-6b26c520ec73,R.I.P.,2011-01-10,127 Hours,b0de0be5-f2ae-3025-89f2-fad3cb1f4542
@@ -1829,7 +1829,7 @@ c0996c76-de40-4c2f-9bb3-0c1251b73829,Sandakkozhi,2004-03-05,Aayitha Ezhuthu,b0af
 815ce6f5-2941-4ab4-853d-e19ac2be0163,Sarfarosh Ki Tamanna,2002-01-01,The Legend of Bhagat Singh,f9b4b325-b8b0-4621-8790-d3e9123e9298
 7e32311c-fb8b-49ff-8947-68b2d97842d3,Saridhaana,1999-07-23,Thaalam,1fa3659c-554a-4a6c-8988-79deae86c5ab
 094c36ce-4729-4691-91cb-68be2f3c9a1f,Sarsariya,2016-07-06,Mohenjo Daro,066ca916-d4c3-4b2f-a259-cd4f55e4a201
-19f4b32b-0119-4c8c-ba6e-4da37646b126,Sarse Sarak Gayee,-,Lagaan: Once Upon a Time in India,69362552-df20-4393-a168-196411777252
+19f4b32b-0119-4c8c-ba6e-4da37646b126,Sarse Sarak Gayee,2001-04-03,Lagaan: Once Upon a Time in India,69362552-df20-4393-a168-196411777252
 db0a92a8-1b74-40cf-8a82-56b28270ed8c,Saruman,2008-02-04,The Lord of the Rings: Original London Production,4202a9b1-1773-4c70-a378-c446764a647d
 4985ce41-6bee-42a9-9ad3-3d2b7501cd75,Sarvam Thaala Mayam,2019-01-03,Sarvam Thaala Mayam (Original Motion Picture Soundtrack),7c64551f-f273-477e-9a99-1d402341eb17
 bc8d9c9b-faa8-4107-ab1c-36a4a27924bd,Sasivadane,1997-01-01,Iddaru,53cbba51-cf7a-479d-9416-59c425cf954c
@@ -2114,9 +2114,9 @@ fd7b2b03-1120-4f00-9b78-23fcf0c0c8ba,Thumbi Thullal,2022-07-12,Cobra (Original M
 8fd8faa5-b8f9-4143-84a4-024a3268f38d,Tilda Basmati Advertisement,1995-01-01,Humse Hai Muqabala,7ab92bba-2cc5-487a-a01e-982ec35f63a1
 b7192cf8-d8f9-4066-8432-ac53987e269f,Time & Space,2020-01-01,Why? The Musical (2022 Expo Dubai),d199ecde-0920-4873-b887-3caba5e84aa6
 b05ac041-1f68-47e5-8182-c532a8d6410d,Tiranga,2017-10-06,The Flying Lotus,d3471a28-9bfe-419c-81b3-d1123bdb786a
-6bd8a239-f213-4049-9edc-97d64ef73e91,Title Music,-,Taal,d081bdcb-08b5-414d-8a25-bb189beaf8f4
+6bd8a239-f213-4049-9edc-97d64ef73e91,Title Music,1999-08-13,Taal,d081bdcb-08b5-414d-8a25-bb189beaf8f4
 4dc5895e-4c0e-429a-a186-531d44eb886e,Title Theme,1994-05-20,Duet,24f4cdd2-ec24-4c5b-8cc3-48f9e98c83d2
-bd3142e1-57db-4435-9b37-16e8a331f1cc,Toofan Ki Raat,-,Saathiya,8e1fb5da-b481-4cde-b9b0-4a2980a70818
+bd3142e1-57db-4435-9b37-16e8a331f1cc,Toofan Ki Raat,2002-10-18,Saathiya,8e1fb5da-b481-4cde-b9b0-4a2980a70818
 f0f264f9-9d2d-4420-86a7-e65f2ae26d45,Toofan Si Kudi,2021-01-01,Atrangi Re,98c994a1-0518-4986-8886-226bd26613cf
 ec4e9503-30a0-4c93-a526-16d450684726,Top Tucker,2018-10-03,Sarkar,09862641-b4c7-4214-885f-43d7187ba024
 4b6f2003-f508-43d6-a1db-73f05569aeb0,Top Tucker - Telugu,2018-11-02,Sarkar (Telugu) [Original Motion Picture Soundtrack],5d1fc91c-89ea-4ba0-8c39-50e3cb3e8481
@@ -2234,7 +2234,7 @@ d800f28e-548f-4215-a305-49a2cac2a444,Veere Kadh De,2020-03-20,99 Songs,0a30892b-
 84b2a907-beac-4fb9-8197-71d85e93f897,Vellai Pookkal,2002-02-04,Kannathil Muthamittal,0ddcc7ff-108b-4007-a61e-d5e5215097a4
 12b9f305-457b-4e01-babb-7d42afe13200,Velli Malarae,1999-04-19,Jodi,3b29a4f6-ec73-402b-9fa7-20283a937f5e
 ec00c4cb-6cc7-426a-8153-3bc4df6ac192,Velli Malarae (Flute Version),1999-04-19,Jodi,3b29a4f6-ec73-402b-9fa7-20283a937f5e
-25123ee0-b955-4965-b0c6-77c63b6bde1c,Velli Malarae (Instrumental),-,Jodi,0f862523-387a-4148-82be-77e36031d9a3
+25123ee0-b955-4965-b0c6-77c63b6bde1c,Velli Malarae (Instrumental),1999-04-19,Jodi,0f862523-387a-4148-82be-77e36031d9a3
 16d8d897-8ca4-4d60-b9b8-a4c7c93f9ece,Vellipomaake,2016-06-18,Saahasam Swaasaga Saagipo,53076329-144c-402e-b1b4-58b20fa6f535
 4136f71d-abfb-4b95-b636-c95d2a72041e,Vendimabhu Therumeeda,1994-05-24,Duet,e5ff4d8e-2f34-4d86-b11d-42cede2b564d
 82d2c9ff-0e1c-4271-a251-c47849342163,Venilla Venilla,1997-01-01,Iruvar,b5fc35e0-5947-42dc-b222-d6f476343b2e

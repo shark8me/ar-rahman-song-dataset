@@ -67,7 +67,6 @@
   (let [filt-fn (fn[rel]
                   (let [sec-types  (map keyword (map #(.toLowerCase %) (-> rel :release-group :secondary-types)))
                         ret (some #{:compilation :remix :live} sec-types)]
-                    (println " ret " ret " for  sec-types " sec-types " class " (class sec-types))
                     ret))]
     (vec (remove filt-fn rel-list))))
 
@@ -147,19 +146,25 @@
        (map #(let [release-id (:id %)
                    rel-title (:title %)
                    stype (-> % :release-group :secondary-types)
+                   release-group-first-release-date (-> % :release-group :first-release-date)
                    rel-area (-> % :release-events first :area :name)
                    rel-evt-date (-> % :release-events first :date)
                    sdf (new java.text.SimpleDateFormat "yyyy-MM-dd")
                    rel-date (try (.parse sdf rel-evt-date)
                                  (catch Exception e
-                                   (println " failed to parse " rel-evt-date " : " release-id )))]
+                                   #_(println " failed to parse " rel-evt-date " : " release-id )))]
                (->> (mapv :tracks (:media %))
                     (reduce into [])
                     (map :recording)
-                    (map (fn[i] (assoc i :rel-title rel-title :rel-id release-id
-                                       :rel-area rel-area
-                                       :rel-evt-date rel-evt-date
-                                       :rel-type stype))))))
+                    (map (fn[i]
+                           ;;sometimes the track->recordings doesn't have a first-release-date
+                           ;;then add the first-release-date from the release-group.
+                           (-> (if (:first-release-date i) i
+                                   (assoc i :first-release-date release-group-first-release-date))
+                               (assoc :rel-title rel-title :rel-id release-id
+                                      :rel-area rel-area
+                                      :rel-evt-date rel-evt-date
+                                      :rel-type stype)))))))
        (reduce into [])
        (map #(dissoc % :video :length))
        (map #(assoc {} (:id %)  %))
@@ -264,9 +269,9 @@
 
 (defn save-recording-soundtracks
   "remove recodings with identical singers, and only those marked as soundtracks"
-  [recordings-table-csv track-singers rec-wo-duplicates-csv]
+  [recordings-table-json track-singers rec-wo-duplicates-csv]
   (let [rtcsvmap
-        (->> (json/read-str (slurp recordings-table-csv) :key-fn keyword)
+        (->> (json/read-str (slurp recordings-table-json) :key-fn keyword)
              (reduce (fn[acc i]
                        (if (acc (.toLowerCase (:title i)))
                          (update-in acc [(:title i)] conj i)
@@ -301,7 +306,6 @@
         cols [:id :title :date :rel-title :rel-id]
         table-data
         (->> (remove-songs-with-identical-singers rtcsvmap recid-singers-maps)
-             ;;(filter #((set (:rel-type %)) "Soundtrack"))
              (map datefn)
              (map #(map (fn[i] (% i)) cols))
              ;;(take 5)
