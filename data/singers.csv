@@ -17,6 +17,7 @@ a2666d5c-4b82-4ac0-9711-d47f087ad4be,A. R. Rahman
 58161c4f-2dda-4ec8-8bf2-571f300a3f17,Aadesh Shrivastava
 cd03c8e7-3ecb-4c1c-a65e-d1f32286faa6,Mano
 cd03c8e7-3ecb-4c1c-a65e-d1f32286faa6,Swarnalatha
+2ea7839b-5e1b-42ba-9c18-b6492441b0b2,Jonita Gandhi
 a514fcec-365c-4f62-a1f0-49acdd0b4f83,Mano
 eeec0e92-ea66-4fdb-bf76-1f52a11e0149,Suneeta Rao
 eeec0e92-ea66-4fdb-bf76-1f52a11e0149,T. K. Kala
@@ -119,9 +120,6 @@ b6db7416-7706-45d8-a3ca-4e7e8937dfb1,Maria Roe Vincent
 26f316fb-7264-4bac-b15a-55ac377d5475,A. R. Rahman
 30c59a2c-41a2-4b4c-946a-0f0be4047a64,A. R. Rahman
 7e6327de-56e4-4296-8b2e-39ae511ea244,Papon
-210079cb-7cda-47c5-b119-d71e2f25eac9,Udit Narayan
-210079cb-7cda-47c5-b119-d71e2f25eac9,Mahalakshmi Iyer
-f04eb42d-cbed-4e3e-ad39-5af628d0bb67,Abhijeet
 251101be-e1cf-4966-b353-6946fcd8f926,A. R. Rahman
 751c12d5-38d2-4e9c-ba3e-65fad955cba3,A. R. Rahman
 ae608ca9-e71f-45a1-99a9-0da8156d0f1a,Sanaa Moussa
@@ -134,6 +132,10 @@ ac070b3c-7ba0-4257-a2ce-0714f43f925d,Arpita Gandhi
 4dd0f910-5739-4fa3-be84-a48d7b9b2753,Alka Yagnik
 4dd0f910-5739-4fa3-be84-a48d7b9b2753,Arijit Singh
 9854fdb3-01b3-4fd2-892f-5d667d07523d,Ismail Darbar
+3c5def67-6406-4d19-a374-4a07b54c2dca,U2
+3c5def67-6406-4d19-a374-4a07b54c2dca,A. R. Rahman
+3f592450-f44b-497f-a8e0-a28e3822f3c6,U2
+3f592450-f44b-497f-a8e0-a28e3822f3c6,A. R. Rahman
 a24ce7da-f5ca-4863-8859-2c06ddc7e171,Aditya
 a24ce7da-f5ca-4863-8859-2c06ddc7e171,Natalie Di Luccio
 6987cc71-71e8-4c72-861f-56a6c4d141a5,Michael Ripoll
@@ -141,8 +143,6 @@ d8fc15f1-26dd-474e-909c-635f150d0ab5,A. R. Rahman
 d8fc15f1-26dd-474e-909c-635f150d0ab5,Karthik
 c8f48c10-7327-41ad-be5e-0ee13a1aa0dd,Shiraz Uppal
 c8f48c10-7327-41ad-be5e-0ee13a1aa0dd,Natalie Di Luccio
-03f54cc1-fc9d-431d-a0d8-6cd728f668bd,Hariharan
-03f54cc1-fc9d-431d-a0d8-6cd728f668bd,Sadhana Sargam
 8e88e753-874b-4df4-9d74-5866589602ed,A. R. Rahman
 29aaf408-ff76-41b0-8eb3-af44e53130c2,Swarnalatha
 b641a76b-da01-4eb7-ab43-28ff71a59583,Harini
@@ -176,9 +176,6 @@ b4faec67-4776-4707-879e-a384917e2588,The Freemen
 340f2496-6731-4787-b02d-074774a6273f,Hariharan
 340f2496-6731-4787-b02d-074774a6273f,M. S. Viswanathan
 319876f3-e223-4e09-9a41-ce86344f0c34,A. R. Rahman
-4c17adcc-5189-462b-a772-10a06632a9db,Shaan
-4c17adcc-5189-462b-a772-10a06632a9db,Sukhwinder Singh
-4c17adcc-5189-462b-a772-10a06632a9db,Srinivas
 4f22c754-9901-4129-80e9-fd9a0784ab84,A. R. Rahman
 4f22c754-9901-4129-80e9-fd9a0784ab84,Abhay Jodhpurkar
 4f22c754-9901-4129-80e9-fd9a0784ab84,Chinmayi
@@ -202,6 +199,8 @@ df76c3fc-7692-49c0-ac97-6a1ebbfb2652,Chitra Sivaraman
 49c5530c-b94f-4949-9310-eed4f7438419,A. R. Rahman
 c6407793-6835-479b-ae7f-8a09e1b209cf,A. R. Rahman
 4d3ddd91-3c8e-4513-9a98-2f741d58980d,A. R. Rahman
+908fff11-6a26-4620-9ebf-b4849e1d4c67,Hariharan
+908fff11-6a26-4620-9ebf-b4849e1d4c67,Anuradha Sriram
 0d375acf-0f01-49c2-905c-f94990cd456b,Sadhana Sargam
 9c49c2ab-8442-457f-9592-729b804a1295,Anuradha Sriram
 abec42b5-02f1-429b-9b47-2ee18a7084e1,Devan Ekambaram
@@ -221,6 +220,7 @@ a76a498c-f368-42ca-9727-4191933aa3cc,P. Susheela
 37e07bdb-06c8-4fcd-99f6-5a9dcbba4b83,Udit Narayan
 37e07bdb-06c8-4fcd-99f6-5a9dcbba4b83,S.P.B. Pallavi
 37e07bdb-06c8-4fcd-99f6-5a9dcbba4b83,S. P. Balasubrahmanyam
+e3d94606-a67a-4d59-a356-72c3d4704d84,S. Janaki
 8a31745b-f80f-405d-abcf-14d56d8aba09,A. R. Rahman
 6bb472e8-fdee-4474-a761-e31a9116cacb,A. R. Rahman
 ccabd080-4e28-4e4d-a6de-6467696bbbb1,S. P. Balasubrahmanyam
@@ -237,6 +237,7 @@ d06e75c8-0956-4dd2-a062-8d99d0c60802,Asha Bhosle
 c5ea4e54-8ed5-413f-bf6f-8ff4ea3885ef,Swarnalatha
 c5ea4e54-8ed5-413f-bf6f-8ff4ea3885ef,Mehardeen Langa
 5b7dac7d-445e-4de3-b8cf-cfceac99e87f,Anuradha Sriram
+a516bc53-811f-4f8e-a069-4537362a4378,A. R. Rahman
 c5d0488b-431d-4342-a631-31724c4a8559,Ila Arun
 8b15c170-dfdb-4b0d-b0c3-15c7ea04c5f8,Hariharan
 8b15c170-dfdb-4b0d-b0c3-15c7ea04c5f8,Sadhana Sargam
@@ -246,6 +247,7 @@ c5d0488b-431d-4342-a631-31724c4a8559,Ila Arun
 95f3338d-c062-4594-8be8-6f07f1b88e25,Shashaa Tirupati
 95f3338d-c062-4594-8be8-6f07f1b88e25,Maalavika Sundar
 ac93df6f-733d-4f7a-b252-1bd6146b34a4,A. R. Rahman
+265d960d-ea3e-467c-935c-ae74abcd8be3,Alphonse
 e926bc72-15ae-4e01-ae2e-aface1056bdd,Shahul Hameed
 1b5fd5d7-e752-4c86-a600-ea57afc0a487,Sujatha
 49b5836d-bb1c-4ae4-9146-8c46c006e88b,Sujatha
@@ -256,7 +258,6 @@ c1ece51d-9c5d-4f15-9766-02ae6eb29b9d,Mathangi
 c1ece51d-9c5d-4f15-9766-02ae6eb29b9d,George Peter
 c1ece51d-9c5d-4f15-9766-02ae6eb29b9d,Chitra Sivaraman
 c3ffd837-9665-45a9-b89d-373907a3cb21,A. R. Rahman
-ea20568c-de46-4014-b9c1-d517f6fe90fe,A. R. Rahman
 b8a4633a-9917-4320-8658-4decc4db2359,Surjo Bhattacharya
 b8a4633a-9917-4320-8658-4decc4db2359,Shreya Ghoshal
 45384aa3-c3a6-48bb-9052-87e93919f339,Hariharan
@@ -277,6 +278,9 @@ b8a4633a-9917-4320-8658-4decc4db2359,Shreya Ghoshal
 50b05f99-4fe7-4d45-a28c-5f7e2ad155f6,Vijay Yesudas
 0793ba65-831e-439f-bac0-9a39b163b92e,A. R. Rahman
 084b522b-6bbc-4aa3-9167-71dd73e62879,A. R. Rahman
+684f5ccf-dee8-453c-8b69-f70f94cefb32,Hariharan
+684f5ccf-dee8-453c-8b69-f70f94cefb32,Alka Yagnik
+684f5ccf-dee8-453c-8b69-f70f94cefb32,A. R. Rahman
 0464191d-9294-4b55-beb8-268e57647eea,Madhushree
 0464191d-9294-4b55-beb8-268e57647eea,Chinmayi
 0464191d-9294-4b55-beb8-268e57647eea,Vaishali Samant
@@ -293,7 +297,6 @@ a50813df-3f40-4c05-ade1-0f47b29ab68a,S. P. Balasubrahmanyam
 5df27652-199b-44cb-889a-819a58aea849,Shashaa Tirupati
 05dda76c-f87b-4015-bc54-1a01ed19f9f8,Karthik
 a76d5832-35b3-4deb-a517-3b8d0a17600b,Adnan Sami
-3cdd3ec9-ee01-4195-9ab5-d6a5ac4d3e34,Adnan Sami
 8f6b8e51-3b86-47e1-85be-db6db7081caa,Haricharan
 8f6b8e51-3b86-47e1-85be-db6db7081caa,Natalie Di Luccio
 a71c86ce-3187-486e-99ce-5047a2c73f56,Mano
@@ -351,6 +354,8 @@ cf0a4e77-14e3-49f4-9ef5-57868eedb6ee,A. R. Rahman
 baa7b599-ed2c-41c5-98a5-ee48388a103c,Mano
 baa7b599-ed2c-41c5-98a5-ee48388a103c,Swarnalatha
 1e4bb95d-ea73-431c-8785-a7e8cd7a31d6,P. Bharathiraja
+332e2c5f-655f-48d7-9720-4779b7a7b677,Shreya Ghoshal
+332e2c5f-655f-48d7-9720-4779b7a7b677,Uday Mazumdar
 ad638dad-827a-417d-8752-d6f0e1fe56bf,Craig Armstrong
 ad638dad-827a-417d-8752-d6f0e1fe56bf,A. R. Rahman
 2863d8ff-aa7e-4aa3-9df7-a38a1b0b25ab,Sudeep Jaipurwale
@@ -364,6 +369,10 @@ d7d71eec-6ab3-4f2e-b8d7-e02af1da6fc0,[no artist]
 33015823-09f7-4fef-91ed-406272d5d083,Vijay Prakash
 33015823-09f7-4fef-91ed-406272d5d083,Mustafa Kutoane
 33015823-09f7-4fef-91ed-406272d5d083,Keerthi Sagathia
+a0031501-af26-4935-9293-240511cdaa7a,A. R. Rahman
+a0031501-af26-4935-9293-240511cdaa7a,Blaaze
+a0031501-af26-4935-9293-240511cdaa7a,Irshad Kamil
+a0031501-af26-4935-9293-240511cdaa7a,Gil Levy
 5581fdc8-aca9-48c9-a5df-3902d0f70447,Karthik
 5581fdc8-aca9-48c9-a5df-3902d0f70447,Mohammed Irfan
 cd29bddf-7614-434c-afd1-87f84f0565e0,Karthik
@@ -380,6 +389,7 @@ bef493ee-6913-49e4-86e9-801c36ad2ae4,A. R. Rahman
 bef493ee-6913-49e4-86e9-801c36ad2ae4,Nikhita Gandhi
 30d35eda-2c70-46e1-986e-309d6450d4fa,A. R. Rahman
 30d35eda-2c70-46e1-986e-309d6450d4fa,Shakthisree Gopalan
+c3842a4d-04f2-4c98-88d8-65996cbf663c,A. R. Rahman
 28893c95-405d-4433-ae3e-7c741d51bcee,Hariharan
 dd4fa5cd-21b5-4e5d-8c2d-be7def12e940,A. R. Rahman
 6568d121-11ca-433c-8d38-c1fbac5d18cb,P. Bharathiraja
@@ -410,12 +420,13 @@ e9579320-02c8-49d9-ad5c-9ab752b9366e,Sonu Kakkar
 60d54774-a5d9-46d0-881b-6ebdfc484d69,A. R. Rahman
 4b941892-17dd-43b2-877f-fb24ede3cb5b,A. R. Rahman
 a8237417-c50b-45e4-96a9-f1102b71253b,A. R. Rahman
+dce26e60-c567-4e4a-8737-e10af2e84973,A. R. Rahman
 68e4677e-307e-419b-b3ec-ee901724000c,A. R. Rahman
 ff8fa191-ffff-4fea-b489-57959f15ec01,A. R. Rahman
-ca2be276-d9e4-4b48-9c81-8e4857d1cd42,A. R. Rahman
 6a9b6df1-d252-46bf-a3dd-527bea9dadaa,A. R. Rahman
 91fa589c-e4ac-4bc5-989e-be81ed1a3ffb,A. R. Rahman
 9b24b309-a1d1-49f4-bfe6-febeffca5ad4,A. R. Rahman
+4ca695ff-4070-447a-92be-c5023490019a,Malgudi Subha
 dbb7435a-9de9-47b9-989f-2fdce826ffed,Adnan Sami
 dbb7435a-9de9-47b9-989f-2fdce826ffed,Sadhana Sargam
 ba1356ba-bec5-4558-85dd-7b4fd491e3a1,Yogi B
@@ -449,8 +460,9 @@ a5dd7527-741e-4b8d-9aba-3dc50ff4f9a7,A. R. Rahman
 3d572f40-54a6-4b6d-b35a-f58a0947b812,Nikhita Gandhi
 ec354bac-1e55-4d63-8919-a6263dc44bda,Udit Narayan
 ec354bac-1e55-4d63-8919-a6263dc44bda,Kavita Krishnamurthy
-4dbee836-eb41-44b8-be7a-50f472b95a78,Sukhwinder Singh
-4dbee836-eb41-44b8-be7a-50f472b95a78,Sapna Awasthi
+71abe5bb-9553-4554-b06d-f686bfddbd44,A. R. Rahman
+8ed86b84-bb30-46f2-b527-1855c7d44812,Sukhwinder Singh
+8ed86b84-bb30-46f2-b527-1855c7d44812,Sapna Awasthi
 6ef21142-2616-45fa-b291-2a6c62375795,Shreya Ghoshal
 a37348a0-6764-4ed8-99b6-fddbf01f3f8d,A. R. Rahman
 a37348a0-6764-4ed8-99b6-fddbf01f3f8d,Shreya Ghoshal
@@ -458,25 +470,16 @@ a37348a0-6764-4ed8-99b6-fddbf01f3f8d,Shreya Ghoshal
 0771a924-778e-4bf0-ae2e-d42a6d85bf8c,Sujatha
 58fd7f04-72ef-46fd-b72e-a5b10f9f6a39,Sathyaprakash
 58fd7f04-72ef-46fd-b72e-a5b10f9f6a39,Shashaa Tirupati
-ee13d28e-d4ec-4d9a-989f-d2c3c4f0476f,A. R. Rahman
 9453991f-9602-4a5f-8018-2256dda28edf,Shashaa Tirupati
 f4bce3cd-a212-4489-841d-395383b00f65,A. R. Rahman
+15d77a6d-ce78-4137-83f0-9299a94201a9,A. R. Rahman
 4fab3b56-aefe-4f3e-9f3e-e6261ae5fcae,A. R. Rahman
-c2601b43-c03b-48be-b5ea-c4f60183fb8e,A. R. Rahman
-c2601b43-c03b-48be-b5ea-c4f60183fb8e,Srinivas
 dfdabe59-76ae-4052-8685-ce3c4a42ea48,Sukhwinder Singh
 dfdabe59-76ae-4052-8685-ce3c4a42ea48,Haricharan
 dfdabe59-76ae-4052-8685-ce3c4a42ea48,Haripriya
-35afc557-5fda-469e-87b6-1af67ed0cd2f,Richa Sharma
-35afc557-5fda-469e-87b6-1af67ed0cd2f,Mahalakshmi Iyer
-35afc557-5fda-469e-87b6-1af67ed0cd2f,Vaishali Samant
-35afc557-5fda-469e-87b6-1af67ed0cd2f,Shoma Banerjee
 11eefd68-369f-46de-82a8-2e3177d97119,Rabbi Shergill
 c2aeb0c0-3446-4f9b-aed6-b81b0c1a1268,A. R. Rahman
 def459f4-39e8-4592-900a-956a77790858,A. R. Rahman
-66be3a3d-0625-486e-9098-731333681a26,Udit Narayan
-66be3a3d-0625-486e-9098-731333681a26,Kavita Krishnamurthy
-66be3a3d-0625-486e-9098-731333681a26,Swarnalatha
 a56dc260-82ba-4f1e-b158-f9dab45e7204,Bela Shende
 a56dc260-82ba-4f1e-b158-f9dab45e7204,Srinivas
 95e9be50-b90e-4197-adfe-752add2e25df,Mychael Danna
@@ -506,9 +509,6 @@ e16d9606-a43b-4f88-afb1-2f40009b6522,A. R. Rahman
 07cf5fd3-5691-4d00-a151-fd5ddae9377b,Minmini
 d767ae0c-3d4b-4fbd-8cf9-f17248f8298f,Minmini
 fcf605bb-b344-415d-9c74-721874e7cea9,A. R. Rahman
-117b7872-d1fe-4cf9-8a61-589343edd678,Minmini
-117b7872-d1fe-4cf9-8a61-589343edd678,A. R. Rahman
-5ca258c4-43c2-48b3-892d-2850928cc2d4,A. R. Rahman
 d0e628b2-933b-4fe8-b20f-95a89dd98d90,A. R. Rahman
 240487a6-fee0-43cb-87b1-fd6cb669abcf,Sukhwinder Singh
 240487a6-fee0-43cb-87b1-fd6cb669abcf,Shreya Ghoshal
@@ -566,9 +566,6 @@ b0cdad38-17aa-4183-8e62-23cd4b6ab43d,G.V. Prakash Kumar
 371a6e57-6645-4e28-af1c-2aa3ca92a9ed,A. R. Rahman
 3c0d3716-3c30-41dc-bdd0-ba35069e258a,Jolly Mukherjee
 3c0d3716-3c30-41dc-bdd0-ba35069e258a,Poornima
-26dc3297-08f6-4f52-85ad-4d206f7840af,Asha Bhosle
-26dc3297-08f6-4f52-85ad-4d206f7840af,Karthik
-26dc3297-08f6-4f52-85ad-4d206f7840af,Blaaze
 8751b305-c948-4081-b3a5-18d0745ef909,Kailash Kher
 06f33e7b-4c0f-48e3-898f-b2bfa41f3716,Srinivas
 817d0124-3e15-4bad-9a46-3f4985b5fc8b,S. P. Balasubrahmanyam
@@ -577,10 +574,6 @@ d360829b-4ccb-46da-909a-d40a3fe86c67,Sadhana Sargam
 d360829b-4ccb-46da-909a-d40a3fe86c67,Murtuza Khan
 d360829b-4ccb-46da-909a-d40a3fe86c67,Qadir Khan
 d360829b-4ccb-46da-909a-d40a3fe86c67,A. R. Rahman
-7f8533be-d15f-4484-9aa2-18eb2113350b,Sadhana Sargam
-7f8533be-d15f-4484-9aa2-18eb2113350b,Murtuza Khan
-7f8533be-d15f-4484-9aa2-18eb2113350b,Qadir Khan
-7f8533be-d15f-4484-9aa2-18eb2113350b,A. R. Rahman
 6da72bd7-9327-46fd-8195-2e64f253332e,S. P. Balasubrahmanyam
 6da72bd7-9327-46fd-8195-2e64f253332e,Harini
 8cefe6ac-3c3b-4ae4-bdbf-a9cfcbcbc15e,Mychael Danna
@@ -623,6 +616,7 @@ cc53803c-d58f-4276-89c7-1a5e38f283d7,A. R. Rahman
 97b7c5c9-7260-441f-a3b3-ffde711ac439,A. R. Rahman
 188d6f03-3d88-4525-a103-2c3ea6b6e227,A. R. Rahman
 85bae48c-80e2-427c-b91c-b034c9a4f328,A. R. Rahman
+b1b839e2-12c7-4966-891e-5ffd56b41139,Malgudi Subha
 cc942ddc-cabf-4019-b7bf-64313ab70945,Blaaze
 cc942ddc-cabf-4019-b7bf-64313ab70945,Vasundhara Das
 fbd0cd27-9c9a-4d0c-8757-609b5b5c0b61,A. R. Rahman
@@ -646,14 +640,13 @@ a7d981df-dd3d-42a8-9768-2a0d96ae0de3,Viviane Chaix
 a7d981df-dd3d-42a8-9768-2a0d96ae0de3,Claire
 7e57a853-f8ee-4a0a-9eed-0a664cafec14,Seattle Symphony
 7e57a853-f8ee-4a0a-9eed-0a664cafec14,Ricardo Averbach
-f7efebf5-63b1-4612-9c32-79d1a3ab046d,Sukhwinder Singh
-f7efebf5-63b1-4612-9c32-79d1a3ab046d,A. R. Rahman
 b5f17ecf-e6b3-4791-9bbd-1c5ad0d3f4fd,A. R. Rahman
 dbf3acaf-e106-4327-9d77-d05387f70c00,Sonu Nigam
 dbf3acaf-e106-4327-9d77-d05387f70c00,Anuradha Sriram
 a6008b02-4eb3-4686-9cdd-59cae73e311f,A. R. Rahman
 a3924225-41e0-43ba-aa73-a90222f1f830,A. R. Rahman
 20710ae5-f429-480e-a93f-6272f6c38436,Nakul Abhyankar
+2d48abaa-121c-4cf9-a3ff-c2dac834271e,A. R. Rahman
 0659b241-bad5-4f43-ae38-24b7421b2ab4,A. R. Rahman
 6ac6c008-7dc5-4de9-8513-d9e9222e24aa,Craig Armstrong
 6ac6c008-7dc5-4de9-8513-d9e9222e24aa,A. R. Rahman
@@ -669,11 +662,9 @@ b06e7783-992b-4b94-9d16-2fcb2c4bf176,Kavita Krishnamurthy
 b06e7783-992b-4b94-9d16-2fcb2c4bf176,Unni Menon
 53e1a566-7c4e-444e-aa18-a1afd3acc741,Sriram Parthasarathy
 77ba8210-2680-4abe-acca-819a04e0567a,Surjo Bhattacharya
-acacd1e9-135d-4f57-bcbc-2d274d475d84,Kavita Krishnamurthy
+382b2448-7613-424d-b66d-b8872e833ede,A. R. Rahman
 57ef7084-820f-445b-9383-f5bedc20205d,A. R. Rahman
 eeea79a4-c993-4800-98c9-5b8c88d25658,Annupamaa
-bbbf0517-2945-4a2c-95f2-1899441301a1,Srinivas
-bbbf0517-2945-4a2c-95f2-1899441301a1,Swarnalatha
 bd0b08bc-656e-4d6f-b571-0fd893275c54,Sukhwinder Singh
 c530684a-b585-4289-88e7-77d0798ff706,A. R. Rahman
 328227f5-3341-4f57-a851-8068fc9e75f0,A. R. Rahman
@@ -697,8 +688,6 @@ bc74c29b-f9dc-4bd8-958b-ec337e614f51,Nadeem-Shravan
 af2c94bf-838a-44f8-a887-1ad560b2443d,Udit Narayan
 af2c94bf-838a-44f8-a887-1ad560b2443d,Alka Yagnik
 7b1dcdab-df97-4b79-bee7-6b61c1caead0,A. R. Rahman
-622f82c2-9766-4afc-bd38-0f4d6dd6b0b1,A. R. Rahman
-2eded5da-1c8a-4cb5-aa93-e9b9384bf9d1,A. R. Rahman
 517eccb5-63b1-4388-93d9-d5e45c9649b8,A. R. Rahman
 223a8af6-a6c3-4464-8f51-c8b88af02114,Munir Ahmad Mir
 8453fa7d-e662-42d7-9736-231097b6d771,Bamba Bakya
@@ -729,6 +718,9 @@ e4d3938a-4824-4f15-b137-fa7e69a012d0,Stark
 e08cb298-c586-4e2e-83b2-98d4960de81b,A. R. Rahman
 c9b4c384-269b-4917-90b8-01c71310fdc8,S. P. Balasubrahmanyam
 c9b4c384-269b-4917-90b8-01c71310fdc8,Malgudi Subha
+e10c8093-9628-4cf5-a0cd-d94c973fc2bd,Naresh Iyer
+e10c8093-9628-4cf5-a0cd-d94c973fc2bd,Jaspreet Jasz
+e10c8093-9628-4cf5-a0cd-d94c973fc2bd,Arya
 1d31aac0-8427-4494-a77c-f71a544707c7,Liz Phair
 4b654ee5-811d-4f84-b046-d09bab98d53a,Craig Armstrong
 4b654ee5-811d-4f84-b046-d09bab98d53a,A. R. Rahman
@@ -737,7 +729,6 @@ c9b4c384-269b-4917-90b8-01c71310fdc8,Malgudi Subha
 13aa05e5-1dc1-4ef8-a7e9-4459e2484461,Kadri Gopalnath
 4a6cb050-23a3-4e65-978d-75570ddee5d5,Hans Raj Hans
 9e9e39a1-57eb-4138-9063-9da7246c78b0,Rhythm
-3fa11ee1-60ba-4852-901d-7d54f18db800,A. R. Rahman
 9eab0fe8-7822-4daa-9405-d42c952ba77d,S. P. Balasubrahmanyam
 2e0627f5-6895-4818-bb6e-ab92cf8c6e28,Hariharan
 2e0627f5-6895-4818-bb6e-ab92cf8c6e28,Sujatha
@@ -781,7 +772,7 @@ e3e0cc65-097b-4628-8cd3-78e767574394,Suresh Peters
 6d8c7485-4f45-428d-8985-892e64c9ad6d,A. R. Rahman
 7df6fe9a-f3d5-442c-9fb3-4bcb11c90cdd,Bappi Lahiri
 7df6fe9a-f3d5-442c-9fb3-4bcb11c90cdd,K. S. Chithra
-33da678e-65c0-4c1a-86d5-be98968ed245,A. R. Rahman
+1c46154d-c40d-45dd-b357-fc9e619d3e47,A. R. Rahman
 34a00516-1f88-4039-8824-5e0da898c78f,Harshdeep Kaur
 e30609bd-531c-46a0-a45b-c11a09d66793,A. R. Rahman
 33ab6da4-c128-4c37-965e-441db84e0463,Sonu Nigam
@@ -815,7 +806,8 @@ ff95da98-af3a-4ed7-8288-a6d60f1df412,Ambili
 136f0c21-b94d-4748-b91a-37c63d2a4663,Srinivas
 136f0c21-b94d-4748-b91a-37c63d2a4663,Sujatha
 5d5112f4-c4fe-495b-bca7-6d2ccd39b8e1,A. R. Rahman
-bfc4e375-bded-41cb-aeee-83fc5a0ded86,A. R. Rahman
+5d32c1e6-0ba1-4f77-bf31-dcb09412a53a,S. P. Balasubrahmanyam
+5d32c1e6-0ba1-4f77-bf31-dcb09412a53a,Sujatha
 9a5d73c9-fa93-4a7c-86c7-b9dd04cd6644,S. P. Balasubrahmanyam
 9149e915-cab1-40ce-ac79-d04501e46784,Unnikrishnan
 9149e915-cab1-40ce-ac79-d04501e46784,S.P.B. Pallavi
@@ -842,7 +834,6 @@ f16a771e-f977-43b4-bebb-857e83e4f0a5,Gopika Purnima
 0c7de8ce-90b3-4b5f-8d79-89ece7fe5b0a,K. S. Chithra
 457e5647-b89f-406f-a3bc-2ca2742ab5c4,Shankar Mahadevan
 178ed270-2b92-4f67-8337-05a4645a5ccf,Arijit Singh
-810b0f2f-f1fb-46ce-96db-73ee72e45275,Arijit Singh
 ff453f24-062c-4f3c-8609-d1b87f3d8a5b,A. R. Rahman
 c2faba29-610d-4fce-b5c2-eb8411132816,Unni Menon
 93fd20bc-a282-42cd-93ce-e6b5677263f5,S. P. Balasubrahmanyam
@@ -883,6 +874,7 @@ fc82128a-b90b-4691-9216-9a9e29dea52e,Swarnalatha
 7fd57111-8403-4471-8921-2fec288e133b,A. R. Rahman
 37ac380d-beef-4400-ba3a-0e356cad3e4b,Srinivas
 37ac380d-beef-4400-ba3a-0e356cad3e4b,Suresh Peters
+b3e7b54a-c673-4fea-a65d-4b80e045750b,Swarnalatha
 2eebdd6a-b1ba-4eac-8bee-cd2a8c312263,Anto
 2eebdd6a-b1ba-4eac-8bee-cd2a8c312263,Prathap Chandran
 2eebdd6a-b1ba-4eac-8bee-cd2a8c312263,Srinivas
@@ -896,6 +888,9 @@ eb15c20b-0f45-49df-96b4-853409e7974c,Dilshad Shaikh
 eb15c20b-0f45-49df-96b4-853409e7974c,Nikhita Gandhi
 eb15c20b-0f45-49df-96b4-853409e7974c,MC Heam
 4c4b0abc-b0e5-4ccf-b33e-bdd84a99dfd4,A. R. Rahman
+4039a627-632c-4eab-a169-81f3ef41f125,A. R. Rahman
+4039a627-632c-4eab-a169-81f3ef41f125,Sunitha Sarathy
+4039a627-632c-4eab-a169-81f3ef41f125,Tanvi Shah
 fba6c19f-3789-48ad-8942-9dbb27df4dff,A. R. Rahman
 642df1a5-40fb-4832-b09b-e56216f7454f,A. R. Rahman
 43bd1194-8c5d-46ad-8626-1dd42105b36e,A. R. Rahman
@@ -925,6 +920,10 @@ deaf8978-ffa8-4a28-80f5-a50245b935e7,Suzanne D’Mello
 9baf790a-afd8-45e1-8679-92093150bdb9,Mychael Danna
 9baf790a-afd8-45e1-8679-92093150bdb9,A. R. Rahman
 94c49796-79c4-4789-8106-f39808e4306d,A. R. Rahman
+e3ef469b-0f04-496c-8dcf-982d7132bd67,A. R. Rahman
+e3ef469b-0f04-496c-8dcf-982d7132bd67,Karthik
+e3ef469b-0f04-496c-8dcf-982d7132bd67,Lady Kash
+e3ef469b-0f04-496c-8dcf-982d7132bd67,Virat Kohli
 ed128ab2-6c1e-4c94-a33c-42a63aefe148,Ismail Darbar
 5c19a9aa-fb38-4b60-acb0-94ba154b4c02,A. R. Rahman
 26517cc0-0029-459b-9e0f-f42a5545fcf3,A. R. Rahman
@@ -944,8 +943,16 @@ bfdda4da-1bc7-4e61-92f8-326c604e0275,A. R. Rahman
 6d116abc-ca7d-4435-ab91-3299c369d3dc,K. S. Chithra
 be597d95-7a1f-42de-bd75-9c28894835aa,Sonu Nigam
 c1f32ca3-4688-43ed-bb8a-a2de82983712,Sonu Nigam
+48c1cdb2-7e61-4d23-8ebd-085606b56dff,Jonita Gandhi
 fb2c1bbb-e8a1-473f-a7b9-bbc2a752be39,S. P. Balasubrahmanyam
 30e1837f-5b7c-4cfa-afef-a43f336ce504,Rekha Bhardwaj
+04109c6f-e6e7-4d88-9c6e-efe900f71f0b,A. R. Rahman
+04109c6f-e6e7-4d88-9c6e-efe900f71f0b,Udit Narayan
+04109c6f-e6e7-4d88-9c6e-efe900f71f0b,Alka Yagnik
+04109c6f-e6e7-4d88-9c6e-efe900f71f0b,Sukhwinder Singh
+04109c6f-e6e7-4d88-9c6e-efe900f71f0b,Shankar Mahadevan
+04109c6f-e6e7-4d88-9c6e-efe900f71f0b,Shaan
+04109c6f-e6e7-4d88-9c6e-efe900f71f0b,Sehar
 f6d36544-9f67-4cbc-b7ee-02af4c04a3f8,Papon
 f6d36544-9f67-4cbc-b7ee-02af4c04a3f8,Shreya Ghoshal
 49b69483-2616-4b41-9959-9b730b146c96,Sapna Mukherjee
@@ -986,9 +993,11 @@ a7e4238c-8182-458f-8bc7-049c948148fb,Hentry Kuruvilla
 a7e4238c-8182-458f-8bc7-049c948148fb,Raven Millhouse
 d03cb8a6-b04b-4283-b74b-8453aced16fc,Shakthisree Gopalan
 979cf981-aa89-4161-8b20-ee45eecb6bc6,A. R. Rahman
+4425aea6-0b85-441c-9416-48d97e568faf,Nusrat Fateh Ali Khan
+4425aea6-0b85-441c-9416-48d97e568faf,A. R. Rahman
+34ef6bef-3cfb-495c-be32-076d05353619,A. R. Rahman
 84c0460c-c419-4487-a859-ef99516bc143,Javed Ali
 84c0460c-c419-4487-a859-ef99516bc143,Sonu Nigam
-bb62081c-335c-4ac6-b1f7-2feea7277f02,Sunitha Sarathy
 42cdc0b6-5d67-4f2d-9fc5-3ff5ba5679ec,Udit Narayan
 31fe6b78-9c2c-49eb-8539-6c4a98a4336f,A. R. Rahman
 bfa2324e-1757-41a6-a805-201baf4245a1,A. R. Rahman
@@ -1001,10 +1010,6 @@ cc9ad7c4-64f7-4b65-bbee-1aacd8a9069c,Hariharan
 cc9ad7c4-64f7-4b65-bbee-1aacd8a9069c,Swarnalatha
 f6c626c3-e600-4274-859f-2b357d0ef6d0,A. R. Rahman
 06c03942-5c42-442f-949c-4e6410a747c9,A. R. Rahman
-7ff69566-b259-4a0e-8cc2-d486b2291092,Kavita Krishnamurthy
-7ff69566-b259-4a0e-8cc2-d486b2291092,Udit Narayan
-887873db-d5a4-457b-b603-885a848a49b6,Hariharan
-887873db-d5a4-457b-b603-885a848a49b6,Swarnalatha
 76dbd322-6d95-41cf-ae33-c615416bca5f,Udit Narayan
 76dbd322-6d95-41cf-ae33-c615416bca5f,Vasundhara Das
 68ea702f-d1e3-4668-af5c-56e6984ce88b,Sanaa Moussa
@@ -1026,6 +1031,7 @@ fb427c32-ad95-4a7a-b2cb-aacc9d5dd0a4,A. R. Rahman
 fb427c32-ad95-4a7a-b2cb-aacc9d5dd0a4,Mayssa Karaa
 fb427c32-ad95-4a7a-b2cb-aacc9d5dd0a4,Shiv
 74ffafe5-7cf7-4778-8e8f-3b8f9036370b,A. R. Rahman
+42e17b43-3b51-446a-81ea-0104a7df65fb,Malgudi Subha
 e4ddf8f3-86be-43bb-b500-038ba38885c6,Harshdeep Kaur
 d8776a81-3281-4245-a662-fb25115687ed,Mika Singh
 d8776a81-3281-4245-a662-fb25115687ed,Nakash Aziz
@@ -1063,12 +1069,13 @@ c74e3a5b-5b6b-4e80-b272-f0fd2eb73bb6,Karthik
 2016faa5-861e-4f6b-9bef-5696eae3aa97,Srinivas
 2016faa5-861e-4f6b-9bef-5696eae3aa97,Bonnie Chakraborty
 03933833-f491-4579-a074-68e608d9bbff,A. R. Rahman
+998dc69f-2104-4755-829f-c4ec5300b9d5,A. R. Rahman
 bdfba45d-d177-4e0f-9f62-1371406b5a64,Abhay Jodhpurkar
 6e2deb41-6783-4bbf-ad65-74298d6dedc7,A. R. Rahman
+f68f9bc9-fd1b-485a-81f2-26bb6a23bb34,Ananya Birla
+f68f9bc9-fd1b-485a-81f2-26bb6a23bb34,A. R. Rahman
 0595f5fc-22dd-4e85-a2f2-458794fdeebd,A. R. Rahman
 ca0b06b5-40a7-48e4-b32c-fd620523cc1b,A. R. Rahman
-37ebeb20-7a82-444f-bb2d-2a0016116399,Asha Bhosle
-37ebeb20-7a82-444f-bb2d-2a0016116399,Aditya Narayan
 6b2dffe2-b952-4844-b805-b412525f1358,A. R. Rahman
 bd82af54-f1a8-4dd8-b75c-6f39eb522ef8,A. R. Rahman
 eddf8f53-6274-4b96-a2aa-9f14bb994b83,Craig Armstrong
@@ -1076,6 +1083,8 @@ eddf8f53-6274-4b96-a2aa-9f14bb994b83,A. R. Rahman
 5a19c128-ad54-4dd5-b164-ad05faf6a15c,Craig Armstrong
 5a19c128-ad54-4dd5-b164-ad05faf6a15c,A. R. Rahman
 ada7a47b-ddd0-4ce5-98a5-5c7a22a57fd7,A. R. Rahman
+df203c95-578e-4183-b2da-eee30f445d7b,Leon D’Souza
+df203c95-578e-4183-b2da-eee30f445d7b,Suzanne D’Mello
 98af533c-34bd-4717-a526-2fc2600f7ca1,A. R. Rahman
 10060210-2ea0-47ce-9983-9f27e63b20a4,Mychael Danna
 10060210-2ea0-47ce-9983-9f27e63b20a4,A. R. Rahman
@@ -1090,14 +1099,14 @@ c5fe6c70-b7bd-442f-9c09-92ec580fa047,Udit Narayan
 c5fe6c70-b7bd-442f-9c09-92ec580fa047,Kavita Krishnamurthy
 c5fe6c70-b7bd-442f-9c09-92ec580fa047,Bombino Music
 17a07798-56e2-4bd7-bc72-831237e4d0bc,A. R. Rahman
+6ee68900-dc55-4698-9be9-7118faa30621,A. R. Rahman
 586cc0d8-60c8-4c2b-aee3-f1ef6f7a8e13,Udit Narayan
 586cc0d8-60c8-4c2b-aee3-f1ef6f7a8e13,Madhushree
+6adf68fe-6aec-49d6-a5cf-70584838114d,A. R. Rahman
 7c1ddacf-511c-4a59-a17e-a31a515560dc,A. R. Rahman
 7c1ddacf-511c-4a59-a17e-a31a515560dc,Armaan Malik
 7c1ddacf-511c-4a59-a17e-a31a515560dc,Shashaa Tirupati
 9c0b6631-c440-4314-8e21-b6e6da662fc5,A. R. Rahman
-b1aa3a00-941b-49ad-b817-9287ae7a7879,Udit Narayan
-b1aa3a00-941b-49ad-b817-9287ae7a7879,Hema Sardesai
 a57dddf7-8efe-485f-9870-e376a22a951e,Shashaa Tirupati
 5c5d12b4-332c-4312-b7cf-48fc2654df73,A. R. Rahman
 5e3dd005-1554-4cad-ac38-9325f4d08474,A. R. Rahman
@@ -1109,10 +1118,10 @@ f3d72740-5042-45d1-b5ef-02721347d789,A. R. Rahman
 5691bfde-a82d-489f-87d7-74cf53791c49,Kavita Krishnamurthy
 5691bfde-a82d-489f-87d7-74cf53791c49,Aditya Narayan
 0e9e5aa1-40f2-4cd2-b1cd-0a3a09c6448e,Chinmayi
-8b826e76-1bf1-4230-a8bf-f61073e53a85,Annupamaa
-8b826e76-1bf1-4230-a8bf-f61073e53a85,Mathangi
+93255fb6-a4f1-447f-9d6e-f3e6095fae4b,A. R. Rahman
 a447297e-c668-430a-9f42-cf8931fd0f2c,A. R. Rahman
 2ee5b690-3ce1-4a82-aee8-949747bf7d8b,A. R. Rahman
+3cd9b2d6-05ef-482f-8f09-c40e2a07405a,Shankar Mahadevan
 04834cb3-179e-43b6-a32f-772a7464bb26,Dhee
 975cd0ed-768f-4605-8fc9-fc9feb15fe91,Srinivas
 975cd0ed-768f-4605-8fc9-fc9feb15fe91,Chinmayi
@@ -1173,11 +1182,13 @@ dd1b6949-f428-4447-8140-54c8b34fee4f,A. R. Rahman
 ba8c9220-8c0f-4606-9d60-845b654a7edb,P. Sunandha
 ba8c9220-8c0f-4606-9d60-845b654a7edb,Kalyani Menon
 ba8c9220-8c0f-4606-9d60-845b654a7edb,Minmini
+f0d8bc74-25ed-4d1e-9e21-860bc7f5e15b,A. R. Rahman
 0fb06a6d-3988-45b2-9350-c52d7c426c2f,Sujatha
 0fb06a6d-3988-45b2-9350-c52d7c426c2f,Anuradha Sriram
 0fb06a6d-3988-45b2-9350-c52d7c426c2f,G.V. Prakash Kumar
 0fb06a6d-3988-45b2-9350-c52d7c426c2f,Shweta Mohan
 0fb06a6d-3988-45b2-9350-c52d7c426c2f,Esther
+541c8c44-7cf8-4f50-927e-c8aece3c0dc7,Dinesh
 a42e4acb-f4c1-489a-a4e4-9728a07f9e04,Kamal Haasan
 a42e4acb-f4c1-489a-a4e4-9728a07f9e04,K. S. Chithra
 c5c3658d-e733-4fc1-9a21-f6b56aba962e,Kamal Haasan
@@ -1216,6 +1227,9 @@ f386a825-1d3a-4e96-b673-fd0f7807d6ab,Shahul Hameed
 5fe199ea-2be0-4a50-adeb-2c5b52c55965,Kash n' Krissy
 27ed4410-959c-4da6-bd2e-ffa4b4047214,Parul Mishra
 bf561521-e7cf-4ca9-bcc9-1ea12b9c6877,Rashid Ali
+6d8e87d0-b24b-4b89-b715-c32e1ada153e,Sonu Nigam
+6d8e87d0-b24b-4b89-b715-c32e1ada153e,Anuradha Sriram
+6d8e87d0-b24b-4b89-b715-c32e1ada153e,Sujatha
 2cda5756-d855-46f7-ab7a-70700be611c3,A. R. Rahman
 df3e745d-fa32-48e2-84b4-e56817642685,Kavita Krishnamurthy
 df3e745d-fa32-48e2-84b4-e56817642685,Sukhwinder Singh
@@ -1228,8 +1242,6 @@ df3e745d-fa32-48e2-84b4-e56817642685,Sukhwinder Singh
 9667bb2c-95cd-4abe-b9ed-728e7fdb5113,Mohit Chauhan
 4aa901c6-6543-4000-b40b-33bb3e392024,Raghav Mathur
 4aa901c6-6543-4000-b40b-33bb3e392024,Shilpa Rao
-0ece3320-f5cb-4e42-b888-a725ee448676,Kavita Krishnamurthy
-0ece3320-f5cb-4e42-b888-a725ee448676,Sukhwinder Singh
 26fa500b-6dd7-4cd7-b139-5674ad5cdc33,A. R. Rahman
 1759779d-e415-4c6b-b020-ffb53a0f7eb1,Nakash Aziz
 1759779d-e415-4c6b-b020-ffb53a0f7eb1,Neeti Mohan
@@ -1240,6 +1252,9 @@ eabf4848-ef67-4539-be25-4c1e6149262a,A. R. Rahman
 eabf4848-ef67-4539-be25-4c1e6149262a,Annupamaa
 ddcfddf7-dbbc-41a6-97e8-c98a77370bcf,A. R. Rahman
 4bc0e511-eddc-4695-8010-c50876b2766d,Vijay Yesudas
+5da9d3df-2149-41b9-bb97-389ce528318d,A. R. Rahman
+5da9d3df-2149-41b9-bb97-389ce528318d,K. S. Chithra
+5da9d3df-2149-41b9-bb97-389ce528318d,Madras Chorale Group
 cd352fa5-6e3e-4bff-9c21-0e5dd4c3dd54,Mohit Chauhan
 0a704304-3f09-4dff-834e-cd54a7709cdc,Hema Sardesai
 cda197ef-c7b1-4610-9985-04bad625c9aa,A. R. Rahman
@@ -1264,8 +1279,9 @@ ead8a176-e032-4f9b-962c-aed27fa36b84,Jali Fily Cissokho
 7bd338ab-50e9-4c54-beec-9aae95eb1ff4,Anuradha Sriram
 7bd338ab-50e9-4c54-beec-9aae95eb1ff4,G.V. Prakash Kumar
 7bd338ab-50e9-4c54-beec-9aae95eb1ff4,Shweta Mohan
-e844ba49-08bf-4451-8111-a031659c7ea2,A. R. Rahman
-30bffffb-c3df-402e-8c69-c79b84cfc62b,A. R. Rahman
+17a15046-a9bd-42cf-aa7f-db2d7a89bc4a,A. R. Rahman
+17a15046-a9bd-42cf-aa7f-db2d7a89bc4a,The Pussycat Dolls
+17a15046-a9bd-42cf-aa7f-db2d7a89bc4a,Nicole Scherzinger
 9abc3cd6-2b4e-4b08-aeef-5954883ab4fb,A. R. Rahman
 9abc3cd6-2b4e-4b08-aeef-5954883ab4fb,Sukhwinder Singh
 9abc3cd6-2b4e-4b08-aeef-5954883ab4fb,Tanvi Shah
@@ -1305,20 +1321,19 @@ a815054f-8c93-40bd-882c-ee50024f6a45,Megha
 735f4da6-5c2e-4623-84de-d304ae86f83a,K. S. Chithra
 423a704b-e180-41ad-81b2-f27ccd79cfc3,A. R. Rahman
 718d10b2-ab26-4143-b359-fc6fb7ac3c57,A. R. Rahman
-ae434976-df50-4110-8142-e2dcf0e366c2,Sadhana Sargam
 da08d90a-b7b6-4238-8577-a244e972b03b,A. R. Rahman
 b962ab48-0e9d-42f5-94dd-10db0eb4e6c2,Tanvi Shah
 bb0ae8f4-364a-4151-b9c0-f7dcfc9d50fd,Tanvi Shah
 bb0ae8f4-364a-4151-b9c0-f7dcfc9d50fd,Bhargavi Pillai
 227a9fcb-e506-4353-aeaa-8a8b79741462,Hans Raj Hans
 3e3b39f6-33b5-4438-a0a8-81b5c3d17a40,A. R. Rahman
-3221d7c3-85b7-491e-8bda-9499c9349add,A. R. Rahman
 8942ae31-5a72-4d1f-9585-2c8704dcbde3,Neeti Mohan
 8942ae31-5a72-4d1f-9585-2c8704dcbde3,Sofia Ashraf
-1db7dc80-9c11-45e0-8d5a-4ceba2b8da08,A. R. Rahman
-8d8a6917-7877-4733-a4a6-8d5bdd22f4e2,A. R. Rahman
-a33fae22-53cc-4552-a8cc-1adde791b80e,Lata Mangeshkar
-a33fae22-53cc-4552-a8cc-1adde791b80e,M. G. Sreekumar
+d909e342-94f5-43ae-8f02-8211fb7d9f06,A. R. Rahman
+d909e342-94f5-43ae-8f02-8211fb7d9f06,Karthik
+d909e342-94f5-43ae-8f02-8211fb7d9f06,Raqueeb Alam
+11cb1b96-c1d4-4fa3-bf7b-b8ef9b8fedc4,Lata Mangeshkar
+11cb1b96-c1d4-4fa3-bf7b-b8ef9b8fedc4,M. G. Sreekumar
 40ca5825-0aa5-4712-a383-16e2d17f5419,Mohit Chauhan
 3fd7b4f4-21d1-4bd4-96f5-1038b35e4e14,T. K. Kala
 3fd7b4f4-21d1-4bd4-96f5-1038b35e4e14,Sarala
@@ -1349,12 +1364,14 @@ d0556ca3-06e5-42e8-a318-68326088d8ed,Shashwat Singh
 d0556ca3-06e5-42e8-a318-68326088d8ed,Poorvi Koutish
 4b90b3bd-f379-4273-8cdf-379f84f49e0d,A. R. Rahman
 4b90b3bd-f379-4273-8cdf-379f84f49e0d,Sid Sriram
+0ba0c86e-d8a5-48b1-aa22-175ff4769066,A. R. Rahman
 b985e95d-92d2-498a-93e6-1b7c73336fe1,Srinivas
 b985e95d-92d2-498a-93e6-1b7c73336fe1,Anuradha Sriram
-0b89c3ed-8b17-4703-9e73-af4cca3187e4,A. R. Rahman
 aa4be6bc-fff2-4f28-89d9-fb5133db393e,S. P. Balasubrahmanyam
 aa4be6bc-fff2-4f28-89d9-fb5133db393e,Sujatha
 b5b7b816-0cd2-4d6b-a2f2-67246c185a13,S. P. Balasubrahmanyam
+8117a36e-dec1-456e-9056-e33d8f8f266d,Mano
+8117a36e-dec1-456e-9056-e33d8f8f266d,S. Janaki
 bc68fa3d-3724-4c61-b006-11a2ccf4f392,T. L. Maharajan
 bc68fa3d-3724-4c61-b006-11a2ccf4f392,Swarnalatha
 5600e4f3-d16a-4bdc-83f0-54cd8b066cc7,A. R. Rahman
@@ -1407,6 +1424,8 @@ ce88f1a8-2798-4451-a5ec-07ced7e4f4c5,Deepthi Suresh
 ce88f1a8-2798-4451-a5ec-07ced7e4f4c5,Sowmiya
 ce88f1a8-2798-4451-a5ec-07ced7e4f4c5,Khatija Rahman
 5b692504-7886-47c9-bb06-fa04750a2198,Rashid Ali
+12b17eed-cc41-4bfd-a8f9-8bf2f0cabe7c,A. R. Rahman
+12b17eed-cc41-4bfd-a8f9-8bf2f0cabe7c,Madhushree
 526bfa13-a1de-4e23-adec-ed5a6f6b55ec,Yuvan Shankar Raja
 c2e0fbb5-221c-4e0e-a705-1ab27b8c7e6b,Vijay Prakash
 c2e0fbb5-221c-4e0e-a705-1ab27b8c7e6b,Mumbai Film Choir
@@ -1420,6 +1439,7 @@ e859a353-03e3-4605-85fc-e676b30eba8e,A. R. Rahman
 af85d4b5-287a-493f-9b1a-72982834e549,S. Janaki
 af85d4b5-287a-493f-9b1a-72982834e549,Unni Menon
 630fccf7-adcf-41a7-8689-73fbcaf396e9,A. R. Rahman
+4ea8fd87-2bd1-4ff0-9956-f30373d0ead8,S.P.B. Charan
 1c69803f-bae4-4ead-9174-7b938a1a2d1f,Karthik
 1c69803f-bae4-4ead-9174-7b938a1a2d1f,Sujatha
 99b78125-fd2e-45a6-b46e-838262ea5bd3,A. R. Rahman
@@ -1433,10 +1453,10 @@ b4c04d6d-03cf-4d0d-a638-827fb8fc48f8,S.P.B. Pallavi
 5773b1e6-0bf1-4b20-9825-f8af371ed5e0,Unni Menon
 a6427dc2-1be0-47c7-834b-2246e895963a,Jonita Gandhi
 3d1bbfa5-87ac-49b5-8b53-64a0c6fe0e2a,Rashid Khan
-2470d055-c436-4949-bdfc-9c7ec3d09e99,Asha Bhosle
-2470d055-c436-4949-bdfc-9c7ec3d09e99,Aditya Narayan
-2470d055-c436-4949-bdfc-9c7ec3d09e99,Richa Sharma
 bc37822c-53e4-45c9-b017-b4054dd252cd,A. R. Rahman
+1d2b01f1-79a0-43af-a133-eeb53015b7fb,Asha Bhosle
+1d2b01f1-79a0-43af-a133-eeb53015b7fb,Aditya Narayan
+1d2b01f1-79a0-43af-a133-eeb53015b7fb,Richa Sharma
 1abd53d4-b038-4aa8-a0b2-cb7c2b04494d,Rashid Ali
 1abd53d4-b038-4aa8-a0b2-cb7c2b04494d,Vasundhara Das
 29bbe62e-9e77-4c55-93fe-88e8b0cf142b,Srinivas
@@ -1445,6 +1465,9 @@ f2880392-3ea6-4285-a30e-cd1858224acc,A. R. Rahman
 2799561c-731b-445e-9027-9f77a03d31d3,A. R. Rahman
 2799561c-731b-445e-9027-9f77a03d31d3,Naveen
 2799561c-731b-445e-9027-9f77a03d31d3,S. P. Balasubrahmanyam
+458d2443-657d-42dd-8078-0313b159f395,Benny Dayal
+458d2443-657d-42dd-8078-0313b159f395,A. R. Rahman
+458d2443-657d-42dd-8078-0313b159f395,Shreya Ghoshal
 bea3f6f4-4c70-4bf8-85c4-ed2287cd00a4,A. R. Rahman
 7eea4bbe-e35c-47ea-9cd6-25ca71e895f5,Sujatha
 abec43e7-90d8-4c0a-bc34-696690ec3df2,Hariharan
@@ -1570,9 +1593,6 @@ a6431588-afc0-4aa5-949c-8893257585c5,Sirija
 57a81135-d2ac-444f-8ec6-b7219dbaf8fc,Sreeja
 e8901bfb-8116-434b-9e88-bb18b0167479,A. R. Rahman
 8adb7a41-ae86-486c-9262-82980194fe8b,A. R. Rahman
-0d868d89-d8ca-4bba-8141-9f13917dadf9,Shankar Mahadevan
-0d868d89-d8ca-4bba-8141-9f13917dadf9,Kavita Krishnamurthy
-0d868d89-d8ca-4bba-8141-9f13917dadf9,Swarnalatha
 e016875f-a725-410e-bc05-1b72d41c1d6b,Benny Dayal
 e016875f-a725-410e-bc05-1b72d41c1d6b,Bhagyaraj
 e016875f-a725-410e-bc05-1b72d41c1d6b,A. R. Reihana
@@ -1588,9 +1608,8 @@ e016875f-a725-410e-bc05-1b72d41c1d6b,Gowtham Bharadwaj
 54f6c27a-5ca9-4cb5-a1c7-2e6fe484287c,A. R. Rahman
 54f6c27a-5ca9-4cb5-a1c7-2e6fe484287c,Wale
 bcff366c-11c4-41fe-89e4-66440de78769,A. R. Rahman
-4d1d5c35-c128-4558-bbdc-eae3feaf7bbc,K. S. Chithra
-51342f93-3ebb-4ee2-8370-64fdfd3964c5,K. S. Chithra
-51342f93-3ebb-4ee2-8370-64fdfd3964c5,A. R. Rahman
+3687e7cf-3a5c-4e5d-b358-a4f723d59bf0,K. S. Chithra
+3687e7cf-3a5c-4e5d-b358-a4f723d59bf0,A. R. Rahman
 1df20ae7-9028-483d-a568-8e8127c5b61b,A. R. Rahman
 fb64e683-0e63-4aa8-96a4-5de75e84746e,Sadhana Sargam
 fb64e683-0e63-4aa8-96a4-5de75e84746e,Aslam
@@ -1600,7 +1619,6 @@ a5921ef9-2c3c-4785-8cde-d9cf3b6f86fa,Asha Bhosle
 a5921ef9-2c3c-4785-8cde-d9cf3b6f86fa,Hans Raj Hans
 db98b836-6eb5-4922-9eeb-b53a712203be,A. R. Rahman
 db98b836-6eb5-4922-9eeb-b53a712203be,Mohammed Aslam
-a1fb1be7-99e7-476c-9b30-de3759933903,A. R. Rahman
 17a0cdda-56bd-4418-9278-832cceef3106,A. R. Rahman
 17a0cdda-56bd-4418-9278-832cceef3106,Shweta Pandit
 17a0cdda-56bd-4418-9278-832cceef3106,Suzanne D’Mello
@@ -1609,15 +1627,16 @@ a1fb1be7-99e7-476c-9b30-de3759933903,A. R. Rahman
 ef38eb83-38da-49db-9902-bd4c36fcfad0,A. R. Rahman
 1112be6a-2a01-4f27-b3a5-51489e41e8b6,A. R. Rahman
 96508062-8d95-47df-8be9-c12f3cd32892,A. R. Rahman
-6e37ed9f-18fa-4779-a816-145f589ebcf7,Lata Mangeshkar
-6e37ed9f-18fa-4779-a816-145f589ebcf7,Sonu Nigam
+c4810ee1-dc4e-46b7-a7bd-bbf93f8e01a6,Mohit Chauhan
 18c58501-cfca-49b6-b02d-96ae0cf61bc1,Shweta Shetty
 18c58501-cfca-49b6-b02d-96ae0cf61bc1,Suresh Peters
 18c58501-cfca-49b6-b02d-96ae0cf61bc1,Swarnalatha
 fbf8ace6-6e6d-43af-8c3b-abab1b0d0c6d,Hariharan
 fb94b2db-be4e-44af-9d02-9289f3325eb8,Harini
 10083bd9-e6f4-4532-9c61-5253970751b2,Reena Bhardwaj
-c0391b7f-ccde-401f-852c-6d4078b7cf2a,Shaan
+dc1b3464-9347-4efe-a3f8-44e968c1be22,Shweta Pandit
+dc1b3464-9347-4efe-a3f8-44e968c1be22,Jyoti
+f8195c73-cb20-48b1-ba06-e852f15bc476,Mohit Chauhan
 7cb3f85c-f62f-4837-8b76-34b6ae8c787f,A. R. Rahman
 b208d1a6-f831-46df-8e43-386feb5e622a,Sunitha Sarathy
 b208d1a6-f831-46df-8e43-386feb5e622a,Karthik
@@ -1643,6 +1662,7 @@ d4979ced-eff1-47d8-93aa-599d8d966546,Javed Ali
 d4979ced-eff1-47d8-93aa-599d8d966546,Chinmayi
 e9c70f4b-dde2-4d17-8be1-90d610f377c5,Javed Ali
 e9c70f4b-dde2-4d17-8be1-90d610f377c5,Chinmayi
+9768a15b-ce90-4d40-81e5-a328a9f56838,Shreya Ghoshal
 924c9f85-2171-485f-8159-12e68c81ba49,A. R. Rahman
 34d8cdb4-026d-46e4-86c0-40308cbcec61,A. R. Rahman
 58d2045e-74a2-4b2e-a371-da2735ddc339,Naveen
@@ -1683,7 +1703,6 @@ ac152554-5dee-49d9-beb2-20ddb63fbef8,Febi Mani
 ac152554-5dee-49d9-beb2-20ddb63fbef8,Ganga
 72343972-9bda-4823-ba81-30f32520b1db,P. Jayachandran
 0e565cf9-5ccf-4c56-99f3-f62b042b155c,Annupamaa
-3723a072-6682-41c6-b6b7-b36cda455918,A. R. Rahman
 651ae599-eb84-489e-9cf4-209659f8f203,S. P. Balasubrahmanyam
 651ae599-eb84-489e-9cf4-209659f8f203,Ila Arun
 f080e61a-1922-4942-bb00-bebcc5783567,Annupamaa
@@ -1704,12 +1723,6 @@ b69915f9-7ba1-4b87-a880-2372d4115891,Udit Narayan
 b69915f9-7ba1-4b87-a880-2372d4115891,Kavita Krishnamurthy
 b69915f9-7ba1-4b87-a880-2372d4115891,G.V. Prakash Kumar
 b69915f9-7ba1-4b87-a880-2372d4115891,Shradha
-08f2cd18-ebfc-4e20-9aac-1bde26eff483,A. R. Rahman
-9ce084d8-a4a5-49e5-bdf8-9019ac4b64f6,Pallavi
-9ce084d8-a4a5-49e5-bdf8-9019ac4b64f6,Shubha
-9ce084d8-a4a5-49e5-bdf8-9019ac4b64f6,Annupamaa
-9ce084d8-a4a5-49e5-bdf8-9019ac4b64f6,Noel James
-9ce084d8-a4a5-49e5-bdf8-9019ac4b64f6,Srinivas
 0d830e40-81c4-41a6-b696-f71dd731a8f0,S.P.B. Pallavi
 0d830e40-81c4-41a6-b696-f71dd731a8f0,Shubha
 0d830e40-81c4-41a6-b696-f71dd731a8f0,Annupamaa
@@ -1727,10 +1740,6 @@ b69915f9-7ba1-4b87-a880-2372d4115891,Shradha
 d7b988aa-fbd7-4d15-9d32-29c3c7bb4ce3,G.V. Prakash Kumar
 d7b988aa-fbd7-4d15-9d32-29c3c7bb4ce3,Swarnalatha
 d7b988aa-fbd7-4d15-9d32-29c3c7bb4ce3,Sharda
-102ee5d7-cf86-4535-9e5a-c21fbe9d8304,Udit Narayan
-102ee5d7-cf86-4535-9e5a-c21fbe9d8304,Kavita Krishnamurthy
-102ee5d7-cf86-4535-9e5a-c21fbe9d8304,G.V. Prakash Kumar
-102ee5d7-cf86-4535-9e5a-c21fbe9d8304,Shraddha Sinha
 222e64d9-280c-4ff1-9f7c-b042731fc4b8,A. R. Rahman
 532415f7-3853-4047-93f9-62efd990a06e,S. P. Balasubrahmanyam
 532415f7-3853-4047-93f9-62efd990a06e,T. K. Kala
@@ -1752,10 +1761,15 @@ de2501e7-ebe1-4d8a-9f49-b4e2d4e633d6,Sirkazhi G. Sivachidambaram
 de2501e7-ebe1-4d8a-9f49-b4e2d4e633d6,Swarnalatha
 de2501e7-ebe1-4d8a-9f49-b4e2d4e633d6,Naresh Iyer
 de2501e7-ebe1-4d8a-9f49-b4e2d4e633d6,Theni Kunjrama
+2bba1a1d-39eb-4caf-aeac-33fa5baf4eb2,A. R. Rahman
+2bba1a1d-39eb-4caf-aeac-33fa5baf4eb2,Javed Ali
+2bba1a1d-39eb-4caf-aeac-33fa5baf4eb2,Mohit Chauhan
 0e68d1cb-4ac3-4ad3-9ab1-087e7d192109,Benny Dayal
 0e68d1cb-4ac3-4ad3-9ab1-087e7d192109,Kalyani Menon
 473904a1-dd52-4bb9-a88c-2de6b9a1d466,K. J. Yesudas
 473904a1-dd52-4bb9-a88c-2de6b9a1d466,Sujatha
+4755e78a-ca7b-481a-b4ed-ed9d228ccae4,Blaaze
+4755e78a-ca7b-481a-b4ed-ed9d228ccae4,Gomathi Sree
 f635f031-fc44-43a1-8501-8fd49eb42712,Hariharan
 f635f031-fc44-43a1-8501-8fd49eb42712,Mahalakshmi Iyer
 afbb34ec-cbe1-4cee-82ca-55f905a7c02c,A. R. Rahman
@@ -1763,7 +1777,7 @@ d11aa522-3589-4b83-b979-208486e16817,Madhu Vaishali
 d11aa522-3589-4b83-b979-208486e16817,Shoma
 ce0e0f7f-386c-4d24-bc40-2615fd41635c,A. R. Rahman
 cb2bfc9b-6781-4f73-994e-665414afb115,Udit Narayan
-64a5ded8-1176-439d-a578-49647f6d7398,Udit Narayan
+8b74cc91-e540-42d6-9eab-392cdf676d3f,Lata Mangeshkar
 0e59a5a4-7c82-4757-bfec-6df92a213786,A. R. Rahman
 e289929a-e3fc-479d-96c1-bc0678dc95d1,Himesh Reshammiya
 0c0851b2-07fb-4622-8c43-c58e692b8846,Harini
@@ -1788,7 +1802,6 @@ e80e3a6c-7122-4849-9b4d-ace2363967a7,Bruno Coon
 0d996077-5233-4ecd-99ef-bea1aaa5f4f6,Suzanne D’Mello
 5badf687-84a0-4174-8c2a-8f52a77c323e,A. R. Rahman
 efd5a4d4-4dc9-48fb-9b6c-85a551f8492a,A. R. Rahman
-3e611d91-ae77-43c5-b87f-ac1f308d7703,Swarnalatha
 f5d007c1-b053-48b4-aa59-7c20f95c172c,Shreya Ghoshal
 852d9693-3665-426b-945c-71c2fd7d85f7,A. R. Rahman
 7a77d55a-1ea3-4f77-9029-c5d6bf94cf43,A. R. Rahman
@@ -1832,6 +1845,7 @@ cec54447-d28b-4fa4-95f5-075cbe8cb285,John O’Brien
 18f2eec4-fe51-4afd-8dec-dfd65d720b26,Swarnalatha
 fa67dbf9-34db-48fb-a6b6-2befc088fc96,Lata Mangeshkar
 fa67dbf9-34db-48fb-a6b6-2befc088fc96,A. R. Rahman
+e3da5da3-a799-415e-a710-f9fe98277227,A. R. Rahman
 a73633aa-5ecd-45b8-af45-c7a33debde1d,Sid Sriram
 a73633aa-5ecd-45b8-af45-c7a33debde1d,Shweta Mohan
 e59fd3b6-b02a-4f15-ae21-1bc5aef53f53,S. P. Balasubrahmanyam
@@ -1875,6 +1889,7 @@ d92d7da6-adad-465f-a776-f74b6d7b7043,Shashaa Tirupati
 585a86a9-d68f-49da-9c1c-9de6f813aaa4,A. R. Rahman
 c765a98e-85d5-47f6-bd01-80db4d1a09b5,S.P.B. Charan
 c765a98e-85d5-47f6-bd01-80db4d1a09b5,Shreya Ghoshal
+d4312b82-79e6-4239-b262-c4e7aa0db5de,A. R. Rahman
 c46c0862-d1a5-405c-bf35-e2e9bf285c0e,Shankar Mahadevan
 c46c0862-d1a5-405c-bf35-e2e9bf285c0e,Vasundhara Das
 442b2dca-be39-4314-8e33-03a360226b8b,Unni Menon
@@ -1908,8 +1923,6 @@ a4e88f4f-3501-4d70-b539-9440e286f566,Kavita Krishnamurthy
 81673545-c65d-4156-a6eb-0dfa2b98c1ef,Javed Ali
 81673545-c65d-4156-a6eb-0dfa2b98c1ef,Suchitra
 d2af5cac-b07e-4aed-9da4-ec653ce152e1,A. R. Rahman
-49e4b213-1310-4c34-a1df-c9ed9a3d40f9,Alka Yagnik
-49e4b213-1310-4c34-a1df-c9ed9a3d40f9,Udit Narayan
 ca3e93a2-199b-4d51-867a-fb73a06602dc,A. R. Rahman
 ca3e93a2-199b-4d51-867a-fb73a06602dc,Shashaa Tirupati
 78f9b6bf-6a36-416b-85a4-5a53a2523d5b,A. R. Rahman
@@ -1926,8 +1939,6 @@ eb68fc94-26cc-42ab-b108-47f549e126d0,Abhilasha Sinha
 70250532-79c7-45d7-bae5-865bea3ed7ee,Jonita Gandhi
 70250532-79c7-45d7-bae5-865bea3ed7ee,Hriday Gattani
 9f087c35-45a8-4a1d-8200-15d9df51571b,A. R. Rahman
-19de4e92-6a27-419d-925f-fd75f2202d60,Kavita Krishnamurthy
-19de4e92-6a27-419d-925f-fd75f2202d60,Sukhwinder Singh
 55b0a259-669d-431c-b6e1-fcaf198f8eba,Sujatha
 ca0b2fb2-bb63-4c94-ad89-0d5110fb7d33,A. R. Rahman
 fd9bcaac-1245-4d22-9491-13d3600f27b1,A. R. Rahman
@@ -1992,13 +2003,13 @@ d760834b-52b0-42fb-b220-633409a5170f,A. R. Rahman
 8be152e4-aa45-45bc-8173-02395ce6d257,Srinivas
 a7f47220-3a57-4f05-90b8-96855a8079ea,Srinivas
 a7f47220-3a57-4f05-90b8-96855a8079ea,Clinton Cerejo
-f7fb6bea-2b05-4c3c-abf5-a457a8b791d1,A. R. Rahman
 23aa31d6-af44-4869-a310-42e929a45fd1,Shweta Shetty
 23aa31d6-af44-4869-a310-42e929a45fd1,A. R. Rahman
-fa0e3147-1244-47ab-9428-455aaf3be7d5,Shweta Shetty
-fa0e3147-1244-47ab-9428-455aaf3be7d5,A. R. Rahman
 046205b1-9a41-4226-acbc-67151044e243,A. R. Rahman
 bf063724-4a28-48e3-b6fd-83636a8f34a9,Vijay Prakash
+ab020735-12cd-4c8a-abf8-adbc5feb06ac,A. R. Rahman
+ab020735-12cd-4c8a-abf8-adbc5feb06ac,Sukhwinder Singh
+ab020735-12cd-4c8a-abf8-adbc5feb06ac,Shraddha Pandit
 123bca0a-1d14-480e-a796-9158667430af,Bela Shende
 da1c92e2-78cf-487d-9942-e63b790ff80f,Arivu
 96d2d25d-8aa7-4c74-9d17-1bc2b1123246,K. S. Chithra
@@ -2059,6 +2070,10 @@ f99b27b7-6ea4-4b99-8d3b-6b1309bedcdc,Sunidhi Chauhan
 f99b27b7-6ea4-4b99-8d3b-6b1309bedcdc,Hriday Gattani
 ce3ca8cd-02e1-4c31-8101-21547f7b2fb3,Seattle Symphony
 ce3ca8cd-02e1-4c31-8101-21547f7b2fb3,Ricardo Averbach
+d836d4e2-70e4-4801-a28a-506c1f02e90d,Sonu Nigam
+d836d4e2-70e4-4801-a28a-506c1f02e90d,Alka Yagnik
+d836d4e2-70e4-4801-a28a-506c1f02e90d,Benny Dayal
+d836d4e2-70e4-4801-a28a-506c1f02e90d,Naresh Iyer
 ce33e77a-6409-40c8-88ff-2a2090ef2ffb,Chitra Sivaraman
 ce33e77a-6409-40c8-88ff-2a2090ef2ffb,Matangi
 ce33e77a-6409-40c8-88ff-2a2090ef2ffb,Sriram Parthasarathy
@@ -2084,6 +2099,9 @@ fa4ae9c9-5975-484b-b0b5-b40252238f2e,Sujatha
 5e1f62b2-beb2-4a0e-b101-c79debd31a12,Madhushree
 58dca57e-4240-4c5d-8415-779c1bd282d1,Madhushree
 58dca57e-4240-4c5d-8415-779c1bd282d1,Naresh Iyer
+c1ad1a32-9d0f-42ba-9f96-27af77b74712,Chinmayi
+c1ad1a32-9d0f-42ba-9f96-27af77b74712,Keerthi Sagathia
+c1ad1a32-9d0f-42ba-9f96-27af77b74712,Maryem Tollar
 6f694a51-7f62-4757-b3f7-e500e37880cd,Chinmayi
 6f694a51-7f62-4757-b3f7-e500e37880cd,Maryem Tollar
 6f694a51-7f62-4757-b3f7-e500e37880cd,Keerthi Sagathia
@@ -2105,8 +2123,7 @@ d2af7e17-fe02-4d97-ba11-8dbc69d9ad78,Sadhana Sargam
 e195b4c4-4de6-48cd-929d-e0b4cd22d595,Sunidhi Chauhan
 e195b4c4-4de6-48cd-929d-e0b4cd22d595,Karsan Das Sagathia
 ea8b74e9-dfc9-46fc-a0cb-b060a14d897a,A. R. Rahman
-3644eb19-b805-4c3d-a1bb-cf79d074f2d8,Asha Bhosle
-3644eb19-b805-4c3d-a1bb-cf79d074f2d8,Sukhwinder Singh
+3314a8de-36ca-4581-8c27-2367584a920f,A. R. Rahman
 f2d1fb35-5e0a-4f45-9025-4e9502f81807,A. R. Rahman
 ee5635ad-90e1-4d28-90ee-9c8ca2bbfc3e,A. R. Rahman
 b8772736-826a-4370-9a2c-33029d722735,A. R. Rahman
@@ -2140,8 +2157,6 @@ f698f5b1-4742-458c-a306-0a608d540a75,Shreya Ghoshal
 d9a2f4c2-abad-4ed1-9ce4-e3fb26e62fc5,A. R. Rahman
 307936bf-56ea-45bf-bf45-1663b5c0432a,A. R. Rahman
 6178f021-d1ae-4f10-ad7a-d7a0a7dbdca8,A. R. Rahman
-45a4fc04-6b93-4447-91b6-f0b3c1c705a1,Sonu Nigam
-45a4fc04-6b93-4447-91b6-f0b3c1c705a1,Manmohan Waris
 d1ed5e52-7f7e-452c-b738-24999c840c76,Annupamaa
 b3183738-b27a-409a-9161-9a37e2cdfb66,Annupamaa
 b3183738-b27a-409a-9161-9a37e2cdfb66,Swarnalatha
@@ -2151,12 +2166,19 @@ b0beb7cf-0d5d-43dc-972a-0d9426ac4a9a,A. R. Rahman
 0c6c29bd-1d02-4669-807c-188f3e80b6db,Ranjit Barot
 b56b0df3-a5f6-467f-a7fa-1dbe4122e41d,Zubeen Garg
 dae26884-2454-40b0-a683-ed1161c756ac,A. R. Rahman
-ea206396-007d-44f8-802c-a40614a963b1,A. R. Rahman
-834bfb32-2f24-43be-8d53-7566b669f65b,A. R. Rahman
 0bfdc7e7-65ee-46d8-9f5a-b13c82b4f3e2,Nikhil-Vinay
 52c370a1-2947-4d9f-9b06-79bda1c18a0c,Jayesh Gandhi
 52c370a1-2947-4d9f-9b06-79bda1c18a0c,Udit Narayan
 52c370a1-2947-4d9f-9b06-79bda1c18a0c,Alka Yagnik
+10f90665-49b1-4757-9c66-19089db38950,Gulzar
+10f90665-49b1-4757-9c66-19089db38950,A. R. Rahman
+10f90665-49b1-4757-9c66-19089db38950,Alka Yagnik
+10f90665-49b1-4757-9c66-19089db38950,Shreya Ghoshal
+10f90665-49b1-4757-9c66-19089db38950,K. S. Chithra
+10f90665-49b1-4757-9c66-19089db38950,Sadhana Sargam
+10f90665-49b1-4757-9c66-19089db38950,Shashaa Tirupati
+10f90665-49b1-4757-9c66-19089db38950,Armaan Malik
+10f90665-49b1-4757-9c66-19089db38950,Asees Kaur
 e208def8-d5b8-44c5-b593-99f3dbf3a8a5,Srinivas
 e208def8-d5b8-44c5-b593-99f3dbf3a8a5,Nithyasree Mahadevan
 e208def8-d5b8-44c5-b593-99f3dbf3a8a5,Sriram
@@ -2185,12 +2207,17 @@ bf637238-9b3d-4013-aea5-68a0f195dc29,Srimathumitha
 712b86b6-00a3-41dc-99c8-18eec23b4f05,P. Jayachandran
 712b86b6-00a3-41dc-99c8-18eec23b4f05,Alka Yagnik
 55d4d3b6-20ff-48e3-90c0-b44d98342ec0,S. P. Balasubrahmanyam
+4dc8059c-5a04-4259-8232-14f0b872a168,Srinivas
+4dc8059c-5a04-4259-8232-14f0b872a168,Nithyasree Mahadevan
+4dc8059c-5a04-4259-8232-14f0b872a168,Sriram
 31311a91-f5f8-4f9b-b753-dbefd0e182f9,Nithyasree Mahadevan
 31311a91-f5f8-4f9b-b753-dbefd0e182f9,Srinivas
 9b213771-aa8d-4bab-9218-1802138548dd,S. P. Balasubrahmanyam
 9b213771-aa8d-4bab-9218-1802138548dd,K. S. Chithra
 fe6265f9-5268-45e4-afba-f0556b24e0d5,Tiger Shroff
 fe6265f9-5268-45e4-afba-f0556b24e0d5,Nisa Shetty
+e94b2eb5-387b-433a-b213-23d84fd98cda,A. R. Rahman
+cd0ac831-f792-4b22-92d0-ddb47f2070ba,A. R. Rahman
 a69850dc-f846-4bad-9725-9fc8278dbbb1,S. P. Balasubrahmanyam
 f14ed283-b31b-4c31-9ec6-4a3c63dd703b,Nadeem-Shravan
 14a90310-1ad4-42d9-aa8d-2ba16b6004fb,Vishal Mishra
@@ -2212,6 +2239,7 @@ b66b22ef-b570-4706-b015-7495d7c17c90,A. R. Rahman
 6b2adb77-e44a-4dfc-b4f2-b5fdc3b78a41,Vandana Srinivasan
 22b8993d-9108-4301-9aa5-1779e972da82,A. R. Rahman
 bfc678fb-8814-4268-8f45-43dbe8192757,Abhay Jodhpurkar
+3b3e1eba-83bf-486b-aee6-9ba764a7b69d,A. R. Rahman
 d5d11076-d2a7-496f-8901-4c29ad61b294,A. R. Rahman
 d5d11076-d2a7-496f-8901-4c29ad61b294,A. R. Reihana
 d5d11076-d2a7-496f-8901-4c29ad61b294,Tippu
@@ -2224,6 +2252,7 @@ b74eb624-cb47-4fbf-bde3-09f68ad2d808,A. R. Rahman
 6c3d3426-43bc-4ae1-8066-ddc00c8c2dc5,Darshana
 83652a07-0368-4146-b340-d363ebe8a4fa,Srinivas
 83652a07-0368-4146-b340-d363ebe8a4fa,Sujatha
+b6e366f6-2604-4830-9bb9-58a7edfe42b2,S. Janaki
 94f31920-8e20-4977-8072-95266211530e,S. Janaki
 94f31920-8e20-4977-8072-95266211530e,Shankar Mahadevan
 bb621f87-12f8-45d8-a8ce-4830025f9cb7,Shahul Hameed
@@ -2259,6 +2288,17 @@ b8c87480-4dd9-4e61-9439-7a81103ac2c4,Swarnalatha
 08dd9add-80a6-49be-8453-e4931072108e,Swarnalatha
 bcb1e2ae-0546-4eb4-bcdd-d72803d87500,Haricharan
 bcb1e2ae-0546-4eb4-bcdd-d72803d87500,K. S. Chithra
+17da30e3-a2d8-4870-a88c-8c792b44ca13,A. R. Rahman
+4c1489c0-70e0-4aab-94bb-ee4481461b72,A. R. Rahman
+4c1489c0-70e0-4aab-94bb-ee4481461b72,Mechery Louis Ouseppachan
+00e32d77-45a0-4009-a99b-779310796dad,A. R. Rahman
+00e32d77-45a0-4009-a99b-779310796dad,Mechery Louis Ouseppachan
+1fa0874a-208c-4145-bfce-9518ac5ce216,A. R. Rahman
+1fa0874a-208c-4145-bfce-9518ac5ce216,Mechery Louis Ouseppachan
+75f9f408-78ad-4e52-9757-2ca2f931868b,A. R. Rahman
+75f9f408-78ad-4e52-9757-2ca2f931868b,Mechery Louis Ouseppachan
+cb8415c0-3ded-49f1-b486-6f5e1fda51a1,A. R. Rahman
+cb8415c0-3ded-49f1-b486-6f5e1fda51a1,Mechery Louis Ouseppachan
 789ddb41-2528-4e21-b04a-40721ec20922,Unnikrishnan
 2269f964-4b25-431b-9e28-b018597d2a73,A. R. Rahman
 2203e3f5-7de6-43da-b918-c7aa86f9c83e,Yuvan Shankar Raja
@@ -2284,6 +2324,7 @@ fcbb2a5c-8ce9-485f-9f19-d10f393138ff,S. P. Balasubrahmanyam
 a21a05c1-e8ad-42fb-811e-f59ce7cd4f39,Srinivasa Krishnan
 a21a05c1-e8ad-42fb-811e-f59ce7cd4f39,Hriday Gattani
 96f4ef1c-c5d5-41d9-ae77-ed496ba307bd,A. R. Rahman
+e180ea54-9dac-4e8b-9e05-3805e5898fbf,A. R. Rahman
 14634f86-ab27-40aa-a37b-348c11d59bc5,S. P. Balasubrahmanyam
 14634f86-ab27-40aa-a37b-348c11d59bc5,Sujatha
 6f6746d7-33cd-4847-9384-60fd35db521e,Rafique
@@ -2292,7 +2333,6 @@ a21a05c1-e8ad-42fb-811e-f59ce7cd4f39,Hriday Gattani
 41130f60-0457-4183-9acc-1b5d1dac3f67,Jaspinder Narula
 a283afab-0d2b-4490-9c53-a31bd7b34b91,A. R. Rahman
 018e1355-fbd0-4ca0-bfb5-db3eb8e16461,A. R. Rahman
-eef37617-002a-4138-8b6c-ba0deb349e43,Blaaze
 0eaee76b-9664-41b8-8452-145afbc9ea33,A. R. Rahman
 0eaee76b-9664-41b8-8452-145afbc9ea33,Blaaze
 0eaee76b-9664-41b8-8452-145afbc9ea33,Vivian Chaix
@@ -2320,6 +2360,7 @@ a209727e-babc-4f80-992c-7f94ad360e98,Jali Fily Cissokho
 4fa71404-d725-4b75-95d3-7ab50830a0be,Shashaa Tirupati
 4fa71404-d725-4b75-95d3-7ab50830a0be,Sathyaprakash
 6455d066-0b1f-4319-8fb5-cf0a9276f608,Karthik
+cd71fc37-8868-4bfc-9436-dd1ba88b7796,A. R. Rahman
 c9b2a609-2181-419c-b8d5-0e80dc7e51f7,A. R. Rahman
 c9b2a609-2181-419c-b8d5-0e80dc7e51f7,Mohit Chauhan
 d1eb5820-593c-4946-a8b7-4c6f4bf33574,Unni Menon
@@ -2408,6 +2449,8 @@ dcc05617-f801-4fc6-9dd4-8a3834e6e405,K. S. Chithra
 8355c3c8-a1e8-4009-87a3-f29029f68f3f,S. P. Balasubrahmanyam
 92523c55-430d-495a-b534-3e622442f965,A. R. Rahman
 92523c55-430d-495a-b534-3e622442f965,Shreya Ghoshal
+e893f313-9b4f-470c-aada-faa93b4c37a6,A. R. Rahman
+e893f313-9b4f-470c-aada-faa93b4c37a6,Inno Genga
 fca54dd9-e746-4f79-bdaa-81cff4702156,Karthik
 fca54dd9-e746-4f79-bdaa-81cff4702156,Darshana
 fca54dd9-e746-4f79-bdaa-81cff4702156,Maria Roe Vincent
@@ -2456,6 +2499,8 @@ a17442ea-5021-4cb9-a8bc-550d632216a8,A. R. Rahman
 f5108612-0e4f-4a76-a462-a8ccbdd63d63,Harini
 026f582d-50de-4e08-8bda-bb41f0e6c837,Hariharan
 2779fa61-cd63-4ef2-982a-cfc7cf75872a,Shankar Mahadevan
+0d8a6dfc-1828-4b34-bb41-9aeead084f42,S. P. Balasubrahmanyam
+0d8a6dfc-1828-4b34-bb41-9aeead084f42,S. Janaki
 93fa6a05-8591-48ca-90b8-081a216aa4a9,S. P. Balasubrahmanyam
 38c9678e-c27e-46dd-a070-fa04b31c6f1b,A. R. Rahman
 a1b88e33-38ad-4c5b-b873-3510b920b493,Anuradha Sriram
@@ -2521,6 +2566,7 @@ de2df665-b58e-4c1a-a3c7-85cb6cf6a4ab,A. R. Rahman
 4559b1ab-1b98-41f0-9626-73802b4536e4,A. R. Rahman
 9cad15a0-0d6a-4caa-a057-e43a70f49f3a,Mano
 9cad15a0-0d6a-4caa-a057-e43a70f49f3a,Swarnalatha
+fabb7343-4e72-416a-b524-6793f826cc9e,A. R. Rahman
 db1b41d4-5dc2-4787-8fdb-104fff4cbcf7,Malgudi Subha
 db1b41d4-5dc2-4787-8fdb-104fff4cbcf7,Suresh Peters
 c7c78f33-ad53-4b04-8fcb-1b206f6be4a0,Hemachandra Vedala
@@ -2530,11 +2576,6 @@ e81c12eb-f3ba-4e04-bfea-c04045531718,Shashaa Tirupati
 740350fb-9d00-447b-a9a2-1bce2347097c,A. R. Rahman
 740350fb-9d00-447b-a9a2-1bce2347097c,Shashaa Tirupati
 a8c52c67-cd36-4459-9e60-97c61b13160e,Unnikrishnan
-ad529ba3-3884-43f4-ad06-a8094c4bb9dc,Asha Bhosle
-ad529ba3-3884-43f4-ad06-a8094c4bb9dc,K. J. Yesudas
-3899a6b3-77ed-4695-a9a1-7ef67a7f7158,Udit Narayan
-3899a6b3-77ed-4695-a9a1-7ef67a7f7158,Alka Yagnik
-3899a6b3-77ed-4695-a9a1-7ef67a7f7158,Vasundhara Das
 15aff026-cced-4252-9d0c-8bc039413733,A. R. Rahman
 0d268789-dfe9-40ce-b964-a6a836118dfb,A. R. Rahman
 0d268789-dfe9-40ce-b964-a6a836118dfb,Srinidhi Venkatesh
@@ -2564,8 +2605,6 @@ ff69edea-56b0-43d2-8c25-f2ad79044bc2,S. P. Balasubrahmanyam
 ff69edea-56b0-43d2-8c25-f2ad79044bc2,Swarnalatha
 ff69edea-56b0-43d2-8c25-f2ad79044bc2,Asha Bhosle
 02bee0f4-806c-41ff-8086-022ca63023e6,Unnikrishnan
-117f044a-883a-423f-9eec-4f7b9a56e9f3,Remo Fernandes
-117f044a-883a-423f-9eec-4f7b9a56e9f3,Febi Mani
 1acc7d41-ec02-452d-97c6-8d5dfbf48ede,Asha Bhosle
 1acc7d41-ec02-452d-97c6-8d5dfbf48ede,S. P. Balasubrahmanyam
 8916e88e-0d86-43fe-a509-1c1e1f7b0cf6,S. P. Balasubrahmanyam
@@ -2576,6 +2615,7 @@ c764c0cd-461d-44c4-bfa9-fd7452146683,K. S. Chithra
 77127904-f116-4e32-801f-9b00445d04a0,Kalyani Menon
 727ac16b-f3f5-4c6b-9613-8f4e2e39caab,Clinton Cerejo
 e8179fc8-5f99-4742-81a8-3f13bd4ac989,A. R. Rahman
+731cd683-9789-4591-915f-241fc4793e0c,A. R. Rahman
 46c1b7e3-1fb2-4494-9a13-ee8735ff29c4,Sadhana Sargam
 46c1b7e3-1fb2-4494-9a13-ee8735ff29c4,Shankar Mahadevan
 f5613fcf-4d9a-454d-a3c5-25652efb224d,K. S. Chithra
@@ -2609,10 +2649,12 @@ cc8c9527-8905-4ce5-b59d-12bd4574aca2,A. R. Rahman
 cc8c9527-8905-4ce5-b59d-12bd4574aca2,Deepthi Suresh
 cc8c9527-8905-4ce5-b59d-12bd4574aca2,Sreekanth Hariharan
 cc8c9527-8905-4ce5-b59d-12bd4574aca2,Sathyaprakash
-6e202d6a-ce99-4364-99d0-92de48e32d2b,A. R. Rahman
+402f63e9-bd2e-4d08-a162-12eed36f2b7f,S. P. Balasubrahmanyam
+402f63e9-bd2e-4d08-a162-12eed36f2b7f,S. Janaki
 51de3e67-c8d2-4cd4-9036-2ccb05d9753d,A. R. Rahman
 03f887f0-b43e-4484-b0dd-fe4561408a2c,Mano
 03f887f0-b43e-4484-b0dd-fe4561408a2c,Remo Fernandes
+6cd9a3ec-ffa7-43b4-9692-a42f6fcc2dbf,Malgudi Subha
 7c2e7f55-c047-4e28-8228-93274c0cf3da,A. R. Rahman
 7c2e7f55-c047-4e28-8228-93274c0cf3da,M.I.A.
 54b5c4eb-e393-4002-9e48-9ba29459a747,A. R. Rahman
@@ -2629,7 +2671,6 @@ cc8c9527-8905-4ce5-b59d-12bd4574aca2,Sathyaprakash
 7a82dd2f-6fda-400d-a961-dcb1f0e377e1,A. R. Rahman
 356dcb22-f627-4df7-a5c1-b6915b7407ef,Niranjana Ramanan
 356dcb22-f627-4df7-a5c1-b6915b7407ef,Keerthana Vaidyanathan
-893b8901-ee64-4375-9715-aea56447384b,A. R. Rahman
 9a5e3571-ef63-41fb-aef5-63283c346b76,A. R. Rahman
 6a5bd480-a714-4a2c-a3a1-cc7bcb01a023,Minmini
 a9c96f07-d776-489f-84fb-f2e711b4481d,Ila Arun
@@ -2641,6 +2682,8 @@ a9c96f07-d776-489f-84fb-f2e711b4481d,Ila Arun
 f78f26c0-a589-42f3-ac6e-4211cf3832d0,Minmini
 f78f26c0-a589-42f3-ac6e-4211cf3832d0,Shahul Hameed
 cd794a5c-2dbf-49f6-ada7-96089a25c616,K. J. Yesudas
+e4e03337-c255-4619-ae8f-eea9f8ed3039,Hariharan
+e4e03337-c255-4619-ae8f-eea9f8ed3039,Clinton Cerejo
 b91e5dd7-9d64-42f9-a6ae-73f017a21744,Shahul Hameed
 b91e5dd7-9d64-42f9-a6ae-73f017a21744,Minmini
 9789e56e-b230-431a-9cad-b72c179356bc,K. J. Yesudas
@@ -2713,6 +2756,7 @@ c68f0fea-5867-4b3a-b5a6-330a8ffce412,A. R. Rahman
 6b2e99c7-a358-4385-862c-ba07aa665189,Shankar Mahadevan
 df8a8ea3-fa0a-4cdb-94d0-b5f6788e3a35,Unnikrishnan
 df8a8ea3-fa0a-4cdb-94d0-b5f6788e3a35,Sadhana Sargam
+f382cd28-42f7-4128-abc4-26b4558b50cc,Mano
 6a653b7b-06bb-469c-8a75-6f4ff7008d15,S. P. Balasubrahmanyam
 dbc5b8fe-3cf5-49da-98de-694ec62bd6e5,A. R. Rahman
 afdd7a92-fba1-477d-b407-c2c1a87ea676,Madhavan
@@ -2819,17 +2863,21 @@ b614a168-e044-4c98-9b98-f2ac356df197,Nikhita Gandhi
 20f612d2-7792-4777-8017-fc36b2aa032f,Sid Sriram
 ed834f4a-14d2-4187-aa52-38a151210d19,S. P. Balasubrahmanyam
 ed834f4a-14d2-4187-aa52-38a151210d19,K. S. Chithra
-080ce7d4-f47d-4af1-9a58-6aa4cffc41e8,A. R. Rahman
-eff0d43f-d614-4612-9d3f-2360d0cacf46,A. R. Rahman
+eb8fb2c6-9d8a-46b1-9279-d046ca7a02cf,A. R. Rahman
+48201ae4-c443-4038-9679-fa676551258e,A. R. Rahman
+48201ae4-c443-4038-9679-fa676551258e,Blaaze
+36e4b0e1-e9c5-40ae-8148-df4da7dcd7f1,A. R. Rahman
 cdfc49e4-914c-47c7-ae1c-861d9c40ad61,Precious
 52a1cbc2-e42f-40b9-94ea-e5006bd4cd98,S. P. Balasubrahmanyam
 52a1cbc2-e42f-40b9-94ea-e5006bd4cd98,Swarnalatha
 5f39c114-7bdf-4de5-8c67-47c5c997d340,Sadhana Sargam
+2a8477be-faf0-4714-a5a5-492fca89b455,A. R. Rahman
 4f0b5c6b-26ad-43b3-a1de-f40d7c660c23,S. P. Balasubrahmanyam
 4f0b5c6b-26ad-43b3-a1de-f40d7c660c23,O.S. Arun
 4f0b5c6b-26ad-43b3-a1de-f40d7c660c23,Rafee
 4f5e2ea3-1da7-4b26-be89-f34674c865d7,Hriday Gattani
 4f5e2ea3-1da7-4b26-be89-f34674c865d7,Chinmayi
+1a3320e9-859b-4539-926f-9063b4121245,A. R. Rahman
 5293218f-27b4-462e-a127-1b5a39de10bc,Sangeetha
 69d0c84f-8d7c-4138-a0fd-90e9c3ef1d2d,S. P. Balasubrahmanyam
 69d0c84f-8d7c-4138-a0fd-90e9c3ef1d2d,Udit Narayan
@@ -2863,7 +2911,8 @@ c1d34957-582e-4e26-bf3c-4ada4a8379f0,Farooqi Parissa
 103ba9e0-f6be-4d06-ac56-59ba56d4bd36,S. P. Balasubrahmanyam
 103ba9e0-f6be-4d06-ac56-59ba56d4bd36,A. R. Rahman
 103ba9e0-f6be-4d06-ac56-59ba56d4bd36,Khatija Rahman
-5c5aa753-a102-4ac3-9b94-10e40d25811f,A. R. Rahman
+eb80a67e-fdd9-4461-8e45-57cfb74ffa26,Unni Menon
+eb80a67e-fdd9-4461-8e45-57cfb74ffa26,Sujatha
 649270eb-0df1-479d-a0f6-6871a5df9f98,A. R. Rahman
 84966813-d454-49f5-9f05-f924925e7fba,Seattle Symphony
 84966813-d454-49f5-9f05-f924925e7fba,Ricardo Averbach
@@ -2878,7 +2927,6 @@ ea8a9bb1-40e2-4ebe-bddf-b3014e12b606,Shashaa Tirupati
 04780a98-f95a-44f3-b943-0e3e1333c934,Haricharan
 04780a98-f95a-44f3-b943-0e3e1333c934,Shashaa Tirupati
 8fa14b9e-d0af-4fb7-8301-db3555f0b67a,A. R. Rahman
-36d5a9b5-f0ee-4f61-8b4b-ffffcc7df3fb,A. R. Rahman
 cfd06ac6-dde6-44ec-ab84-9a1f247e8982,Mano
 cfd06ac6-dde6-44ec-ab84-9a1f247e8982,K. S. Chithra
 15220111-4b8d-4e3c-b5c5-5b0e74c1a77e,A. R. Rahman
@@ -2886,12 +2934,12 @@ cfd06ac6-dde6-44ec-ab84-9a1f247e8982,K. S. Chithra
 3d8c3bb0-f895-4b50-86c6-83f3fb665dd8,K. S. Chithra
 3d8c3bb0-f895-4b50-86c6-83f3fb665dd8,Mano
 36e56a42-de1b-4e12-8c7d-50be51e25137,A. R. Rahman
+67e728a4-d3d5-4fb2-bdf9-229783b30792,Kavita Krishnamurthy
+67e728a4-d3d5-4fb2-bdf9-229783b30792,Suresh Wadkar
 8162c2bf-c39a-4a2d-9cb5-16be227ff9ea,A. R. Rahman
-7c116304-e47b-41b3-bed7-738ed9764572,Sonu Nigam
-7c116304-e47b-41b3-bed7-738ed9764572,Anuradha Paudwal
-c1130c47-5346-4511-ad2a-a50cd87eab42,Anuradha Paudwal
-c1130c47-5346-4511-ad2a-a50cd87eab42,M. G. Sreekumar
 e98c381f-3b0e-433f-8a8a-6b26c520ec73,A. R. Rahman
+ea71d98a-a004-46f8-9905-eb982890a5d6,K. J. Yesudas
+ea71d98a-a004-46f8-9905-eb982890a5d6,Swarnalatha
 9aee6c1b-9a9a-45f3-9479-13c1eaffd98e,Shoba
 725d89f2-3601-4376-817c-c6349a30776e,Mano
 725d89f2-3601-4376-817c-c6349a30776e,Sujatha
@@ -2914,9 +2962,6 @@ a6780754-5be9-4d0d-aad8-06e382529150,Harini
 7faa5e72-9782-4b87-bd5d-811f6dfe12a3,Nivas
 d19694c8-4e20-45bf-81fc-24af21a2c486,A. R. Rahman
 95b266a3-bb39-41ed-8812-3a2363faf052,A. R. Rahman
-bcbfc936-9f42-4ef6-ba97-6867003420fc,Asha Bhosle
-bcbfc936-9f42-4ef6-ba97-6867003420fc,Udit Narayan
-bcbfc936-9f42-4ef6-ba97-6867003420fc,Vaishali Samant
 6fec6f87-5690-4d61-b7d6-c9bb28ff2df3,A. R. Rahman
 c16a52d7-9a04-43f0-a7e5-0f31e04d5b4d,A. R. Rahman
 86db5adc-8769-407c-8388-d9c90dc9d8fc,A. R. Rahman
@@ -2939,8 +2984,6 @@ d1dd792c-dffc-4b5f-9df0-33666285f66d,MC Heam
 d1dd792c-dffc-4b5f-9df0-33666285f66d,Krystal
 77ac81c8-5814-4bc6-9ee7-1cfd5a21ad85,Sukhwinder Singh
 77ac81c8-5814-4bc6-9ee7-1cfd5a21ad85,Alka Yagnik
-2386b1c0-44dc-40d9-bf16-033c2eb2a046,Sukhwinder Singh
-2386b1c0-44dc-40d9-bf16-033c2eb2a046,Alka Yagnik
 680c6f70-1047-449a-beea-1e686f39bb7e,A. R. Rahman
 5db0563d-168c-4223-8cec-fb29455f01da,The London Session Orchestra
 63ea8870-5ebe-4348-83b8-2d0cab471d5a,London Philharmonic Orchestra
@@ -2951,6 +2994,9 @@ f82e4108-6847-4039-a49e-30f2d1f80af3,Nivas
 e1c321f9-b4fa-4d1a-be20-2cf0faee7597,Haricharan
 e1c321f9-b4fa-4d1a-be20-2cf0faee7597,Dr. Narayanan
 9ff708b5-6247-47a6-9b05-f43f715eb67b,Asha Bhosle
+394af1b1-8542-471f-9af0-28865261e067,A. R. Rahman
+394af1b1-8542-471f-9af0-28865261e067,Daler Mehndi
+394af1b1-8542-471f-9af0-28865261e067,K. S. Chithra
 741146a8-0d15-4d2f-8675-96db33d6cd01,A. R. Rahman
 18a286a0-7fcb-4c17-8646-91b32796a24a,Asha Bhosle
 53db7e1f-8e67-4893-9ca8-80954b8247a4,Daler Mehndi
@@ -2986,6 +3032,7 @@ e8900468-e516-49be-80c5-ecda0a746819,Rianjali
 a6a72d49-03c3-44d0-9a8e-2540e6c2ad26,A. R. Rahman
 a8675192-82c0-44af-a4ce-3957981df17c,George Doering
 7bc00bca-9617-4c70-8e4b-4b8e74c85b31,A. R. Rahman
+7ca76a24-313a-4936-b0db-abc556ce4646,A. R. Rahman
 3e7920b8-8fba-43c4-9cf1-ead4fbcec8f5,A. R. Rahman
 3e7920b8-8fba-43c4-9cf1-ead4fbcec8f5,Swagath Rathod
 3e7920b8-8fba-43c4-9cf1-ead4fbcec8f5,Faiz Mustafa
@@ -3010,6 +3057,7 @@ fc11893a-81da-4e0d-be72-6d86a6c363d5,Kumar
 7d7734aa-c7c4-4c94-913f-b6fe37aa7306,A. R. Rahman
 16be2b74-a3de-4a3c-b13b-8be1e25ea4b1,A. R. Rahman
 50405baa-442a-4fec-acf1-5406137ce411,A. R. Rahman
+2255e2a0-4be7-4485-9577-ba8d720f5e0b,A. R. Rahman
 bfc0aaef-abac-4313-9dc4-966c8306acbe,A. R. Rahman
 a6a22268-5b9f-463d-b7e1-34ec70520f2a,A. R. Rahman
 6d849a81-9a38-4baa-8d2b-821eac2af2ee,A. R. Rahman
@@ -3018,12 +3066,12 @@ a6a22268-5b9f-463d-b7e1-34ec70520f2a,A. R. Rahman
 7e798da4-f6c0-4457-b6dc-0e31333450cb,A. R. Rahman
 b81d8289-e284-4c94-ba43-49bebe4a4178,Julia Gartha
 b81d8289-e284-4c94-ba43-49bebe4a4178,Khatija Rahman
+e56f439a-b92d-4534-bd95-f95c8b68c0e5,S. P. Balasubrahmanyam
+e56f439a-b92d-4534-bd95-f95c8b68c0e5,Sujatha
 96f65f04-afb3-45ac-9615-a09bc8d70e8c,A. R. Rahman
-930c4764-8fb8-4437-88a8-cf590c614987,Sujatha
 15fca183-2f71-441c-b111-1bcf4f7b8468,Hariharan
 e2037630-db9e-4332-9042-27089fa0ccde,Mehardeen Langa
 6ca65d72-8032-4011-b470-c855130d31cd,K. S. Chithra
-1c66894c-cfac-4399-9dff-2dc0270ea526,Hariharan
 45801f25-876c-43ca-b610-89a1ff694192,S. Janaki
 45801f25-876c-43ca-b610-89a1ff694192,Srinivas
 45801f25-876c-43ca-b610-89a1ff694192,Mehardeen Langa
@@ -3033,7 +3081,10 @@ ca1def8b-144d-45ae-bcb0-d9be10071457,Udit Narayan
 89ed65b2-0e7b-46d2-b389-f4c7a145ba26,Udit Narayan
 2bc78f94-71e4-4ceb-b345-1638f570211d,Hariharan
 2bc78f94-71e4-4ceb-b345-1638f570211d,A. R. Rahman
-ad835a74-0812-4260-8abc-9ca5778c8b58,A. R. Rahman
+4f4b419d-7752-4dad-ab17-df7ed197ddb7,A. R. Rahman
+4f4b419d-7752-4dad-ab17-df7ed197ddb7,Naresh Iyer
+4d2bbd44-cfb7-49c4-a768-bc34e813ecfa,S. P. Balasubrahmanyam
+4d2bbd44-cfb7-49c4-a768-bc34e813ecfa,K. S. Chithra
 2602f26e-4bb1-4ef4-917e-b3ecde4e2eb8,Anuradha Sriram
 f3721c48-23ee-4ffa-9b29-fcb18b38a72c,Viva!
 6ac28d8e-c6dc-4573-bf89-27305dc5b14b,A. R. Rahman
@@ -3044,10 +3095,9 @@ ecffa7ec-53f0-4cbc-b736-f2daa1929cea,Aadesh Shrivastava
 da11e19f-d547-425f-8cd3-33111c2f0ac7,S. P. Balasubrahmanyam
 da11e19f-d547-425f-8cd3-33111c2f0ac7,K. S. Chithra
 d1b7a080-d06d-43a4-bff7-34a36106dc91,A. R. Rahman
-cfb39c14-91bd-4dad-91a3-729866fec388,A. R. Rahman
+05b99be9-8d66-4e67-a1e0-4c9dd15aa0bc,Baba Sehgal
+05b99be9-8d66-4e67-a1e0-4c9dd15aa0bc,Shweta Shetty
 9e2aa354-a8a7-4f3a-a13e-0f2451ec297c,A. R. Rahman
-b84d4410-fc69-4043-8fab-a1c7b47c59dd,Baba Sehgal
-b84d4410-fc69-4043-8fab-a1c7b47c59dd,Shweta Shetty
 9588bc65-f0b0-4e1f-9589-7e9807747662,DJ Sandy
 03637913-0c9c-4e46-a8a6-695f669ef2be,A. R. Rahman
 34470d4c-ab7e-45bd-b67f-b2d31b59fbb5,A. R. Rahman
@@ -3062,12 +3112,13 @@ f368f122-9d4d-4e28-bec9-6803c00ccb60,Alka Yagnik
 5152d642-7f37-495a-ae54-bd10a53c2437,A. R. Reihana
 5152d642-7f37-495a-ae54-bd10a53c2437,Tippu
 5152d642-7f37-495a-ae54-bd10a53c2437,Nikhita Gandhi
-514a0356-16cc-43b5-b698-0548171c20ac,Sonu Nigam
-514a0356-16cc-43b5-b698-0548171c20ac,Dominique Cerejo
-514a0356-16cc-43b5-b698-0548171c20ac,Clinton Cerejo
-514a0356-16cc-43b5-b698-0548171c20ac,Benny Dayal
+d80e27f6-d6e1-4370-bf0a-c4befe7764cb,Sonu Nigam
+d80e27f6-d6e1-4370-bf0a-c4befe7764cb,Benny Dayal
+d80e27f6-d6e1-4370-bf0a-c4befe7764cb,Clinton Cerejo
+d80e27f6-d6e1-4370-bf0a-c4befe7764cb,Dominique Cerejo
 a4e9f058-fef6-4d90-887b-e19f54451332,A. R. Rahman
-125b73d2-47ec-41f2-84ee-8c932b6c1f14,Madhushree
+773b38de-dd45-473f-b3ca-2930affbff5d,A. R. Rahman
+773b38de-dd45-473f-b3ca-2930affbff5d,K. S. Chithra
 1ad351f5-7e5c-4903-86df-ea83433bf8db,Nakash Aziz
 1ad351f5-7e5c-4903-86df-ea83433bf8db,Poorvi Koutish
 1ad351f5-7e5c-4903-86df-ea83433bf8db,Nikhita Gandhi
@@ -3088,7 +3139,6 @@ e0e693d5-2624-403d-934d-ff5f0737a359,Minmini
 18185bac-7f81-4625-ab52-d5624ec013ac,A. R. Rahman
 d1063f48-9ced-4184-ac3c-0b660f090a87,A. R. Rahman
 d1063f48-9ced-4184-ac3c-0b660f090a87,Blaaze
-154d2d59-be17-4a00-a521-4db31cd0baf9,A. R. Rahman
 28c773a8-5425-4d7e-bd30-2f2d4e7b6752,Unnikrishnan
 4b4e7e3e-18c4-4172-a403-f7d9d451e0c6,Unnikrishnan
 99245ad7-d0fd-402b-98d7-c8a4aa06c4ca,Unnikrishnan
@@ -3098,6 +3148,9 @@ d1063f48-9ced-4184-ac3c-0b660f090a87,Blaaze
 dfdc45b2-9e76-4c13-b24a-596012b5f8df,A. R. Rahman
 d7b8e02a-5a3b-4746-ae71-652715750c56,A. R. Rahman
 69f1cc51-45de-47e0-9d1e-6cd9271e2dde,Aslam Mustafa
+65ac6e81-a9cf-4d31-85f3-af8ecfd13c97,Malgudi Subha
+65ac6e81-a9cf-4d31-85f3-af8ecfd13c97,Minmini
+65ac6e81-a9cf-4d31-85f3-af8ecfd13c97,Annupamaa
 c0996c76-de40-4c2f-9bb3-0c1251b73829,Madhushree
 c0996c76-de40-4c2f-9bb3-0c1251b73829,A. R. Rahman
 639fa4f9-8feb-4090-85f1-ac6f5887a2ac,Haricharan
@@ -3113,7 +3166,6 @@ c0996c76-de40-4c2f-9bb3-0c1251b73829,A. R. Rahman
 7a6b1472-6731-44c6-826e-5d4e9980168b,A. R. Rahman
 6b6c5623-f496-4372-8253-f9393ab8ca5e,A. R. Rahman
 815ce6f5-2941-4ab4-853d-e19ac2be0163,A. R. Rahman
-fcdac47e-738f-4875-8a09-9ddce645324b,Sonu Nigam
 7e32311c-fb8b-49ff-8947-68b2d97842d3,Mano
 7e32311c-fb8b-49ff-8947-68b2d97842d3,K. S. Chithra
 094c36ce-4729-4691-91cb-68be2f3c9a1f,Shashwat Singh
@@ -3154,6 +3206,9 @@ e5c03b62-91ba-4a42-9b3e-0270121c09c9,T. K. Kala
 0c167749-538b-4a07-aa77-676a6dee852b,Shahul Hameed
 a7299ccf-92f7-4e50-a4d4-b1113e5b24ef,Shankar Mahadevan
 a7299ccf-92f7-4e50-a4d4-b1113e5b24ef,S. Janaki
+99037b7c-02c3-45b8-9f0f-b37bfff2a26d,Asha Bhosle
+99037b7c-02c3-45b8-9f0f-b37bfff2a26d,Shankar Mahadevan
+b5e9e916-4dad-4cf7-acb2-a8782a4a9d3c,Malgudi Subha
 0353e272-7269-40f9-b2b9-8ba4d6615f3d,A. R. Rahman
 0353e272-7269-40f9-b2b9-8ba4d6615f3d,Sunitha Sarathy
 0353e272-7269-40f9-b2b9-8ba4d6615f3d,Arjun Chandy
@@ -3166,9 +3221,6 @@ bd056d5a-58d4-444e-a3d1-aceb3531a586,S.P.B. Pallavi
 1615dcf9-7b4c-4e07-a33e-2526d579e373,Ranu Mukherjee
 1615dcf9-7b4c-4e07-a33e-2526d579e373,Sonu Nigam
 1615dcf9-7b4c-4e07-a33e-2526d579e373,नीरज वोरा
-2d6701c5-aa96-40b5-a710-aadee5ffb333,Swarnalatha
-2d6701c5-aa96-40b5-a710-aadee5ffb333,Sonu Nigam
-2d6701c5-aa96-40b5-a710-aadee5ffb333,नीरज वोरा
 3d89078d-0258-4dea-a2f7-f2291ee52c85,A. R. Rahman
 6a75545b-f0ce-459c-8d04-1e2f8c5765ad,A. R. Rahman
 ddc084c9-a55b-42e0-b220-ec0e12341237,A. R. Rahman
@@ -3199,6 +3251,7 @@ ee1469a8-9383-4b06-a87b-a5ed23b51a8c,Krishna Chetan
 986ba37b-d32e-412f-9baf-b80f9abe1d46,A. R. Rahman
 477e5a95-f5b5-461a-a0f5-a8101e1ce960,A. R. Rahman
 477e5a95-f5b5-461a-a0f5-a8101e1ce960,Madhushree
+8063a8b9-2147-4a3b-8665-9e3d6107298e,Malgudi Subha
 48e89b38-54a6-485f-ad21-e7f541da6dba,Mohit Chauhan
 48e89b38-54a6-485f-ad21-e7f541da6dba,Karthik
 a15884e7-8138-4eda-a797-8ec5ab55a9fe,Kunal Ganjawala
@@ -3235,6 +3288,9 @@ bf94976f-c886-4fec-a253-cbae83adba9c,Munir Ahmad Mir
 05c0f2f8-ee4c-40e8-9cdf-914a47053dda,Swarnalatha
 05c0f2f8-ee4c-40e8-9cdf-914a47053dda,Devan Ekambaram
 5f2e8f78-0a2f-40d9-8330-012659a02689,Nikhita Gandhi
+b94bc350-9085-484d-b97a-1c3d1f9d2628,Naveen Kumar
+08896d0f-1824-493c-8127-480d74b90232,Naveen Kumar
+9e3763a4-8527-4504-b33c-3b447e9fb01e,Naveen Kumar
 8d7ce232-d55a-4412-8be3-9895da3e7798,Bamba Bakya
 8d7ce232-d55a-4412-8be3-9895da3e7798,Vipin Aneja
 8d7ce232-d55a-4412-8be3-9895da3e7798,Aparna Narayanan
@@ -3258,6 +3314,8 @@ cb95ef59-0de1-437c-a1f7-5e8098ed883b,Craig Armstrong
 cb95ef59-0de1-437c-a1f7-5e8098ed883b,A. R. Rahman
 a72530fb-f253-454b-82b8-1b5a6c9b361d,A. R. Rahman
 03a602ed-5cbf-45f8-a4e7-8edf6c9c7f85,Bass Junkies
+89c04bb5-c738-4134-a54e-8af6efb909c3,Sadhana Sargam
+89c04bb5-c738-4134-a54e-8af6efb909c3,Srinivas
 baf658c5-4b46-438b-bad6-3291559d032f,Sadhana Sargam
 baf658c5-4b46-438b-bad6-3291559d032f,Srinivas
 f0e87556-6624-4722-8524-558384f0b8c3,Sadhana Sargam
@@ -3265,6 +3323,7 @@ f0e87556-6624-4722-8524-558384f0b8c3,Srinivas
 16e1e201-e8bb-45ab-8923-90daf4431a7a,Mano
 16e1e201-e8bb-45ab-8923-90daf4431a7a,Unnikrishnan
 16e1e201-e8bb-45ab-8923-90daf4431a7a,Chinmayi
+7633969c-c0a7-40a5-817e-1654b5cc2090,A. R. Rahman
 90e010bc-2502-4b28-aab8-3ce891773d72,A. R. Rahman
 6766b0e0-ef40-481a-96fd-5a3a3af740d3,A. R. Rahman
 6766b0e0-ef40-481a-96fd-5a3a3af740d3,Shashwat Singh
@@ -3313,6 +3372,10 @@ bb671b45-b2cb-4d5a-83a0-d73ecec6cae1,A. R. Rahman
 565b5dfc-082e-4d44-9fe1-b2aecc11df92,KK
 c087a0eb-2d91-4697-a2bc-ad2f644e8835,KK
 c087a0eb-2d91-4697-a2bc-ad2f644e8835,Febi Mani
+344db112-d879-4633-956b-528cac428e53,Blaaze
+344db112-d879-4633-956b-528cac428e53,Tanvi Shah
+344db112-d879-4633-956b-528cac428e53,Ravi “Rags” Khote
+344db112-d879-4633-956b-528cac428e53,Suresh Peters
 7d5896f8-9417-4341-8692-cb39a9f41d4e,Seattle Symphony
 7d5896f8-9417-4341-8692-cb39a9f41d4e,Ricardo Averbach
 a68bff60-7787-4ab7-80b4-5dcfa7d37ba1,A. R. Rahman
@@ -3340,9 +3403,6 @@ e54e2de9-3a75-41d1-8d9f-e379b4c1bc9a,Timmy
 3b9858ae-52c5-46ac-b024-aa2849e0425d,Shashaa Tirupati
 d02236d7-bf40-4a93-8d3e-d09ab5e26bd1,A. R. Rahman
 4535b2b1-252c-4783-b811-3f35b449152d,A. R. Rahman
-a64c206e-41fc-4eab-9185-903d4e05f938,Udit Narayan
-a64c206e-41fc-4eab-9185-903d4e05f938,Kavita Krishnamurthy
-a64c206e-41fc-4eab-9185-903d4e05f938,Swarnalatha
 001c8c71-ca4a-4d7d-a9d1-a827400fee64,Suresh Peters
 001c8c71-ca4a-4d7d-a9d1-a827400fee64,Annupamaa
 001c8c71-ca4a-4d7d-a9d1-a827400fee64,Swarnalatha
@@ -3357,6 +3417,8 @@ bb2ca9bc-385c-40c0-8dac-878e5e9a73cf,Harini
 bb2ca9bc-385c-40c0-8dac-878e5e9a73cf,S. P. Balasubrahmanyam
 12af2428-a99c-44db-b347-9f617071f2c3,A. R. Rahman
 49fd3d68-04ea-4e2d-9d6c-5158531e4d9c,Karthik
+b210b23a-d73d-43ae-930a-a42ebe1fccfa,S. P. Balasubrahmanyam
+b210b23a-d73d-43ae-930a-a42ebe1fccfa,Sadhana Sargam
 f3744c23-5489-4fdf-8f60-314cbd3af63d,S. P. Balasubrahmanyam
 f3744c23-5489-4fdf-8f60-314cbd3af63d,Sadhana Sargam
 91634943-a096-4018-8ead-9c62221372f5,A. R. Rahman
@@ -3366,8 +3428,8 @@ fde99147-13ed-43ce-bee2-e1fba3d0c3ec,Udit Narayan
 fde99147-13ed-43ce-bee2-e1fba3d0c3ec,Alka Yagnik
 3426ecf8-b890-4996-8952-579a975eeb77,Sukhwinder Singh
 f6f429c7-3a19-42af-a7f2-7a5d79b3c573,A. R. Rahman
-d52f564a-e344-47d5-aa18-24dc483a6c98,Alka Yagnik
-d52f564a-e344-47d5-aa18-24dc483a6c98,Udit Narayan
+fe02d162-701c-4224-a648-0e83ff99326d,Alka Yagnik
+fe02d162-701c-4224-a648-0e83ff99326d,Udit Narayan
 c6b3b448-b638-4a6a-ba1e-44a55bde69b7,S. P. Balasubrahmanyam
 c6b3b448-b638-4a6a-ba1e-44a55bde69b7,S.P. Sailaja
 c6b3b448-b638-4a6a-ba1e-44a55bde69b7,Saloni
@@ -3388,18 +3450,17 @@ c2a75112-96e4-4eca-a33f-8f5607d1ed3a,Haricharan
 c2a75112-96e4-4eca-a33f-8f5607d1ed3a,Diwakar
 e9430af6-9ecf-45e6-b80f-73ff9c08f298,A. R. Rahman
 338b6e98-98f3-4360-9721-ef809bb64f87,Asha Bhosle
-a6994132-f1a2-4232-859c-627dcced87fc,Asha Bhosle
 44db02e0-4ccd-4b5f-9d3a-d549c63d206f,A. R. Rahman
 31c97958-f841-4c73-b399-40bfe04e4328,A. R. Rahman
-52ec7d2b-6c47-4b45-8858-2fd70da02c05,Babul Supriyo
-52ec7d2b-6c47-4b45-8858-2fd70da02c05,Srinivas
 1154ad74-80f7-489a-8c48-528fa42887e2,A. R. Rahman
+f7dc54e2-a492-44c6-84c7-6b550723c60f,Benny Dayal
+f7dc54e2-a492-44c6-84c7-6b550723c60f,Blaaze
+f7dc54e2-a492-44c6-84c7-6b550723c60f,Javed Ali
+f7dc54e2-a492-44c6-84c7-6b550723c60f,Viviane Chaix
 d66acae9-935d-46a9-8bc9-d66039773cf6,Hariharan
 d66acae9-935d-46a9-8bc9-d66039773cf6,Kavita Krishnamurthy
 a0c728b7-e122-4ae6-b23d-97c8f879e5b9,Hariharan
 a0c728b7-e122-4ae6-b23d-97c8f879e5b9,Harini
-a88cad60-1397-4b8e-918f-0c565fd47fe4,Hariharan
-a88cad60-1397-4b8e-918f-0c565fd47fe4,Kavita Krishnamurthy
 2403f43b-043e-403d-9938-01f9c9cab2b8,Mano
 2403f43b-043e-403d-9938-01f9c9cab2b8,Sujatha
 23169ce2-091b-4f4f-99ae-c2133bb57ec2,S.P.B. Charan
@@ -3424,10 +3485,11 @@ af3c21ca-06d5-4442-a320-63af5499c0d1,Madhushree
 4cb661e9-1091-486d-a85c-5b7da069b5ec,S. P. Balasubrahmanyam
 4cb661e9-1091-486d-a85c-5b7da069b5ec,Shoba
 d66d35e1-28e2-4ce0-96b2-01819b3c8321,S. P. Balasubrahmanyam
+d5fd8e7f-dfb6-4800-9706-c9ba8095e34e,A. R. Rahman
 13378e5d-4a2b-46f8-be9f-c9630df2a595,Sid Sriram
 13378e5d-4a2b-46f8-be9f-c9630df2a595,Dinesh Kanagaratnam
 13378e5d-4a2b-46f8-be9f-c9630df2a595,Aparna Narayanan
-269e88c8-de92-4ec3-9ccb-4a63bd4c3c6b,A. R. Rahman
+a9e89352-5192-4bfd-b329-091bb6367586,Hariharan
 17dcb152-bcfa-4096-82e5-fa49dce5ffd1,A. R. Rahman
 d50d2266-5834-4600-bd11-c7056b7cc796,Kochadaiiyaan Ensemble
 d7ea1dff-1115-4b5c-a10d-ecd5f1a27e08,Sangeetha Sajith
@@ -3617,6 +3679,7 @@ f286484c-38be-49e7-91bc-07be252e5707,Mahalakshmi Iyer
 4f6b3600-304f-4a74-93e2-d84bf495cbe0,Leon James
 4f6b3600-304f-4a74-93e2-d84bf495cbe0,Peer Mohammed
 4f6b3600-304f-4a74-93e2-d84bf495cbe0,Sonu Kakkar
+75697121-5c02-4517-ba34-84d05a213691,Mano
 0e4062b8-9cc2-40e1-95a9-27ede95bea1b,Le Trio Joubran
 0e4062b8-9cc2-40e1-95a9-27ede95bea1b,Sanaa Moussa
 0cb11744-afb2-4c94-8c1a-b20f001f6231,Gopal Rao
@@ -3650,6 +3713,8 @@ e50d18d7-a61f-4138-b344-ca54a0970c45,A. R. Rahman
 575cf746-37cd-40c6-86cd-7a3ac9c74b25,S. Shailaja
 575cf746-37cd-40c6-86cd-7a3ac9c74b25,Kailash Kher
 575cf746-37cd-40c6-86cd-7a3ac9c74b25,Ismail Darbar
+d506f254-6307-4b9b-ab11-d948fa47ba5e,Madhushree
+d506f254-6307-4b9b-ab11-d948fa47ba5e,Naresh Iyer
 f479291f-9314-4c0c-887d-2cfec9a47fae,A. R. Rahman
 c1f95cc9-697f-48e0-b5bb-20c5a0f53aa5,Arijit Singh
 c1f95cc9-697f-48e0-b5bb-20c5a0f53aa5,Shreya Ghoshal
@@ -3677,9 +3742,9 @@ be5c7308-74c1-4108-965a-76d03cacc654,Kavita Krishnamurthy
 987eb4d7-251d-43f0-9ae3-57cdeb8395bf,Kavita Krishnamurthy
 29a08d6e-60ae-46ec-bea6-2767b51dc7d3,A. R. Rahman
 29a08d6e-60ae-46ec-bea6-2767b51dc7d3,Rabbi Shergill
+50b1401f-cead-40ce-a9df-3badffe3ebb1,Alka Yagnik
+50b1401f-cead-40ce-a9df-3badffe3ebb1,Javed Ali
 b73183ee-1182-4c74-bee9-64d8eab3f404,Hriday Gattani
-3db5b70a-1742-46f5-8b36-a74dadd01408,Hariharan
-3db5b70a-1742-46f5-8b36-a74dadd01408,Kavita Krishnamurthy
 1685b857-6dcc-497f-a424-790d5c43f7b7,A. R. Rahman
 1685b857-6dcc-497f-a424-790d5c43f7b7,Shashaa Tirupati
 366a284b-3be5-444c-9517-f6a24ed62b9c,Khatija Rahman
@@ -3753,6 +3818,8 @@ c2643eff-823e-47e1-a86b-16216a78ed3d,Sireesha Bhagavatula
 c2643eff-823e-47e1-a86b-16216a78ed3d,Pavithra Chari
 043e9c09-1b6c-4513-851d-28290c8586d7,Shankar Mahadevan
 f77be38b-fb19-42eb-a724-4c4d9a14647f,A. R. Rahman
+59c59efc-37e2-4406-98fe-5373c7f9fbac,Hariharan
+59c59efc-37e2-4406-98fe-5373c7f9fbac,K. S. Chithra
 03a934f4-759b-4554-a9cd-eb74e5227344,Unnikrishnan
 9c57cb74-a0cd-4702-9249-14f5eb8c05fc,A. R. Rahman
 9c57cb74-a0cd-4702-9249-14f5eb8c05fc,Sarthak Kalyani
@@ -3820,7 +3887,6 @@ fe74f691-de40-48a1-b514-f208a93e8b61,Harini
 c64779ec-d578-476c-8c67-a2f57aceb930,Mano
 c64779ec-d578-476c-8c67-a2f57aceb930,Unni Menon
 c64779ec-d578-476c-8c67-a2f57aceb930,K. S. Chithra
-15e6752e-f381-49f3-aa96-fb0ac235cfe7,A. R. Rahman
 d800f28e-548f-4215-a305-49a2cac2a444,A. R. Rahman
 d800f28e-548f-4215-a305-49a2cac2a444,Sarthak Kalyani
 d800f28e-548f-4215-a305-49a2cac2a444,Swagat Rathod
@@ -3867,6 +3933,7 @@ ce419c62-35e4-4055-99c8-a463e264b586,Sharanya Srinivas
 ce419c62-35e4-4055-99c8-a463e264b586,Vishwaprasadh
 ce419c62-35e4-4055-99c8-a463e264b586,Naresh Iyer
 fedfc6f3-9d25-40d9-80d3-061eb37ace48,Mano
+53c92985-b6c5-4fa6-8575-93fc5efee974,Karthik
 cd656091-c279-4704-ae9b-b76f81af4c96,A. R. Rahman
 331a978e-6647-4e3f-aaab-00293963d32f,Karthik
 331a978e-6647-4e3f-aaab-00293963d32f,Shreya Ghoshal
@@ -3884,6 +3951,7 @@ c552c72d-c2cc-4a7a-8ded-0ab7bae7b5fa,Madhushree
 7d74d035-44af-4bf8-b3c1-ac236d8b4159,A. R. Rahman
 5b4f1f7a-4d78-48b6-a453-7b94093d4048,Craig Armstrong
 5b4f1f7a-4d78-48b6-a453-7b94093d4048,A. R. Rahman
+9c2fd02e-a342-4403-99dd-155f8eb24043,A. R. Rahman
 5a643673-a662-4274-a567-770b6dd596b3,Kash
 5a643673-a662-4274-a567-770b6dd596b3,Krissy
 5a643673-a662-4274-a567-770b6dd596b3,Suvi Suresh
@@ -3892,6 +3960,7 @@ e6fcc6a0-de91-45a9-a027-bded994bd028,A. R. Rahman
 837c44f3-669a-409e-be91-17bc04d1967c,A. R. Rahman
 d0b49b21-85a4-4643-8126-687b4a40dc2c,A. R. Rahman
 7e318d66-e67f-46a0-97d6-29b359b19b01,A. R. Rahman
+f5102ebf-7489-4632-80aa-06bed1b7b383,A. R. Rahman
 cc559205-e81a-4e7f-906a-61987cbe533e,A. R. Rahman
 125777cb-d2c4-420a-9cf9-92b88084f1c3,Arijit Singh
 125777cb-d2c4-420a-9cf9-92b88084f1c3,Shashwat Singh
@@ -3937,8 +4006,6 @@ f1559806-bb18-4687-932b-abcfcced69e8,Tanvi Shah
 b61b603e-ad4b-45c0-ac5b-ee16daa110ee,A. R. Rahman
 2b598d1b-44c4-4042-9b13-5e38aa0b9f05,Chinnaponnu
 2b598d1b-44c4-4042-9b13-5e38aa0b9f05,Sangeetha
-f2778f53-d389-4f59-b336-1349eefb422c,Udit Narayan
-f2778f53-d389-4f59-b336-1349eefb422c,K. S. Chithra
 7be48e86-c426-4c64-915c-b9dd5031277c,Udit Narayan
 7be48e86-c426-4c64-915c-b9dd5031277c,K. S. Chithra
 99432106-978e-478f-b55a-cb88fee4fb4b,Shweta Mohan
@@ -3955,13 +4022,10 @@ dd45b072-653b-4cc6-9835-b7e941abcfb2,Mahalakshmi Iyer
 dd45b072-653b-4cc6-9835-b7e941abcfb2,Vaishali Samant
 dd45b072-653b-4cc6-9835-b7e941abcfb2,Richa Sharma
 92677c07-7283-4400-8c82-6e5d715c36fe,S. P. Balasubrahmanyam
-b6e4d5d1-9032-4309-8415-d0bb2ea6ee7a,A. R. Rahman
 c0761b33-387e-432c-bf37-fcc5805646f4,Kavita Krishnamurthy
 c0761b33-387e-432c-bf37-fcc5805646f4,Vinod Rathod
 a46edded-e196-41a6-9174-05bb1bf84649,P. Jayachandran
 17f35a52-09a7-409d-a121-debeaa30d1a7,Vasundhara Das
-d83a5c1c-3f0b-4288-b371-6da20471ec29,Kavita Krishnamurthy
-d83a5c1c-3f0b-4288-b371-6da20471ec29,Vinod Rathod
 4ba76c92-4434-4a09-bfc3-bcf18d2811af,Madhavan
 4ba76c92-4434-4a09-bfc3-bcf18d2811af,Shalini
 4ba76c92-4434-4a09-bfc3-bcf18d2811af,V. Natarajan
@@ -3981,19 +4045,20 @@ f89701b7-032c-469e-af3d-fa1f06cc6264,Sathyaprakash
 0adaa956-d7ef-46e6-a433-481ed51384da,S. P. Balasubrahmanyam
 0adaa956-d7ef-46e6-a433-481ed51384da,K. S. Chithra
 743b4995-7d00-44a6-9ecd-5bdc2363733f,A. R. Rahman
-cb97ffad-9f99-4cbb-a940-78732e94e9da,S. P. Balasubrahmanyam
-cb97ffad-9f99-4cbb-a940-78732e94e9da,K. S. Chithra
 6038410f-ba69-406c-8545-0578a095b664,Sujatha
 6038410f-ba69-406c-8545-0578a095b664,Anuradha Sriram
 6038410f-ba69-406c-8545-0578a095b664,G.V. Prakash Kumar
 6038410f-ba69-406c-8545-0578a095b664,Shweta Mohan
 6038410f-ba69-406c-8545-0578a095b664,Aditya Narayan
 6038410f-ba69-406c-8545-0578a095b664,Shradha
+d1530763-8b58-4984-a9de-b20682255830,A. R. Rahman
 3ad647f4-257c-4c33-97c1-c6447eadda1d,Madhukar T. Dhumal
 fd690c0a-25e6-404d-b3ea-a96d8957b427,Srinivas
 fd690c0a-25e6-404d-b3ea-a96d8957b427,Sujata Trivedi
 c06a8719-d5cb-4a25-92ae-bb86606741a1,A. R. Rahman
 e8989dc0-c2f4-4f28-8cc3-2bbb538ed714,Kumar Sanu
+c7928eb2-4f92-4791-ad2e-b9bcfa058e8f,A. R. Rahman
+c7928eb2-4f92-4791-ad2e-b9bcfa058e8f,Reena Bhardwaj
 3c422d92-b86b-4e58-86f5-7e80fe63940b,Udit Narayan
 3c422d92-b86b-4e58-86f5-7e80fe63940b,Master Vignesh
 3c422d92-b86b-4e58-86f5-7e80fe63940b,Baby Pooja
@@ -4008,6 +4073,7 @@ a76d21b7-e7d6-4a33-ac08-2eda28bffd86,Shahul Hameed
 1ed15f60-c6e5-4ccd-958b-dfb835943de8,K. S. Chithra
 1ed15f60-c6e5-4ccd-958b-dfb835943de8,Srinivas
 6f84ba16-fc9a-4586-a66a-0b1c5d49b86f,Rashid Ali
+4ffe7356-4d48-423c-b52a-05554aa84c70,Shankar Mahadevan
 4f7e3e99-7631-4ba4-85ce-3385e782eb55,K. S. Chithra
 4f7e3e99-7631-4ba4-85ce-3385e782eb55,Srinivas
 6f76dfe0-d6b0-4cdc-a8d2-f8a6bc467360,A. R. Rahman
@@ -4017,9 +4083,14 @@ d38aa3fc-36a7-48a0-865f-03b0bf07dc9d,Mano
 c6869d4b-46bb-4e40-99cc-bd482903b8f9,S. P. Balasubrahmanyam
 c6869d4b-46bb-4e40-99cc-bd482903b8f9,S. Janaki
 f858b318-ee4a-4166-838a-d6f5a3f66cc5,A. R. Rahman
+4df20a95-3054-42d2-adeb-7f38fa9823fc,Udit Narayan
+4df20a95-3054-42d2-adeb-7f38fa9823fc,Hariharan
+4df20a95-3054-42d2-adeb-7f38fa9823fc,Kailash Kher
 46a7394e-9b7c-4bda-a9af-49d81d0da1e0,Udit Narayan
 46a7394e-9b7c-4bda-a9af-49d81d0da1e0,Hariharan
 46a7394e-9b7c-4bda-a9af-49d81d0da1e0,Kailash Kher
+d048c96e-de28-43dd-992a-fb51d99cc389,Asha Bhosle
+d048c96e-de28-43dd-992a-fb51d99cc389,Deena Chandra Das
 2cd81514-615b-41d2-b1e0-d22b1d6e0016,A. R. Rahman
 2cd81514-615b-41d2-b1e0-d22b1d6e0016,RAFI
 2cd81514-615b-41d2-b1e0-d22b1d6e0016,Rakeeb
@@ -4031,6 +4102,7 @@ f858b318-ee4a-4166-838a-d6f5a3f66cc5,A. R. Rahman
 1c5228fd-b571-4e42-b562-92658c6e8586,Karthik
 1c5228fd-b571-4e42-b562-92658c6e8586,Raquib
 802e1e4c-46dd-49b5-88b7-ee5ca1e34947,Javed Ali
+acff3f04-069f-4883-8a22-97c8e83b771b,Malgudi Subha
 e1299622-8676-405a-9d0a-4ae7f2528e2f,Plastic Bertrand
 e7c14761-493e-498b-aee1-5e85c1716661,K. S. Chithra
 e7c14761-493e-498b-aee1-5e85c1716661,Udit Narayan

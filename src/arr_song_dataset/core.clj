@@ -64,11 +64,14 @@
 (defn remove-compilations
   "remove albums that are marked as compilations"
   [rel-list]
-  (let [filt-fn (fn[rel] (some #(= "compilation" %)
-                               (map #(.toLowerCase %) (-> rel :release-group :secondary-types))))]
+  (let [filt-fn (fn[rel]
+                  (let [sec-types  (map keyword (map #(.toLowerCase %) (-> rel :release-group :secondary-types)))
+                        ret (some #{:compilation :remix :live} sec-types)]
+                    (println " ret " ret " for  sec-types " sec-types " class " (class sec-types))
+                    ret))]
     (vec (remove filt-fn rel-list))))
 
-(defn get-tracks-in-media
+#_(defn get-tracks-in-media
   "get all the tracks in all :media entries"
   [rel-list]
   (->> rel-list
@@ -140,6 +143,7 @@
   "remove duplicate recordings and songs"
   [arr-rel-list json-file]
   (->> arr-rel-list
+       remove-compilations
        (map #(let [release-id (:id %)
                    rel-title (:title %)
                    stype (-> % :release-group :secondary-types)
@@ -297,7 +301,7 @@
         cols [:id :title :date :rel-title :rel-id]
         table-data
         (->> (remove-songs-with-identical-singers rtcsvmap recid-singers-maps)
-             (filter #((set (:rel-type %)) "Soundtrack"))
+             ;;(filter #((set (:rel-type %)) "Soundtrack"))
              (map datefn)
              (map #(map (fn[i] (% i)) cols))
              ;;(take 5)
@@ -330,6 +334,17 @@
              (clojure.string/join "\n"))]
     (spit singers-csv (str (clojure.string/join "," ["song_id" "singer"]) "\n" table-data ))))
 
+(defn regenerate
+  [arr-releases-json track-details-json]
+  (let [arr-rel-list (json/read-str (slurp arr-releases-json) :key-fn keyword)
+        track-singers-fin (json/read-str (slurp track-details-json) :key-fn keyword)]
+    (save-song-table track-singers-fin "songtable.csv")
+    (save-recordings-table arr-rel-list "arrrecordingtable.json")
+
+    (save-recording-soundtracks "arrrecordingtable.json" track-singers-fin "data/recordings.csv")
+
+    (save-singers-table track-singers-fin "data/recordings.csv" "data/singers.csv")))
+
 ;;download and save all releases
 ;;(save-releases arr-artist-id "./arr-releases-5471.json")
 
@@ -349,3 +364,5 @@
 ;;(save-recording-soundtracks "arrrecordingtable.json" track-singers-fin "data/recordings.csv")
 
 ;;(save-singers-table track-singers-fin "data/recordings.csv" "data/singers.csv")
+
+;;(regenerate "./arr-releases-5471.json" "./arr-track-details.json")
