@@ -300,20 +300,23 @@
                                            (do
                                              (println " failed to parse " (:rel-evt-date i)
                                                       " : " (:first-release-date i)
-                                                      i  )
-                                             nil)))))))))]
+                                                      i  ) nil)))))))))]
                  (assoc i :date (if dt (.format sdf dt) "-"))))
         cols [:id :title :date :rel-title :rel-id]
         table-data
         (->> (remove-songs-with-identical-singers rtcsvmap recid-singers-maps)
              (map datefn)
+             (map #(assoc % :title
+                          (if (.startsWith (:title %) "\"")
+                            (:title %)
+                            (str "\"" (.replace (:title %)"\"" "") "\""))))
              (map #(map (fn[i] (% i)) cols))
              ;;(take 5)
              (map #(clojure.string/join "," %))
              (clojure.string/join "\n"))]
     (spit rec-wo-duplicates-csv
           (str (clojure.string/join ","
-                                    (map name [:song_id :title :date :movie :release_id])) "\n" table-data ))))
+                                    (map name [:song_id :song :date :movie :release_id])) "\n" table-data ))))
 
 ;;(save-recording-soundtracks "arrrecordingtable.json" track-singers-fin "recordingtable_wo_dupl_singers2.csv")
 
