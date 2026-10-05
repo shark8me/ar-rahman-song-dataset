@@ -1,0 +1,1268 @@
+{
+ "1": {
+  "query": "How many albums has Rahman released?",
+  "heads": {
+   "select_cols": [],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "10"
+   ]
+  },
+  "values": {},
+  "sql": "SELECT COUNT(DISTINCT s1.song_id) FROM songs s1 LIMIT 10",
+  "predicted": [
+   "2358"
+  ],
+  "error": null,
+  "feasible": true,
+  "t_classify": 1.901,
+  "violations": []
+ },
+ "2": {
+  "query": "How many movies has Rahman released?",
+  "heads": {
+   "select_cols": [],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "10"
+   ]
+  },
+  "values": {},
+  "sql": "SELECT COUNT(DISTINCT s1.song_id) FROM songs s1 LIMIT 10",
+  "predicted": [
+   "2358"
+  ],
+  "error": null,
+  "feasible": true,
+  "t_classify": 2.224,
+  "violations": []
+ },
+ "3": {
+  "query": "When was Rahman's first album released?",
+  "heads": {
+   "select_cols": [],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "10"
+   ]
+  },
+  "values": {},
+  "sql": "SELECT COUNT(DISTINCT s1.song_id) FROM songs s1 LIMIT 10",
+  "predicted": [
+   "2358"
+  ],
+  "error": null,
+  "feasible": true,
+  "t_classify": 1.841,
+  "violations": []
+ },
+ "4": {
+  "query": "When was Rahman's last album released?",
+  "heads": {
+   "select_cols": [],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "10"
+   ]
+  },
+  "values": {},
+  "sql": "SELECT COUNT(DISTINCT s1.song_id) FROM songs s1 LIMIT 10",
+  "predicted": [
+   "2358"
+  ],
+  "error": null,
+  "feasible": true,
+  "t_classify": 1.891,
+  "violations": []
+ },
+ "5": {
+  "query": "What was the name of Rahman's first album?",
+  "heads": {
+   "select_cols": [],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "10"
+   ]
+  },
+  "values": {},
+  "sql": "SELECT COUNT(DISTINCT s1.song_id) FROM songs s1 LIMIT 10",
+  "predicted": [
+   "2358"
+  ],
+  "error": null,
+  "feasible": true,
+  "t_classify": 2.027,
+  "violations": []
+ },
+ "6": {
+  "query": "What was the name of Rahman's second album?",
+  "heads": {
+   "select_cols": [],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "10"
+   ]
+  },
+  "values": {},
+  "sql": "SELECT COUNT(DISTINCT s1.song_id) FROM songs s1 LIMIT 10",
+  "predicted": [
+   "2358"
+  ],
+  "error": null,
+  "feasible": true,
+  "t_classify": 1.914,
+  "violations": []
+ },
+ "7": {
+  "query": "What was the name of Rahman's last album?",
+  "heads": {
+   "select_cols": [],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "10"
+   ]
+  },
+  "values": {},
+  "sql": "SELECT COUNT(DISTINCT s1.song_id) FROM songs s1 LIMIT 10",
+  "predicted": [
+   "2358"
+  ],
+  "error": null,
+  "feasible": true,
+  "t_classify": 1.91,
+  "violations": []
+ },
+ "8": {
+  "query": "When was the album Jodhaa Akbar released?",
+  "heads": {
+   "select_cols": [],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "10"
+   ]
+  },
+  "values": {},
+  "sql": "SELECT COUNT(DISTINCT s1.song_id) FROM songs s1 LIMIT 10",
+  "predicted": [
+   "2358"
+  ],
+  "error": null,
+  "feasible": true,
+  "t_classify": 1.858,
+  "violations": []
+ },
+ "9": {
+  "query": "How many artists has Rahman collaborated with?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "10"
+   ]
+  },
+  "values": {},
+  "sql": "SELECT COUNT(DISTINCT s2.name) FROM songs s1 JOIN singers s2 ON s1.song_id = s2.song_id LIMIT 10",
+  "predicted": [
+   "597"
+  ],
+  "error": null,
+  "feasible": true,
+  "t_classify": 1.802,
+  "violations": []
+ },
+ "10": {
+  "query": "How many singers has Rahman collaborated with?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "10"
+   ]
+  },
+  "values": {},
+  "sql": "SELECT COUNT(DISTINCT s2.name) FROM songs s1 JOIN singers s2 ON s1.song_id = s2.song_id LIMIT 10",
+  "predicted": [
+   "597"
+  ],
+  "error": null,
+  "feasible": true,
+  "t_classify": 1.801,
+  "violations": []
+ },
+ "11": {
+  "query": "How many songs are there in the movie Roja?",
+  "heads": {
+   "select_cols": [],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "10"
+   ]
+  },
+  "values": {},
+  "sql": "SELECT COUNT(DISTINCT s1.song_id) FROM songs s1 LIMIT 10",
+  "predicted": [
+   "2358"
+  ],
+  "error": null,
+  "feasible": true,
+  "t_classify": 1.809,
+  "violations": []
+ },
+ "12": {
+  "query": "Which singer sang the song Roja Jaaneman?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "10"
+   ]
+  },
+  "values": {},
+  "sql": "SELECT DISTINCT s2.name FROM songs s1 JOIN singers s2 ON s1.song_id = s2.song_id LIMIT 10",
+  "predicted": [
+   "Aditya",
+   "Aparna Narayanan",
+   "Chinmayi",
+   "Dinesh Kanagaratnam",
+   "Haricharan",
+   "Sathyaprakash",
+   "Shashaa Tirupati",
+   "Sid Sriram",
+   "Sri Rascol",
+   "Vijay Prakash"
+  ],
+  "error": null,
+  "feasible": true,
+  "t_classify": 1.984,
+  "violations": []
+ },
+ "13": {
+  "query": "When was the song Roja Jaaneman released?",
+  "heads": {
+   "select_cols": [],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "10"
+   ]
+  },
+  "values": {},
+  "sql": "SELECT COUNT(DISTINCT s1.song_id) FROM songs s1 LIMIT 10",
+  "predicted": [
+   "2358"
+  ],
+  "error": null,
+  "feasible": true,
+  "t_classify": 1.907,
+  "violations": []
+ },
+ "14": {
+  "query": "How many artists performed the song Aadi Paaru Mangaatha?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "10"
+   ]
+  },
+  "values": {},
+  "sql": "SELECT COUNT(DISTINCT s2.name) FROM songs s1 JOIN singers s2 ON s1.song_id = s2.song_id LIMIT 10",
+  "predicted": [
+   "597"
+  ],
+  "error": null,
+  "feasible": true,
+  "t_classify": 1.909,
+  "violations": []
+ },
+ "15": {
+  "query": "who sang song Aadi Paaru Mangaatha?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "10"
+   ]
+  },
+  "values": {},
+  "sql": "SELECT DISTINCT s2.name FROM songs s1 JOIN singers s2 ON s1.song_id = s2.song_id LIMIT 10",
+  "predicted": [
+   "Aditya",
+   "Aparna Narayanan",
+   "Chinmayi",
+   "Dinesh Kanagaratnam",
+   "Haricharan",
+   "Sathyaprakash",
+   "Shashaa Tirupati",
+   "Sid Sriram",
+   "Sri Rascol",
+   "Vijay Prakash"
+  ],
+  "error": null,
+  "feasible": true,
+  "t_classify": 1.929,
+  "violations": []
+ },
+ "16": {
+  "query": "Who are artist Rahman's top 5 collaborators?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "singer"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "count_desc"
+   ],
+   "limit": [
+    "10"
+   ]
+  },
+  "values": {
+   "n": 5
+  },
+  "sql": "SELECT s2.name, COUNT(*) AS cnt FROM songs s1 JOIN singers s2 ON s1.song_id = s2.song_id GROUP BY s2.name ORDER BY cnt DESC, s2.name ASC LIMIT 10",
+  "predicted": [
+   [
+    "A. R. Rahman",
+    "901"
+   ],
+   [
+    "Hariharan",
+    "80"
+   ],
+   [
+    "K. S. Chithra",
+    "113"
+   ],
+   [
+    "Karthik",
+    "56"
+   ],
+   [
+    "Mano",
+    "63"
+   ],
+   [
+    "S. P. Balasubrahmanyam",
+    "148"
+   ],
+   [
+    "Shreya Ghoshal",
+    "58"
+   ],
+   [
+    "Srinivas",
+    "64"
+   ],
+   [
+    "Sujatha",
+    "80"
+   ],
+   [
+    "Swarnalatha",
+    "63"
+   ]
+  ],
+  "error": null,
+  "feasible": true,
+  "t_classify": 1.982,
+  "violations": []
+ },
+ "17": {
+  "query": "How many movies did Rahman release in 1999?",
+  "heads": {
+   "select_cols": [],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "10"
+   ]
+  },
+  "values": {
+   "year": "1999"
+  },
+  "sql": "SELECT COUNT(DISTINCT s1.song_id) FROM songs s1 LIMIT 10",
+  "predicted": [
+   "2358"
+  ],
+  "error": null,
+  "feasible": true,
+  "t_classify": 1.962,
+  "violations": []
+ },
+ "18": {
+  "query": "List the albums that Rahman released in 1999.",
+  "heads": {
+   "select_cols": [],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "10"
+   ]
+  },
+  "values": {
+   "year": "1999"
+  },
+  "sql": "SELECT DISTINCT s1.song_id FROM songs s1 LIMIT 10",
+  "predicted": [
+   "58161c4f-2dda-4ec8-8bf2-571f300a3f17",
+   "77171abc-f704-436f-8acf-7a1e8802296f",
+   "794f7c8e-da8b-4b13-ab6d-9be32949b265",
+   "a2666d5c-4b82-4ac0-9711-d47f087ad4be",
+   "b8a61399-95de-464e-a4d2-bc53d25f3d4a",
+   "b98be30c-aace-4e4f-9d92-ca3e8f6c830a",
+   "bb64365c-cd6c-438c-9e8a-c8aba0c58314",
+   "cb3c3322-977d-4e1a-8148-49f6a17c2fca",
+   "df86ad2d-9412-43e9-a2c7-fcfb15947c9e",
+   "e4ecd5ab-ac67-4dfd-891d-6eb5d69fd7a0"
+  ],
+  "error": null,
+  "feasible": true,
+  "t_classify": 1.965,
+  "violations": []
+ },
+ "19": {
+  "query": "Who are the singers in movie Delhi-6?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "10"
+   ]
+  },
+  "values": {},
+  "sql": "SELECT DISTINCT s2.name FROM songs s1 JOIN singers s2 ON s1.song_id = s2.song_id LIMIT 10",
+  "predicted": [
+   "Aditya",
+   "Aparna Narayanan",
+   "Chinmayi",
+   "Dinesh Kanagaratnam",
+   "Haricharan",
+   "Sathyaprakash",
+   "Shashaa Tirupati",
+   "Sid Sriram",
+   "Sri Rascol",
+   "Vijay Prakash"
+  ],
+  "error": null,
+  "feasible": true,
+  "t_classify": 2.009,
+  "violations": []
+ },
+ "20": {
+  "query": "Who are the singers for the song Aaromale",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "10"
+   ]
+  },
+  "values": {},
+  "sql": "SELECT DISTINCT s2.name FROM songs s1 JOIN singers s2 ON s1.song_id = s2.song_id LIMIT 10",
+  "predicted": [
+   "Aditya",
+   "Aparna Narayanan",
+   "Chinmayi",
+   "Dinesh Kanagaratnam",
+   "Haricharan",
+   "Sathyaprakash",
+   "Shashaa Tirupati",
+   "Sid Sriram",
+   "Sri Rascol",
+   "Vijay Prakash"
+  ],
+  "error": null,
+  "feasible": true,
+  "t_classify": 2.091,
+  "violations": []
+ },
+ "21": {
+  "query": "Who collaborated with singer Mathangi on song Aaha Tamizhamma?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "10"
+   ]
+  },
+  "values": {
+   "singer": "Mathangi"
+  },
+  "sql": "SELECT DISTINCT s2.name FROM songs s1 JOIN singers s2 ON s1.song_id = s2.song_id LIMIT 10",
+  "predicted": [
+   "Aditya",
+   "Aparna Narayanan",
+   "Chinmayi",
+   "Dinesh Kanagaratnam",
+   "Haricharan",
+   "Sathyaprakash",
+   "Shashaa Tirupati",
+   "Sid Sriram",
+   "Sri Rascol",
+   "Vijay Prakash"
+  ],
+  "error": null,
+  "feasible": true,
+  "t_classify": 2.033,
+  "violations": []
+ },
+ "22": {
+  "query": "How many movies did Rahman compose for?",
+  "heads": {
+   "select_cols": [],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "10"
+   ]
+  },
+  "values": {},
+  "sql": "SELECT COUNT(DISTINCT s1.song_id) FROM songs s1 LIMIT 10",
+  "predicted": [
+   "2358"
+  ],
+  "error": null,
+  "feasible": true,
+  "t_classify": 2.011,
+  "violations": []
+ },
+ "23": {
+  "query": "List the film soundtracks that Rahman has composed.",
+  "heads": {
+   "select_cols": [],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "10"
+   ]
+  },
+  "values": {},
+  "sql": "SELECT DISTINCT s1.song_id FROM songs s1 LIMIT 10",
+  "predicted": [
+   "58161c4f-2dda-4ec8-8bf2-571f300a3f17",
+   "77171abc-f704-436f-8acf-7a1e8802296f",
+   "794f7c8e-da8b-4b13-ab6d-9be32949b265",
+   "a2666d5c-4b82-4ac0-9711-d47f087ad4be",
+   "b8a61399-95de-464e-a4d2-bc53d25f3d4a",
+   "b98be30c-aace-4e4f-9d92-ca3e8f6c830a",
+   "bb64365c-cd6c-438c-9e8a-c8aba0c58314",
+   "cb3c3322-977d-4e1a-8148-49f6a17c2fca",
+   "df86ad2d-9412-43e9-a2c7-fcfb15947c9e",
+   "e4ecd5ab-ac67-4dfd-891d-6eb5d69fd7a0"
+  ],
+  "error": null,
+  "feasible": true,
+  "t_classify": 1.979,
+  "violations": []
+ },
+ "24": {
+  "query": "List the songs in the film The Gentleman",
+  "heads": {
+   "select_cols": [],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "10"
+   ]
+  },
+  "values": {},
+  "sql": "SELECT DISTINCT s1.song_id FROM songs s1 LIMIT 10",
+  "predicted": [
+   "58161c4f-2dda-4ec8-8bf2-571f300a3f17",
+   "77171abc-f704-436f-8acf-7a1e8802296f",
+   "794f7c8e-da8b-4b13-ab6d-9be32949b265",
+   "a2666d5c-4b82-4ac0-9711-d47f087ad4be",
+   "b8a61399-95de-464e-a4d2-bc53d25f3d4a",
+   "b98be30c-aace-4e4f-9d92-ca3e8f6c830a",
+   "bb64365c-cd6c-438c-9e8a-c8aba0c58314",
+   "cb3c3322-977d-4e1a-8148-49f6a17c2fca",
+   "df86ad2d-9412-43e9-a2c7-fcfb15947c9e",
+   "e4ecd5ab-ac67-4dfd-891d-6eb5d69fd7a0"
+  ],
+  "error": null,
+  "feasible": true,
+  "t_classify": 1.968,
+  "violations": []
+ },
+ "25": {
+  "query": "Which film is the song Agar Tum Saath Ho in?",
+  "heads": {
+   "select_cols": [],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "10"
+   ]
+  },
+  "values": {},
+  "sql": "SELECT COUNT(DISTINCT s1.song_id) FROM songs s1 LIMIT 10",
+  "predicted": [
+   "2358"
+  ],
+  "error": null,
+  "feasible": true,
+  "t_classify": 2.001,
+  "violations": []
+ },
+ "26": {
+  "query": "Which year was the song Alaipayuthey released?",
+  "heads": {
+   "select_cols": [],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "10"
+   ]
+  },
+  "values": {},
+  "sql": "SELECT COUNT(DISTINCT s1.song_id) FROM songs s1 LIMIT 10",
+  "predicted": [
+   "2358"
+  ],
+  "error": null,
+  "feasible": true,
+  "t_classify": 1.965,
+  "violations": []
+ },
+ "27": {
+  "query": "list all the singers who sang for the movie Alaipayuthey",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "10"
+   ]
+  },
+  "values": {},
+  "sql": "SELECT DISTINCT s2.name FROM songs s1 JOIN singers s2 ON s1.song_id = s2.song_id LIMIT 10",
+  "predicted": [
+   "Aditya",
+   "Aparna Narayanan",
+   "Chinmayi",
+   "Dinesh Kanagaratnam",
+   "Haricharan",
+   "Sathyaprakash",
+   "Shashaa Tirupati",
+   "Sid Sriram",
+   "Sri Rascol",
+   "Vijay Prakash"
+  ],
+  "error": null,
+  "feasible": true,
+  "t_classify": 2.132,
+  "violations": []
+ },
+ "28": {
+  "query": "List all songs that the singer Sid Sriram sang in 2016",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "10"
+   ]
+  },
+  "values": {
+   "year": "2016",
+   "singer": "Sid Sriram"
+  },
+  "sql": "SELECT DISTINCT s2.name FROM songs s1 JOIN singers s2 ON s1.song_id = s2.song_id WHERE substr(s1.date,1,4) LIKE '2016%' LIMIT 10",
+  "predicted": [
+   "Aditya",
+   "Aparna Narayanan",
+   "Chinmayi",
+   "Dinesh Kanagaratnam",
+   "Haricharan",
+   "Sathyaprakash",
+   "Shashaa Tirupati",
+   "Sid Sriram",
+   "Sri Rascol",
+   "Vijay Prakash"
+  ],
+  "error": null,
+  "feasible": true,
+  "t_classify": 2.056,
+  "violations": []
+ },
+ "29": {
+  "query": "Which singers sang for Rahman in the year 2016",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "10"
+   ]
+  },
+  "values": {
+   "year": "2016"
+  },
+  "sql": "SELECT DISTINCT s2.name FROM songs s1 JOIN singers s2 ON s1.song_id = s2.song_id WHERE substr(s1.date,1,4) LIKE '2016%' LIMIT 10",
+  "predicted": [
+   "Aditya",
+   "Aparna Narayanan",
+   "Chinmayi",
+   "Dinesh Kanagaratnam",
+   "Haricharan",
+   "Sathyaprakash",
+   "Shashaa Tirupati",
+   "Sid Sriram",
+   "Sri Rascol",
+   "Vijay Prakash"
+  ],
+  "error": null,
+  "feasible": true,
+  "t_classify": 2.073,
+  "violations": []
+ },
+ "30": {
+  "query": "How many singers sang for Rahman in 2016",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "title"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "10"
+   ]
+  },
+  "values": {
+   "year": "2016"
+  },
+  "sql": "SELECT COUNT(DISTINCT s2.name) FROM songs s1 JOIN singers s2 ON s1.song_id = s2.song_id LIMIT 10",
+  "predicted": [
+   "597"
+  ],
+  "error": null,
+  "feasible": true,
+  "t_classify": 2.044,
+  "violations": []
+ },
+ "31": {
+  "query": "Which year did Rahman compose the most movies?",
+  "heads": {
+   "select_cols": [],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "10"
+   ]
+  },
+  "values": {},
+  "sql": "SELECT COUNT(DISTINCT s1.song_id) FROM songs s1 LIMIT 10",
+  "predicted": [
+   "2358"
+  ],
+  "error": null,
+  "feasible": true,
+  "t_classify": 2.145,
+  "violations": []
+ },
+ "_meta": {
+  "use_constraints": true,
+  "use_fuzzy": true,
+  "total_time": 61.23,
+  "gold_count": 31,
+  "adapter": "results/lora/final"
+ }
+}

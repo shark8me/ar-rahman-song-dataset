@@ -21,9 +21,24 @@ def pred_labels(result, task):
     return list(tr.labels)
 
 
-def run(use_constraints=True, use_fuzzy=True):
+def build_finetuned_classifier(adapter_dir, map_location="cpu"):
+    """Load base model + PEFT LoRA adapter saved by finetune.py."""
+    import torch
+    from gliner2 import AutoExtractor
+    from peft import PeftModel
+    from gliner2.classification import Classifier
+    base = AutoExtractor.from_pretrained("fastino/GLiNER2.5-Decide")
+    model = PeftModel.from_pretrained(base, adapter_dir)
+    model.float()
+    return Classifier(model).eval()
+
+
+def run(use_constraints=True, use_fuzzy=True, adapter=None):
     gold = [json.loads(l) for l in open(os.path.join(HERE, 'gold.jsonl'))]
-    clf = build_classifier()
+    if adapter:
+        clf = build_finetuned_classifier(adapter)
+    else:
+        clf = build_classifier()
     schema = build_schema(use_constraints=use_constraints)
     conn = sqlite3.connect(DB)
     fdict = _FuzzyDict(conn)
@@ -66,6 +81,7 @@ def run(use_constraints=True, use_fuzzy=True):
         "use_constraints": use_constraints, "use_fuzzy": use_fuzzy,
         "total_time": round(time.time() - t0, 2),
         "gold_count": len(gold),
+        "adapter": adapter,
     }
     conn.close()
     return outputs
@@ -77,8 +93,10 @@ def main():
     ap.add_argument("--no-constraints", action="store_true")
     ap.add_argument("--no-fuzzy", action="store_true")
     ap.add_argument("--out", default=None)
+    ap.add_argument("--adapter", default=None, help="LoRA adapter dir from finetune.py")
     a = ap.parse_args()
-    res = run(use_constraints=not a.no_constraints, use_fuzzy=not a.no_fuzzy)
+    res = run(use_constraints=not a.no_constraints, use_fuzzy=not a.no_fuzzy,
+              adapter=a.adapter)
     out_path = a.out or os.path.join(HERE, "results", f"pred_{a.run}.json")
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
     with open(out_path, 'w') as f:

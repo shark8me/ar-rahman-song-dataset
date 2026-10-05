@@ -16,6 +16,8 @@ HEAD_ORDER = ["select_cols", "filter_col", "filter_op", "agg", "group_by", "join
 
 
 def norm(label_list):
+    if isinstance(label_list, str):
+        label_list = [label_list]  # gold single-label heads are bare strings
     return sorted(label_list)
 
 

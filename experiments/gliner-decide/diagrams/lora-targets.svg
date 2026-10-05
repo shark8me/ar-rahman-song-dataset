@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif">
+  <rect width="960" height="600" fill="#14171d"/>
+  <text x="480" y="30" text-anchor="middle" fill="#e8ebf2" font-size="17" font-weight="600">A4 fine-tune — what was frozen, what was trained, and what for</text>
+
+  <!-- left: model blocks -->
+  <text x="250" y="58" text-anchor="middle" fill="#8b93a7" font-size="13" font-weight="600">Model blocks (494.4M params total)</text>
+
+  <g font-size="12">
+    <!-- frozen encoder core -->
+    <rect x="40" y="70" width="420" height="120" rx="8" fill="#1d2330" stroke="#3a4150"/>
+    <text x="250" y="92" text-anchor="middle" fill="#8b93a7" font-weight="600">DeBERTa-v3-large encoder (24 layers)</text>
+    <rect x="60" y="104" width="180" height="30" rx="4" fill="#222835" stroke="#3a4150"/>
+    <text x="150" y="123" text-anchor="middle" fill="#7c8496">base weights — FROZEN ❄</text>
+    <rect x="260" y="104" width="180" height="30" rx="4" fill="#22301f" stroke="#3f7a4e"/>
+    <text x="350" y="123" text-anchor="middle" fill="#4fc38a">LoRA r=16 α=32 on q,k,v,dense 🔥</text>
+    <text x="250" y="158" text-anchor="middle" fill="#7c8496" font-size="11">LoRA adapts attention/FFN projections without touching the frozen base weights</text>
+    <text x="250" y="176" text-anchor="middle" fill="#7c8496" font-size="11">so the 340M pretrained-language prior is preserved</text>
+  </g>
+
+  <g font-size="12">
+    <rect x="40" y="200" width="420" height="54" rx="8" fill="#1d2330" stroke="#3a4150"/>
+    <text x="250" y="221" text-anchor="middle" fill="#8b93a7">span representation layers — LoRA 🔥 (part of target group)</text>
+    <text x="250" y="240" text-anchor="middle" fill="#7c8496" font-size="11">linear projections feeding per-task query representations</text>
+
+    <rect x="40" y="264" width="420" height="54" rx="8" fill="#1d2330" stroke="#3a4150"/>
+    <text x="250" y="285" text-anchor="middle" fill="#8b93a7">classifier head linears — LoRA 🔥 (the main learners)</text>
+    <text x="250" y="304" text-anchor="middle" fill="#7c8496" font-size="11">per-task scoring of each label in each of the 8 heads</text>
+
+    <rect x="40" y="328" width="420" height="54" rx="8" fill="#1d2330" stroke="#3a4150"/>
+    <text x="250" y="349" text-anchor="middle" fill="#8b93a7">count embed (LSTM) + count pred — LoRA 🔥</text>
+    <text x="250" y="368" text-anchor="middle" fill="#7c8496" font-size="11">used for span-count calibration; minimal role in this task</text>
+
+    <rect x="40" y="392" width="420" height="50" rx="8" fill="#1d2330" stroke="#3a4150"/>
+    <text x="250" y="413" text-anchor="middle" fill="#8b93a7">constrained decoder + renderer + SQLite — NOT part of the model</text>
+    <text x="250" y="431" text-anchor="middle" fill="#7c8496" font-size="11">unchanged, deterministic code paths</text>
+  </g>
+
+  <rect x="40" y="456" width="420" height="60" rx="8" fill="#22301f" stroke="#3f7a4e"/>
+  <text x="250" y="478" text-anchor="middle" fill="#4fc38a" font-size="12.5" font-weight="600">Trainable: 7,930,192 LoRA params (1.6% of model)</text>
+  <text x="250" y="497" text-anchor="middle" fill="#7c8496" font-size="11">AdamW, task_lr 5e-4 (run 3), cosine schedule, 30 epochs, batch 2, CPU</text>
+
+  <!-- right: heads table -->
+  <text x="740" y="58" text-anchor="middle" fill="#8b93a7" font-size="13" font-weight="600">The 8 classification heads — what each was trained to decide</text>
+
+  <g font-size="11.5">
+    <rect x="510" y="70" width="420" height="27" fill="#1d2330"/>
+    <text x="520" y="88" fill="#5b6472">head · type</text>
+    <text x="700" y="88" fill="#5b6472">decision it learns · zero-shot → fine-tuned</text>
+    <line x1="510" y1="97" x2="930" y2="97" stroke="#2a2f3a"/>
+
+    <text x="520" y="115" fill="#c9d2e4" font-family="ui-monospace,monospace">select_cols · multi</text>
+    <text x="700" y="115" fill="#8b93a7">which columns to return · 39% → 100%</text>
+    <text x="520" y="143" fill="#c9d2e4" font-family="ui-monospace,monospace">filter_col · single</text>
+    <text x="700" y="143" fill="#8b93a7">what to filter on (title/movie/year) · 16% → 58%</text>
+    <text x="520" y="171" fill="#c9d2e4" font-family="ui-monospace,monospace">filter_op · single</text>
+    <text x="700" y="171" fill="#8b93a7">like vs year_eq vs none · 16% → 58%</text>
+    <text x="520" y="199" fill="#c9d2e4" font-family="ui-monospace,monospace">agg · single</text>
+    <text x="700" y="199" fill="#8b93a7">count / min / max / none · 36% → 100%</text>
+    <text x="520" y="227" fill="#c9d2e4" font-family="ui-monospace,monospace">group_by · single</text>
+    <text x="700" y="227" fill="#8b93a7">group by singer/year/none · 7% → 100%</text>
+    <text x="520" y="255" fill="#c9d2e4" font-family="ui-monospace,monospace">join · multi</text>
+    <text x="700" y="255" fill="#8b93a7">needs songs↔singers join? · 42% → 100%</text>
+    <text x="520" y="283" fill="#c9d2e4" font-family="ui-monospace,monospace">order · single</text>
+    <text x="700" y="283" fill="#8b93a7">date asc/desc, count desc · 7% → 97%</text>
+    <text x="520" y="311" fill="#c9d2e4" font-family="ui-monospace,monospace">limit · single</text>
+    <text x="700" y="311" fill="#8b93a7">top-N (1/5/…) or none · 61% → 97%</text>
+
+    <line x1="510" y1="325" x2="930" y2="325" stroke="#2a2f3a"/>
+    <text x="520" y="346" fill="#4fc38a" font-weight="600">Training signal</text>
+    <text x="700" y="346" fill="#8b93a7" font-size="11">gold.jsonl: 25 questions × 8 gold labels each</text>
+    <text x="520" y="368" fill="#8b93a7" font-size="11">loss = sum over 8 tasks of per-label classification loss</text>
+  </g>
+
+  <rect x="510" y="390" width="420" height="126" rx="8" fill="#33241f" stroke="#8a5a3f"/>
+  <text x="520" y="412" fill="#e0a06c" font-size="12.5" font-weight="600">Result after fine-tuning</text>
+  <text x="520" y="433" fill="#8b93a7" font-size="11.5">6 of 8 heads learn to ~100% (many are small closed sets the</text>
+  <text x="520" y="450" fill="#8b93a7" font-size="11.5">encoder generalizes easily). filter_col/filter_op stall at 58%:</text>
+  <text x="520" y="467" fill="#8b93a7" font-size="11.5">on unseen "song X" questions the model defaults to year_eq</text>
+  <text x="520" y="484" fill="#8b93a7" font-size="11.5">instead of title+LIKE. Held-out EA 0/6 — needs more varied</text>
+  <text x="520" y="501" fill="#8b93a7" font-size="11.5">filter examples, not more epochs.</text>
+
+  <text x="40" y="570" fill="#5b6472" font-size="11">❄ frozen (requires_grad=False) · 🔥 LoRA adapter trained (see gliner2 lora_target_groups: encoder, span_rep, classifier, count_embed, count_pred)</text>
+</svg>

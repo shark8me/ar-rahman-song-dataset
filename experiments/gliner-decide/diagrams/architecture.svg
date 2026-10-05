@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#5b6472"/>
+    </marker>
+  </defs>
+  <rect width="960" height="560" fill="#14171d"/>
+  <text x="480" y="30" text-anchor="middle" fill="#e8ebf2" font-size="17" font-weight="600">GLiNER2.5-Decide — how a question becomes a SQL skeleton</text>
+
+  <!-- input -->
+  <rect x="30" y="70" width="200" height="70" rx="8" fill="#1d2330" stroke="#34405a"/>
+  <text x="130" y="95" text-anchor="middle" fill="#7fb3ff" font-size="13" font-weight="600">Natural-language question</text>
+  <text x="130" y="115" text-anchor="middle" fill="#8b93a7" font-size="12">"Who sang the song</text>
+  <text x="130" y="130" text-anchor="middle" fill="#8b93a7" font-size="12">Aadi Paaru Mangaatha?"</text>
+  <line x1="230" y1="105" x2="268" y2="105" stroke="#5b6472" stroke-width="1.4" marker-end="url(#arr)"/>
+
+  <!-- tokenizer -->
+  <rect x="270" y="80" width="110" height="50" rx="8" fill="#1d2330" stroke="#34405a"/>
+  <text x="325" y="100" text-anchor="middle" fill="#c9d2e4" font-size="12.5">Tokenizer</text>
+  <text x="325" y="118" text-anchor="middle" fill="#8b93a7" font-size="11">DeBERTa-v3 BPE</text>
+  <line x1="380" y1="105" x2="418" y2="105" stroke="#5b6472" stroke-width="1.4" marker-end="url(#arr)"/>
+
+  <!-- encoder -->
+  <rect x="420" y="60" width="180" height="210" rx="8" fill="#1d2330" stroke="#4c6bab" stroke-width="1.5"/>
+  <text x="510" y="85" text-anchor="middle" fill="#7fb3ff" font-size="13.5" font-weight="600">DeBERTa-v3-large</text>
+  <text x="510" y="102" text-anchor="middle" fill="#8b93a7" font-size="11.5">24 transformer layers · 340M</text>
+  <g fill="#242c3f" stroke="#34405a">
+    <rect x="436" y="115" width="148" height="26" rx="4"/>
+    <rect x="440" y="149" width="140" height="26" rx="4"/>
+    <rect x="440" y="183" width="140" height="26" rx="4"/>
+    <rect x="440" y="217" width="140" height="26" rx="4"/>
+  </g>
+  <g fill="#8b93a7" font-size="10.5" text-anchor="middle">
+    <text x="510" y="132">layer 1 · attn + FFN</text>
+    <text x="510" y="166">layer 2</text>
+    <text x="510" y="200">… layers 3–23 …</text>
+    <text x="510" y="234">layer 24</text>
+  </g>
+  <line x1="600" y1="165" x2="638" y2="165" stroke="#5b6472" stroke-width="1.4" marker-end="url(#arr)"/>
+
+  <!-- pooling + span rep -->
+  <rect x="640" y="90" width="140" height="150" rx="8" fill="#1d2330" stroke="#34405a"/>
+  <text x="710" y="115" text-anchor="middle" fill="#c9d2e4" font-size="12.5" font-weight="600">Token pooling</text>
+  <text x="710" y="132" text-anchor="middle" fill="#8b93a7" font-size="11">(first-token)</text>
+  <rect x="655" y="148" width="110" height="26" rx="4" fill="#242c3f" stroke="#34405a"/>
+  <text x="710" y="165" text-anchor="middle" fill="#8b93a7" font-size="10.5">span representation</text>
+  <rect x="655" y="184" width="110" height="26" rx="4" fill="#242c3f" stroke="#34405a"/>
+  <text x="710" y="201" text-anchor="middle" fill="#8b93a7" font-size="10.5">count embed (LSTM)</text>
+  <line x1="710" y1="240" x2="710" y2="278" stroke="#5b6472" stroke-width="1.4" marker-end="url(#arr)"/>
+
+  <!-- classifier head -->
+  <rect x="600" y="280" width="220" height="60" rx="8" fill="#1d2330" stroke="#4c6bab" stroke-width="1.5"/>
+  <text x="710" y="303" text-anchor="middle" fill="#7fb3ff" font-size="13" font-weight="600">Linear classifier heads</text>
+  <text x="710" y="322" text-anchor="middle" fill="#8b93a7" font-size="11.5">one logit set per task (8 tasks)</text>
+  <line x1="600" y1="310" x2="562" y2="310" stroke="#5b6472" stroke-width="1.4" marker-end="url(#arr)"/>
+
+  <!-- 8 heads -->
+  <g font-size="11.5">
+    <rect x="330" y="292" width="230" height="34" rx="6" fill="#1d2330" stroke="#34405a"/>
+    <text x="340" y="308" fill="#c9d2e4">single-label:</text>
+    <text x="340" y="320" fill="#8b93a7" font-size="10.5">filter_col · filter_op · agg · group_by · order · limit</text>
+    <rect x="330" y="334" width="230" height="34" rx="6" fill="#1d2330" stroke="#34405a"/>
+    <text x="340" y="350" fill="#c9d2e4">multi-label:</text>
+    <text x="340" y="362" fill="#8b93a7" font-size="10.5">select_cols (≤3) · join (songs_singers)</text>
+  </g>
+  <line x1="445" y1="368" x2="445" y2="400" stroke="#5b6472" stroke-width="1.4" marker-end="url(#arr)"/>
+
+  <!-- decoding -->
+  <rect x="290" y="402" width="310" height="58" rx="8" fill="#1d2330" stroke="#8a6c3f"/>
+  <text x="445" y="424" text-anchor="middle" fill="#e0a06c" font-size="12.5" font-weight="600">Constrained decoding (C.implies / C.excludes)</text>
+  <text x="445" y="442" text-anchor="middle" fill="#8b93a7" font-size="11">feasibility filtering + beam over label combinations</text>
+  <line x1="600" y1="431" x2="638" y2="431" stroke="#5b6472" stroke-width="1.4" marker-end="url(#arr)"/>
+
+  <!-- skeleton json -->
+  <rect x="640" y="402" width="300" height="64" rx="8" fill="#1d2330" stroke="#34405a"/>
+  <text x="782" y="422" text-anchor="middle" fill="#4fc38a" font-size="11.5" font-family="ui-monospace,monospace">{select:[singer], filter_col: title,</text>
+  <text x="782" y="438" text-anchor="middle" fill="#4fc38a" font-size="11.5" font-family="ui-monospace,monospace">filter_op: like, agg: none,</text>
+  <text x="782" y="452" text-anchor="middle" fill="#4fc38a" font-size="11.5" font-family="ui-monospace,monospace">join: [songs_singers]}</text>
+
+  <!-- renderer -->
+  <line x1="785" y1="460" x2="785" y2="488" stroke="#5b6472" stroke-width="1.4" marker-end="url(#arr)"/>
+  <rect x="620" y="490" width="330" height="52" rx="8" fill="#1d2330" stroke="#4fc38a"/>
+  <text x="785" y="510" text-anchor="middle" fill="#4fc38a" font-size="12.5" font-weight="600">render.py: skeleton + extracted literals → SQL</text>
+  <text x="785" y="528" text-anchor="middle" fill="#8b93a7" font-size="11">fuzzy LIKE matching · executed on arr.db (SQLite)</text>
+
+  <text x="30" y="548" fill="#5b6472" font-size="11">Zero-shot: only the blue-boxed blocks (encoder, pooling, classifier) are pretrained; nothing was trained on question→clause mapping.</text>
+</svg>
