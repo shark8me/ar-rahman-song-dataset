@@ -1,0 +1,29 @@
+{
+  "work_name": ["album", "movie", "film", "soundtrack", "song", "work"],
+  "filter_col": ["title", "date", "movie_name", "singer", "year"],
+  "filter_op": [
+    {"label": "eq", "description": "exact string equality on the filter column"},
+    {"label": "like", "description": "substring / fuzzy text match (used for entity names)"},
+    {"label": "year_eq", "description": "filter the date column by an exact 4-digit year"},
+    {"label": "between", "description": "date range [start, end)"}
+  ],
+  "agg": [
+    {"label": "count", "description": "COUNT of matching rows / distinct members"},
+    {"label": "min", "description": "earliest date"},
+    {"label": "max", "description": "latest date"},
+    {"label": "none", "description": "no aggregation - return rows or distinct values"}
+  ],
+  "group_by": ["none", "title", "date", "movie_name", "singer", "year", "release_id"],
+  "select_cols": [
+    {"label": "title", "description": "song / recording title"},
+    {"label": "date", "description": "release / recording date"},
+    {"label": "movie_name", "description": "the work (movie, film, album, soundtrack) the song belongs to"},
+    {"label": "singer", "description": "a performer / singer / artist / collaborator name"},
+    {"label": "release_id", "description": "the album / release identifier"}
+  ],
+  "join": [
+    {"label": "songs_singers", "description": "join songs to singers on song_id, required whenever singer is selected or filtered"}
+  ],
+  "order": ["date_asc", "date_desc", "count_desc", "none"],
+  "limit": ["1", "2", "3", "5", "10", "none"]
+}

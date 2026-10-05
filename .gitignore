@@ -10,3 +10,9 @@ pom.xml.asc
 /.nrepl-port
 .hgignore
 .hg/
+
+# GLiNER2-Decide experiment — local artifacts not for VCS
+experiments/gliner-decide/.venv/
+__pycache__/
+*.pyc
+experiments/gliner-decide/arr.db
