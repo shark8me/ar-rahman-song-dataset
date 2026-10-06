@@ -61,6 +61,48 @@
         ikeys [:title :first-release-date :id :artist-credit]]
     song))
 
+;; ---- incremental update by year ------------------------------------------
+;; the browse endpoint used in get-all-releases has no date filter, but the
+;; search endpoint does: arid:<artist> AND date:[<y1>-01-01 TO <y2>-12-31].
+;; search results lack :media, so each new release id is re-fetched with the
+;; full inc= payload before being merged into the existing dump.
+
+(defn get-all-track-singers
+  [track-map]
+  (->> track-map
+       (mapv (fn[[k v]]
+               {k (assoc v :song-details
+                         (let [res (wait-till (fn[](get-song-details k)))]
+                           (println " " (-> res :body :title))
+                           (:body res)))}))))
+
+(defn get-releases-for-years
+  "search releases of the artist released between [start-year end-year] (inclusive).
+  returns the raw search-endpoint release maps (no :media, ids + release-group only)."
+  [artist-id start-year end-year]
+  (loop [acc []
+         offset 0]
+    (let [q (str "arid:" artist-id " AND date:[" start-year "-01-01 TO " end-year "-12-31]")
+          url (str "https://musicbrainz.org/ws/2/release?query="
+                   (java.net.URLEncoder/encode q "UTF-8")
+                   "&fmt=json&limit=100&offset=" offset)
+          resp (:body (wait-till #(client/get url {:accept :json :headers headers :as :json})))
+          cnt (:count resp)
+          rels (vec (:releases resp))]
+      (println " search-count " cnt " offset " offset " got " (count rels))
+      (if (>= (+ offset (count rels)) cnt)
+        (into acc rels)
+        (recur (into acc rels) (+ offset (count rels)))))))
+
+(defn get-release-details
+  "full release payload (with :media/:tracks) for one release id, in the same
+  shape that get-all-releases/save-recordings-table expect"
+  [rel-id]
+  (:body (wait-till #(client/get
+                      (str "https://musicbrainz.org/ws/2/release/" rel-id
+                           "?inc=recordings+release-groups+artist-rels+recording-rels")
+                      {:accept :json :headers headers :as :json}))))
+
 (defn remove-compilations
   "remove albums that are marked as compilations"
   [rel-list]
@@ -69,6 +111,45 @@
                         ret (some #{:compilation :remix :live} sec-types)]
                     ret))]
     (vec (remove filt-fn rel-list))))
+
+(defn save-releases-for-years
+  "incremental update: download releases dated [start-year end-year], merge them
+  into the existing releases-json (deduped by release id), and fetch singer
+  details for any recordings not already in track-details-json, merging those
+  in too. does not run regenerate afterwards."
+  [artist-id start-year end-year releases-json track-details-json]
+  (let [existing (json/read-str (slurp releases-json) :key-fn keyword)
+        existing-ids (into #{} (map :id) existing)
+        new-releases (->> (get-releases-for-years artist-id start-year end-year)
+                          (remove #(existing-ids (:id %)))
+                          (map :id)
+                          (mapv get-release-details))
+        merged-releases (into (vec existing) new-releases)
+        ;; singer details for new recordings
+        track-details (vec (json/read-str (slurp track-details-json) :key-fn keyword))
+        known-recs (->> track-details
+                        (apply merge)
+                        keys
+                        (map name)
+                        (into #{}))
+        new-track-map (->> new-releases
+                           remove-compilations
+                           (map #(mapv :tracks (:media %)))
+                           (reduce into [])
+                           (reduce into [])
+                           (reduce (fn[acc i] (assoc acc (-> i :recording :id) i)) {}))
+        missing-recs (remove known-recs (keys new-track-map))
+        new-singers (when (seq missing-recs)
+                      (apply merge
+                             (get-all-track-singers (select-keys new-track-map (vec missing-recs)))))
+        merged-details (if new-singers
+                         (conj track-details new-singers)
+                         track-details)]
+    (println " new releases " (count new-releases)
+             " new recordings " (count missing-recs))
+    (spit releases-json (json/write-str merged-releases))
+    (spit track-details-json (json/write-str merged-details))
+    [releases-json track-details-json]))
 
 #_(defn get-tracks-in-media
   "get all the tracks in all :media entries"
@@ -81,15 +162,6 @@
 
 ;;(def arr-rel-list (json/read-str (slurp "./arr-releases-5471.json") :key-fn keyword))
 ;;(def all-tracks (get-tracks-in-media arr-rel-list))
-
-(defn get-all-track-singers
-  [track-map]
-  (->> track-map
-       (mapv (fn[[k v]]
-               {k (assoc v :song-details
-                         (let [res (wait-till (fn[](get-song-details k)))]
-                           (println " " (-> res :body :title))
-                           (:body res)))}))))
 
 (defn get-track-singers
   [all-tracks]
@@ -352,6 +424,13 @@
 
     (save-singers-table track-singers-fin "data/recordings.csv" "data/singers.csv")))
 
+(defn update-for-years
+  "incremental update by release year, then rebuild all derived csv/json outputs"
+  [artist-id start-year end-year releases-json track-details-json]
+  (let [[rj tdj] (save-releases-for-years artist-id start-year end-year
+                                          releases-json track-details-json)]
+    (regenerate rj tdj)))
+
 ;;download and save all releases
 ;;(save-releases arr-artist-id "./arr-releases-5471.json")
 
@@ -373,3 +452,9 @@
 ;;(save-singers-table track-singers-fin "data/recordings.csv" "data/singers.csv")
 
 ;;(regenerate "./arr-releases-5471.json" "./arr-track-details.json")
+
+;;incremental update: fetch only releases dated in the given year range, merge
+;;into the existing dumps, rebuild the derived outputs
+;;(update-for-years arr-artist-id 2025 2026 "./arr-releases-5471.json" "./arr-track-details.json")
+;;without rebuilding:
+;;(save-releases-for-years arr-artist-id 2025 2026 "./arr-releases-5471.json" "./arr-track-details.json")

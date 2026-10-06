@@ -7,6 +7,7 @@
                  [org.clojure/data.json "2.5.0"]
                  [org.xerial/sqlite-jdbc "3.43.0.0"]
                  [clj-http "3.12.3"]
+                 [cheshire "5.13.0"]
                  [org.clojure/java.jdbc "0.7.0"]
                  [com.layerware/hugsql "0.4.7"]
                  [mount "0.1.11"]

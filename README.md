@@ -1,4 +1,4 @@
-# What 30 years of A. R. Rahman looks like in data
+# What 35 years of A. R. Rahman looks like in data
 
 *A blog post about building a dataset of A. R. Rahman's songs and singer collaborators from MusicBrainz — and what it took to clean it up.*
 
@@ -42,7 +42,9 @@ The steps, tracked in the git history:
 
 7. **Load into SQLite** (`arr.db` — two tables, `songs` and `singers`), which makes it trivially queryable.
 
-The final dataset: **2,358 recordings** across **307 albums/film soundtracks**, sung by **597 distinct singers**, spanning releases dated **1991 to 2024**.
+**Keeping it fresh.** The original step 1 re-walked all ~5,471 releases from scratch. That has since been replaced by an incremental update: `get-releases-for-years` (`core.clj`) queries the MusicBrainz *search* endpoint with `arid:<artist> AND date:[<y1>-01-01 TO <y2>-12-31]`, re-fetches only the newly-found releases with the full `inc=` payload, merges them into `arr-releases-5471.json`, and fetches singer credits just for the new recordings. `update-for-years` wraps that plus the derived-table rebuild — a year-range refresh costs tens of rate-limited calls instead of thousands.
+
+**Data refresh: October 2026.** The dataset was regenerated on **2026-10-07** with the incremental update pulling releases dated 2024–2026 straight from MusicBrainz (589 releases / 3,545 recordings in the raw pipeline outputs). A same-song duplicate (*Jinguchaa*, single vs album release) was caught and removed by hand. The final dataset: **2,547 recordings** across **338 albums/film soundtracks**, sung by **658 distinct singers**, spanning releases dated **1991 to 2026** (latest: *2026-09-14*).
 
 ## What counts as "a song"?
 
@@ -65,7 +67,7 @@ singers(song_id, name)
 
 ![Songs released per year](doc/charts/songs_per_year.svg)
 
-1994 stands out — Rahman's early-90s Tamil run (*Gentleman*, *Thiruda Thiruda*, *Duet*, *Kadhalan*...) produced 140 recordings in one year, the peak of his career by this measure. 1999 (139) and 2014 (139) are the other spikes — 2014 was famously one of his busiest years, with ~12 films in various languages.
+1994 stands out — Rahman's early-90s Tamil run (*Gentleman*, *Thiruda Thiruda*, *Duet*, *Kadhalan*...) produced 140 recordings in one year, the peak of his career by this measure. 1999 (139) and 2014 (139) are the other spikes — 2014 was famously one of his busiest years, with ~12 films in various languages. The refresh adds 2025 (67 songs, 10 soundtracks — *Kadhalikka Neramillai*, *Thug Life*, *Chhaava*, *Tere Ishk Mein*...) and 2026 so far (40 songs, 12 soundtracks).
 
 ### Albums / film soundtracks per year
 
@@ -79,7 +81,7 @@ singers(song_id, name)
 
 The collaborator pool keeps widening: from 16 singers in 1992 to 60–80 distinct singers a year through the 2010s. Rahman's practice of introducing fresh voices (the "new voice on every Rahman album" effect) shows up clearly here — 2010 alone had **79 distinct singers**, versus 22 in 2007.
 
-The top collaborators across the whole dataset: A. R. Rahman himself (901 recordings), S. P. Balasubrahmanyam (148), K. S. Chithra (113), Sujatha (80), Hariharan (80), Srinivas (64), Swarnalatha (63), Mano (63).
+The top collaborators across the whole dataset: A. R. Rahman himself (1,033 recordings), S. P. Balasubrahmanyam (148), K. S. Chithra (113), Sujatha (81), Hariharan (81), Srinivas (64), Swarnalatha (63), Mano (63), Shreya Ghoshal (61), Karthik (56).
 
 ## Asking questions of the data
 
@@ -89,8 +91,8 @@ A few of the gold questions, with their reference answers:
 
 | Question | Reference answer |
 |---|---|
-| How many movies has Rahman released? | **307** |
-| How many singers has Rahman collaborated with? | **597** |
+| How many movies has Rahman released? | **338** |
+| How many singers has Rahman collaborated with? | **658** |
 | When was Rahman's first album released? | **1991-01-01** |
 | What was the name of Rahman's first album? | **Set Me Free** |
 | Which year did Rahman compose the most movies? | **1994** |
@@ -102,8 +104,8 @@ Each gold entry pairs the question with a structured skeleton — e.g. "Which si
 
 ## Reproducing
 
-- The pipeline: open `core.clj` in a REPL and evaluate (functions are annotated with the call order at the bottom of the file).
-- The ready-made data: `data/recordings.csv` (2,358 rows) + `data/singers.csv` (4,107 rows), or load `arr.db`.
+- The pipeline: open `core.clj` in a REPL and evaluate (functions are annotated with the call order at the bottom of the file). To refresh the data for recent years without a full re-crawl: `(update-for-years arr-artist-id 2025 2026 "./arr-releases-5471.json" "./arr-track-details.json")` then `(regenerate ...)`.
+- The ready-made data: `data/recordings.csv` (2,547 rows) + `data/singers.csv` (4,410 rows), or load `arr.db` (rebuild it from the CSVs before use — the committed copy predates the refresh). The year charts in `doc/charts/` regenerate with `make_charts.py`.
 - The QA experiment: `experiments/gliner-decide/`.
 
 ## License
