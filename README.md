@@ -83,6 +83,33 @@ The collaborator pool keeps widening: from 16 singers in 1992 to 60–80 distinc
 
 The top collaborators across the whole dataset: A. R. Rahman himself (1,033 recordings), S. P. Balasubrahmanyam (148), K. S. Chithra (113), Sujatha (81), Hariharan (81), Srinivas (64), Swarnalatha (63), Mano (63), Shreya Ghoshal (61), Karthik (56).
 
+## Multi-composer dataset
+
+The Rahman pipeline has been generalized so other composers get their own fetch, derived tables, and SQLite tables alongside it. Each composer is registered in a `composers` map in `core.clj` (MBID + file prefix); every entry point takes the composer keyword. Per-composer files use a `<pfx>` prefix (`<pfx>-releases.json`, `<pfx>-track-details.json`, `data/<pfx>/recordings.csv`, `data/<pfx>/singers.csv`); Rahman keeps his legacy filenames so the blog-post numbers above stay reproducible.
+
+All composers load into the same `arr.db` as per-composer tables `songs_<pfx>` / `singers_<pfx>`, with a `composer` column stamped from the registry — so cross-composer questions become SQL joins on singer name.
+
+| Composer | prefix | songs | albums/films | distinct singers | span |
+|---|---|---|---|---|---|
+| A. R. Rahman | `arr` | 2,547 | 338 | 658 | 1991–2026 |
+| Ilaiyaraaja | `ila` | 2,027 | 343 | 300 | 1977–2026 |
+| Pritam | `pri` | 1,338 | 209 | 395 | 2001–2026 |
+| Shankar–Ehsaan–Loy | `sel` | 645 | 93 | 282 | 1999–2026 |
+| Vishal–Shekhar | `vsh` | 575 | 81 | 276 | 2003–2025 |
+| Harris Jayaraj | `har` | 495 | 92 | 250 | 2001–2026 |
+| Sushin Shyam | `sus` | 226 | 24 | 76 | 2016–2026 |
+
+(The Rahman row matches the refreshed dataset above; per-composer charts are in `doc/charts/<pfx>/`.)
+
+The same "what counts as a song" rules apply to every composer: the unit is a MusicBrainz recording, compilation/remix/live release-groups are dropped, and duplicate release appearances of the same recording are collapsed. Known coverage caveats:
+
+- **Group acts** (Shankar–Ehsaan–Loy, Vishal–Shekhar) are clean single MBIDs, but some releases credit only "Shankar Mahadevan" or "Vishal Dadlani" individually → missed.
+- **Composer-as-singer on other composers' albums** does not appear — the pipeline fetches releases *by* the artist (consistent with Rahman semantics).
+- **Bundled deluxe editions** can carry another composer's soundtrack as a bonus disc: *Dilwale – Deluxe Edition* (2015) includes 29 DDLJ-era (1995, Jatin–Lalit) tracks in the Pritam dataset, and MB carries "Chak De India" on a *Fan* release in the Vishal–Shekhar dataset.
+- **MusicBrainz misattributions**: *Vinnaithaandi Varuvaayaa* (2010) is credited to A. R. Rahman in MB (it is a Harris Jayaraj-adjacent gap, not a pipeline bug); *Premalu* (2024) has zero MB releases crediting Sushin Shyam.
+- **Ilaiyaraaja's undated releases**: 57 of 520 MB releases carry no date (older catalogs); 136 recordings.csv rows from those were skipped at the SQLite load, so `songs_ila` covers 2,027 of 2,163 derived recordings. Some devotional/untyped albums may also leak into the non-soundtrack bucket (73 of 520 releases have no secondary type).
+- Artist credits themselves are what MB carries — any credit missing upstream is missing here.
+
 ## Asking questions of the data
 
 The dataset is small enough that plain SQL answers most questions. To explore how far you can get from natural language to SQL, `experiments/gliner-decide/` contains a QA benchmark: 31 hand-written questions (`gold.jsonl`), each with a "SQL skeleton" spec (select columns, filter, aggregation, join, order...) and reference SQL (`ref_results.json`). These feed a fine-tuning experiment with GLiNER2.5-Decide that maps a question to a SQL skeleton — see `experiments/gliner-decide/REPORT.md` for that story.
@@ -105,7 +132,7 @@ Each gold entry pairs the question with a structured skeleton — e.g. "Which si
 ## Reproducing
 
 - The pipeline: open `core.clj` in a REPL and evaluate (functions are annotated with the call order at the bottom of the file). To refresh the data for recent years without a full re-crawl: `(update-for-years arr-artist-id 2025 2026 "./arr-releases-5471.json" "./arr-track-details.json")` then `(regenerate ...)`.
-- The ready-made data: `data/recordings.csv` (2,547 rows) + `data/singers.csv` (4,410 rows), or load `arr.db` (rebuild it from the CSVs before use — the committed copy predates the refresh). The year charts in `doc/charts/` regenerate with `make_charts.py`.
+- The ready-made data: `data/recordings.csv` (2,547 rows) + `data/singers.csv` (4,410 rows), or load `arr.db` (rebuild it from the CSVs before use — the committed copy predates the refresh). The year charts regenerate with `make_charts.py` (per composer: `python3 make_charts.py <pfx> ...`, e.g. `ila sel pri`; no argument = Rahman).
 - The QA experiment: `experiments/gliner-decide/`.
 
 ## License

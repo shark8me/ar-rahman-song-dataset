@@ -1,27 +1,67 @@
 (ns arr-song-dataset.core
-  (:require [clj-http.client :as client]
+  (:require [clojure.java.io :as io]
+            [clj-http.client :as client]
             [clojure.data.json :as json])
   #_(:gen-class))
 
 (def headers {"User-Agent" "Application name/arr-song-dataset ( https://github.com/shark8me)" })
 (def arr-artist-id "e0bba708-bdd3-478d-84ea-c706413bedab")
 
+;; ---- composer registry -----------------------------------------------------
+;; every pipeline entry point takes a composer keyword; :arr keeps its legacy
+;; file layout so the blog-post numbers stay reproducible.
+(def composers
+  {:arr {:id "e0bba708-bdd3-478d-84ea-c706413bedab" :prefix "arr" :name "A. R. Rahman"
+         :releases-json "arr-releases-5471.json"
+         :track-details-json "arr-track-details.json"
+         :songtable-csv "songtable.csv"
+         :recording-table-json "arrrecordingtable.json"
+         :data-dir "data/"}
+   :ila {:id "34394522-a0f0-4675-aad2-30ac3cb3d7d3" :prefix "ila" :name "Ilaiyaraaja"}
+   :sel {:id "d8d3e7de-793e-49fa-8bb8-6bc732d4c8aa" :prefix "sel" :name "Shankar–Ehsaan–Loy"}
+   :pri {:id "52db98c1-0cc9-4aab-9f2d-ea8d359234f3" :prefix "pri" :name "Pritam"}
+   :har {:id "ecdd5aa9-b760-47d4-9541-3c3d04da433b" :prefix "har" :name "Harris Jayaraj"}
+   :sus {:id "85c91760-4e3f-406d-984a-fc89180b9d07" :prefix "sus" :name "Sushin Shyam"}
+   :vsh {:id "2df4ce6a-87d6-49e5-b140-4e71066f996c" :prefix "vsh" :name "Vishal–Shekhar"}})
+
+(defn paths-for
+  "all output paths for a composer, resolving the legacy (:arr) vs new layout"
+  [ckey]
+  (let [{:keys [id prefix] :as c} (get composers ckey)]
+    (when c
+      (merge c
+             {:releases-json      (or (:releases-json c) (str prefix "-releases.json"))
+              :track-details-json (or (:track-details-json c) (str prefix "-track-details.json"))
+              :songtable-csv      (or (:songtable-csv c) (str "songtable_" prefix ".csv"))
+              :recording-table-json (or (:recording-table-json c) (str prefix "recordingtable.json"))
+              :data-dir           (or (:data-dir c) (str "data/" prefix "/"))}))))
+
+(def wait-till-max-attempts
+  "retry cap for wait-till: after this many attempts without a :body (endless
+  503 streak or a request that always throws, e.g. a 404 recording), give up
+  and return an empty map so callers see nil :body instead of looping forever"
+  40)
+
 (defn wait-till
-  [ifn]
-  (let [sleep-for (rand-int 5)
-        icall (fn[]@(future
+  ([ifn] (wait-till ifn wait-till-max-attempts))
+  ([ifn max-attempts]
+   (let [sleep-for (rand-int 5)
+         icall (fn[]@(future
                       (Thread/sleep (* sleep-for 1000))
                       (try
                         (ifn)
                         (catch Exception e
                           (do
                             (println " exception "e)
-                            [])))))]
-    (loop [sl sleep-for]
+                            {})))))]
+    (loop [sl sleep-for
+           n 1]
       (let [iresp (icall)]
-        (if (:body iresp)
-          iresp
-          (recur (+ sl (rand-int 5))))))))
+        (cond
+          (:body iresp) iresp
+          (>= n max-attempts) (do (println " wait-till: giving up after " n " attempts")
+                                  {})
+          :else (recur (+ sl (rand-int 5)) (inc n))))))))
 
 #_(wait-till #(client/get
              (str "https://musicbrainz.org/ws/2/release?artist="arr-artist-id "&offset=" 0 "&inc=recordings+release-groups+artist-rels+recording-rels")
@@ -118,7 +158,9 @@
   details for any recordings not already in track-details-json, merging those
   in too. does not run regenerate afterwards."
   [artist-id start-year end-year releases-json track-details-json]
-  (let [existing (json/read-str (slurp releases-json) :key-fn keyword)
+  (let [existing (if (.exists (io/file releases-json))
+                   (json/read-str (slurp releases-json) :key-fn keyword)
+                   []) ; bootstrap: new composer starts with an empty dump
         existing-ids (into #{} (map :id) existing)
         new-releases (->> (get-releases-for-years artist-id start-year end-year)
                           (remove #(existing-ids (:id %)))
@@ -126,7 +168,9 @@
                           (mapv get-release-details))
         merged-releases (into (vec existing) new-releases)
         ;; singer details for new recordings
-        track-details (vec (json/read-str (slurp track-details-json) :key-fn keyword))
+        track-details (vec (if (.exists (io/file track-details-json))
+                             (json/read-str (slurp track-details-json) :key-fn keyword)
+                             [])) ; bootstrap: new composer starts with empty details
         known-recs (->> track-details
                         (apply merge)
                         keys
@@ -147,6 +191,8 @@
                          track-details)]
     (println " new releases " (count new-releases)
              " new recordings " (count missing-recs))
+    (io/make-parents releases-json)
+    (io/make-parents track-details-json)
     (spit releases-json (json/write-str merged-releases))
     (spit track-details-json (json/write-str merged-details))
     [releases-json track-details-json]))
@@ -170,8 +216,10 @@
 
 
 (defn save-track-singers
-  [track-singers]
-  (spit "./arr-track-details.json" (json/write-str track-singers)))
+  ([track-singers]
+   (save-track-singers track-singers "./arr-track-details.json"))
+  ([track-singers path]
+   (spit path (json/write-str track-singers))))
 
 ;;(def track-singers (get-track-singers all-tracks))
 ;;(save-track-singers track-singers)
@@ -386,6 +434,7 @@
              ;;(take 5)
              (map #(clojure.string/join "," %))
              (clojure.string/join "\n"))]
+    (io/make-parents rec-wo-duplicates-csv)
     (spit rec-wo-duplicates-csv
           (str (clojure.string/join ","
                                     (map name [:song_id :song :date :movie :release_id])) "\n" table-data ))))
@@ -411,18 +460,27 @@
              (reduce into [])
              (map #(clojure.string/join "," %))
              (clojure.string/join "\n"))]
+    (io/make-parents singers-csv)
     (spit singers-csv (str (clojure.string/join "," ["song_id" "singer"]) "\n" table-data ))))
 
 (defn regenerate
-  [arr-releases-json track-details-json]
-  (let [arr-rel-list (json/read-str (slurp arr-releases-json) :key-fn keyword)
-        track-singers-fin (json/read-str (slurp track-details-json) :key-fn keyword)]
-    (save-song-table track-singers-fin "songtable.csv")
-    (save-recordings-table arr-rel-list "arrrecordingtable.json")
+  "rebuild all derived outputs. legacy 2-arity keeps the old Rahman paths;
+  new 5-arity takes the per-composer paths from the registry."
+  ([arr-releases-json track-details-json]
+   (regenerate arr-releases-json track-details-json
+               "songtable.csv" "arrrecordingtable.json" "data/"))
+  ([arr-releases-json track-details-json songtable-csv
+    recording-table-json data-dir]
+   (let [arr-rel-list (json/read-str (slurp arr-releases-json) :key-fn keyword)
+         track-singers-fin (json/read-str (slurp track-details-json) :key-fn keyword)]
+     (save-song-table track-singers-fin songtable-csv)
+     (save-recordings-table arr-rel-list recording-table-json)
 
-    (save-recording-soundtracks "arrrecordingtable.json" track-singers-fin "data/recordings.csv")
+     (save-recording-soundtracks recording-table-json track-singers-fin
+                                 (str data-dir "recordings.csv"))
 
-    (save-singers-table track-singers-fin "data/recordings.csv" "data/singers.csv")))
+     (save-singers-table track-singers-fin (str data-dir "recordings.csv")
+                         (str data-dir "singers.csv")))))
 
 (defn update-for-years
   "incremental update by release year, then rebuild all derived csv/json outputs"
@@ -430,6 +488,29 @@
   (let [[rj tdj] (save-releases-for-years artist-id start-year end-year
                                           releases-json track-details-json)]
     (regenerate rj tdj)))
+
+;; ---- composer-level entry points -------------------------------------------
+;; convenience wrappers taking a composer keyword; all paths come from the
+;; registry. (regenerate-composer :sus) (update-composer-for-years :sus 2015 2016)
+
+(defn regenerate-composer
+  [ckey]
+  (let [{:keys [releases-json track-details-json songtable-csv
+                recording-table-json data-dir]} (paths-for ckey)]
+    (regenerate releases-json track-details-json
+                songtable-csv recording-table-json data-dir)))
+
+(defn update-composer-for-years
+  "incremental update by year range for a composer, then rebuild all outputs"
+  [ckey start-year end-year]
+  (let [{:keys [id releases-json track-details-json]} (paths-for ckey)]
+    (update-for-years id start-year end-year releases-json track-details-json)))
+
+(defn save-releases-composer-for-years
+  "incremental fetch by year range for a composer, without rebuilding"
+  [ckey start-year end-year]
+  (let [{:keys [id releases-json track-details-json]} (paths-for ckey)]
+    (save-releases-for-years id start-year end-year releases-json track-details-json)))
 
 ;;download and save all releases
 ;;(save-releases arr-artist-id "./arr-releases-5471.json")

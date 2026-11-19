@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="320" font-family="Helvetica,Arial,sans-serif">
-<text x="70" y="22" font-size="16" font-weight="bold" fill="#333">Songs released per year</text>
+<text x="70" y="22" font-size="16" font-weight="bold" fill="#333">Songs released per year — A. R. Rahman</text>
 <line x1="70" y1="40" x2="890" y2="40" stroke="#ddd"/>
 <text x="62" y="44" font-size="11" fill="#666" text-anchor="end">140</text>
 <line x1="70" y1="100" x2="890" y2="100" stroke="#ddd"/>
