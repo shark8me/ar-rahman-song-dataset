@@ -16,3 +16,40 @@ experiments/gliner-decide/.venv/
 __pycache__/
 *.pyc
 experiments/gliner-decide/arr.db
+
+# Local tooling caches
+.cpcache/
+.hermes/
+
+# Raw MusicBrainz dumps — regenerable; derived CSVs are the committed artifact
+*-releases.json
+*-releases.json.bak
+*.json.bak
+*-track-details.json
+*-track-details.json.bak
+*recordingtable.json
+*recordingtable.csv
+
+# Legacy intermediate arr tables (superseded by per-composer files)
+/songs.csv
+/songtable.csv
+/songtablemovie.csv
+/recording_singers*.csv
+/recordingtable_wo_dupl_singers*.csv
+
+# Scratch probes and stale artifacts
+/arr.db
+/arr-releases-547.json
+/arr-releases-5471.json
+/arr-releases-l.json
+/track-details-nl.json
+/releases
+/schema
+/dupcheck-log.txt
+/query_response.txt
+/query_type_response.csv
+/queryoutputs.txt
+/stats.txt
+
+# Large experiment result dirs (checkpoints/predictions)
+experiments/gliner-decide/results/lora*/
