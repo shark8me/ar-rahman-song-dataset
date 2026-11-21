@@ -1,0 +1,10820 @@
+{
+ "42": {
+  "query": "Find the vocalists on Maasi Maasam from Ilaiyaraaja's album for the film containing it.",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_list"
+ },
+ "46": {
+  "query": "When was the song Panivizhum Malar Vanam released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "47": {
+  "query": "In which year did the song Adida Melathai come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "59": {
+  "query": "In which year did Dhanush first sing for Ilaiyaraaja?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_first_year_c"
+ },
+ "73": {
+  "query": "When was the song Ae Khuda released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "84": {
+  "query": "In which year did B Praak first sing for Pritam?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_first_year_c"
+ },
+ "97": {
+  "query": "List the playback singers featured on Shankar-Ehsaan-Loy's soundtrack for the film Taare Zameen Par.",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "movie_singers_list"
+ },
+ "102": {
+  "query": "When was the song Duma Dum released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "103": {
+  "query": "What year did the song Dhoop Ke Sikke come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "121": {
+  "query": "Who are the playback singers credited on Kuthanthram - Extended from Sushin Shyam's filmography?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_list"
+ },
+ "123": {
+  "query": "When was the song Sleepless Nights released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "124": {
+  "query": "In which year did the song The Cyber Hunt come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "137": {
+  "query": "In which year did Pradeep Kumar first sing for Sushin Shyam?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_first_year_c"
+ },
+ "138": {
+  "query": "When did Suchith Suresan first sing for Sushin Shyam?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_first_year_c"
+ },
+ "153": {
+  "query": "When was the song Chand Chahiye released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "154": {
+  "query": "In what year did Lovely (house remix) come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "164": {
+  "query": "List the songs Kailash Kher sang for Vishal-Shekhar in 2006.",
+  "heads": {
+   "select_cols": [
+    "title"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_songs_list_year"
+ },
+ "165": {
+  "query": "How many movies did Shaan sing for Vishal-Shekhar?",
+  "heads": {
+   "select_cols": [
+    "movie_name"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_movies_count"
+ },
+ "173": {
+  "query": "When was the song Marvel Anthem released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "180": {
+  "query": "How many tracks in A. R. Rahman's catalogue feature Hariharan as a vocalist?",
+  "heads": {
+   "select_cols": [
+    "title"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_songs_count_c"
+ },
+ "181": {
+  "query": "How many films did Harshdeep Kaur contribute vocals to in A. R. Rahman's discography?",
+  "heads": {
+   "select_cols": [
+    "movie_name"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_movies_count"
+ },
+ "183": {
+  "query": "In which year did U2 first sing for A. R. Rahman?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_first_year_c"
+ },
+ "194": {
+  "query": "Who sang Marvel Anthem on A. R. Rahman's album for the film it appears in?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_list"
+ },
+ "196": {
+  "query": "When was the song Nila Kaigirathu released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "197": {
+  "query": "In which year did the song Laadli come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "199": {
+  "query": "List all songs that Minmini sang for A. R. Rahman in 1992.",
+  "heads": {
+   "select_cols": [
+    "title"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_songs_list_year"
+ },
+ "201": {
+  "query": "How many movies did Hariharan sing for A. R. Rahman?",
+  "heads": {
+   "select_cols": [
+    "movie_name"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_movies_count"
+ },
+ "203": {
+  "query": "In which year did Minmini first sing for A. R. Rahman?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_first_year_c"
+ },
+ "217": {
+  "query": "Which composer did the singer Krishna Beura sing the most songs for?",
+  "heads": {
+   "select_cols": [],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "xc_singer_top_composer"
+ },
+ "227": {
+  "query": "How many vocalists are credited on Changu Chaaka from Ilaiyaraaja's filmography?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "228": {
+  "query": "When was the song Nilaavae Vaa released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "229": {
+  "query": "In what year did Raja Kaiya Vachchaa come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "240": {
+  "query": "Who sang the song Changu Chaaka for Ilaiyaraaja?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_list"
+ },
+ "241": {
+  "query": "Which artists performed the song Nilaavae Vaa for Ilaiyaraaja?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_list"
+ },
+ "243": {
+  "query": "When was the song Mandaveli released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "244": {
+  "query": "In what year did the song Nothing but Wind come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "245": {
+  "query": "How many tracks in Ilaiyaraaja's catalogue feature Kailash Kher as a vocalist?",
+  "heads": {
+   "select_cols": [
+    "title"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_songs_count_c"
+ },
+ "246": {
+  "query": "How many tracks in Ilaiyaraaja's catalogue feature Kumar Sanu as a vocalist?",
+  "heads": {
+   "select_cols": [
+    "title"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_songs_count_c"
+ },
+ "254": {
+  "query": "Find the vocalists on Nilaavae Vaa from Ilaiyaraaja's album for the film containing it.",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_list"
+ },
+ "256": {
+  "query": "How many artists performed the song Raja Kaiya Vachchaa for Ilaiyaraaja?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "257": {
+  "query": "How many singers performed Ayiram Thamarai for Ilaiyaraaja?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "258": {
+  "query": "When was the song Changu Chaaka released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "260": {
+  "query": "Which songs did Kamal Haasan record for Ilaiyaraaja in 1991? List them.",
+  "heads": {
+   "select_cols": [
+    "title"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_songs_list_year"
+ },
+ "261": {
+  "query": "How many films did Kumar Sanu contribute vocals to in Ilaiyaraaja's discography?",
+  "heads": {
+   "select_cols": [
+    "movie_name"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_movies_count"
+ },
+ "263": {
+  "query": "In which year did Neeti Mohan first sing for Ilaiyaraaja?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_first_year_c"
+ },
+ "270": {
+  "query": "Find the vocalists on Changu Chaaka from Ilaiyaraaja's album for the film containing it.",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_list"
+ },
+ "272": {
+  "query": "How many vocalists are credited on Nilaavae Vaa from Ilaiyaraaja's filmography?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "273": {
+  "query": "How many singers perform Ayiram Thamarai from Ilaiyaraaja's filmography?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "274": {
+  "query": "When was the song Poonkuyile Poonkuyile released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "275": {
+  "query": "How many songs did Kamal Haasan sing for Ilaiyaraaja?",
+  "heads": {
+   "select_cols": [
+    "title"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_songs_count_c"
+ },
+ "296": {
+  "query": "When was the song Ya Ali released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "297": {
+  "query": "In which year did Shayad (film version) come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "298": {
+  "query": "How many songs did KK sing for Pritam?",
+  "heads": {
+   "select_cols": [
+    "title"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_songs_count_c"
+ },
+ "299": {
+  "query": "How many songs has Shaan sung for Pritam?",
+  "heads": {
+   "select_cols": [
+    "title"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_songs_count_c"
+ },
+ "300": {
+  "query": "Which songs did KK record for Pritam in 2008? List them.",
+  "heads": {
+   "select_cols": [
+    "title"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_songs_list_year"
+ },
+ "302": {
+  "query": "How many songs did Shaan sing for Pritam in 2007?",
+  "heads": {
+   "select_cols": [
+    "title"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_songs_count_year"
+ },
+ "304": {
+  "query": "In which year did KK sing the most songs for Pritam?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_top_year"
+ },
+ "305": {
+  "query": "In which year did Sreerama Chandra first sing for Pritam?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_first_year_c"
+ },
+ "312": {
+  "query": "List the songs in the film Taare Zameen Par by Shankar-Ehsaan-Loy.",
+  "heads": {
+   "select_cols": [
+    "title"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "movie_songs_list"
+ },
+ "317": {
+  "query": "Give the full tracklist of Shankar-Ehsaan-Loy's album for Taare Zameen Par.",
+  "heads": {
+   "select_cols": [
+    "title"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "movie_songs_list"
+ },
+ "325": {
+  "query": "When was the song Kal Ho Naa Ho (The Heat Beat Mix) released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "333": {
+  "query": "Who sang the song Kal Ho Naa Ho (The Heat Beat Mix) for Shankar-Ehsaan-Loy?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_list"
+ },
+ "351": {
+  "query": "When was the song Maravikale released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "352": {
+  "query": "In what year did Alexander Theme come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "368": {
+  "query": "How many artists performed the song Swag Se Swagat (Arabic version) for Vishal-Shekhar?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "400": {
+  "query": "When was the song Ajab Si released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "401": {
+  "query": "In what year did Vishal-Shekhar's song Swag Se Swagat (Arabic version) come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "411": {
+  "query": "How many artists performed the song Ajab Si for Vishal-Shekhar?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "421": {
+  "query": "How many vocalists are credited on Dheeme Dheeme from A. R. Rahman's filmography?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "422": {
+  "query": "When was the song So Gaye Hain released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "435": {
+  "query": "When was the song Dheeme Dheeme released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "436": {
+  "query": "In what year did the track Shambo Shambo come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "447": {
+  "query": "In which year did the song So Gaye Hain come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "457": {
+  "query": "Which music composers did the singer P. Susheela sing for?",
+  "heads": {
+   "select_cols": [],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "xc_singer_composers_list"
+ },
+ "467": {
+  "query": "How many songs has the singer P. Susheela sung in total?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "xc_singer_total_songs"
+ },
+ "479": {
+  "query": "Who sang Darling Darling in Ilaiyaraaja's album for its film?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_list"
+ },
+ "482": {
+  "query": "When was the song Poove Ilaiya Poove released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "483": {
+  "query": "In what year did Thaamarakkili Paadunnu come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "496": {
+  "query": "Find the vocalists on Poove Ilaiya Poove from Ilaiyaraaja's album for the film containing it.",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_list"
+ },
+ "500": {
+  "query": "In what year did the song Darling Darling come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "509": {
+  "query": "How many vocalists are credited on Thaamarakkili Paadunnu from Ilaiyaraaja's filmography?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "511": {
+  "query": "When was the song Darling Darling released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "512": {
+  "query": "In what year did Ilaiyaraaja's song Panivizhum Malar Vanam come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "525": {
+  "query": "How many artists performed the song Panivizhum Malar Vanam for Ilaiyaraaja?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "526": {
+  "query": "In which year did the song Darling Darling come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "527": {
+  "query": "How many songs has KK recorded for Ilaiyaraaja?",
+  "heads": {
+   "select_cols": [
+    "title"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_songs_count_c"
+ },
+ "532": {
+  "query": "In which year did Kunal Ganjawala first sing for Ilaiyaraaja?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_first_year_c"
+ },
+ "560": {
+  "query": "Who sings Phurrr on Pritam's album for the film it belongs to?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_list"
+ },
+ "562": {
+  "query": "How many vocalists are credited on Hua Main for Pritam?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "563": {
+  "query": "When was the song Labon Ko released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "564": {
+  "query": "In which year did Halla Re (Neal \u2019n\u2019 Nikki) come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "567": {
+  "query": "How many songs did Harshdeep Kaur sing for Pritam?",
+  "heads": {
+   "select_cols": [
+    "title"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_songs_count_c"
+ },
+ "578": {
+  "query": "Who are the voices behind the song Hai Junoon in Pritam's album?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_list"
+ },
+ "581": {
+  "query": "When was the song Hua Main released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "582": {
+  "query": "In what year did the song Phurrr come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "587": {
+  "query": "In which year did Harshdeep Kaur first sing for Pritam?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_first_year_c"
+ },
+ "588": {
+  "query": "In which year did Mustafa Zahid first collaborate with Pritam as a singer?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_first_year_c"
+ },
+ "597": {
+  "query": "When was the song Taare Zameen Par released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "599": {
+  "query": "List all songs that Shaan sang for Shankar-Ehsaan-Loy in 2010.",
+  "heads": {
+   "select_cols": [
+    "title"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_songs_list_year"
+ },
+ "601": {
+  "query": "In which year did Shaan sing the most songs for Shankar-Ehsaan-Loy?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_top_year"
+ },
+ "602": {
+  "query": "In which year did Kailash Kher first sing for Shankar-Ehsaan-Loy?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_first_year_c"
+ },
+ "605": {
+  "query": "Which playback singers are featured on Shankar-Ehsaan-Loy's soundtrack for the movie Karthik Calling Karthik?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "movie_singers_list"
+ },
+ "607": {
+  "query": "In what year did the song Mourya Re come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "610": {
+  "query": "How many songs has Shaan sung for Shankar-Ehsaan-Loy?",
+  "heads": {
+   "select_cols": [
+    "title"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_songs_count_c"
+ },
+ "611": {
+  "query": "When did Shaan first sing for Shankar-Ehsaan-Loy?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_first_year_c"
+ },
+ "634": {
+  "query": "When was the song Kaar Kaala Velai released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "652": {
+  "query": "How many vocalists are credited on Raftaarein from Vishal-Shekhar's filmography?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "654": {
+  "query": "When was the song Haule Haule released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "655": {
+  "query": "In what year did the track Ruk Ruk come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "667": {
+  "query": "How many vocalists are credited on Haule Haule from Vishal-Shekhar's filmography?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "668": {
+  "query": "When was the song Ore Saawariya released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "669": {
+  "query": "In which year did the song Dhoom Taana come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "680": {
+  "query": "How many vocalists are credited on Ruk Ruk from Vishal-Shekhar's filmography?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "681": {
+  "query": "When was the song Raftaarein released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "682": {
+  "query": "In which year did Uff Yun Maa come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "683": {
+  "query": "How many songs did Lucky Ali sing for Vishal-Shekhar?",
+  "heads": {
+   "select_cols": [
+    "title"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_songs_count_c"
+ },
+ "687": {
+  "query": "In which year did Amit Trivedi first sing for Vishal-Shekhar?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_first_year_c"
+ },
+ "688": {
+  "query": "When did Lucky Ali first sing for Vishal-Shekhar?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_first_year_c"
+ },
+ "694": {
+  "query": "How many songs did Vishal Bhardwaj sing for Vishal-Shekhar?",
+  "heads": {
+   "select_cols": [
+    "title"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_songs_count_c"
+ },
+ "696": {
+  "query": "In which year did Lucky Ali sing the most songs for Vishal-Shekhar?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_top_year"
+ },
+ "697": {
+  "query": "In which year did Amitabh Bachchan first sing for Vishal-Shekhar?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_first_year_c"
+ },
+ "711": {
+  "query": "How many artists performed the song Raftaarein for Vishal-Shekhar?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "712": {
+  "query": "How many vocalists lent their voices to Haule Haule in Vishal-Shekhar's composition?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "713": {
+  "query": "When was the song Dhoom Taana released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "714": {
+  "query": "In which year did Aas Paas Khuda (unplugged) come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "717": {
+  "query": "How many films did Amitabh Bachchan contribute vocals to in Vishal-Shekhar's discography?",
+  "heads": {
+   "select_cols": [
+    "movie_name"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_movies_count"
+ },
+ "719": {
+  "query": "When did Vishal Bhardwaj make their first appearance on a Vishal-Shekhar album?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "singer_first_year_c"
+ },
+ "731": {
+  "query": "How many vocalists are credited on Ishq Bina from A. R. Rahman's filmography?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "732": {
+  "query": "When was the song Maanja Nee released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "733": {
+  "query": "What year did the song Daud come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "747": {
+  "query": "Who sang Ishq Bina on A. R. Rahman's album for the film containing it?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_list"
+ },
+ "757": {
+  "query": "Who sang the song Ishq Bina for A. R. Rahman?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_list"
+ },
+ "760": {
+  "query": "How many vocalists are credited on the song Daud from A. R. Rahman's filmography?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "761": {
+  "query": "When was the song Aazadi released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "765": {
+  "query": "In which year did Kalamandalam Sajith Vijayan first sing for A. R. Rahman?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_first_year_c"
+ },
+ "778": {
+  "query": "When was the song Ishq Bina released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "779": {
+  "query": "In what year did the song Daud come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "782": {
+  "query": "When was the song Daud released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "790": {
+  "query": "How many songs did the singer Harshdeep Kaur sing in 2016?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "xc_singer_songs_count_year"
+ },
+ "811": {
+  "query": "When was the song Ayiram Thamarai released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "812": {
+  "query": "In what year did the song Chinna Polikey (Sad Version 1) come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "815": {
+  "query": "How many films did Kamal Haasan contribute vocals to in Ilaiyaraaja's discography?",
+  "heads": {
+   "select_cols": [
+    "movie_name"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_movies_count"
+ },
+ "816": {
+  "query": "In which year did Kavita Krishnamurthy sing the most songs for Ilaiyaraaja?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_top_year"
+ },
+ "817": {
+  "query": "In which year did Kumar Sanu first sing for Ilaiyaraaja?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_first_year_c"
+ },
+ "834": {
+  "query": "How many artists performed the song Saanson Ko for Pritam?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "835": {
+  "query": "When was the song Hai Junoon released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "866": {
+  "query": "When was the song Ottamuri Vakkumayi released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "867": {
+  "query": "In what year did the track Desert Safari come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "877": {
+  "query": "How many singers lent their voices to Ottamuri Vakkumayi in Sushin Shyam's work?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "894": {
+  "query": "When was the song Tere Ishq Mein released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "895": {
+  "query": "In what year did the song Ratta Maar come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "914": {
+  "query": "When was the song Omana Penne released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "915": {
+  "query": "In which year did the song Milo Wahan Wahan come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "921": {
+  "query": "In which year did Shiraz Uppal first sing for A. R. Rahman?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_first_year_c"
+ },
+ "923": {
+  "query": "How many music composers did the singer Dhanush sing for?",
+  "heads": {
+   "select_cols": [],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "xc_singer_composers_count"
+ },
+ "924": {
+  "query": "How many music composers did the singer Karthik sing for?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "xc_singer_composers_count"
+ },
+ "926": {
+  "query": "Which music composers did the singer Dhanush sing for?",
+  "heads": {
+   "select_cols": [],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "xc_singer_composers_list"
+ },
+ "932": {
+  "query": "Which composer did the singer Dhanush sing the most songs for?",
+  "heads": {
+   "select_cols": [],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "xc_singer_top_composer"
+ },
+ "933": {
+  "query": "Which composer did the singer Karthik sing the most songs for?",
+  "heads": {
+   "select_cols": [],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "xc_singer_top_composer"
+ },
+ "935": {
+  "query": "How many songs has the singer Dhanush sung in total?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "xc_singer_total_songs"
+ },
+ "953": {
+  "query": "How many vocalists are credited on Manadhai En Moodinaai from Ilaiyaraaja's filmography?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "955": {
+  "query": "When was the song Mad, Mod, Mood And Fugue released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "956": {
+  "query": "In which year did the song Azhagu Aayiram come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "958": {
+  "query": "How many tracks did Hariharan record for Ilaiyaraaja as composer?",
+  "heads": {
+   "select_cols": [
+    "title"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_songs_count_c"
+ },
+ "969": {
+  "query": "Which singers performed Azhagu Aayiram on Ilaiyaraaja's film album?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_list"
+ },
+ "971": {
+  "query": "When was the song Manadhai En Moodinaai released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "972": {
+  "query": "In which year did the song Oru Gundu Mani Kulunguthadi come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "982": {
+  "query": "When was the song Vaan Megam Poo Poovaai released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "983": {
+  "query": "In which year did the song Piraye come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "984": {
+  "query": "How many songs has Hariharan sung for Ilaiyaraaja?",
+  "heads": {
+   "select_cols": [
+    "title"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_songs_count_c"
+ },
+ "996": {
+  "query": "When did the song Akashe Jyotsna come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1008": {
+  "query": "How many artists performed the song Oru Gundu Mani Kulunguthadi for Ilaiyaraaja?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "1010": {
+  "query": "When was the song Vadi En Kappa Kelange released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1011": {
+  "query": "In what year did Ilaiyaraaja's song Thoothu Neeum Selladi come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1012": {
+  "query": "How many songs did Hariharan sing for Ilaiyaraaja?",
+  "heads": {
+   "select_cols": [
+    "title"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_songs_count_c"
+ },
+ "1030": {
+  "query": "When was the song Aavan Jaavan released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1046": {
+  "query": "In which year did the song Janaab-e-Aali come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1051": {
+  "query": "In which year did Bappi Lahiri first sing for Pritam?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_first_year_c"
+ },
+ "1070": {
+  "query": "When was the song Mirzya released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1091": {
+  "query": "When was the song Rathipushpam released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1101": {
+  "query": "Name every playback singer credited on the track Rathipushpam in Sushin Shyam's catalogue.",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_list"
+ },
+ "1105": {
+  "query": "When was the song Aane Madanapoo released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1106": {
+  "query": "In which year did the song The Mumbai Infinity come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1137": {
+  "query": "Which singers performed vocals on Saans in Vishal-Shekhar's soundtrack?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_list"
+ },
+ "1140": {
+  "query": "When was the song Tooh released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1150": {
+  "query": "When was the song Saans released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1151": {
+  "query": "In which year did the song Lovely come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1158": {
+  "query": "In which year did Rabbi Shergill first sing for Vishal-Shekhar?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_first_year_c"
+ },
+ "1159": {
+  "query": "When did Caralisa Monteiro first sing for Vishal-Shekhar?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_first_year_c"
+ },
+ "1174": {
+  "query": "When was the song Maula Wa Sallim released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1175": {
+  "query": "When did Uyirum Neeyae come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1178": {
+  "query": "How many songs did Minmini sing for A. R. Rahman in 1992?",
+  "heads": {
+   "select_cols": [
+    "title"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_songs_count_year"
+ },
+ "1189": {
+  "query": "How many vocalists are credited on Bommai from Ilaiyaraaja's filmography?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "1191": {
+  "query": "When was the song Nothing but Wind released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1192": {
+  "query": "In what year did the song Peranbae come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1207": {
+  "query": "Find the vocalists on Sattru Munbu from Ilaiyaraaja's album for the film containing it.",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_list"
+ },
+ "1208": {
+  "query": "Who sang Peranbae on Ilaiyaraaja's album for the film it appears in?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_list"
+ },
+ "1209": {
+  "query": "How many vocalists are credited on Nothing but Wind from Ilaiyaraaja's filmography?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "1211": {
+  "query": "When was the song Ilamai Edho Edho released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1212": {
+  "query": "In what year did the song Mara Karukkalile come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1223": {
+  "query": "When was the song Bommai released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1235": {
+  "query": "Find the vocalists on Nothing but Wind from Ilaiyaraaja's album for the film containing it.",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_list"
+ },
+ "1236": {
+  "query": "Name the vocalists who perform on Peranbae from Ilaiyaraaja's album.",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_list"
+ },
+ "1246": {
+  "query": "How many artists performed the song Bommai for Ilaiyaraaja?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "1248": {
+  "query": "When was the song Sattru Munbu released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1261": {
+  "query": "Who sang the song O Bedardeya for Pritam?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_list"
+ },
+ "1264": {
+  "query": "When was the song Dhoom Machale released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1265": {
+  "query": "In what year did Pritam's song Phurrr (film version) come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1266": {
+  "query": "How many tracks in Pritam's catalogue feature Kailash Kher as a vocalist?",
+  "heads": {
+   "select_cols": [
+    "title"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_songs_count_c"
+ },
+ "1271": {
+  "query": "In which year did Raftaar first sing for Pritam?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_first_year_c"
+ },
+ "1284": {
+  "query": "How many vocalists are credited on Kill Dil from Shankar-Ehsaan-Loy's filmography?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "1285": {
+  "query": "When was the song Sooraj Ki Baahon Mein released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1286": {
+  "query": "In what year did the song Ove Janiya come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1301": {
+  "query": "How many singers lent their voices to Sooraj Ki Baahon Mein by Shankar-Ehsaan-Loy?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "1302": {
+  "query": "When was the song Kill Dil released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1303": {
+  "query": "In what year did Bad Boy, composed by Shankar-Ehsaan-Loy, come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1319": {
+  "query": "How many artists performed the song The Last Dance for Sushin Shyam?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "1321": {
+  "query": "When was the song Killing Chacko released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1322": {
+  "query": "What year did Sushin Shyam's song Neela Kadalukkadiyil come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1332": {
+  "query": "How many vocalists are credited on Sharabi from Vishal-Shekhar's filmography?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "1334": {
+  "query": "When was the song Titli released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1335": {
+  "query": "In what year did Salaam Namaste (dhol mix) come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1363": {
+  "query": "In which year did the song Sharabi come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1367": {
+  "query": "In which year did Diljit Dosanjh first sing for Vishal-Shekhar?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_first_year_c"
+ },
+ "1371": {
+  "query": "In what year did Krishna Beura first sing for Vishal-Shekhar?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_first_year_c"
+ },
+ "1380": {
+  "query": "How many singers performed the song Sharabi for Vishal-Shekhar?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "1381": {
+  "query": "When did the song Punjabi Wedding Song come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1401": {
+  "query": "When was the song Jugni released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1402": {
+  "query": "What year did Nila Kaigirathu come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1414": {
+  "query": "In which year did the song Mountains come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1431": {
+  "query": "Name every playback singer credited on the track Panivizhum Malar Vanam in Ilaiyaraaja's catalogue.",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_list"
+ },
+ "1433": {
+  "query": "How many vocalists are credited on Muthumani Maalai from Ilaiyaraaja's filmography?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "1435": {
+  "query": "When was the song Andhi Mazhai Megam released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1436": {
+  "query": "In what year did Poo Maalayae by Ilaiyaraaja come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1441": {
+  "query": "Who sang the song Panivizhum Malar Vanam for Ilaiyaraaja?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_list"
+ },
+ "1442": {
+  "query": "Who performed the song Andhi Mazhai Megam for Ilaiyaraaja?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_list"
+ },
+ "1443": {
+  "query": "How many artists performed the song Ilamai Ennum Poonkaatru for Ilaiyaraaja?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "1444": {
+  "query": "When was the song Muthumani Maalai released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1445": {
+  "query": "In what year did the song En Uyire Vaa come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1449": {
+  "query": "How many songs did Kamal Haasan sing for Ilaiyaraaja in 1987?",
+  "heads": {
+   "select_cols": [
+    "title"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_songs_count_year"
+ },
+ "1453": {
+  "query": "Which year saw G. V. Prakash Kumar record the most songs for Ilaiyaraaja?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_top_year"
+ },
+ "1454": {
+  "query": "In which year did Radhika first sing for Ilaiyaraaja?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_first_year_c"
+ },
+ "1461": {
+  "query": "Find the vocalists on Andhi Mazhai Megam from Ilaiyaraaja's album for the film containing it.",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_list"
+ },
+ "1462": {
+  "query": "Who are the vocalists on Ilamai Ennum Poonkaatru from Ilaiyaraaja's album for the film it appears in?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_list"
+ },
+ "1464": {
+  "query": "When was the song En Uyire Vaa released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1465": {
+  "query": "In which year did Ilaiyaraaja's song Poo Maalayae come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1470": {
+  "query": "How many movies did Kamal Haasan sing for Ilaiyaraaja?",
+  "heads": {
+   "select_cols": [
+    "movie_name"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_movies_count"
+ },
+ "1472": {
+  "query": "In which year did G. V. Prakash Kumar first sing for Ilaiyaraaja?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_first_year_c"
+ },
+ "1476": {
+  "query": "How many artists performed the song En Uyire Vaa for Ilaiyaraaja?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "1479": {
+  "query": "In which year did Kamal Haasan sing the most songs for Ilaiyaraaja?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_top_year"
+ },
+ "1484": {
+  "query": "Who are the vocalists on Ilamai Ennum Poonkaatru from Ilaiyaraaja's album for the film containing it?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_list"
+ },
+ "1486": {
+  "query": "What year did the song Muthumani Maalai come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1495": {
+  "query": "Find the vocalists on Panivizhum Malar Vanam from Ilaiyaraaja's album for the film containing it.",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_list"
+ },
+ "1497": {
+  "query": "How many vocalists are credited on Andhi Mazhai Megam from Ilaiyaraaja's filmography?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "1498": {
+  "query": "How many singers are credited for the song En Uyire Vaa in Ilaiyaraaja's work?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "1499": {
+  "query": "When was the song Ilamai Ennum Poonkaatru released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1500": {
+  "query": "In what year did the song Poo Maalayae come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1504": {
+  "query": "In which year did Bhupinder Singh first sing for Ilaiyaraaja?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_first_year_c"
+ },
+ "1515": {
+  "query": "Name every playback singer credited on the track O Bedardeya in Pritam's catalogue.",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_list"
+ },
+ "1516": {
+  "query": "How many artists performed the song Tera Hone Laga Hoon for Pritam?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "1517": {
+  "query": "When was the song Shiva Theme released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1518": {
+  "query": "In what year did the song Banda come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1529": {
+  "query": "Find the vocalists on O Bedardeya from Pritam's album for the film containing it.",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_list"
+ },
+ "1531": {
+  "query": "When was the song O Bedardeya released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1532": {
+  "query": "In what year did the song Tera Hone Laga Hoon come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1549": {
+  "query": "List the playback singers credited on the song Tera Hone Laga Hoon in Pritam's catalogue.",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_list"
+ },
+ "1550": {
+  "query": "How many artists performed the song Banda for Pritam?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "1555": {
+  "query": "How many songs did Diljit Dosanjh sing for Pritam in 2023?",
+  "heads": {
+   "select_cols": [
+    "title"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_songs_count_year"
+ },
+ "1566": {
+  "query": "Who sang the song Tera Hone Laga Hoon for Pritam?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_list"
+ },
+ "1567": {
+  "query": "Which vocalists performed the song O Bedardeya for Pritam?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_list"
+ },
+ "1570": {
+  "query": "When was the song Dheemey Dheemey released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1571": {
+  "query": "When did Pritam's song Utth Ja Ziddi Re come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1584": {
+  "query": "How many artists performed the song Bol Na Halke Halke for Shankar-Ehsaan-Loy?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "1586": {
+  "query": "When was the song Tu Hi Bata Zindagi (male) released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1587": {
+  "query": "In which year did the song Chedkhaniyaan by Shankar-Ehsaan-Loy come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1592": {
+  "query": "When was the song Bol Na Halke Halke released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1596": {
+  "query": "In which year did Hariharan first sing for Shankar-Ehsaan-Loy?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_first_year_c"
+ },
+ "1598": {
+  "query": "In what year did the song Panga (Title Track) come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1602": {
+  "query": "What year did Harshdeep Kaur first work as a singer for Shankar-Ehsaan-Loy?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_first_year_c"
+ },
+ "1614": {
+  "query": "When was the song Panga (Title Track) released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1615": {
+  "query": "In which year did the song Chedkhaniyaan come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1624": {
+  "query": "How many artists performed the song Prey for Sushin Shyam?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "1625": {
+  "query": "When was the song Broken Things released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1626": {
+  "query": "In which year did the song Virus come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1633": {
+  "query": "How many vocalists are credited on The Last Dance from Sushin Shyam's filmography?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "1634": {
+  "query": "When was the song Prey released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1635": {
+  "query": "In what year did the song Kisa Paathiyil come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1646": {
+  "query": "When was the song The Last Dance released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1660": {
+  "query": "How many artists performed the song Tooh for Vishal-Shekhar?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "1661": {
+  "query": "When was the song Jabraa Fan (Marathi) released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1687": {
+  "query": "In what year did the song Subah Subah come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1714": {
+  "query": "How many vocalists are credited on Mukkala Mukkabala from A. R. Rahman's filmography?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "1722": {
+  "query": "When was the song Mukkala Mukkabala released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1723": {
+  "query": "In what year did the song Chanda Re come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1731": {
+  "query": "In which year did Hema Sardesai first sing for A. R. Rahman?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_first_year_c"
+ },
+ "1732": {
+  "query": "When did Kavita Krishnamurthy first sing for A. R. Rahman?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_first_year_c"
+ },
+ "1754": {
+  "query": "How many artists performed the song Naan Sonnal for Ilaiyaraaja?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "1755": {
+  "query": "When was the song Ithu Oru Pon Malai released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1759": {
+  "query": "In which year did Karthik first sing for Ilaiyaraaja?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_first_year_c"
+ },
+ "1762": {
+  "query": "When did the song Maasi Maasam come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1788": {
+  "query": "Who sang the song Maasi Maasam composed by Ilaiyaraaja?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_list"
+ },
+ "1790": {
+  "query": "When was the song Naan Sonnal released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1791": {
+  "query": "In which year did Ilaiyaraaja's song Ithu Oru Pon Malai come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1792": {
+  "query": "How many tracks in Ilaiyaraaja's catalogue feature Karthik as a vocalist?",
+  "heads": {
+   "select_cols": [
+    "title"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_songs_count_c"
+ },
+ "1800": {
+  "query": "Name every playback singer credited on the track Maasi Maasam in Ilaiyaraaja's catalogue.",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_list"
+ },
+ "1803": {
+  "query": "When was the song The Journey released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1808": {
+  "query": "When was the song Tum Mile (Remix) released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1812": {
+  "query": "In which year did DJ Akbar Sami first sing for Pritam?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_first_year_c"
+ },
+ "1815": {
+  "query": "In what year did the song Phurrr (film version) come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1832": {
+  "query": "When was the song Obsession released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1833": {
+  "query": "In what year did Pritam's track Phurrr (film version) come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1840": {
+  "query": "In which year did Snoop Dogg first sing for Pritam?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_first_year_c"
+ },
+ "1847": {
+  "query": "How many vocalists are credited on Tum Mile (Remix) from Pritam's filmography?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "1849": {
+  "query": "When was the song Lehra Do (film version) released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1850": {
+  "query": "In which year did Phurrr (film version) come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1863": {
+  "query": "On Tum Mile (Remix) from Pritam's filmography, how many vocalists receive credit?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "1864": {
+  "query": "When was the song Phurrr (film version) released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1874": {
+  "query": "For the song Mourya Re by Shankar-Ehsaan-Loy, how many performers were credited?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "1875": {
+  "query": "When was the song Dekh Toofaan Aaya Hai released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1876": {
+  "query": "In which year did the song Chhapaak (Title Track) come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1879": {
+  "query": "Which songs did KK record for Shankar-Ehsaan-Loy in 2003? List them.",
+  "heads": {
+   "select_cols": [
+    "title"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_songs_list_year"
+ },
+ "1883": {
+  "query": "In which year did Kamal Haasan first sing for Shankar-Ehsaan-Loy?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_first_year_c"
+ },
+ "1888": {
+  "query": "Who are the singers in the movie Taare Zameen Par by Shankar-Ehsaan-Loy?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "movie_singers_list"
+ },
+ "1892": {
+  "query": "Who were the playback singers on Shankar-Ehsaan-Loy's soundtrack for Taare Zameen Par?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "movie_singers_list"
+ },
+ "1895": {
+  "query": "How many artists performed the song Dekh Toofaan Aaya Hai for Shankar-Ehsaan-Loy?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "1896": {
+  "query": "How many vocalists performed Chhapaak (Title Track) for Shankar-Ehsaan-Loy?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "1897": {
+  "query": "When was the song Dhuaan released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1898": {
+  "query": "In which year did Toh Zinda Ho Tum come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1904": {
+  "query": "Could you list the songs from Shankar-Ehsaan-Loy's score for Taare Zameen Par?",
+  "heads": {
+   "select_cols": [
+    "title"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "movie_songs_list"
+ },
+ "1908": {
+  "query": "How many artists performed the song Mourya Re for Shankar-Ehsaan-Loy?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "1909": {
+  "query": "What year did the song Chhapaak (Title Track) come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1912": {
+  "query": "How many songs did Shaan sing for Shankar-Ehsaan-Loy in 2007?",
+  "heads": {
+   "select_cols": [
+    "title"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_songs_count_year"
+ },
+ "1919": {
+  "query": "Which artists performed the song Dekh Toofaan Aaya Hai for Shankar-Ehsaan-Loy?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_list"
+ },
+ "1921": {
+  "query": "How many vocalists performed the song Chhapaak (Title Track) for Shankar-Ehsaan-Loy?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "1922": {
+  "query": "When was the song Mourya Re released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1923": {
+  "query": "In what year did the song Dhuaan come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1934": {
+  "query": "How many vocalists are credited on The Mumbai Infinity from Sushin Shyam's filmography?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "1936": {
+  "query": "When was the song Kuthanthram - Extended released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1937": {
+  "query": "What year did Broken Things come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1948": {
+  "query": "How many artists performed the song Broken Things for Sushin Shyam?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "1956": {
+  "query": "Name every playback singer credited on the track Lungi Dance in Vishal-Shekhar's catalogue.",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_list"
+ },
+ "1958": {
+  "query": "When did the song Tore Bina come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1965": {
+  "query": "Who sang the track Ajab Si composed by Vishal-Shekhar? List all the playback singers.",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "name_asc"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_list"
+ },
+ "1967": {
+  "query": "How many artists performed the song Haule Haule for Vishal-Shekhar?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "1968": {
+  "query": "When was the song Tore Bina released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1969": {
+  "query": "In what year did the song Bhankas come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1971": {
+  "query": "How many songs did KK sing for Vishal-Shekhar?",
+  "heads": {
+   "select_cols": [
+    "title"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_songs_count_c"
+ },
+ "1977": {
+  "query": "In which year did KK first sing for Vishal-Shekhar?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_first_year_c"
+ },
+ "1985": {
+  "query": "When was the song Lungi Dance released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1986": {
+  "query": "When did the song Haule Haule come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1996": {
+  "query": "How many artists performed the song Kaise Mujhe (instrumental) for A. R. Rahman?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "1997": {
+  "query": "How many artists performed the song Jumbalaka for A. R. Rahman?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "1998": {
+  "query": "When was the song Warriors of Heaven and Earth released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "1999": {
+  "query": "In which year did the song Munnerudhan come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "2001": {
+  "query": "How many songs has KK sung for A. R. Rahman?",
+  "heads": {
+   "select_cols": [
+    "title"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_songs_count_c"
+ },
+ "2012": {
+  "query": "How many singers performed the track Jumbalaka for A. R. Rahman?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "2013": {
+  "query": "When was the song Chinna Chinna Aasai (Bit) released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "2014": {
+  "query": "In which year did the song The Giant Emerges come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "2016": {
+  "query": "How many songs in A. R. Rahman's catalogue have KK as a vocalist?",
+  "heads": {
+   "select_cols": [
+    "title"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_songs_count_c"
+ },
+ "2020": {
+  "query": "In which year did P. Susheela first sing for A. R. Rahman?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_first_year_c"
+ },
+ "2032": {
+  "query": "How many vocalists are credited on Kaise Mujhe (instrumental) from A. R. Rahman's filmography?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "2033": {
+  "query": "When was the song Jumbalaka released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "2034": {
+  "query": "In which year did Chinna Chinna Aasai (Bit) come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "2043": {
+  "query": "When was the song Kaise Mujhe (instrumental) released?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "2044": {
+  "query": "In what year did Chinna Chinna Aasai (Bit) come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "2050": {
+  "query": "How many films did KK contribute vocals to in A. R. Rahman's discography?",
+  "heads": {
+   "select_cols": [
+    "movie_name"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_movies_count"
+ },
+ "2051": {
+  "query": "In which year did Alphonse first sing for A. R. Rahman?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "none"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "singer_first_year_c"
+ },
+ "2052": {
+  "query": "When did Kamaal Khan first collaborate with A. R. Rahman as a singer?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "singer_first_year_c"
+ },
+ "2060": {
+  "query": "For the track Chinna Chinna Aasai (Bit), how many artists performed it for A. R. Rahman?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "song_singers_count"
+ },
+ "2061": {
+  "query": "When did the song Warriors of Heaven and Earth come out?",
+  "heads": {
+   "select_cols": [
+    "date"
+   ],
+   "filter_col": [
+    "year"
+   ],
+   "filter_op": [
+    "year_eq"
+   ],
+   "agg": [
+    "min"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "1"
+   ]
+  },
+  "template_id": "song_year"
+ },
+ "2068": {
+  "query": "Which music composers did the singer Shaan sing for?",
+  "heads": {
+   "select_cols": [],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "xc_singer_composers_list"
+ },
+ "2072": {
+  "query": "Which composer did the singer Caralisa Monteiro sing the most songs for?",
+  "heads": {
+   "select_cols": [],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "xc_singer_top_composer"
+ },
+ "2076": {
+  "query": "How many songs has the singer Diljit Dosanjh sung in total?",
+  "heads": {
+   "select_cols": [
+    "singer"
+   ],
+   "filter_col": [
+    "none"
+   ],
+   "filter_op": [
+    "none"
+   ],
+   "agg": [
+    "count"
+   ],
+   "group_by": [
+    "none"
+   ],
+   "join": [
+    "songs_singers"
+   ],
+   "order": [
+    "none"
+   ],
+   "limit": [
+    "none"
+   ]
+  },
+  "template_id": "xc_singer_total_songs"
+ },
+ "_meta": {
+  "n": 373,
+  "adapter": "results/exp1/best/final",
+  "constraints": true,
+  "total_time": 297.1
+ }
+}

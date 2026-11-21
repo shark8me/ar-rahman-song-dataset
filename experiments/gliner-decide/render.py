@@ -175,6 +175,9 @@ def render(pred, values, fdict):
         ordr = " ORDER BY MIN(s1.date) ASC" if (agg == "min" or group_by != "none") else " ORDER BY s1.date ASC"
     elif order == "date_desc":
         ordr = " ORDER BY MAX(s1.date) DESC" if (agg == "max" or group_by != "none") else " ORDER BY s1.date DESC"
+    elif order == "name_asc":
+        ocol = SEL2COL.get(select[0], "s1." + select[0]) if select else "s1.title"
+        ordr = f" ORDER BY {ocol} ASC"
     elif order == "count_desc":
         gkey = gb.replace(" GROUP BY ", "") if gb else ""
         ordr = f" ORDER BY cnt DESC" + (f", {gkey} ASC" if gkey else "")

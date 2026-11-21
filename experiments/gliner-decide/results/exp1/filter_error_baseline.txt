@@ -1,0 +1,83 @@
+Filter decision error analysis — pred_finetuned-lora-best.json
+Gold entries: 31 | train idx: 25 | test idx: 6
+Missed filter_col/filter_op decisions: 13
+
+[8] test=False
+  query : When was the album Jodhaa Akbar released?
+  gold  : filter_col=movie_name filter_op=like
+  pred  : filter_col=year filter_op=year_eq
+  filter value: 'Jodhaa Akbar'  in_train=True
+
+[11] test=True
+  query : How many songs are there in the movie Roja?
+  gold  : filter_col=movie_name filter_op=like
+  pred  : filter_col=year filter_op=year_eq
+  filter value: 'Roja'  in_train=True
+
+[12] test=False
+  query : Which singer sang the song Roja Jaaneman?
+  gold  : filter_col=title filter_op=like
+  pred  : filter_col=year filter_op=year_eq
+  filter value: 'Roja Jaaneman'  in_train=True
+
+[13] test=False
+  query : When was the song Roja Jaaneman released?
+  gold  : filter_col=title filter_op=like
+  pred  : filter_col=year filter_op=year_eq
+  filter value: 'Roja Jaaneman'  in_train=True
+
+[14] test=False
+  query : How many artists performed the song Aadi Paaru Mangaatha?
+  gold  : filter_col=title filter_op=like
+  pred  : filter_col=year filter_op=year_eq
+  filter value: 'Aadi Paaru Mangaatha'  in_train=True
+
+[15] test=True
+  query : who sang song Aadi Paaru Mangaatha?
+  gold  : filter_col=title filter_op=like
+  pred  : filter_col=year filter_op=year_eq
+  filter value: 'Aadi Paaru Mangaatha'  in_train=True
+
+[19] test=False
+  query : Who are the singers in movie Delhi-6?
+  gold  : filter_col=movie_name filter_op=like
+  pred  : filter_col=year filter_op=year_eq
+  filter value: 'Delhi-6'  in_train=True
+
+[20] test=True
+  query : Who are the singers for the song Aaromale
+  gold  : filter_col=title filter_op=like
+  pred  : filter_col=year filter_op=year_eq
+  filter value: 'Aaromale'  in_train=False
+
+[21] test=False
+  query : Who collaborated with singer Mathangi on song Aaha Tamizhamma?
+  gold  : filter_col=title filter_op=like
+  pred  : filter_col=year filter_op=year_eq
+  filter value: 'Aaha Tamizhamma | Mathangi'  in_train=False
+
+[24] test=False
+  query : List the songs in the film The Gentleman
+  gold  : filter_col=movie_name filter_op=like
+  pred  : filter_col=year filter_op=year_eq
+  filter value: 'The Gentleman'  in_train=True
+
+[25] test=True
+  query : Which film is the song Agar Tum Saath Ho in?
+  gold  : filter_col=title filter_op=like
+  pred  : filter_col=year filter_op=year_eq
+  filter value: 'Agar Tum Saath Ho'  in_train=False
+
+[26] test=False
+  query : Which year was the song Alaipayuthey released?
+  gold  : filter_col=title filter_op=like
+  pred  : filter_col=year filter_op=year_eq
+  filter value: 'Alaipayuthey'  in_train=True
+
+[27] test=False
+  query : list all the singers who sang for the movie Alaipayuthey
+  gold  : filter_col=movie_name filter_op=like
+  pred  : filter_col=year filter_op=year_eq
+  filter value: 'Alaipayuthey'  in_train=True
+
+Summary: 13 misses | filter value present in train: 10 | absent from train: 3 | no filter value extractable: 0

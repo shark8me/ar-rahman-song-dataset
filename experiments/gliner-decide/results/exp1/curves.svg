@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="460"
+ font-family="monospace"><rect width="900" height="460" fill="#11151c"/>
+<text x="20" y="28" fill="#e6e6e6" font-size="18">exp1 LoRA training curves</text>
+<text x="20" y="48" fill="#888" font-size="11">updated 20:51:58</text>
+<text x="40" y="120" fill="#888" font-size="14">waiting for metrics… (job may not have started)</text>
+<text x="40" y="440" fill="#aaa" font-size="12">step=? epoch=? lr=? train_pts=0 eval_pts=0</text>
+</svg>

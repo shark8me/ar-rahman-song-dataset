@@ -53,3 +53,4 @@ experiments/gliner-decide/arr.db
 
 # Large experiment result dirs (checkpoints/predictions)
 experiments/gliner-decide/results/lora*/
+experiments/gliner-decide/results/exp1/best/

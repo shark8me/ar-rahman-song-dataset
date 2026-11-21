@@ -1,0 +1,33 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] You are using a model of type `gliner2` to instantiate a model of type `extractor`. This may be expected if you are loading a checkpoint that shares a subset of the architecture (e.g., loading a `sam2_video` checkpoint into `Sam2Model`), but is otherwise not supported and can yield errors. Please verify that the checkpoint is compatible with the model you are instantiating.
+[transformers] You are using a model of type `gliner2` to instantiate a model of type ``. This may be expected if you are loading a checkpoint that shares a subset of the architecture (e.g., loading a `sam2_video` checkpoint into `Sam2Model`), but is otherwise not supported and can yield errors. Please verify that the checkpoint is compatible with the model you are instantiating.
+n_test: 373
+
+per-head accuracy:
+  select_cols  240/373 = 0.643
+  filter_col   358/373 = 0.960
+  filter_op    362/373 = 0.971
+  agg          262/373 = 0.702
+  group_by     373/373 = 1.000
+  join         373/373 = 1.000
+  order        373/373 = 1.000
+  limit        373/373 = 1.000
+
+exact skeleton: 128/373 = 0.343
+filter decision (col+op): 358/373 = 0.960
+
+filter decision by split:
+  held_out  filter 197/212 = 0.929   skeleton 100/212 = 0.472
+  seen      filter 161/161 = 1.000   skeleton 28/161 = 0.174
+
+filter_col confusion (gold -> pred):
+  title -> none: 10
+  title -> movie_name: 3
+  title -> year: 1
+  none -> movie_name: 1
+filter_op confusion (gold -> pred):
+  like -> none: 10
+  like -> like: 4
+  none -> like: 1
+
+meta: {'n': 373, 'adapter': 'results/exp1/retrain/final', 'constraints': True, 'descriptions': True, 'total_time': 624.3}

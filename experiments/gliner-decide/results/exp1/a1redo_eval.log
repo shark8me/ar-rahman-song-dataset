@@ -1,0 +1,45 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] You are using a model of type `gliner2` to instantiate a model of type `extractor`. This may be expected if you are loading a checkpoint that shares a subset of the architecture (e.g., loading a `sam2_video` checkpoint into `Sam2Model`), but is otherwise not supported and can yield errors. Please verify that the checkpoint is compatible with the model you are instantiating.
+[transformers] You are using a model of type `gliner2` to instantiate a model of type ``. This may be expected if you are loading a checkpoint that shares a subset of the architecture (e.g., loading a `sam2_video` checkpoint into `Sam2Model`), but is otherwise not supported and can yield errors. Please verify that the checkpoint is compatible with the model you are instantiating.
+/home/kiran/src/music/arr-qa/experiments/gliner-decide/.venv/lib/python3.11/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/kiran/src/music/arr-qa/experiments/gliner-decide/.venv/lib/python3.11/site-packages/gliner2/models/span/model.py:99: RuntimeWarning: Encoder rejected attn_implementation='sdpa'; falling back to 'eager' (DebertaV2Model does not support an attention implementation through torch.nn.functional.scaled_dot_product_attention yet. Please request the support for this architecture: https://github.com/huggingface/transformers/issues/28005. If you believe this error is a bug, please open an issue in Transformers GitHub repository and load your model with the argument `attn_implementation="eager"` meanwhile. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="eager")`)
+  self.encoder = self._load_encoder(
+============================================================
+🧠 Model Configuration
+============================================================
+Encoder model      : microsoft/deberta-v3-large
+Counting layer     : count_lstm
+Token pooling      : first
+============================================================
+/home/kiran/src/music/arr-qa/experiments/gliner-decide/.venv/lib/python3.11/site-packages/peft/config.py:220: UserWarning: Unexpected keyword arguments ['astra_config'] for class LoraConfig, these are ignored. This probably means that you're loading a configuration file that was saved using a higher version of the library and additional parameters have been introduced since. It is highly recommended to upgrade the PEFT version before continuing (e.g. by running `pip install -U peft`).
+  warnings.warn(
+n_test: 373
+
+per-head accuracy:
+  select_cols  373/373 = 1.000
+  filter_col   365/373 = 0.979
+  filter_op    370/373 = 0.992
+  agg          316/373 = 0.847
+  group_by     373/373 = 1.000
+  join         372/373 = 0.997
+  order        373/373 = 1.000
+  limit        216/373 = 0.579
+
+exact skeleton: 166/373 = 0.445
+filter decision (col+op): 365/373 = 0.979
+
+filter decision by split:
+  held_out  filter 204/212 = 0.962   skeleton 5/212 = 0.024
+  seen      filter 161/161 = 1.000   skeleton 161/161 = 1.000
+
+filter_col confusion (gold -> pred):
+  title -> movie_name: 5
+  title -> none: 2
+  none -> movie_name: 1
+filter_op confusion (gold -> pred):
+  like -> like: 5
+  like -> none: 2
+  none -> like: 1
+
+meta: {'n': 373, 'adapter': 'results/exp1/best/final', 'constraints': True, 'total_time': 894.0}

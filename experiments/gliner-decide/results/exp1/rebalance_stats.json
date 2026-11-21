@@ -1,0 +1,14 @@
+{
+ "train_size": 1954,
+ "filter_dist": {
+  "title|like": 672,
+  "movie_name|like": 794,
+  "none|none": 338,
+  "year|like": 148,
+  "year|year_eq": 2
+ },
+ "year_capped_from": 449,
+ "year_kept": 150,
+ "synth": 550,
+ "swap_pairs": 112
+}

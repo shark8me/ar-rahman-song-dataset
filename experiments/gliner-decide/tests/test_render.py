@@ -61,6 +61,17 @@ def test_group_count_desc_top_n():
     assert rows[0][0] == "A. R. Rahman", rows
     c.close()
 
+def test_name_asc_orders_by_selected_name_col():
+    c = conn(); fd = fdict(c)
+    sql = render({"select_cols": ["movie_name"], "filter_col": ["none"], "filter_op": ["none"],
+                  "agg": ["none"], "group_by": ["none"], "join": [],
+                  "order": ["name_asc"], "limit": ["none"]}, {}, fd)
+    assert " ORDER BY s1.movie_name ASC" in sql, sql
+    rows = c.execute(sql).fetchall()
+    vals = [r[0] for r in rows]
+    assert vals == sorted(vals), sql
+    c.close()
+
 def test_extract_values_year_n_singer():
     v = extract_values("List all songs Singers the singer Sid Sriram sang in 2016")
     assert v["year"] == "2016", v
