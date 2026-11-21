@@ -9,6 +9,52 @@ on the leakage-safe 373-question test set is excellent for select/group/order/jo
 filter_op, the bottleneck identified in REPORT.md — stayed collapsed at ~0.23 with
 the same degenerate `year`/`year_eq` prediction the 25-example run showed.
 
+## Main table — what each stage of fine-tuning buys (cross-links to REPORT.md)
+
+The full fine-tuning progression, from no fine-tuning at all to the final
+adapter. Zero-shot and 25-example numbers are from `REPORT.md` (Tables
+"Results — zero-shot" and "A4 — LoRA fine-tune"); all 1,703-example numbers
+are from this report's per-stage tables below. Metric definitions differ
+slightly across stages (zero-shot/25-example: 31 Rahman questions; scaled
+stages: 373-question leakage-safe test split, corrected constraints — so the
+zero-shot filter numbers are *understated* against an easier scoring regime
+and the gap is, if anything, larger than shown).
+
+| stage | train size | filter decision | exact skeleton | EA |
+|---|---|---|---|---|
+| zero-shot (no fine-tune) | 0 | 0.231* | **0.000** | 0.00–0.03 |
+| 25-example LoRA (A4) | 25 | 0.581 | 0.548 | 0.419 overall / 0.000 held-out |
+| scaled LoRA, 8ep bare (a1redo) | 1,703 | 0.979 | 0.445 | 0.867 |
+| scaled LoRA + rebalanced 3ep (retrain) | 1,954 | 0.952 | 0.694 | 0.825 |
+| **scaled LoRA + descriptions (a2desc)** | 1,703 | **0.979** | **0.845** | **0.870** |
+| a2desc + first-family scorer rule | 1,703 | 0.979 | 0.845 | **0.966** |
+
+*zero-shot filter_col+filter_op combined ≈ 0.16 each (constrained; REPORT.md
+zero-shot table); constraints actively hurt zero-shot.
+
+Reading the table:
+
+1. **Fine-tuning is necessary, not optional.** Zero-shot GLiNER2.5-Decide
+   never produces a single correct skeleton (0/31) regardless of constraints
+   — every per-head gain is moot because all 8 heads must be right at once.
+2. **25 examples buy the mechanism, not the coverage.** Skeleton 0 → 54.8%
+   and EA 0 → 41.9% on seen questions, but held-out filter decisions stay
+   0/6 — with ~6 title-like filter patterns in train, the head can't read
+   slot type from the query.
+3. **100× more data buys the filter decision.** 25 → 1,703 lifts filter
+   0.581 → 0.979 (held-out 0.962) — but only after the inference-time
+   constraint set was corrected (A1-redo); the naive constraint set masked
+   the gain (0.231).
+4. **Data rebalancing trades heads; descriptions add without taking away.**
+   The rebalanced retrain tripled skeleton (0.445 → 0.694) by fixing limit
+   but dropped agg (0.847 → 0.697). Training *with* label descriptions
+   (a2desc, same data as a1redo) keeps filter at 0.979 and fixes both
+   limit and agg → skeleton 0.845, EA 0.870.
+5. **The residual gap is one template family, best fixed outside the model.**
+   Two retrains to teach `first` ⇒ min (aggfirst, aggv2) both regressed
+   other heads; the deterministic scorer rule closes it inference-only:
+   EA 0.870 → 0.966.
+
 ## What succeeded
 
 - **Scaled verified corpus** (`experiments/multi-composer-qa/gold-multi-scaled.jsonl`,
