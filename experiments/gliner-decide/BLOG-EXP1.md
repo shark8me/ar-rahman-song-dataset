@@ -15,7 +15,58 @@ Kun Faya Kun?" and the SQL that answers them.
 The underlying model is a small encoder (GLiNER2.5-Decide) that doesn't
 generate SQL. Instead it makes **8 classification decisions** about a
 question's structure — the "SQL skeleton" — and a renderer turns that skeleton
-into real SQL run against per-composer databases. For example:
+into real SQL run against per-composer databases.
+
+### The 8 heads: what each one reads and decides
+
+Every head is a classification over the *same input* — the question text plus
+the frozen schema label list for that head (optionally with label descriptions,
+e.g. `like: "substring/pattern match"`). The model outputs, for each label,
+whether it applies. Training is LoRA fine-tuning on that input→label mapping.
+Concretely, for the question "List the playback singers featured on
+Shankar-Ehsaan-Loy's soundtrack for the film Taare Zameen Par":
+
+| head | type | labels (simplified) | output for this question |
+|---|---|---|---|
+| `select_cols` | multi-label | song, singer, movie_name, year, … | `[singer]` — what the answer should contain |
+| `filter_col` | single-label | none, title, movie_name, year, singer | `movie_name` — which column the WHERE clause targets |
+| `filter_op` | single-label | none, like, year_eq | `like` — substring match |
+| `agg` | single-label | none, min, max, count, distinct | `none` — plain rows |
+| `group_by` | single-label | none, year | `none` |
+| `join` | multi-label | songs_singers, songs_movies, none | `[songs_singers]` — singer table joins song table |
+| `order` | single-label | none, count_desc, name_asc | `none` |
+| `limit` | single-label | none, 1 | `none` |
+
+The renderer then combines the 8 decisions into SQL:
+`SELECT s2.singer FROM songs_se l1 JOIN singers_se s2 … WHERE
+l1.movie_name LIKE '%Taare Zameen Par%'`. Two heads the question never
+mentions (group_by, order) still have to be right — a spurious `group_by=year`
+silently corrupts the answer.
+
+Per-head accuracy on the 373-question held-out test set (the a2desc adapter,
+the final champion; from the "A1-redo" and "A2-proper" tables in
+`REPORT-EXP1.md`):
+
+| head | 25-example LoRA | scaled bare (a1redo) | **scaled + descriptions (a2desc)** |
+|---|---|---|---|
+| select_cols | — | 1.000 | 0.995 |
+| group_by | 0.065 | 1.000 | 1.000 |
+| order | 0.323 | 1.000 | 1.000 |
+| join | 0.419 | 0.997 | 0.997 |
+| limit | 0.613 | 0.579 | 1.000 |
+| agg | 0.355 | 0.847 | 0.858 |
+| filter_col | 0.161 | 0.979 | 0.979 |
+| filter_op | 0.161 | 0.979 | 0.979 |
+| **exact skeleton (all 8)** | 0.000 | 0.445 | **0.845** |
+
+*(25-example figures are the no-constraint zero-shot numbers from
+`REPORT.md`'s zero-shot table — the A4 fine-tuned adapter's per-head breakdown
+was only reported for filter/skeleton.)*
+
+Reading it: the structural heads (group_by, order, join) go from coin-flip to
+near-perfect with 100× data; the filter pair — the heads that require reading
+slot type — go from 0.161 to 0.979; and agg stays the hardest (~0.86), which
+is exactly where the first-family rule (below) picks up. For example:
 
 > **Question:** "List the playback singers featured on Shankar-Ehsaan-Loy's
 > soundtrack for the film Taare Zameen Par."
