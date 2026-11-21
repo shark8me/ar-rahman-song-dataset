@@ -1,0 +1,16 @@
+EA-eligible test entries: 354 (skipped 19 cross-composer)
+EA: 354/354 = 1.000
+  exec errors: 0   unbound filter values: 0
+by composer:
+  ila: 105/105 = 1.000
+  arr: 60/60 = 1.000
+  vsh: 57/57 = 1.000
+  pri: 54/54 = 1.000
+  sel: 49/49 = 1.000
+  sus: 29/29 = 1.000
+by answer shape:
+  scalar: 212/212 = 1.000
+  count: 90/90 = 1.000
+  list: 52/52 = 1.000
+time: 36s
+wrote /home/kiran/src/music/arr-qa/experiments/gliner-decide/results/exp1/ea_fresh.json

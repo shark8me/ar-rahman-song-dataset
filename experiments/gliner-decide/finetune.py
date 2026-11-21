@@ -16,7 +16,8 @@ from gliner2.training.data import InputExample, Classification, TrainingDataset
 from gliner2.training.trainer import TrainingConfig, GLiNER2Trainer
 
 from query_schema import (SELECT_LABELS, FILTER_COLS, FILTER_OPS, AGG_LABELS,
-                          GROUP_LABELS, JOIN_LABELS, ORDER_LABELS, LIMIT_LABELS)
+                          GROUP_LABELS, JOIN_LABELS, ORDER_LABELS, LIMIT_LABELS,
+                          LABEL_DESCRIPTIONS)
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 
@@ -31,6 +32,15 @@ HEAD_SPECS = {
     "order":       (ORDER_LABELS, False),
     "limit":       (LIMIT_LABELS, False),
 }
+
+
+def head_labels(head, base, use_descriptions=False):
+    """A2-proper: labels stay a list; descriptions ride in the separate
+    `label_descriptions` field (gliner2 sampling modes few_shot/descriptions/both
+    require that split -- dict labels crash random.sample label dropping)."""
+    if not use_descriptions:
+        return base, None
+    return base, {lab: LABEL_DESCRIPTIONS[head][lab] for lab in base}
 
 
 def gold_examples():
@@ -139,6 +149,8 @@ def main():
     ap.add_argument("--out", default=None, help="adapter output dir override")
     ap.add_argument("--metrics-out", default=None,
                     help="JSONL path for live training curves (default: results/exp1/metrics.jsonl)")
+    ap.add_argument("--descriptions", action="store_true",
+                    help="A2-proper: train with {label: description} label maps")
     a = ap.parse_args()
 
     if a.data:
@@ -152,8 +164,9 @@ def main():
                     tv = []
                 if not isinstance(tv, list):
                     tv = [tv]
-                cls.append({"task": head, "labels": labels, "true_label": tv,
-                            "multi_label": multi})
+                labs, descs = head_labels(head, labels, a.descriptions)
+                cls.append({"task": head, "labels": labs, "true_label": tv,
+                            "multi_label": multi, "label_descriptions": descs})
             raw.append({"idx": g['idx'], "query": g['query'], "classifications": cls})
     else:
         raw = gold_examples()

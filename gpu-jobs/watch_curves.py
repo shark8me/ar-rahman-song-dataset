@@ -48,16 +48,48 @@ def render(recs, out):
     parts = [SVG_HEAD.format(ts=time.strftime("%H:%M:%S"))]
     series = [("train loss", tr, "loss", "#4fc3f7"), ("eval loss", ev, "eval_loss", "#ff8a65")]
     plotted = 0
+    W, H, X0, Y0, YB = 840, 330, 40, 70, 400
+    ymax, smax = 1.0, 1
+    # joint scale (p99 cap keeps divergence visible); axes drawn once
+    all_vals = [r[key] for _, pts, key, _ in series for r in pts]
+    smax = max([r.get("step", i + 1) for _, pts, _, _ in series
+                for i, r in enumerate(pts)] or [1])
+    if all_vals:
+        vcap = sorted(all_vals)[int(0.99 * (len(all_vals) - 1))] if len(all_vals) > 5 \
+            else max(all_vals)
+        ymax = max(vcap, 1e-6) * 1.1
+        # y gridlines + tick labels
+        nticks = 5
+        for i in range(nticks + 1):
+            v = ymax * i / nticks
+            y = YB - (v / ymax) * (YB - Y0)
+            parts.append(f'<line x1="{X0}" y1="{y:.1f}" x2="{X0+W}" y2="{y:.1f}" '
+                         f'stroke="#232a36" stroke-width="1"/>')
+            lab = f"{v:.1f}" if v >= 1 else f"{v:.3g}"
+            parts.append(f'<text x="{X0-6}" y="{y+4:.1f}" fill="#888" font-size="11" '
+                         f'text-anchor="end">{lab}</text>')
+        # x ticks: steps
+        xt = 5
+        for i in range(xt + 1):
+            s = smax * i / xt
+            x = X0 + (s / smax) * W
+            parts.append(f'<line x1="{x:.1f}" y1="{Y0}" x2="{x:.1f}" y2="{YB}" '
+                         f'stroke="#1a2130" stroke-width="1"/>')
+            parts.append(f'<text x="{x:.1f}" y="{YB+18}" fill="#888" font-size="11" '
+                         f'text-anchor="middle">{s:.0f}</text>')
+        # axis lines + axis titles
+        parts.append(f'<line x1="{X0}" y1="{Y0}" x2="{X0}" y2="{YB}" stroke="#666" '
+                     f'stroke-width="1.5"/>')
+        parts.append(f'<line x1="{X0}" y1="{YB}" x2="{X0+W}" y2="{YB}" stroke="#666" '
+                     f'stroke-width="1.5"/>')
+        parts.append(f'<text x="14" y="{(Y0+YB)//2}" fill="#aaa" font-size="12" '
+                     f'transform="rotate(-90 14 {(Y0+YB)//2})">loss</text>')
+        parts.append(f'<text x="{X0+W//2}" y="{YB+38}" fill="#aaa" font-size="12" '
+                     f'text-anchor="middle">step</text>')
     for label, pts, key, color in series:
         if not pts:
             continue
         vals = [r[key] for r in pts]
-        vmax = max(max(vals), 1e-6)
-        W, H, X0, Y0, YB = 840, 330, 40, 70, 400
-        # log-ish scale: cap display at p99 to keep divergence visible but scaled
-        vcap = sorted(vals)[int(0.99 * (len(vals) - 1))] if len(vals) > 5 else vmax
-        ymax = max(vcap, 1e-6) * 1.1
-        smax = max(r.get("step", i + 1) for i, r in enumerate(pts))
         poly = []
         for i, r in enumerate(pts):
             v = min(r[key], ymax)

@@ -1,0 +1,16 @@
+EA-eligible test entries: 354 (skipped 19 cross-composer)
+EA: 308/354 = 0.870
+  exec errors: 0   unbound filter values: 2
+by composer:
+  ila: 97/105 = 0.924
+  arr: 51/60 = 0.850
+  vsh: 50/57 = 0.877
+  pri: 45/54 = 0.833
+  sel: 44/49 = 0.898
+  sus: 21/29 = 0.724
+by answer shape:
+  scalar: 171/212 = 0.807
+  count: 87/90 = 0.967
+  list: 50/52 = 0.962
+time: 291s
+wrote /home/kiran/src/music/arr-qa/experiments/gliner-decide/results/exp1/ea_exp1_a1redo_a3nofuzzy.json

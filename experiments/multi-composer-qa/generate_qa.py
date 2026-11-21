@@ -202,7 +202,14 @@ PHRASES = {
         "How many films did {singer} contribute vocals to in {composer}'s discography?",
     ],
     "singer_top_year": "In which year did {singer} sing the most songs for {composer}?",
-    "singer_first_year_c": "In which year did {singer} first sing for {composer}?",
+    "singer_first_year_c": [
+        "In which year did {singer} first sing for {composer}?",
+        "When did {singer} first work with {composer}?",
+        "When did {singer} first appear on a {composer} album?",
+        "Which year did {singer} first collaborate with {composer}?",
+        "When did {singer} start singing for {composer}?",
+        "What year did {singer} make their first recording for {composer}?",
+    ],
     "xc_singer_composers_count": [
         "How many music composers did the singer {singer} sing for?",
         "Across all six composers, how many composers feature the singer {singer} on their soundtracks?",

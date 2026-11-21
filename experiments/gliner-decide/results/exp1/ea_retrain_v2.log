@@ -1,0 +1,16 @@
+EA-eligible test entries: 354 (skipped 19 cross-composer)
+EA: 292/354 = 0.825
+  exec errors: 0   unbound filter values: 2
+by composer:
+  ila: 94/105 = 0.895
+  arr: 48/60 = 0.800
+  vsh: 44/57 = 0.772
+  pri: 44/54 = 0.815
+  sel: 43/49 = 0.878
+  sus: 19/29 = 0.655
+by answer shape:
+  scalar: 155/212 = 0.731
+  count: 87/90 = 0.967
+  list: 50/52 = 0.962
+time: 474s
+wrote /home/kiran/src/music/arr-qa/experiments/gliner-decide/results/exp1/ea_exp1_retrain.json

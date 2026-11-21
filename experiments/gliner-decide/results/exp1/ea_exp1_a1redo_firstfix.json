@@ -1,0 +1,4620 @@
+{
+ "_meta": {
+  "ea": 342,
+  "n": 354,
+  "no_fuzzy": false,
+  "gold_heads": false,
+  "gold_values": false,
+  "pred": "results/exp1/pred_exp1_a1redo.json",
+  "skipped_xc": 19
+ },
+ "rows": {
+  "42": {
+   "query": "Find the vocalists on Maasi Maasam from Ilaiyaraaja's album for the film containing it.",
+   "composer": "ila",
+   "sql": "SELECT DISTINCT s2.singer FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Maasi Maasam%' ORDER BY s2.singer ASC",
+   "values": {
+    "work_name": "Maasi Maasam"
+   },
+   "answer": [
+    "K. J. Yesudas",
+    "Swarnalatha"
+   ],
+   "gold": [
+    "K. J. Yesudas",
+    "Swarnalatha"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "46": {
+   "query": "When was the song Panivizhum Malar Vanam released?",
+   "composer": "ila",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_ila s1 WHERE s1.song LIKE '%Panivizhum Malar Vanam%' LIMIT 1",
+   "values": {
+    "work_name": "Panivizhum Malar Vanam"
+   },
+   "answer": "1982-01-01 00:00:00",
+   "gold": "1982-01-01 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "47": {
+   "query": "In which year did the song Adida Melathai come out?",
+   "composer": "ila",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_ila s1 WHERE s1.song LIKE '%Adida Melathai%' LIMIT 1",
+   "values": {
+    "work_name": "Adida Melathai"
+   },
+   "answer": "2000-01-14 00:00:00",
+   "gold": "2000-01-14 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "59": {
+   "query": "In which year did Dhanush first sing for Ilaiyaraaja?",
+   "composer": "ila",
+   "sql": "SELECT MIN(substr(s1.release_date,1,4)) FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Dhanush%'",
+   "values": {},
+   "answer": "2023",
+   "gold": "2023",
+   "ok": true,
+   "error": null
+  },
+  "73": {
+   "query": "When was the song Ae Khuda released?",
+   "composer": "pri",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_pri s1 WHERE s1.song LIKE '%Ae Khuda%' LIMIT 1",
+   "values": {
+    "work_name": "Ae Khuda"
+   },
+   "answer": "2007-04-16 00:00:00",
+   "gold": "2007-04-16 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "84": {
+   "query": "In which year did B Praak first sing for Pritam?",
+   "composer": "pri",
+   "sql": "SELECT MIN(substr(s1.release_date,1,4)) FROM songs_pri s1 JOIN singers_pri s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%B Praak%'",
+   "values": {},
+   "answer": "2021",
+   "gold": "2021",
+   "ok": true,
+   "error": null
+  },
+  "97": {
+   "query": "List the playback singers featured on Shankar-Ehsaan-Loy's soundtrack for the film Taare Zameen Par.",
+   "composer": "sel",
+   "sql": "SELECT DISTINCT s2.singer FROM songs_sel s1 JOIN singers_sel s2 ON s1.song_id = s2.song_id WHERE s1.movie LIKE '%Taare Zameen Par%' ORDER BY s2.singer ASC",
+   "values": {
+    "work_name": "Taare Zameen Par"
+   },
+   "answer": [
+    "Aamir Khan",
+    "Adnan Sami",
+    "Amitabh Bhattacharya",
+    "Amole Gupte",
+    "Ananya Wadkar",
+    "Auriel Cordo",
+    "Bugs Bhargava",
+    "Divya Kumar",
+    "Dominique Cerejo",
+    "Kiran Rao",
+    "Loy Mendonsa",
+    "Raaj Gopal Iyer",
+    "Ram Madhvani",
+    "Raman Mahadevan",
+    "Ravi Khanwilker",
+    "Shaan",
+    "Shankar Mahadevan",
+    "Shankar Sachdev",
+    "Shankar–Ehsaan–Loy",
+    "Siddharth Mahadevan",
+    "Vishal Dadlani",
+    "Vivienne Pocha"
+   ],
+   "gold": [
+    "Aamir Khan",
+    "Adnan Sami",
+    "Amitabh Bhattacharya",
+    "Amole Gupte",
+    "Ananya Wadkar",
+    "Auriel Cordo",
+    "Bugs Bhargava",
+    "Divya Kumar",
+    "Dominique Cerejo",
+    "Kiran Rao",
+    "Loy Mendonsa",
+    "Raaj Gopal Iyer",
+    "Ram Madhvani",
+    "Raman Mahadevan",
+    "Ravi Khanwilker",
+    "Shaan",
+    "Shankar Mahadevan",
+    "Shankar Sachdev",
+    "Shankar–Ehsaan–Loy",
+    "Siddharth Mahadevan",
+    "Vishal Dadlani",
+    "Vivienne Pocha"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "102": {
+   "query": "When was the song Duma Dum released?",
+   "composer": "sel",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_sel s1 WHERE s1.song LIKE '%Duma Dum%' LIMIT 1",
+   "values": {
+    "work_name": "Duma Dum"
+   },
+   "answer": "2013-06-28 00:00:00",
+   "gold": "2013-06-28 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "103": {
+   "query": "What year did the song Dhoop Ke Sikke come out?",
+   "composer": "sel",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_sel s1 WHERE s1.song LIKE '%Dhoop Ke Sikke%' LIMIT 1",
+   "values": {
+    "work_name": "Dhoop Ke Sikke"
+   },
+   "answer": "2009-09-29 00:00:00",
+   "gold": "2009-09-29 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "121": {
+   "query": "Who are the playback singers credited on Kuthanthram - Extended from Sushin Shyam's filmography?",
+   "composer": "sus",
+   "sql": "SELECT DISTINCT s2.singer FROM songs_sus s1 JOIN singers_sus s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Kuthanthram - Extended%' AND s2.singer LIKE '%Sushin Shyam%' ORDER BY s2.singer ASC",
+   "values": {
+    "work_name": "Kuthanthram - Extended"
+   },
+   "answer": [
+    "Sushin Shyam"
+   ],
+   "gold": [
+    "Sushin Shyam",
+    "Vedan"
+   ],
+   "ok": false,
+   "error": null
+  },
+  "123": {
+   "query": "When was the song Sleepless Nights released?",
+   "composer": "sus",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_sus s1 WHERE s1.song LIKE '%Sleepless Nights%' LIMIT 1",
+   "values": {
+    "work_name": "Sleepless Nights"
+   },
+   "answer": "2020-04-09 00:00:00",
+   "gold": "2020-04-09 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "124": {
+   "query": "In which year did the song The Cyber Hunt come out?",
+   "composer": "sus",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_sus s1 WHERE s1.song LIKE '%The Cyber Hunt%' LIMIT 1",
+   "values": {
+    "work_name": "The Cyber Hunt"
+   },
+   "answer": "2023-11-13 00:00:00",
+   "gold": "2023-11-13 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "137": {
+   "query": "In which year did Pradeep Kumar first sing for Sushin Shyam?",
+   "composer": "sus",
+   "sql": "SELECT MIN(substr(s1.release_date,1,4)) FROM songs_sus s1 JOIN singers_sus s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Pradeep Kumar%'",
+   "values": {},
+   "answer": "2021",
+   "gold": "2021",
+   "ok": true,
+   "error": null
+  },
+  "138": {
+   "query": "When did Suchith Suresan first sing for Sushin Shyam?",
+   "composer": "sus",
+   "sql": "SELECT MIN(substr(s1.release_date,1,4)) FROM songs_sus s1 JOIN singers_sus s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Suchith Suresan%'",
+   "values": {},
+   "answer": "2016",
+   "gold": "2016",
+   "ok": true,
+   "error": null
+  },
+  "153": {
+   "query": "When was the song Chand Chahiye released?",
+   "composer": "vsh",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_vsh s1 WHERE s1.song LIKE '%Chand Chahiye%' LIMIT 1",
+   "values": {
+    "work_name": "Chand Chahiye"
+   },
+   "answer": "2003-06-20 00:00:00",
+   "gold": "2003-06-20 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "154": {
+   "query": "In what year did Lovely (house remix) come out?",
+   "composer": "vsh",
+   "sql": "SELECT DISTINCT s1.release_date FROM songs_vsh s1 WHERE s1.movie LIKE '%Minds Without Fear%'",
+   "values": {
+    "work_name": "Minds Without Fear"
+   },
+   "answer": "2011-10-16 00:00:00",
+   "gold": "2014-09-26 00:00:00",
+   "ok": false,
+   "error": null
+  },
+  "164": {
+   "query": "List the songs Kailash Kher sang for Vishal-Shekhar in 2006.",
+   "composer": "vsh",
+   "sql": "SELECT DISTINCT s1.song FROM songs_vsh s1 JOIN singers_vsh s2 ON s1.song_id = s2.song_id WHERE substr(s1.release_date,1,4) LIKE '2006%' AND s2.singer LIKE '%Kailash Kher%' ORDER BY s1.song ASC",
+   "values": {
+    "year": "2006"
+   },
+   "answer": [
+    "Chal Rahi Hai Saanse (Trapped In Paradise Mix)"
+   ],
+   "gold": [
+    "Chal Rahi Hai Saanse (Trapped In Paradise Mix)"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "165": {
+   "query": "How many movies did Shaan sing for Vishal-Shekhar?",
+   "composer": "vsh",
+   "sql": "SELECT COUNT(DISTINCT s1.movie) FROM songs_vsh s1 JOIN singers_vsh s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Shaan%'",
+   "values": {},
+   "answer": 14,
+   "gold": 14,
+   "ok": true,
+   "error": null
+  },
+  "173": {
+   "query": "When was the song Marvel Anthem released?",
+   "composer": "arr",
+   "sql": "SELECT MIN(s1.date) FROM songs s1 WHERE s1.title LIKE '%Marvel Anthem%' LIMIT 1",
+   "values": {
+    "work_name": "Marvel Anthem"
+   },
+   "answer": "2019-04-05",
+   "gold": "2019-04-05",
+   "ok": true,
+   "error": null
+  },
+  "180": {
+   "query": "How many tracks in A. R. Rahman's catalogue feature Hariharan as a vocalist?",
+   "composer": "arr",
+   "sql": "SELECT COUNT(DISTINCT s1.title) FROM songs s1 JOIN singers s2 ON s1.song_id = s2.song_id WHERE s2.name LIKE '%Hariharan%'",
+   "values": {},
+   "answer": 83,
+   "gold": 83,
+   "ok": true,
+   "error": null
+  },
+  "181": {
+   "query": "How many films did Harshdeep Kaur contribute vocals to in A. R. Rahman's discography?",
+   "composer": "arr",
+   "sql": "SELECT COUNT(DISTINCT s1.movie_name) FROM songs s1 JOIN singers s2 ON s1.song_id = s2.song_id WHERE s2.name LIKE '%Harshdeep Kaur%'",
+   "values": {},
+   "answer": 3,
+   "gold": 3,
+   "ok": true,
+   "error": null
+  },
+  "183": {
+   "query": "In which year did U2 first sing for A. R. Rahman?",
+   "composer": "arr",
+   "sql": "SELECT MIN(substr(s1.date,1,4)) FROM songs s1 JOIN singers s2 ON s1.song_id = s2.song_id WHERE s2.name LIKE '%U2%'",
+   "values": {},
+   "answer": "2019",
+   "gold": "2019",
+   "ok": true,
+   "error": null
+  },
+  "194": {
+   "query": "Who sang Marvel Anthem on A. R. Rahman's album for the film it appears in?",
+   "composer": "arr",
+   "sql": "SELECT DISTINCT s2.name FROM songs s1 JOIN singers s2 ON s1.song_id = s2.song_id WHERE s1.title LIKE '%Marvel Anthem%' ORDER BY s2.name ASC",
+   "values": {
+    "work_name": "Marvel Anthem"
+   },
+   "answer": [
+    "A. R. Rahman"
+   ],
+   "gold": [
+    "A. R. Rahman"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "196": {
+   "query": "When was the song Nila Kaigirathu released?",
+   "composer": "arr",
+   "sql": "SELECT MIN(s1.date) FROM songs s1 WHERE s1.title LIKE '%Nila Kaigirathu%' LIMIT 1",
+   "values": {
+    "work_name": "Nila Kaigirathu"
+   },
+   "answer": "1995-05-11",
+   "gold": "1995-05-11",
+   "ok": true,
+   "error": null
+  },
+  "197": {
+   "query": "In which year did the song Laadli come out?",
+   "composer": "arr",
+   "sql": "SELECT MIN(s1.date) FROM songs s1 WHERE s1.title LIKE '%Laadli%' LIMIT 1",
+   "values": {
+    "work_name": "Laadli"
+   },
+   "answer": "2014-09-29",
+   "gold": "2014-09-29",
+   "ok": true,
+   "error": null
+  },
+  "199": {
+   "query": "List all songs that Minmini sang for A. R. Rahman in 1992.",
+   "composer": "arr",
+   "sql": "SELECT DISTINCT s1.title FROM songs s1 JOIN singers s2 ON s1.song_id = s2.song_id WHERE substr(s1.date,1,4) LIKE '1992%' AND s2.name LIKE '%Minmini%' ORDER BY s1.title ASC",
+   "values": {
+    "year": "1992"
+   },
+   "answer": [
+    "Chinna Chinna Aasai",
+    "Chinna Chinna Aasai (Bit)",
+    "Chinni Chinni Aasa",
+    "Chinni Chinni Aasa (Reprise)"
+   ],
+   "gold": [
+    "Chinna Chinna Aasai",
+    "Chinna Chinna Aasai (Bit)",
+    "Chinni Chinni Aasa",
+    "Chinni Chinni Aasa (Reprise)"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "201": {
+   "query": "How many movies did Hariharan sing for A. R. Rahman?",
+   "composer": "arr",
+   "sql": "SELECT COUNT(DISTINCT s1.movie_name) FROM songs s1 JOIN singers s2 ON s1.song_id = s2.song_id WHERE s2.name LIKE '%Hariharan%'",
+   "values": {},
+   "answer": 61,
+   "gold": 61,
+   "ok": true,
+   "error": null
+  },
+  "203": {
+   "query": "In which year did Minmini first sing for A. R. Rahman?",
+   "composer": "arr",
+   "sql": "SELECT MIN(substr(s1.date,1,4)) FROM songs s1 JOIN singers s2 ON s1.song_id = s2.song_id WHERE s2.name LIKE '%Minmini%'",
+   "values": {},
+   "answer": "1992",
+   "gold": "1992",
+   "ok": true,
+   "error": null
+  },
+  "227": {
+   "query": "How many vocalists are credited on Changu Chaaka from Ilaiyaraaja's filmography?",
+   "composer": "ila",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Changu Chaaka%'",
+   "values": {
+    "work_name": "Changu Chaaka"
+   },
+   "answer": 1,
+   "gold": 1,
+   "ok": true,
+   "error": null
+  },
+  "228": {
+   "query": "When was the song Nilaavae Vaa released?",
+   "composer": "ila",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_ila s1 WHERE s1.song LIKE '%Nilaavae Vaa%' LIMIT 1",
+   "values": {
+    "work_name": "Nilaavae Vaa"
+   },
+   "answer": "1986-01-01 00:00:00",
+   "gold": "1986-01-01 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "229": {
+   "query": "In what year did Raja Kaiya Vachchaa come out?",
+   "composer": "ila",
+   "sql": "SELECT DISTINCT s1.release_date FROM songs_ila s1 WHERE s1.song LIKE '%Raja Kaiya Vachchaa%'",
+   "values": {
+    "work_name": "Raja Kaiya Vachchaa"
+   },
+   "answer": "1989-01-01 00:00:00",
+   "gold": "1989-01-01 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "240": {
+   "query": "Who sang the song Changu Chaaka for Ilaiyaraaja?",
+   "composer": "ila",
+   "sql": "SELECT DISTINCT s2.singer FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Changu Chaaka%' ORDER BY s2.singer ASC",
+   "values": {
+    "work_name": "Changu Chaaka"
+   },
+   "answer": [
+    "S. P. Sailaja"
+   ],
+   "gold": [
+    "S. P. Sailaja"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "241": {
+   "query": "Which artists performed the song Nilaavae Vaa for Ilaiyaraaja?",
+   "composer": "ila",
+   "sql": "SELECT DISTINCT s2.singer FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Nilaavae Vaa%' ORDER BY s2.singer ASC",
+   "values": {
+    "work_name": "Nilaavae Vaa"
+   },
+   "answer": [
+    "S. P. Balasubrahmanyam"
+   ],
+   "gold": [
+    "S. P. Balasubrahmanyam"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "243": {
+   "query": "When was the song Mandaveli released?",
+   "composer": "ila",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_ila s1 WHERE s1.song LIKE '%Mandaveli%' LIMIT 1",
+   "values": {
+    "work_name": "Mandaveli"
+   },
+   "answer": "1984-12-21 00:00:00",
+   "gold": "1984-12-21 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "244": {
+   "query": "In what year did the song Nothing but Wind come out?",
+   "composer": "ila",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_ila s1 WHERE s1.song LIKE '%Nothing but Wind%' LIMIT 1",
+   "values": {
+    "work_name": "Nothing but Wind"
+   },
+   "answer": "2003-01-08 00:00:00",
+   "gold": "2003-01-08 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "245": {
+   "query": "How many tracks in Ilaiyaraaja's catalogue feature Kailash Kher as a vocalist?",
+   "composer": "ila",
+   "sql": "SELECT COUNT(DISTINCT s1.song) FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Kailash Kher%'",
+   "values": {},
+   "answer": 5,
+   "gold": 5,
+   "ok": true,
+   "error": null
+  },
+  "246": {
+   "query": "How many tracks in Ilaiyaraaja's catalogue feature Kumar Sanu as a vocalist?",
+   "composer": "ila",
+   "sql": "SELECT COUNT(DISTINCT s1.song) FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Kumar Sanu%'",
+   "values": {},
+   "answer": 1,
+   "gold": 1,
+   "ok": true,
+   "error": null
+  },
+  "254": {
+   "query": "Find the vocalists on Nilaavae Vaa from Ilaiyaraaja's album for the film containing it.",
+   "composer": "ila",
+   "sql": "SELECT DISTINCT s2.singer FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Nilaavae Vaa%' ORDER BY s2.singer ASC",
+   "values": {
+    "work_name": "Nilaavae Vaa"
+   },
+   "answer": [
+    "S. P. Balasubrahmanyam"
+   ],
+   "gold": [
+    "S. P. Balasubrahmanyam"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "256": {
+   "query": "How many artists performed the song Raja Kaiya Vachchaa for Ilaiyaraaja?",
+   "composer": "ila",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Raja Kaiya Vachchaa%'",
+   "values": {
+    "work_name": "Raja Kaiya Vachchaa"
+   },
+   "answer": 1,
+   "gold": 1,
+   "ok": true,
+   "error": null
+  },
+  "257": {
+   "query": "How many singers performed Ayiram Thamarai for Ilaiyaraaja?",
+   "composer": "ila",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Ayiram Thamarai%'",
+   "values": {
+    "work_name": "Ayiram Thamarai"
+   },
+   "answer": 2,
+   "gold": 2,
+   "ok": true,
+   "error": null
+  },
+  "258": {
+   "query": "When was the song Changu Chaaka released?",
+   "composer": "ila",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_ila s1 WHERE s1.song LIKE '%Changu Chaaka%' LIMIT 1",
+   "values": {
+    "work_name": "Changu Chaaka"
+   },
+   "answer": "1990-04-27 00:00:00",
+   "gold": "1990-04-27 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "260": {
+   "query": "Which songs did Kamal Haasan record for Ilaiyaraaja in 1991? List them.",
+   "composer": "ila",
+   "sql": "SELECT DISTINCT s1.song FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE substr(s1.release_date,1,4) LIKE '1991%' AND s2.singer LIKE '%Kamal Haasan%' ORDER BY s1.song ASC",
+   "values": {
+    "year": "1991"
+   },
+   "answer": [
+    "Introduction Speech",
+    "Kanmani Anbodu",
+    "Kanmani Anbodu - (Speech)",
+    "Kanmani Anbodu Kadhalan (From Guna)",
+    "Nayaki Nayakan",
+    "Unnai Naan Ariyen"
+   ],
+   "gold": [
+    "Introduction Speech",
+    "Kanmani Anbodu",
+    "Kanmani Anbodu - (Speech)",
+    "Kanmani Anbodu Kadhalan (From Guna)",
+    "Nayaki Nayakan",
+    "Unnai Naan Ariyen"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "261": {
+   "query": "How many films did Kumar Sanu contribute vocals to in Ilaiyaraaja's discography?",
+   "composer": "ila",
+   "sql": "SELECT COUNT(DISTINCT s1.movie) FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Kumar Sanu%'",
+   "values": {},
+   "answer": 1,
+   "gold": 1,
+   "ok": true,
+   "error": null
+  },
+  "263": {
+   "query": "In which year did Neeti Mohan first sing for Ilaiyaraaja?",
+   "composer": "ila",
+   "sql": "SELECT MIN(substr(s1.release_date,1,4)) FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Neeti Mohan%'",
+   "values": {},
+   "answer": "2019",
+   "gold": "2019",
+   "ok": true,
+   "error": null
+  },
+  "270": {
+   "query": "Find the vocalists on Changu Chaaka from Ilaiyaraaja's album for the film containing it.",
+   "composer": "ila",
+   "sql": "SELECT DISTINCT s2.singer FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Changu Chaaka%' ORDER BY s2.singer ASC",
+   "values": {
+    "work_name": "Changu Chaaka"
+   },
+   "answer": [
+    "S. P. Sailaja"
+   ],
+   "gold": [
+    "S. P. Sailaja"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "272": {
+   "query": "How many vocalists are credited on Nilaavae Vaa from Ilaiyaraaja's filmography?",
+   "composer": "ila",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Nilaavae Vaa%'",
+   "values": {
+    "work_name": "Nilaavae Vaa"
+   },
+   "answer": 1,
+   "gold": 1,
+   "ok": true,
+   "error": null
+  },
+  "273": {
+   "query": "How many singers perform Ayiram Thamarai from Ilaiyaraaja's filmography?",
+   "composer": "ila",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Ayiram Thamarai%'",
+   "values": {
+    "work_name": "Ayiram Thamarai"
+   },
+   "answer": 2,
+   "gold": 2,
+   "ok": true,
+   "error": null
+  },
+  "274": {
+   "query": "When was the song Poonkuyile Poonkuyile released?",
+   "composer": "ila",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_ila s1 WHERE s1.song LIKE '%Poonkuyile Poonkuyile%' LIMIT 1",
+   "values": {
+    "work_name": "Poonkuyile Poonkuyile"
+   },
+   "answer": "1999-03-25 00:00:00",
+   "gold": "1999-03-25 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "275": {
+   "query": "How many songs did Kamal Haasan sing for Ilaiyaraaja?",
+   "composer": "ila",
+   "sql": "SELECT COUNT(DISTINCT s1.song) FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Kamal Haasan%'",
+   "values": {},
+   "answer": 44,
+   "gold": 44,
+   "ok": true,
+   "error": null
+  },
+  "296": {
+   "query": "When was the song Ya Ali released?",
+   "composer": "pri",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_pri s1 WHERE s1.song LIKE '%Ya Ali%' LIMIT 1",
+   "values": {
+    "work_name": "Ya Ali"
+   },
+   "answer": "2006-03-18 00:00:00",
+   "gold": "2006-03-18 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "297": {
+   "query": "In which year did Shayad (film version) come out?",
+   "composer": "pri",
+   "sql": "SELECT DISTINCT s1.release_date FROM songs_pri s1 WHERE s1.movie LIKE '%Shayad (film version) [from \"Love Aaj Kal\"]%'",
+   "values": {
+    "work_name": "Shayad (film version) [from \"Love Aaj Kal\"]"
+   },
+   "answer": "2021-03-26 00:00:00",
+   "gold": "2021-03-26 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "298": {
+   "query": "How many songs did KK sing for Pritam?",
+   "composer": "pri",
+   "sql": "SELECT COUNT(DISTINCT s1.song) FROM songs_pri s1 JOIN singers_pri s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%KK%'",
+   "values": {},
+   "answer": 97,
+   "gold": 97,
+   "ok": true,
+   "error": null
+  },
+  "299": {
+   "query": "How many songs has Shaan sung for Pritam?",
+   "composer": "pri",
+   "sql": "SELECT COUNT(DISTINCT s1.song) FROM songs_pri s1 JOIN singers_pri s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Shaan%'",
+   "values": {},
+   "answer": 51,
+   "gold": 51,
+   "ok": true,
+   "error": null
+  },
+  "300": {
+   "query": "Which songs did KK record for Pritam in 2008? List them.",
+   "composer": "pri",
+   "sql": "SELECT DISTINCT s1.song FROM songs_pri s1 JOIN singers_pri s2 ON s1.song_id = s2.song_id WHERE substr(s1.release_date,1,4) LIKE '2008%' AND s2.singer LIKE '%KK%' ORDER BY s1.song ASC",
+   "values": {
+    "year": "2008"
+   },
+   "answer": [
+    "Dekho Nashe Mein",
+    "Dekho Nashe Mein (Asian RnB mix)",
+    "Dekho Nashe Mein (Latin fiesta mix)",
+    "Golmaal (Remix)",
+    "Zara Sa (Power Ballad)"
+   ],
+   "gold": [
+    "Dekho Nashe Mein",
+    "Dekho Nashe Mein (Asian RnB mix)",
+    "Dekho Nashe Mein (Latin fiesta mix)",
+    "Golmaal (Remix)",
+    "Zara Sa (Power Ballad)"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "302": {
+   "query": "How many songs did Shaan sing for Pritam in 2007?",
+   "composer": "pri",
+   "sql": "SELECT COUNT(DISTINCT s1.song) FROM songs_pri s1 JOIN singers_pri s2 ON s1.song_id = s2.song_id WHERE substr(s1.release_date,1,4) LIKE '2007%' AND s2.singer LIKE '%Shaan%'",
+   "values": {
+    "year": "2007"
+   },
+   "answer": 13,
+   "gold": 13,
+   "ok": true,
+   "error": null
+  },
+  "305": {
+   "query": "In which year did Sreerama Chandra first sing for Pritam?",
+   "composer": "pri",
+   "sql": "SELECT MIN(substr(s1.release_date,1,4)) FROM songs_pri s1 JOIN singers_pri s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Sreerama Chandra%'",
+   "values": {},
+   "answer": "2013",
+   "gold": "2013",
+   "ok": true,
+   "error": null
+  },
+  "312": {
+   "query": "List the songs in the film Taare Zameen Par by Shankar-Ehsaan-Loy.",
+   "composer": "sel",
+   "sql": "SELECT DISTINCT s1.song FROM songs_sel s1 WHERE s1.movie LIKE '%Taare Zameen Par%' ORDER BY s1.song ASC",
+   "values": {
+    "work_name": "Taare Zameen Par"
+   },
+   "answer": [
+    "Bheja Kum",
+    "Bum Bum Bole",
+    "Good for Nothing",
+    "Ishan's Theme",
+    "Jame Raho",
+    "Kholo Kholo",
+    "Maa",
+    "Mera Jahan",
+    "Shubh Mangalam",
+    "Sitaare Zameen Par Title Track",
+    "Taare Zameen Par"
+   ],
+   "gold": [
+    "Bheja Kum",
+    "Bum Bum Bole",
+    "Good for Nothing",
+    "Ishan's Theme",
+    "Jame Raho",
+    "Kholo Kholo",
+    "Maa",
+    "Mera Jahan",
+    "Shubh Mangalam",
+    "Sitaare Zameen Par Title Track",
+    "Taare Zameen Par"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "317": {
+   "query": "Give the full tracklist of Shankar-Ehsaan-Loy's album for Taare Zameen Par.",
+   "composer": "sel",
+   "sql": "SELECT DISTINCT s1.song FROM songs_sel s1 WHERE s1.movie LIKE '%Taare Zameen Par%' ORDER BY s1.song ASC",
+   "values": {
+    "work_name": "Taare Zameen Par"
+   },
+   "answer": [
+    "Bheja Kum",
+    "Bum Bum Bole",
+    "Good for Nothing",
+    "Ishan's Theme",
+    "Jame Raho",
+    "Kholo Kholo",
+    "Maa",
+    "Mera Jahan",
+    "Shubh Mangalam",
+    "Sitaare Zameen Par Title Track",
+    "Taare Zameen Par"
+   ],
+   "gold": [
+    "Bheja Kum",
+    "Bum Bum Bole",
+    "Good for Nothing",
+    "Ishan's Theme",
+    "Jame Raho",
+    "Kholo Kholo",
+    "Maa",
+    "Mera Jahan",
+    "Shubh Mangalam",
+    "Sitaare Zameen Par Title Track",
+    "Taare Zameen Par"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "325": {
+   "query": "When was the song Kal Ho Naa Ho (The Heat Beat Mix) released?",
+   "composer": "sel",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_sel s1 WHERE s1.song LIKE '%Kal Ho Naa Ho (The Heat Beat Mix)%' LIMIT 1",
+   "values": {
+    "work_name": "Kal Ho Naa Ho (The Heat Beat Mix)"
+   },
+   "answer": "2003-01-01 00:00:00",
+   "gold": "2003-01-01 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "333": {
+   "query": "Who sang the song Kal Ho Naa Ho (The Heat Beat Mix) for Shankar-Ehsaan-Loy?",
+   "composer": "sel",
+   "sql": "SELECT DISTINCT s2.singer FROM songs_sel s1 JOIN singers_sel s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Kal Ho Naa Ho (The Heat Beat Mix)%' ORDER BY s2.singer ASC",
+   "values": {
+    "work_name": "Kal Ho Naa Ho (The Heat Beat Mix)"
+   },
+   "answer": [
+    "Sonu Nigam"
+   ],
+   "gold": [
+    "Sonu Nigam"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "351": {
+   "query": "When was the song Maravikale released?",
+   "composer": "sus",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_sus s1 WHERE s1.song LIKE '%Maravikale%' LIMIT 1",
+   "values": {
+    "work_name": "Maravikale"
+   },
+   "answer": "2024-10-23 00:00:00",
+   "gold": "2024-10-23 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "352": {
+   "query": "In what year did Alexander Theme come out?",
+   "composer": "sus",
+   "sql": "SELECT DISTINCT s1.release_date FROM songs_sus s1 WHERE s1.song LIKE '%Alexander Theme%'",
+   "values": {
+    "work_name": "Alexander Theme"
+   },
+   "answer": "2022-04-27 00:00:00",
+   "gold": "2022-04-27 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "368": {
+   "query": "How many artists performed the song Swag Se Swagat (Arabic version) for Vishal-Shekhar?",
+   "composer": "vsh",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_vsh s1 JOIN singers_vsh s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Swag Se Swagat (Arabic version)%'",
+   "values": {
+    "work_name": "Swag Se Swagat (Arabic version)"
+   },
+   "answer": 4,
+   "gold": 4,
+   "ok": true,
+   "error": null
+  },
+  "400": {
+   "query": "When was the song Ajab Si released?",
+   "composer": "vsh",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_vsh s1 WHERE s1.song LIKE '%Ajab Si%' LIMIT 1",
+   "values": {
+    "work_name": "Ajab Si"
+   },
+   "answer": "2007-01-01 00:00:00",
+   "gold": "2007-01-01 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "401": {
+   "query": "In what year did Vishal-Shekhar's song Swag Se Swagat (Arabic version) come out?",
+   "composer": "vsh",
+   "sql": "SELECT DISTINCT s1.release_date FROM songs_vsh s1 WHERE s1.song LIKE '%Swag Se Swagat (Arabic version)%'",
+   "values": {
+    "work_name": "Swag Se Swagat (Arabic version)"
+   },
+   "answer": "2018-01-01 00:00:00",
+   "gold": "2018-01-01 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "411": {
+   "query": "How many artists performed the song Ajab Si for Vishal-Shekhar?",
+   "composer": "vsh",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_vsh s1 JOIN singers_vsh s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Ajab Si%'",
+   "values": {
+    "work_name": "Ajab Si"
+   },
+   "answer": 2,
+   "gold": 2,
+   "ok": true,
+   "error": null
+  },
+  "421": {
+   "query": "How many vocalists are credited on Dheeme Dheeme from A. R. Rahman's filmography?",
+   "composer": "arr",
+   "sql": "SELECT COUNT(DISTINCT s2.name) FROM songs s1 JOIN singers s2 ON s1.song_id = s2.song_id WHERE s1.title LIKE '%Dheeme Dheeme%'",
+   "values": {
+    "work_name": "Dheeme Dheeme"
+   },
+   "answer": 1,
+   "gold": 1,
+   "ok": true,
+   "error": null
+  },
+  "422": {
+   "query": "When was the song So Gaye Hain released?",
+   "composer": "arr",
+   "sql": "SELECT MIN(s1.date) FROM songs s1 WHERE s1.title LIKE '%So Gaye Hain%' LIMIT 1",
+   "values": {
+    "work_name": "So Gaye Hain"
+   },
+   "answer": "2000-09-08",
+   "gold": "2000-09-08",
+   "ok": true,
+   "error": null
+  },
+  "435": {
+   "query": "When was the song Dheeme Dheeme released?",
+   "composer": "arr",
+   "sql": "SELECT MIN(s1.date) FROM songs s1 WHERE s1.title LIKE '%Dheeme Dheeme%' LIMIT 1",
+   "values": {
+    "work_name": "Dheeme Dheeme"
+   },
+   "answer": "2000-09-08",
+   "gold": "2000-09-08",
+   "ok": true,
+   "error": null
+  },
+  "436": {
+   "query": "In what year did the track Shambo Shambo come out?",
+   "composer": "arr",
+   "sql": "SELECT MIN(s1.date) FROM songs s1 WHERE s1.title LIKE '%Shambo Shambo%' LIMIT 1",
+   "values": {
+    "work_name": "Shambo Shambo"
+   },
+   "answer": "1993-01-01",
+   "gold": "1993-01-01",
+   "ok": true,
+   "error": null
+  },
+  "447": {
+   "query": "In which year did the song So Gaye Hain come out?",
+   "composer": "arr",
+   "sql": "SELECT MIN(s1.date) FROM songs s1 WHERE s1.title LIKE '%So Gaye Hain%' LIMIT 1",
+   "values": {
+    "work_name": "So Gaye Hain"
+   },
+   "answer": "2000-09-08",
+   "gold": "2000-09-08",
+   "ok": true,
+   "error": null
+  },
+  "479": {
+   "query": "Who sang Darling Darling in Ilaiyaraaja's album for its film?",
+   "composer": "ila",
+   "sql": "SELECT DISTINCT s2.singer FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Darling Darling%' ORDER BY s2.singer ASC",
+   "values": {
+    "work_name": "Darling Darling"
+   },
+   "answer": [
+    "Ilaiyaraaja"
+   ],
+   "gold": [
+    "Ilaiyaraaja"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "482": {
+   "query": "When was the song Poove Ilaiya Poove released?",
+   "composer": "ila",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_ila s1 WHERE s1.song LIKE '%Poove Ilaiya Poove%' LIMIT 1",
+   "values": {
+    "work_name": "Poove Ilaiya Poove"
+   },
+   "answer": "1982-01-01 00:00:00",
+   "gold": "1982-01-01 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "483": {
+   "query": "In what year did Thaamarakkili Paadunnu come out?",
+   "composer": "ila",
+   "sql": "SELECT DISTINCT s1.release_date FROM songs_ila s1 WHERE s1.song LIKE '%Thaamarakkili Paadunnu%'",
+   "values": {
+    "work_name": "Thaamarakkili Paadunnu"
+   },
+   "answer": "1988-01-01 00:00:00",
+   "gold": "1988-01-01 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "496": {
+   "query": "Find the vocalists on Poove Ilaiya Poove from Ilaiyaraaja's album for the film containing it.",
+   "composer": "ila",
+   "sql": "SELECT DISTINCT s2.singer FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Poove Ilaiya Poove%' ORDER BY s2.singer ASC",
+   "values": {
+    "work_name": "Poove Ilaiya Poove"
+   },
+   "answer": [
+    "Malaysia Vasudevan",
+    "[unknown]"
+   ],
+   "gold": [
+    "Malaysia Vasudevan",
+    "[unknown]"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "500": {
+   "query": "In what year did the song Darling Darling come out?",
+   "composer": "ila",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_ila s1 WHERE s1.song LIKE '%Darling Darling%' LIMIT 1",
+   "values": {
+    "work_name": "Darling Darling"
+   },
+   "answer": "1978-01-01 00:00:00",
+   "gold": "1978-01-01 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "509": {
+   "query": "How many vocalists are credited on Thaamarakkili Paadunnu from Ilaiyaraaja's filmography?",
+   "composer": "ila",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Thaamarakkili Paadunnu%'",
+   "values": {
+    "work_name": "Thaamarakkili Paadunnu"
+   },
+   "answer": 3,
+   "gold": 3,
+   "ok": true,
+   "error": null
+  },
+  "511": {
+   "query": "When was the song Darling Darling released?",
+   "composer": "ila",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_ila s1 WHERE s1.song LIKE '%Darling Darling%' LIMIT 1",
+   "values": {
+    "work_name": "Darling Darling"
+   },
+   "answer": "1978-01-01 00:00:00",
+   "gold": "1978-01-01 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "512": {
+   "query": "In what year did Ilaiyaraaja's song Panivizhum Malar Vanam come out?",
+   "composer": "ila",
+   "sql": "SELECT DISTINCT s1.release_date FROM songs_ila s1 WHERE s1.song LIKE '%Panivizhum Malar Vanam%' LIMIT 1",
+   "values": {
+    "work_name": "Panivizhum Malar Vanam"
+   },
+   "answer": "1982-01-01 00:00:00",
+   "gold": "1982-01-01 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "525": {
+   "query": "How many artists performed the song Panivizhum Malar Vanam for Ilaiyaraaja?",
+   "composer": "ila",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Panivizhum Malar Vanam%'",
+   "values": {
+    "work_name": "Panivizhum Malar Vanam"
+   },
+   "answer": 1,
+   "gold": 1,
+   "ok": true,
+   "error": null
+  },
+  "526": {
+   "query": "In which year did the song Darling Darling come out?",
+   "composer": "ila",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_ila s1 WHERE s1.song LIKE '%Darling Darling%' LIMIT 1",
+   "values": {
+    "work_name": "Darling Darling"
+   },
+   "answer": "1978-01-01 00:00:00",
+   "gold": "1978-01-01 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "527": {
+   "query": "How many songs has KK recorded for Ilaiyaraaja?",
+   "composer": "ila",
+   "sql": "SELECT COUNT(DISTINCT s1.song) FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%KK%'",
+   "values": {},
+   "answer": 4,
+   "gold": 4,
+   "ok": true,
+   "error": null
+  },
+  "532": {
+   "query": "In which year did Kunal Ganjawala first sing for Ilaiyaraaja?",
+   "composer": "ila",
+   "sql": "SELECT MIN(substr(s1.release_date,1,4)) FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Kunal Ganjawala%'",
+   "values": {},
+   "answer": "2009",
+   "gold": "2009",
+   "ok": true,
+   "error": null
+  },
+  "560": {
+   "query": "Who sings Phurrr on Pritam's album for the film it belongs to?",
+   "composer": "pri",
+   "sql": "SELECT DISTINCT s2.singer FROM songs_pri s1 JOIN singers_pri s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Phurrr%' ORDER BY s2.singer ASC",
+   "values": {
+    "work_name": "Phurrr"
+   },
+   "answer": [
+    "Mohit Chauhan",
+    "Pritam",
+    "Tushar Joshi"
+   ],
+   "gold": [
+    "Mohit Chauhan",
+    "Pritam",
+    "Tushar Joshi"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "562": {
+   "query": "How many vocalists are credited on Hua Main for Pritam?",
+   "composer": "pri",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_pri s1 JOIN singers_pri s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Hua Main%'",
+   "values": {
+    "work_name": "Hua Main"
+   },
+   "answer": 2,
+   "gold": 2,
+   "ok": true,
+   "error": null
+  },
+  "563": {
+   "query": "When was the song Labon Ko released?",
+   "composer": "pri",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_pri s1 WHERE s1.song LIKE '%Labon Ko%' LIMIT 1",
+   "values": {
+    "work_name": "Labon Ko"
+   },
+   "answer": "2007-09-08 00:00:00",
+   "gold": "2007-09-08 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "564": {
+   "query": "In which year did Halla Re (Neal ’n’ Nikki) come out?",
+   "composer": "pri",
+   "sql": "SELECT DISTINCT s1.release_date FROM songs_pri s1 WHERE s1.song LIKE '%Halla Re (Neal ’n’ Nikki)%'",
+   "values": {
+    "work_name": "Halla Re (Neal ’n’ Nikki)"
+   },
+   "answer": "2009-06-10 00:00:00",
+   "gold": "2009-06-10 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "567": {
+   "query": "How many songs did Harshdeep Kaur sing for Pritam?",
+   "composer": "pri",
+   "sql": "SELECT COUNT(DISTINCT s1.song) FROM songs_pri s1 JOIN singers_pri s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Harshdeep Kaur%'",
+   "values": {},
+   "answer": 6,
+   "gold": 6,
+   "ok": true,
+   "error": null
+  },
+  "578": {
+   "query": "Who are the voices behind the song Hai Junoon in Pritam's album?",
+   "composer": "pri",
+   "sql": "SELECT DISTINCT s2.singer FROM songs_pri s1 JOIN singers_pri s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Hai Junoon%' ORDER BY s2.singer ASC",
+   "values": {
+    "work_name": "Hai Junoon"
+   },
+   "answer": [
+    "KK"
+   ],
+   "gold": [
+    "KK"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "581": {
+   "query": "When was the song Hua Main released?",
+   "composer": "pri",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_pri s1 WHERE s1.song LIKE '%Hua Main%' LIMIT 1",
+   "values": {
+    "work_name": "Hua Main"
+   },
+   "answer": "2023-10-11 00:00:00",
+   "gold": "2023-10-11 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "582": {
+   "query": "In what year did the song Phurrr come out?",
+   "composer": "pri",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_pri s1 WHERE s1.song LIKE '%Phurrr%' LIMIT 1",
+   "values": {
+    "work_name": "Phurrr"
+   },
+   "answer": "2017-08-04 00:00:00",
+   "gold": "2017-08-04 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "587": {
+   "query": "In which year did Harshdeep Kaur first sing for Pritam?",
+   "composer": "pri",
+   "sql": "SELECT MIN(substr(s1.release_date,1,4)) FROM songs_pri s1 JOIN singers_pri s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Harshdeep Kaur%'",
+   "values": {},
+   "answer": "2010",
+   "gold": "2010",
+   "ok": true,
+   "error": null
+  },
+  "588": {
+   "query": "In which year did Mustafa Zahid first collaborate with Pritam as a singer?",
+   "composer": "pri",
+   "sql": "SELECT MIN(substr(s1.release_date,1,4)) FROM songs_pri s1 JOIN singers_pri s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Mustafa Zahid%'",
+   "values": {},
+   "answer": "2013",
+   "gold": "2013",
+   "ok": true,
+   "error": null
+  },
+  "597": {
+   "query": "When was the song Taare Zameen Par released?",
+   "composer": "sel",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_sel s1 WHERE s1.song LIKE '%Taare Zameen Par%' LIMIT 1",
+   "values": {
+    "work_name": "Taare Zameen Par"
+   },
+   "answer": "2007-01-01 00:00:00",
+   "gold": "2007-01-01 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "599": {
+   "query": "List all songs that Shaan sang for Shankar-Ehsaan-Loy in 2010.",
+   "composer": "sel",
+   "sql": "SELECT DISTINCT s1.song FROM songs_sel s1 JOIN singers_sel s2 ON s1.song_id = s2.song_id WHERE substr(s1.release_date,1,4) LIKE '2010%' AND s2.singer LIKE '%Shaan%' ORDER BY s1.song ASC",
+   "values": {
+    "year": "2010"
+   },
+   "answer": [
+    "Banware Se Pooche Banwariya"
+   ],
+   "gold": [
+    "Banware Se Pooche Banwariya"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "602": {
+   "query": "In which year did Kailash Kher first sing for Shankar-Ehsaan-Loy?",
+   "composer": "sel",
+   "sql": "SELECT MIN(substr(s1.release_date,1,4)) FROM songs_sel s1 JOIN singers_sel s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Kailash Kher%'",
+   "values": {},
+   "answer": "2006",
+   "gold": "2006",
+   "ok": true,
+   "error": null
+  },
+  "605": {
+   "query": "Which playback singers are featured on Shankar-Ehsaan-Loy's soundtrack for the movie Karthik Calling Karthik?",
+   "composer": "sel",
+   "sql": "SELECT DISTINCT s2.singer FROM songs_sel s1 JOIN singers_sel s2 ON s1.song_id = s2.song_id WHERE s1.movie LIKE '%Karthik Calling Karthik%' ORDER BY s2.singer ASC",
+   "values": {
+    "work_name": "Karthik Calling Karthik"
+   },
+   "answer": [
+    "Alyssa Mendonsa",
+    "Caralisa Monteiro",
+    "Clinton Cerejo",
+    "KK",
+    "Kailash Kher",
+    "Karsh Kale",
+    "Loy Mendonsa",
+    "MIDIval PunditZ",
+    "Malika Singh",
+    "Nucleya",
+    "Shankar Mahadevan",
+    "Sukanya Purayastha",
+    "Suraj Jagan",
+    "Udyan Sagar"
+   ],
+   "gold": [
+    "Alyssa Mendonsa",
+    "Caralisa Monteiro",
+    "Clinton Cerejo",
+    "KK",
+    "Kailash Kher",
+    "Karsh Kale",
+    "Loy Mendonsa",
+    "MIDIval PunditZ",
+    "Malika Singh",
+    "Nucleya",
+    "Shankar Mahadevan",
+    "Sukanya Purayastha",
+    "Suraj Jagan",
+    "Udyan Sagar"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "607": {
+   "query": "In what year did the song Mourya Re come out?",
+   "composer": "sel",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_sel s1 WHERE s1.song LIKE '%Mourya Re%' LIMIT 1",
+   "values": {
+    "work_name": "Mourya Re"
+   },
+   "answer": "2006-08-31 00:00:00",
+   "gold": "2006-08-31 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "610": {
+   "query": "How many songs has Shaan sung for Shankar-Ehsaan-Loy?",
+   "composer": "sel",
+   "sql": "SELECT COUNT(DISTINCT s1.song) FROM songs_sel s1 JOIN singers_sel s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Shaan%'",
+   "values": {},
+   "answer": 20,
+   "gold": 20,
+   "ok": true,
+   "error": null
+  },
+  "611": {
+   "query": "When did Shaan first sing for Shankar-Ehsaan-Loy?",
+   "composer": "sel",
+   "sql": "SELECT MIN(substr(s1.release_date,1,4)) FROM songs_sel s1 JOIN singers_sel s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Shaan%'",
+   "values": {},
+   "answer": "2001",
+   "gold": "2001",
+   "ok": true,
+   "error": null
+  },
+  "634": {
+   "query": "When was the song Kaar Kaala Velai released?",
+   "composer": "sus",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_sus s1 WHERE s1.song LIKE '%Kaar Kaala Velai%' LIMIT 1",
+   "values": {
+    "work_name": "Kaar Kaala Velai"
+   },
+   "answer": "2021-11-13 00:00:00",
+   "gold": "2021-11-13 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "652": {
+   "query": "How many vocalists are credited on Raftaarein from Vishal-Shekhar's filmography?",
+   "composer": "vsh",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_vsh s1 JOIN singers_vsh s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Raftaarein%'",
+   "values": {
+    "work_name": "Raftaarein"
+   },
+   "answer": 2,
+   "gold": 2,
+   "ok": true,
+   "error": null
+  },
+  "654": {
+   "query": "When was the song Haule Haule released?",
+   "composer": "vsh",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_vsh s1 WHERE s1.song LIKE '%Haule Haule%' LIMIT 1",
+   "values": {
+    "work_name": "Haule Haule"
+   },
+   "answer": "2016-04-07 00:00:00",
+   "gold": "2016-04-07 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "655": {
+   "query": "In what year did the track Ruk Ruk come out?",
+   "composer": "vsh",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_vsh s1 WHERE s1.song LIKE '%Ruk Ruk%' LIMIT 1",
+   "values": {
+    "work_name": "Ruk Ruk"
+   },
+   "answer": "2003-01-01 00:00:00",
+   "gold": "2003-01-01 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "667": {
+   "query": "How many vocalists are credited on Haule Haule from Vishal-Shekhar's filmography?",
+   "composer": "vsh",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_vsh s1 JOIN singers_vsh s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Haule Haule%'",
+   "values": {
+    "work_name": "Haule Haule"
+   },
+   "answer": 1,
+   "gold": 1,
+   "ok": true,
+   "error": null
+  },
+  "668": {
+   "query": "When was the song Ore Saawariya released?",
+   "composer": "vsh",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_vsh s1 WHERE s1.song LIKE '%Ore Saawariya%' LIMIT 1",
+   "values": {
+    "work_name": "Ore Saawariya"
+   },
+   "answer": "2009-09-28 00:00:00",
+   "gold": "2009-09-28 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "669": {
+   "query": "In which year did the song Dhoom Taana come out?",
+   "composer": "vsh",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_vsh s1 WHERE s1.song LIKE '%Dhoom Taana%' LIMIT 1",
+   "values": {
+    "work_name": "Dhoom Taana"
+   },
+   "answer": "2007-01-01 00:00:00",
+   "gold": "2007-01-01 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "680": {
+   "query": "How many vocalists are credited on Ruk Ruk from Vishal-Shekhar's filmography?",
+   "composer": "vsh",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_vsh s1 JOIN singers_vsh s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Ruk Ruk%'",
+   "values": {
+    "work_name": "Ruk Ruk"
+   },
+   "answer": 2,
+   "gold": 2,
+   "ok": true,
+   "error": null
+  },
+  "681": {
+   "query": "When was the song Raftaarein released?",
+   "composer": "vsh",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_vsh s1 WHERE s1.song LIKE '%Raftaarein%' LIMIT 1",
+   "values": {
+    "work_name": "Raftaarein"
+   },
+   "answer": "2011-09-14 00:00:00",
+   "gold": "2011-09-14 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "682": {
+   "query": "In which year did Uff Yun Maa come out?",
+   "composer": "vsh",
+   "sql": "SELECT DISTINCT s1.release_date FROM songs_vsh s1 WHERE s1.song LIKE '%Uff Yun Maa%'",
+   "values": {
+    "work_name": "Uff Yun Maa"
+   },
+   "answer": "2004-02-09 00:00:00",
+   "gold": "2004-02-09 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "683": {
+   "query": "How many songs did Lucky Ali sing for Vishal-Shekhar?",
+   "composer": "vsh",
+   "sql": "SELECT COUNT(DISTINCT s1.song) FROM songs_vsh s1 JOIN singers_vsh s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Lucky Ali%'",
+   "values": {},
+   "answer": 3,
+   "gold": 3,
+   "ok": true,
+   "error": null
+  },
+  "687": {
+   "query": "In which year did Amit Trivedi first sing for Vishal-Shekhar?",
+   "composer": "vsh",
+   "sql": "SELECT MIN(substr(s1.release_date,1,4)) FROM songs_vsh s1 JOIN singers_vsh s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Amit Trivedi%'",
+   "values": {},
+   "answer": "2021",
+   "gold": "2021",
+   "ok": true,
+   "error": null
+  },
+  "688": {
+   "query": "When did Lucky Ali first sing for Vishal-Shekhar?",
+   "composer": "vsh",
+   "sql": "SELECT MIN(substr(s1.release_date,1,4)) FROM songs_vsh s1 JOIN singers_vsh s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Lucky Ali%'",
+   "values": {},
+   "answer": "2008",
+   "gold": "2008",
+   "ok": true,
+   "error": null
+  },
+  "694": {
+   "query": "How many songs did Vishal Bhardwaj sing for Vishal-Shekhar?",
+   "composer": "vsh",
+   "sql": "SELECT COUNT(DISTINCT s1.song) FROM songs_vsh s1 JOIN singers_vsh s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Vishal Bhardwaj%'",
+   "values": {},
+   "answer": 1,
+   "gold": 1,
+   "ok": true,
+   "error": null
+  },
+  "697": {
+   "query": "In which year did Amitabh Bachchan first sing for Vishal-Shekhar?",
+   "composer": "vsh",
+   "sql": "SELECT MIN(substr(s1.release_date,1,4)) FROM songs_vsh s1 JOIN singers_vsh s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Amitabh Bachchan%'",
+   "values": {},
+   "answer": "2008",
+   "gold": "2008",
+   "ok": true,
+   "error": null
+  },
+  "711": {
+   "query": "How many artists performed the song Raftaarein for Vishal-Shekhar?",
+   "composer": "vsh",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_vsh s1 JOIN singers_vsh s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Raftaarein%'",
+   "values": {
+    "work_name": "Raftaarein"
+   },
+   "answer": 2,
+   "gold": 2,
+   "ok": true,
+   "error": null
+  },
+  "712": {
+   "query": "How many vocalists lent their voices to Haule Haule in Vishal-Shekhar's composition?",
+   "composer": "vsh",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_vsh s1 JOIN singers_vsh s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Haule Haule%'",
+   "values": {
+    "work_name": "Haule Haule"
+   },
+   "answer": 1,
+   "gold": 1,
+   "ok": true,
+   "error": null
+  },
+  "713": {
+   "query": "When was the song Dhoom Taana released?",
+   "composer": "vsh",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_vsh s1 WHERE s1.song LIKE '%Dhoom Taana%' LIMIT 1",
+   "values": {
+    "work_name": "Dhoom Taana"
+   },
+   "answer": "2007-01-01 00:00:00",
+   "gold": "2007-01-01 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "714": {
+   "query": "In which year did Aas Paas Khuda (unplugged) come out?",
+   "composer": "vsh",
+   "sql": "SELECT DISTINCT s1.release_date FROM songs_vsh s1 WHERE s1.song LIKE '%Aas Paas Khuda (unplugged)%'",
+   "values": {
+    "work_name": "Aas Paas Khuda (unplugged)"
+   },
+   "answer": "2010-01-01 00:00:00",
+   "gold": "2010-01-01 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "717": {
+   "query": "How many films did Amitabh Bachchan contribute vocals to in Vishal-Shekhar's discography?",
+   "composer": "vsh",
+   "sql": "SELECT COUNT(DISTINCT s1.movie) FROM songs_vsh s1 JOIN singers_vsh s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Amitabh Bachchan%'",
+   "values": {},
+   "answer": 5,
+   "gold": 5,
+   "ok": true,
+   "error": null
+  },
+  "719": {
+   "query": "When did Vishal Bhardwaj make their first appearance on a Vishal-Shekhar album?",
+   "composer": "vsh",
+   "sql": "SELECT MIN(substr(s1.release_date,1,4)) FROM songs_vsh s1 JOIN singers_vsh s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Vishal Bhardwaj%'",
+   "values": {},
+   "answer": "2016",
+   "gold": "2016",
+   "ok": true,
+   "error": null
+  },
+  "731": {
+   "query": "How many vocalists are credited on Ishq Bina from A. R. Rahman's filmography?",
+   "composer": "arr",
+   "sql": "SELECT COUNT(DISTINCT s2.name) FROM songs s1 JOIN singers s2 ON s1.song_id = s2.song_id WHERE s1.title LIKE '%Ishq Bina%'",
+   "values": {
+    "work_name": "Ishq Bina"
+   },
+   "answer": 6,
+   "gold": 6,
+   "ok": true,
+   "error": null
+  },
+  "732": {
+   "query": "When was the song Maanja Nee released?",
+   "composer": "arr",
+   "sql": "SELECT MIN(s1.date) FROM songs s1 WHERE s1.title LIKE '%Maanja Nee%' LIMIT 1",
+   "values": {
+    "work_name": "Maanja Nee"
+   },
+   "answer": "2024-01-10",
+   "gold": "2024-01-10",
+   "ok": true,
+   "error": null
+  },
+  "733": {
+   "query": "What year did the song Daud come out?",
+   "composer": "arr",
+   "sql": "SELECT MIN(s1.date) FROM songs s1 WHERE s1.title LIKE '%Daud%' LIMIT 1",
+   "values": {
+    "work_name": "Daud"
+   },
+   "answer": "1997-01-01",
+   "gold": "1997-01-01",
+   "ok": true,
+   "error": null
+  },
+  "747": {
+   "query": "Who sang Ishq Bina on A. R. Rahman's album for the film containing it?",
+   "composer": "arr",
+   "sql": "SELECT DISTINCT s2.name FROM songs s1 JOIN singers s2 ON s1.song_id = s2.song_id WHERE s1.title LIKE '%Ishq Bina%' ORDER BY s2.name ASC",
+   "values": {
+    "work_name": "Ishq Bina"
+   },
+   "answer": [
+    "A. R. Rahman",
+    "Anuradha Sriram",
+    "Kavita Krishnamurthy",
+    "Sonu Nigam",
+    "Sujatha",
+    "Sukhwinder Singh"
+   ],
+   "gold": [
+    "A. R. Rahman",
+    "Anuradha Sriram",
+    "Kavita Krishnamurthy",
+    "Sonu Nigam",
+    "Sujatha",
+    "Sukhwinder Singh"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "757": {
+   "query": "Who sang the song Ishq Bina for A. R. Rahman?",
+   "composer": "arr",
+   "sql": "SELECT DISTINCT s2.name FROM songs s1 JOIN singers s2 ON s1.song_id = s2.song_id WHERE s1.title LIKE '%Ishq Bina%' ORDER BY s2.name ASC",
+   "values": {
+    "work_name": "Ishq Bina"
+   },
+   "answer": [
+    "A. R. Rahman",
+    "Anuradha Sriram",
+    "Kavita Krishnamurthy",
+    "Sonu Nigam",
+    "Sujatha",
+    "Sukhwinder Singh"
+   ],
+   "gold": [
+    "A. R. Rahman",
+    "Anuradha Sriram",
+    "Kavita Krishnamurthy",
+    "Sonu Nigam",
+    "Sujatha",
+    "Sukhwinder Singh"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "760": {
+   "query": "How many vocalists are credited on the song Daud from A. R. Rahman's filmography?",
+   "composer": "arr",
+   "sql": "SELECT COUNT(DISTINCT s2.name) FROM songs s1 JOIN singers s2 ON s1.song_id = s2.song_id WHERE s1.title LIKE '%Daud%'",
+   "values": {
+    "work_name": "Daud"
+   },
+   "answer": 2,
+   "gold": 2,
+   "ok": true,
+   "error": null
+  },
+  "761": {
+   "query": "When was the song Aazadi released?",
+   "composer": "arr",
+   "sql": "SELECT MIN(s1.date) FROM songs s1 WHERE s1.title LIKE '%Aazadi%' LIMIT 1",
+   "values": {
+    "work_name": "Aazadi"
+   },
+   "answer": "2005-05-03",
+   "gold": "2005-05-03",
+   "ok": true,
+   "error": null
+  },
+  "765": {
+   "query": "In which year did Kalamandalam Sajith Vijayan first sing for A. R. Rahman?",
+   "composer": "arr",
+   "sql": "SELECT MIN(substr(s1.date,1,4)) FROM songs s1 JOIN singers s2 ON s1.song_id = s2.song_id WHERE s2.name LIKE '%Kalamandalam Sajith Vijayan%'",
+   "values": {},
+   "answer": "2018",
+   "gold": "2018",
+   "ok": true,
+   "error": null
+  },
+  "778": {
+   "query": "When was the song Ishq Bina released?",
+   "composer": "arr",
+   "sql": "SELECT MIN(s1.date) FROM songs s1 WHERE s1.title LIKE '%Ishq Bina%' LIMIT 1",
+   "values": {
+    "work_name": "Ishq Bina"
+   },
+   "answer": "1999-01-01",
+   "gold": "1999-01-01",
+   "ok": true,
+   "error": null
+  },
+  "779": {
+   "query": "In what year did the song Daud come out?",
+   "composer": "arr",
+   "sql": "SELECT MIN(s1.date) FROM songs s1 WHERE s1.title LIKE '%Daud%' LIMIT 1",
+   "values": {
+    "work_name": "Daud"
+   },
+   "answer": "1997-01-01",
+   "gold": "1997-01-01",
+   "ok": true,
+   "error": null
+  },
+  "782": {
+   "query": "When was the song Daud released?",
+   "composer": "arr",
+   "sql": "SELECT MIN(s1.date) FROM songs s1 WHERE s1.title LIKE '%Daud%' LIMIT 1",
+   "values": {
+    "work_name": "Daud"
+   },
+   "answer": "1997-01-01",
+   "gold": "1997-01-01",
+   "ok": true,
+   "error": null
+  },
+  "811": {
+   "query": "When was the song Ayiram Thamarai released?",
+   "composer": "ila",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_ila s1 WHERE s1.song LIKE '%Ayiram Thamarai%' LIMIT 1",
+   "values": {
+    "work_name": "Ayiram Thamarai"
+   },
+   "answer": "1981-01-01 00:00:00",
+   "gold": "1981-01-01 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "812": {
+   "query": "In what year did the song Chinna Polikey (Sad Version 1) come out?",
+   "composer": "ila",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_ila s1 WHERE s1.song LIKE '%Chinna Polikey (Sad Version 1)%' LIMIT 1",
+   "values": {
+    "work_name": "Chinna Polikey (Sad Version 1)"
+   },
+   "answer": "2009-12-04 00:00:00",
+   "gold": "2009-12-04 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "815": {
+   "query": "How many films did Kamal Haasan contribute vocals to in Ilaiyaraaja's discography?",
+   "composer": "ila",
+   "sql": "SELECT COUNT(DISTINCT s1.movie) FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Kamal Haasan%'",
+   "values": {},
+   "answer": 24,
+   "gold": 24,
+   "ok": true,
+   "error": null
+  },
+  "817": {
+   "query": "In which year did Kumar Sanu first sing for Ilaiyaraaja?",
+   "composer": "ila",
+   "sql": "SELECT MIN(substr(s1.release_date,1,4)) FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Kumar Sanu%'",
+   "values": {},
+   "answer": "1999",
+   "gold": "1999",
+   "ok": true,
+   "error": null
+  },
+  "834": {
+   "query": "How many artists performed the song Saanson Ko for Pritam?",
+   "composer": "pri",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_pri s1 JOIN singers_pri s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Saanson Ko%'",
+   "values": {
+    "work_name": "Saanson Ko"
+   },
+   "answer": 1,
+   "gold": 1,
+   "ok": true,
+   "error": null
+  },
+  "835": {
+   "query": "When was the song Hai Junoon released?",
+   "composer": "pri",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_pri s1 WHERE s1.song LIKE '%Hai Junoon%' LIMIT 1",
+   "values": {
+    "work_name": "Hai Junoon"
+   },
+   "answer": "2009-01-01 00:00:00",
+   "gold": "2009-01-01 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "866": {
+   "query": "When was the song Ottamuri Vakkumayi released?",
+   "composer": "sus",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_sus s1 WHERE s1.song LIKE '%Ottamuri Vakkumayi%' LIMIT 1",
+   "values": {
+    "work_name": "Ottamuri Vakkumayi"
+   },
+   "answer": "2023-02-17 00:00:00",
+   "gold": "2023-02-17 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "867": {
+   "query": "In what year did the track Desert Safari come out?",
+   "composer": "sus",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_sus s1 WHERE s1.song LIKE '%Desert Safari%' LIMIT 1",
+   "values": {
+    "work_name": "Desert Safari"
+   },
+   "answer": "2022-04-27 00:00:00",
+   "gold": "2022-04-27 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "877": {
+   "query": "How many singers lent their voices to Ottamuri Vakkumayi in Sushin Shyam's work?",
+   "composer": "sus",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_sus s1 JOIN singers_sus s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Ottamuri Vakkumayi%' AND s2.singer LIKE '%Sushin Shyam%'",
+   "values": {
+    "work_name": "Ottamuri Vakkumayi"
+   },
+   "answer": 1,
+   "gold": 2,
+   "ok": false,
+   "error": null
+  },
+  "894": {
+   "query": "When was the song Tere Ishq Mein released?",
+   "composer": "vsh",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_vsh s1 WHERE s1.song LIKE '%Tere Ishq Mein%' LIMIT 1",
+   "values": {
+    "work_name": "Tere Ishq Mein"
+   },
+   "answer": "2003-06-20 00:00:00",
+   "gold": "2003-06-20 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "895": {
+   "query": "In what year did the song Ratta Maar come out?",
+   "composer": "vsh",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_vsh s1 WHERE s1.song LIKE '%Ratta Maar%' LIMIT 1",
+   "values": {
+    "work_name": "Ratta Maar"
+   },
+   "answer": "2012-08-31 00:00:00",
+   "gold": "2012-08-31 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "914": {
+   "query": "When was the song Omana Penne released?",
+   "composer": "arr",
+   "sql": "SELECT MIN(s1.date) FROM songs s1 WHERE s1.title LIKE '%Omana Penne%' LIMIT 1",
+   "values": {
+    "work_name": "Omana Penne"
+   },
+   "answer": "2010-01-08",
+   "gold": "2010-01-08",
+   "ok": true,
+   "error": null
+  },
+  "915": {
+   "query": "In which year did the song Milo Wahan Wahan come out?",
+   "composer": "arr",
+   "sql": "SELECT MIN(s1.date) FROM songs s1 WHERE s1.title LIKE '%Milo Wahan Wahan%' LIMIT 1",
+   "values": {
+    "work_name": "Milo Wahan Wahan"
+   },
+   "answer": "2008-01-01",
+   "gold": "2008-01-01",
+   "ok": true,
+   "error": null
+  },
+  "921": {
+   "query": "In which year did Shiraz Uppal first sing for A. R. Rahman?",
+   "composer": "arr",
+   "sql": "SELECT MIN(substr(s1.date,1,4)) FROM songs s1 JOIN singers s2 ON s1.song_id = s2.song_id WHERE s2.name LIKE '%Shiraz Uppal%'",
+   "values": {},
+   "answer": "2013",
+   "gold": "2013",
+   "ok": true,
+   "error": null
+  },
+  "953": {
+   "query": "How many vocalists are credited on Manadhai En Moodinaai from Ilaiyaraaja's filmography?",
+   "composer": "ila",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Manadhai En Moodinaai%'",
+   "values": {
+    "work_name": "Manadhai En Moodinaai"
+   },
+   "answer": 1,
+   "gold": 1,
+   "ok": true,
+   "error": null
+  },
+  "955": {
+   "query": "When was the song Mad, Mod, Mood And Fugue released?",
+   "composer": "ila",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_ila s1 WHERE s1.song LIKE '%Mad, Mod, Mood And Fugue%' LIMIT 1",
+   "values": {
+    "work_name": "Mad, Mod, Mood And Fugue"
+   },
+   "answer": "1988-01-01 00:00:00",
+   "gold": "1988-01-01 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "956": {
+   "query": "In which year did the song Azhagu Aayiram come out?",
+   "composer": "ila",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_ila s1 WHERE s1.song LIKE '%Azhagu Aayiram%' LIMIT 1",
+   "values": {
+    "work_name": "Azhagu Aayiram"
+   },
+   "answer": "1980-01-01 00:00:00",
+   "gold": "1980-01-01 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "958": {
+   "query": "How many tracks did Hariharan record for Ilaiyaraaja as composer?",
+   "composer": "ila",
+   "sql": "SELECT COUNT(DISTINCT s1.song) FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Hariharan%'",
+   "values": {},
+   "answer": 18,
+   "gold": 18,
+   "ok": true,
+   "error": null
+  },
+  "969": {
+   "query": "Which singers performed Azhagu Aayiram on Ilaiyaraaja's film album?",
+   "composer": "ila",
+   "sql": "SELECT DISTINCT s2.singer FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Azhagu Aayiram%' ORDER BY s2.singer ASC",
+   "values": {
+    "work_name": "Azhagu Aayiram"
+   },
+   "answer": [
+    "S. Janaki"
+   ],
+   "gold": [
+    "S. Janaki"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "971": {
+   "query": "When was the song Manadhai En Moodinaai released?",
+   "composer": "ila",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_ila s1 WHERE s1.song LIKE '%Manadhai En Moodinaai%' LIMIT 1",
+   "values": {
+    "work_name": "Manadhai En Moodinaai"
+   },
+   "answer": "2022-03-10 00:00:00",
+   "gold": "2022-03-10 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "972": {
+   "query": "In which year did the song Oru Gundu Mani Kulunguthadi come out?",
+   "composer": "ila",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_ila s1 WHERE s1.song LIKE '%Oru Gundu Mani Kulunguthadi%' LIMIT 1",
+   "values": {
+    "work_name": "Oru Gundu Mani Kulunguthadi"
+   },
+   "answer": "1995-06-09 00:00:00",
+   "gold": "1995-06-09 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "982": {
+   "query": "When was the song Vaan Megam Poo Poovaai released?",
+   "composer": "ila",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_ila s1 WHERE s1.song LIKE '%Vaan Megam Poo Poovaai%' LIMIT 1",
+   "values": {
+    "work_name": "Vaan Megam Poo Poovaai"
+   },
+   "answer": "2024-02-08 00:00:00",
+   "gold": "2024-02-08 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "983": {
+   "query": "In which year did the song Piraye come out?",
+   "composer": "ila",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_ila s1 WHERE s1.song LIKE '%Piraye%' LIMIT 1",
+   "values": {
+    "work_name": "Piraye"
+   },
+   "answer": "2013-03-31 00:00:00",
+   "gold": "2013-03-31 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "984": {
+   "query": "How many songs has Hariharan sung for Ilaiyaraaja?",
+   "composer": "ila",
+   "sql": "SELECT COUNT(DISTINCT s1.song) FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Hariharan%'",
+   "values": {},
+   "answer": 18,
+   "gold": 18,
+   "ok": true,
+   "error": null
+  },
+  "996": {
+   "query": "When did the song Akashe Jyotsna come out?",
+   "composer": "ila",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_ila s1 WHERE s1.song LIKE '%Akashe Jyotsna%' LIMIT 1",
+   "values": {
+    "work_name": "Akashe Jyotsna"
+   },
+   "answer": "2000-05-01 00:00:00",
+   "gold": "2000-05-01 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1008": {
+   "query": "How many artists performed the song Oru Gundu Mani Kulunguthadi for Ilaiyaraaja?",
+   "composer": "ila",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Oru Gundu Mani Kulunguthadi%'",
+   "values": {
+    "work_name": "Oru Gundu Mani Kulunguthadi"
+   },
+   "answer": 2,
+   "gold": 2,
+   "ok": true,
+   "error": null
+  },
+  "1010": {
+   "query": "When was the song Vadi En Kappa Kelange released?",
+   "composer": "ila",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_ila s1 WHERE s1.song LIKE '%Vadi En Kappa Kelange%' LIMIT 1",
+   "values": {
+    "work_name": "Vadi En Kappa Kelange"
+   },
+   "answer": "1981-01-01 00:00:00",
+   "gold": "1981-01-01 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1011": {
+   "query": "In what year did Ilaiyaraaja's song Thoothu Neeum Selladi come out?",
+   "composer": "ila",
+   "sql": "SELECT DISTINCT s1.release_date FROM songs_ila s1 WHERE s1.song LIKE '%Thoothu Neeum Selladi%' LIMIT 1",
+   "values": {
+    "work_name": "Thoothu Neeum Selladi"
+   },
+   "answer": "1992-01-01 00:00:00",
+   "gold": "1992-01-01 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1012": {
+   "query": "How many songs did Hariharan sing for Ilaiyaraaja?",
+   "composer": "ila",
+   "sql": "SELECT COUNT(DISTINCT s1.song) FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Hariharan%'",
+   "values": {},
+   "answer": 18,
+   "gold": 18,
+   "ok": true,
+   "error": null
+  },
+  "1030": {
+   "query": "When was the song Aavan Jaavan released?",
+   "composer": "pri",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_pri s1 WHERE s1.song LIKE '%Aavan Jaavan%' LIMIT 1",
+   "values": {
+    "work_name": "Aavan Jaavan"
+   },
+   "answer": "2025-08-16 00:00:00",
+   "gold": "2025-08-16 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1046": {
+   "query": "In which year did the song Janaab-e-Aali come out?",
+   "composer": "pri",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_pri s1 WHERE s1.song LIKE '%Janaab-e-Aali%' LIMIT 1",
+   "values": {
+    "work_name": "Janaab-e-Aali"
+   },
+   "answer": "2025-08-16 00:00:00",
+   "gold": "2025-08-16 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1051": {
+   "query": "In which year did Bappi Lahiri first sing for Pritam?",
+   "composer": "pri",
+   "sql": "SELECT MIN(substr(s1.release_date,1,4)) FROM songs_pri s1 JOIN singers_pri s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Bappi Lahiri%'",
+   "values": {},
+   "answer": "2010",
+   "gold": "2010",
+   "ok": true,
+   "error": null
+  },
+  "1070": {
+   "query": "When was the song Mirzya released?",
+   "composer": "sel",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_sel s1 WHERE s1.song LIKE '%Mirzya%' LIMIT 1",
+   "values": {
+    "work_name": "Mirzya"
+   },
+   "answer": "2016-08-09 00:00:00",
+   "gold": "2016-08-09 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1091": {
+   "query": "When was the song Rathipushpam released?",
+   "composer": "sus",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_sus s1 WHERE s1.song LIKE '%Rathipushpam%' LIMIT 1",
+   "values": {
+    "work_name": "Rathipushpam"
+   },
+   "answer": "2022-03-07 00:00:00",
+   "gold": "2022-03-07 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1101": {
+   "query": "Name every playback singer credited on the track Rathipushpam in Sushin Shyam's catalogue.",
+   "composer": "sus",
+   "sql": "SELECT DISTINCT s2.singer FROM songs_sus s1 JOIN singers_sus s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Rathipushpam%' AND s2.singer LIKE '%Sushin Shyam%' ORDER BY s2.singer ASC",
+   "values": {
+    "work_name": "Rathipushpam"
+   },
+   "answer": [
+    "Sushin Shyam"
+   ],
+   "gold": [
+    "Sushin Shyam",
+    "Unni Menon",
+    "Vinayak Sasikumar"
+   ],
+   "ok": false,
+   "error": null
+  },
+  "1105": {
+   "query": "When was the song Aane Madanapoo released?",
+   "composer": "sus",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_sus s1 WHERE s1.song LIKE '%Aane Madanapoo%' LIMIT 1",
+   "values": {
+    "work_name": "Aane Madanapoo"
+   },
+   "answer": "2016-07-22 00:00:00",
+   "gold": "2016-07-22 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1106": {
+   "query": "In which year did the song The Mumbai Infinity come out?",
+   "composer": "sus",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_sus s1 WHERE s1.song LIKE '%The Mumbai Infinity%' LIMIT 1",
+   "values": {
+    "work_name": "The Mumbai Infinity"
+   },
+   "answer": "2023-11-13 00:00:00",
+   "gold": "2023-11-13 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1137": {
+   "query": "Which singers performed vocals on Saans in Vishal-Shekhar's soundtrack?",
+   "composer": "vsh",
+   "sql": "SELECT DISTINCT s2.singer FROM songs_vsh s1 JOIN singers_vsh s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Saans%' ORDER BY s2.singer ASC",
+   "values": {
+    "work_name": "Saans"
+   },
+   "answer": [
+    "Kailash Kher",
+    "Krishna",
+    "Krishna Beura",
+    "Mohit Chauhan",
+    "Shreya Ghoshal",
+    "Vishal-Shekhar"
+   ],
+   "gold": [
+    "Kailash Kher",
+    "Krishna",
+    "Krishna Beura",
+    "Mohit Chauhan",
+    "Shreya Ghoshal",
+    "Vishal-Shekhar"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "1140": {
+   "query": "When was the song Tooh released?",
+   "composer": "vsh",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_vsh s1 WHERE s1.song LIKE '%Tooh%' LIMIT 1",
+   "values": {
+    "work_name": "Tooh"
+   },
+   "answer": "2013-11-03 00:00:00",
+   "gold": "2013-11-03 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1150": {
+   "query": "When was the song Saans released?",
+   "composer": "vsh",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_vsh s1 WHERE s1.song LIKE '%Saans%' LIMIT 1",
+   "values": {
+    "work_name": "Saans"
+   },
+   "answer": "2003-01-01 00:00:00",
+   "gold": "2003-01-01 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1151": {
+   "query": "In which year did the song Lovely come out?",
+   "composer": "vsh",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_vsh s1 WHERE s1.song LIKE '%Lovely%' LIMIT 1",
+   "values": {
+    "work_name": "Lovely"
+   },
+   "answer": "2014-09-15 00:00:00",
+   "gold": "2014-09-15 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1158": {
+   "query": "In which year did Rabbi Shergill first sing for Vishal-Shekhar?",
+   "composer": "vsh",
+   "sql": "SELECT MIN(substr(s1.release_date,1,4)) FROM songs_vsh s1 JOIN singers_vsh s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Rabbi Shergill%'",
+   "values": {},
+   "answer": "2003",
+   "gold": "2003",
+   "ok": true,
+   "error": null
+  },
+  "1159": {
+   "query": "When did Caralisa Monteiro first sing for Vishal-Shekhar?",
+   "composer": "vsh",
+   "sql": "SELECT MIN(substr(s1.release_date,1,4)) FROM songs_vsh s1 JOIN singers_vsh s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Caralisa Monteiro%'",
+   "values": {},
+   "answer": "2005",
+   "gold": "2005",
+   "ok": true,
+   "error": null
+  },
+  "1174": {
+   "query": "When was the song Maula Wa Sallim released?",
+   "composer": "arr",
+   "sql": "SELECT MIN(s1.date) FROM songs s1 WHERE s1.title LIKE '%Maula Wa Sallim%' LIMIT 1",
+   "values": {
+    "work_name": "Maula Wa Sallim"
+   },
+   "answer": "2017-01-01",
+   "gold": "2017-01-01",
+   "ok": true,
+   "error": null
+  },
+  "1175": {
+   "query": "When did Uyirum Neeyae come out?",
+   "composer": "arr",
+   "sql": "SELECT MIN(s1.date) FROM songs s1 LIMIT 1",
+   "values": {},
+   "answer": "1991-01-01",
+   "gold": "1994-01-01",
+   "ok": false,
+   "error": null
+  },
+  "1178": {
+   "query": "How many songs did Minmini sing for A. R. Rahman in 1992?",
+   "composer": "arr",
+   "sql": "SELECT COUNT(DISTINCT s1.title) FROM songs s1 JOIN singers s2 ON s1.song_id = s2.song_id WHERE substr(s1.date,1,4) LIKE '1992%' AND s2.name LIKE '%Minmini%'",
+   "values": {
+    "year": "1992"
+   },
+   "answer": 4,
+   "gold": 4,
+   "ok": true,
+   "error": null
+  },
+  "1189": {
+   "query": "How many vocalists are credited on Bommai from Ilaiyaraaja's filmography?",
+   "composer": "ila",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Bommai%'",
+   "values": {
+    "work_name": "Bommai"
+   },
+   "answer": 2,
+   "gold": 2,
+   "ok": true,
+   "error": null
+  },
+  "1191": {
+   "query": "When was the song Nothing but Wind released?",
+   "composer": "ila",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_ila s1 WHERE s1.song LIKE '%Nothing but Wind%' LIMIT 1",
+   "values": {
+    "work_name": "Nothing but Wind"
+   },
+   "answer": "2003-01-08 00:00:00",
+   "gold": "2003-01-08 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1192": {
+   "query": "In what year did the song Peranbae come out?",
+   "composer": "ila",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_ila s1 WHERE s1.song LIKE '%Peranbae%' LIMIT 1",
+   "values": {
+    "work_name": "Peranbae"
+   },
+   "answer": "2023-05-12 00:00:00",
+   "gold": "2023-05-12 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1207": {
+   "query": "Find the vocalists on Sattru Munbu from Ilaiyaraaja's album for the film containing it.",
+   "composer": "ila",
+   "sql": "SELECT DISTINCT s2.singer FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Sattru Munbu%' ORDER BY s2.singer ASC",
+   "values": {
+    "work_name": "Sattru Munbu"
+   },
+   "answer": [
+    "Ramya NSK"
+   ],
+   "gold": [
+    "Ramya NSK"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "1208": {
+   "query": "Who sang Peranbae on Ilaiyaraaja's album for the film it appears in?",
+   "composer": "ila",
+   "sql": "SELECT DISTINCT s2.singer FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Peranbae%' ORDER BY s2.singer ASC",
+   "values": {
+    "work_name": "Peranbae"
+   },
+   "answer": [
+    "Shivani Panneerselvam",
+    "Yuvan Shankar Raja"
+   ],
+   "gold": [
+    "Shivani Panneerselvam",
+    "Yuvan Shankar Raja"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "1209": {
+   "query": "How many vocalists are credited on Nothing but Wind from Ilaiyaraaja's filmography?",
+   "composer": "ila",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Nothing but Wind%'",
+   "values": {
+    "work_name": "Nothing but Wind"
+   },
+   "answer": 1,
+   "gold": 1,
+   "ok": true,
+   "error": null
+  },
+  "1211": {
+   "query": "When was the song Ilamai Edho Edho released?",
+   "composer": "ila",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_ila s1 WHERE s1.song LIKE '%Ilamai Edho Edho%' LIMIT 1",
+   "values": {
+    "work_name": "Ilamai Edho Edho"
+   },
+   "answer": "1982-01-01 00:00:00",
+   "gold": "1982-01-01 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1212": {
+   "query": "In what year did the song Mara Karukkalile come out?",
+   "composer": "ila",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_ila s1 WHERE s1.song LIKE '%Mara Karukkalile%' LIMIT 1",
+   "values": {
+    "work_name": "Mara Karukkalile"
+   },
+   "answer": "1988-01-01 00:00:00",
+   "gold": "1988-01-01 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1223": {
+   "query": "When was the song Bommai released?",
+   "composer": "ila",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_ila s1 WHERE s1.song LIKE '%Bommai%' LIMIT 1",
+   "values": {
+    "work_name": "Bommai"
+   },
+   "answer": "1990-01-01 00:00:00",
+   "gold": "1990-01-01 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1235": {
+   "query": "Find the vocalists on Nothing but Wind from Ilaiyaraaja's album for the film containing it.",
+   "composer": "ila",
+   "sql": "SELECT DISTINCT s2.singer FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Nothing but Wind%' ORDER BY s2.singer ASC",
+   "values": {
+    "work_name": "Nothing but Wind"
+   },
+   "answer": [
+    "Ilaiyaraaja"
+   ],
+   "gold": [
+    "Ilaiyaraaja"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "1236": {
+   "query": "Name the vocalists who perform on Peranbae from Ilaiyaraaja's album.",
+   "composer": "ila",
+   "sql": "SELECT DISTINCT s2.singer FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Peranbae%' ORDER BY s2.singer ASC",
+   "values": {
+    "work_name": "Peranbae"
+   },
+   "answer": [
+    "Shivani Panneerselvam",
+    "Yuvan Shankar Raja"
+   ],
+   "gold": [
+    "Shivani Panneerselvam",
+    "Yuvan Shankar Raja"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "1246": {
+   "query": "How many artists performed the song Bommai for Ilaiyaraaja?",
+   "composer": "ila",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Bommai%'",
+   "values": {
+    "work_name": "Bommai"
+   },
+   "answer": 2,
+   "gold": 2,
+   "ok": true,
+   "error": null
+  },
+  "1248": {
+   "query": "When was the song Sattru Munbu released?",
+   "composer": "ila",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_ila s1 WHERE s1.song LIKE '%Sattru Munbu%' LIMIT 1",
+   "values": {
+    "work_name": "Sattru Munbu"
+   },
+   "answer": "2012-08-21 00:00:00",
+   "gold": "2012-08-21 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1261": {
+   "query": "Who sang the song O Bedardeya for Pritam?",
+   "composer": "pri",
+   "sql": "SELECT DISTINCT s2.singer FROM songs_pri s1 JOIN singers_pri s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%O Bedardeya%' ORDER BY s2.singer ASC",
+   "values": {
+    "work_name": "O Bedardeya"
+   },
+   "answer": [
+    "Arijit Singh"
+   ],
+   "gold": [
+    "Arijit Singh"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "1264": {
+   "query": "When was the song Dhoom Machale released?",
+   "composer": "pri",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_pri s1 WHERE s1.song LIKE '%Dhoom Machale%' LIMIT 1",
+   "values": {
+    "work_name": "Dhoom Machale"
+   },
+   "answer": "2004-11-02 00:00:00",
+   "gold": "2004-11-02 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1265": {
+   "query": "In what year did Pritam's song Phurrr (film version) come out?",
+   "composer": "pri",
+   "sql": "SELECT DISTINCT s1.release_date FROM songs_pri s1 WHERE s1.song LIKE '%Phurrr (film version)%' LIMIT 1",
+   "values": {
+    "work_name": "Phurrr (film version)"
+   },
+   "answer": "2017-08-04 00:00:00",
+   "gold": "2017-08-04 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1266": {
+   "query": "How many tracks in Pritam's catalogue feature Kailash Kher as a vocalist?",
+   "composer": "pri",
+   "sql": "SELECT COUNT(DISTINCT s1.song) FROM songs_pri s1 JOIN singers_pri s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Kailash Kher%'",
+   "values": {},
+   "answer": 3,
+   "gold": 3,
+   "ok": true,
+   "error": null
+  },
+  "1271": {
+   "query": "In which year did Raftaar first sing for Pritam?",
+   "composer": "pri",
+   "sql": "SELECT MIN(substr(s1.release_date,1,4)) FROM songs_pri s1 JOIN singers_pri s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Raftaar%'",
+   "values": {},
+   "answer": "2016",
+   "gold": "2016",
+   "ok": true,
+   "error": null
+  },
+  "1284": {
+   "query": "How many vocalists are credited on Kill Dil from Shankar-Ehsaan-Loy's filmography?",
+   "composer": "sel",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_sel s1 JOIN singers_sel s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Kill Dil%'",
+   "values": {
+    "work_name": "Kill Dil"
+   },
+   "answer": 3,
+   "gold": 3,
+   "ok": true,
+   "error": null
+  },
+  "1285": {
+   "query": "When was the song Sooraj Ki Baahon Mein released?",
+   "composer": "sel",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_sel s1 WHERE s1.song LIKE '%Sooraj Ki Baahon Mein%' LIMIT 1",
+   "values": {
+    "work_name": "Sooraj Ki Baahon Mein"
+   },
+   "answer": "2011-06-06 00:00:00",
+   "gold": "2011-06-06 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1286": {
+   "query": "In what year did the song Ove Janiya come out?",
+   "composer": "sel",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_sel s1 WHERE s1.song LIKE '%Ove Janiya%' LIMIT 1",
+   "values": {
+    "work_name": "Ove Janiya"
+   },
+   "answer": "2015-01-01 00:00:00",
+   "gold": "2015-01-01 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1301": {
+   "query": "How many singers lent their voices to Sooraj Ki Baahon Mein by Shankar-Ehsaan-Loy?",
+   "composer": "sel",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_sel s1 JOIN singers_sel s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Sooraj Ki Baahon Mein%'",
+   "values": {
+    "work_name": "Sooraj Ki Baahon Mein"
+   },
+   "answer": 3,
+   "gold": 3,
+   "ok": true,
+   "error": null
+  },
+  "1302": {
+   "query": "When was the song Kill Dil released?",
+   "composer": "sel",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_sel s1 WHERE s1.song LIKE '%Kill Dil%' LIMIT 1",
+   "values": {
+    "work_name": "Kill Dil"
+   },
+   "answer": "2014-10-09 00:00:00",
+   "gold": "2014-10-09 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1303": {
+   "query": "In what year did Bad Boy, composed by Shankar-Ehsaan-Loy, come out?",
+   "composer": "sel",
+   "sql": "SELECT DISTINCT s1.release_date FROM songs_sel s1",
+   "values": {},
+   "answer": "2009-01-01 00:00:00",
+   "gold": "2019-08-28 00:00:00",
+   "ok": false,
+   "error": null
+  },
+  "1319": {
+   "query": "How many artists performed the song The Last Dance for Sushin Shyam?",
+   "composer": "sus",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_sus s1 JOIN singers_sus s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%The Last Dance%' AND s2.singer LIKE '%Sushin Shyam%'",
+   "values": {
+    "work_name": "The Last Dance"
+   },
+   "answer": 0,
+   "gold": 1,
+   "ok": false,
+   "error": null
+  },
+  "1321": {
+   "query": "When was the song Killing Chacko released?",
+   "composer": "sus",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_sus s1 WHERE s1.song LIKE '%Killing Chacko%' LIMIT 1",
+   "values": {
+    "work_name": "Killing Chacko"
+   },
+   "answer": "2022-04-27 00:00:00",
+   "gold": "2022-04-27 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1322": {
+   "query": "What year did Sushin Shyam's song Neela Kadalukkadiyil come out?",
+   "composer": "sus",
+   "sql": "SELECT MIN(substr(s1.release_date,1,4)) FROM songs_sus s1 JOIN singers_sus s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Neela Kadalukkadiyil%' AND s2.singer LIKE '%Sushin Shyam%' LIMIT 1",
+   "values": {
+    "work_name": "Neela Kadalukkadiyil"
+   },
+   "answer": null,
+   "gold": "2021-11-13 00:00:00",
+   "ok": false,
+   "error": null
+  },
+  "1332": {
+   "query": "How many vocalists are credited on Sharabi from Vishal-Shekhar's filmography?",
+   "composer": "vsh",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_vsh s1 JOIN singers_vsh s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Sharabi%'",
+   "values": {
+    "work_name": "Sharabi"
+   },
+   "answer": 2,
+   "gold": 2,
+   "ok": true,
+   "error": null
+  },
+  "1334": {
+   "query": "When was the song Titli released?",
+   "composer": "vsh",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_vsh s1 WHERE s1.song LIKE '%Titli%' LIMIT 1",
+   "values": {
+    "work_name": "Titli"
+   },
+   "answer": "2013-07-01 00:00:00",
+   "gold": "2013-07-01 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1335": {
+   "query": "In what year did Salaam Namaste (dhol mix) come out?",
+   "composer": "vsh",
+   "sql": "SELECT DISTINCT s1.release_date FROM songs_vsh s1 WHERE s1.song LIKE '%Salaam Namaste (dhol mix)%'",
+   "values": {
+    "work_name": "Salaam Namaste (dhol mix)"
+   },
+   "answer": "2005-08-03 00:00:00",
+   "gold": "2005-08-03 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1363": {
+   "query": "In which year did the song Sharabi come out?",
+   "composer": "vsh",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_vsh s1 WHERE s1.song LIKE '%Sharabi%' LIMIT 1",
+   "values": {
+    "work_name": "Sharabi"
+   },
+   "answer": "2014-09-15 00:00:00",
+   "gold": "2014-09-15 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1367": {
+   "query": "In which year did Diljit Dosanjh first sing for Vishal-Shekhar?",
+   "composer": "vsh",
+   "sql": "SELECT MIN(substr(s1.release_date,1,4)) FROM songs_vsh s1 JOIN singers_vsh s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Diljit Dosanjh%'",
+   "values": {},
+   "answer": "2024",
+   "gold": "2024",
+   "ok": true,
+   "error": null
+  },
+  "1371": {
+   "query": "In what year did Krishna Beura first sing for Vishal-Shekhar?",
+   "composer": "vsh",
+   "sql": "SELECT MIN(substr(s1.release_date,1,4)) FROM songs_vsh s1 JOIN singers_vsh s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Krishna Beura%'",
+   "values": {},
+   "answer": "2006",
+   "gold": "2006",
+   "ok": true,
+   "error": null
+  },
+  "1380": {
+   "query": "How many singers performed the song Sharabi for Vishal-Shekhar?",
+   "composer": "vsh",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_vsh s1 JOIN singers_vsh s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Sharabi%'",
+   "values": {
+    "work_name": "Sharabi"
+   },
+   "answer": 2,
+   "gold": 2,
+   "ok": true,
+   "error": null
+  },
+  "1381": {
+   "query": "When did the song Punjabi Wedding Song come out?",
+   "composer": "vsh",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_vsh s1 WHERE s1.song LIKE '%Punjabi Wedding Song%' LIMIT 1",
+   "values": {
+    "work_name": "Punjabi Wedding Song"
+   },
+   "answer": "2014-01-01 00:00:00",
+   "gold": "2014-01-01 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1401": {
+   "query": "When was the song Jugni released?",
+   "composer": "arr",
+   "sql": "SELECT MIN(s1.date) FROM songs s1 WHERE s1.title LIKE '%Jugni%' LIMIT 1",
+   "values": {
+    "work_name": "Jugni"
+   },
+   "answer": "2017-03-21",
+   "gold": "2017-03-21",
+   "ok": true,
+   "error": null
+  },
+  "1402": {
+   "query": "What year did Nila Kaigirathu come out?",
+   "composer": "arr",
+   "sql": "SELECT MIN(s1.date) FROM songs s1 LIMIT 1",
+   "values": {},
+   "answer": "1991-01-01",
+   "gold": "1995-05-11",
+   "ok": false,
+   "error": null
+  },
+  "1414": {
+   "query": "In which year did the song Mountains come out?",
+   "composer": "arr",
+   "sql": "SELECT MIN(s1.date) FROM songs s1 WHERE s1.title LIKE '%Mountains%' LIMIT 1",
+   "values": {
+    "work_name": "Mountains"
+   },
+   "answer": "2004-05-04",
+   "gold": "2004-05-04",
+   "ok": true,
+   "error": null
+  },
+  "1431": {
+   "query": "Name every playback singer credited on the track Panivizhum Malar Vanam in Ilaiyaraaja's catalogue.",
+   "composer": "ila",
+   "sql": "SELECT DISTINCT s2.singer FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Panivizhum Malar Vanam%' ORDER BY s2.singer ASC",
+   "values": {
+    "work_name": "Panivizhum Malar Vanam"
+   },
+   "answer": [
+    "S. P. Balasubrahmanyam"
+   ],
+   "gold": [
+    "S. P. Balasubrahmanyam"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "1433": {
+   "query": "How many vocalists are credited on Muthumani Maalai from Ilaiyaraaja's filmography?",
+   "composer": "ila",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Muthumani Maalai%'",
+   "values": {
+    "work_name": "Muthumani Maalai"
+   },
+   "answer": 2,
+   "gold": 2,
+   "ok": true,
+   "error": null
+  },
+  "1435": {
+   "query": "When was the song Andhi Mazhai Megam released?",
+   "composer": "ila",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_ila s1 WHERE s1.song LIKE '%Andhi Mazhai Megam%' LIMIT 1",
+   "values": {
+    "work_name": "Andhi Mazhai Megam"
+   },
+   "answer": "1987-01-01 00:00:00",
+   "gold": "1987-01-01 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1436": {
+   "query": "In what year did Poo Maalayae by Ilaiyaraaja come out?",
+   "composer": "ila",
+   "sql": "SELECT DISTINCT s1.release_date FROM songs_ila s1 WHERE s1.song LIKE '%Poo Maalayae%'",
+   "values": {
+    "work_name": "Poo Maalayae"
+   },
+   "answer": "1985-06-05 00:00:00",
+   "gold": "1985-06-05 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1441": {
+   "query": "Who sang the song Panivizhum Malar Vanam for Ilaiyaraaja?",
+   "composer": "ila",
+   "sql": "SELECT DISTINCT s2.singer FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Panivizhum Malar Vanam%' ORDER BY s2.singer ASC",
+   "values": {
+    "work_name": "Panivizhum Malar Vanam"
+   },
+   "answer": [
+    "S. P. Balasubrahmanyam"
+   ],
+   "gold": [
+    "S. P. Balasubrahmanyam"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "1442": {
+   "query": "Who performed the song Andhi Mazhai Megam for Ilaiyaraaja?",
+   "composer": "ila",
+   "sql": "SELECT DISTINCT s2.singer FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Andhi Mazhai Megam%' ORDER BY s2.singer ASC",
+   "values": {
+    "work_name": "Andhi Mazhai Megam"
+   },
+   "answer": [
+    "T. L. Maharajan"
+   ],
+   "gold": [
+    "T. L. Maharajan"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "1443": {
+   "query": "How many artists performed the song Ilamai Ennum Poonkaatru for Ilaiyaraaja?",
+   "composer": "ila",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Ilamai Ennum Poonkaatru%'",
+   "values": {
+    "work_name": "Ilamai Ennum Poonkaatru"
+   },
+   "answer": 1,
+   "gold": 1,
+   "ok": true,
+   "error": null
+  },
+  "1444": {
+   "query": "When was the song Muthumani Maalai released?",
+   "composer": "ila",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_ila s1 WHERE s1.song LIKE '%Muthumani Maalai%' LIMIT 1",
+   "values": {
+    "work_name": "Muthumani Maalai"
+   },
+   "answer": "1992-01-01 00:00:00",
+   "gold": "1992-01-01 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1445": {
+   "query": "In what year did the song En Uyire Vaa come out?",
+   "composer": "ila",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_ila s1 WHERE s1.song LIKE '%En Uyire Vaa%' LIMIT 1",
+   "values": {
+    "work_name": "En Uyire Vaa"
+   },
+   "answer": "1988-06-10 00:00:00",
+   "gold": "1988-06-10 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1449": {
+   "query": "How many songs did Kamal Haasan sing for Ilaiyaraaja in 1987?",
+   "composer": "ila",
+   "sql": "SELECT COUNT(DISTINCT s1.song) FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE substr(s1.release_date,1,4) LIKE '1987%' AND s2.singer LIKE '%Kamal Haasan%'",
+   "values": {
+    "year": "1987"
+   },
+   "answer": 3,
+   "gold": 3,
+   "ok": true,
+   "error": null
+  },
+  "1454": {
+   "query": "In which year did Radhika first sing for Ilaiyaraaja?",
+   "composer": "ila",
+   "sql": "SELECT MIN(substr(s1.release_date,1,4)) FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Radhika%'",
+   "values": {},
+   "answer": "1997",
+   "gold": "1997",
+   "ok": true,
+   "error": null
+  },
+  "1461": {
+   "query": "Find the vocalists on Andhi Mazhai Megam from Ilaiyaraaja's album for the film containing it.",
+   "composer": "ila",
+   "sql": "SELECT DISTINCT s2.singer FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Andhi Mazhai Megam%' ORDER BY s2.singer ASC",
+   "values": {
+    "work_name": "Andhi Mazhai Megam"
+   },
+   "answer": [
+    "T. L. Maharajan"
+   ],
+   "gold": [
+    "T. L. Maharajan"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "1462": {
+   "query": "Who are the vocalists on Ilamai Ennum Poonkaatru from Ilaiyaraaja's album for the film it appears in?",
+   "composer": "ila",
+   "sql": "SELECT DISTINCT s2.singer FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Ilamai Ennum Poonkaatru%' ORDER BY s2.singer ASC",
+   "values": {
+    "work_name": "Ilamai Ennum Poonkaatru"
+   },
+   "answer": [
+    "S. P. Balasubrahmanyam"
+   ],
+   "gold": [
+    "S. P. Balasubrahmanyam"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "1464": {
+   "query": "When was the song En Uyire Vaa released?",
+   "composer": "ila",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_ila s1 WHERE s1.song LIKE '%En Uyire Vaa%' LIMIT 1",
+   "values": {
+    "work_name": "En Uyire Vaa"
+   },
+   "answer": "1988-06-10 00:00:00",
+   "gold": "1988-06-10 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1465": {
+   "query": "In which year did Ilaiyaraaja's song Poo Maalayae come out?",
+   "composer": "ila",
+   "sql": "SELECT DISTINCT s1.release_date FROM songs_ila s1 WHERE s1.song LIKE '%Poo Maalayae%' LIMIT 1",
+   "values": {
+    "work_name": "Poo Maalayae"
+   },
+   "answer": "1985-06-05 00:00:00",
+   "gold": "1985-06-05 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1470": {
+   "query": "How many movies did Kamal Haasan sing for Ilaiyaraaja?",
+   "composer": "ila",
+   "sql": "SELECT COUNT(DISTINCT s1.movie) FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Kamal Haasan%'",
+   "values": {},
+   "answer": 24,
+   "gold": 24,
+   "ok": true,
+   "error": null
+  },
+  "1472": {
+   "query": "In which year did G. V. Prakash Kumar first sing for Ilaiyaraaja?",
+   "composer": "ila",
+   "sql": "SELECT MIN(substr(s1.release_date,1,4)) FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%G. V. Prakash Kumar%'",
+   "values": {},
+   "answer": "2023",
+   "gold": "2023",
+   "ok": true,
+   "error": null
+  },
+  "1476": {
+   "query": "How many artists performed the song En Uyire Vaa for Ilaiyaraaja?",
+   "composer": "ila",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%En Uyire Vaa%'",
+   "values": {
+    "work_name": "En Uyire Vaa"
+   },
+   "answer": 2,
+   "gold": 2,
+   "ok": true,
+   "error": null
+  },
+  "1484": {
+   "query": "Who are the vocalists on Ilamai Ennum Poonkaatru from Ilaiyaraaja's album for the film containing it?",
+   "composer": "ila",
+   "sql": "SELECT DISTINCT s2.singer FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Ilamai Ennum Poonkaatru%' ORDER BY s2.singer ASC",
+   "values": {
+    "work_name": "Ilamai Ennum Poonkaatru"
+   },
+   "answer": [
+    "S. P. Balasubrahmanyam"
+   ],
+   "gold": [
+    "S. P. Balasubrahmanyam"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "1486": {
+   "query": "What year did the song Muthumani Maalai come out?",
+   "composer": "ila",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_ila s1 WHERE s1.song LIKE '%Muthumani Maalai%' LIMIT 1",
+   "values": {
+    "work_name": "Muthumani Maalai"
+   },
+   "answer": "1992-01-01 00:00:00",
+   "gold": "1992-01-01 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1495": {
+   "query": "Find the vocalists on Panivizhum Malar Vanam from Ilaiyaraaja's album for the film containing it.",
+   "composer": "ila",
+   "sql": "SELECT DISTINCT s2.singer FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Panivizhum Malar Vanam%' ORDER BY s2.singer ASC",
+   "values": {
+    "work_name": "Panivizhum Malar Vanam"
+   },
+   "answer": [
+    "S. P. Balasubrahmanyam"
+   ],
+   "gold": [
+    "S. P. Balasubrahmanyam"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "1497": {
+   "query": "How many vocalists are credited on Andhi Mazhai Megam from Ilaiyaraaja's filmography?",
+   "composer": "ila",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Andhi Mazhai Megam%'",
+   "values": {
+    "work_name": "Andhi Mazhai Megam"
+   },
+   "answer": 1,
+   "gold": 1,
+   "ok": true,
+   "error": null
+  },
+  "1498": {
+   "query": "How many singers are credited for the song En Uyire Vaa in Ilaiyaraaja's work?",
+   "composer": "ila",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%En Uyire Vaa%'",
+   "values": {
+    "work_name": "En Uyire Vaa"
+   },
+   "answer": 2,
+   "gold": 2,
+   "ok": true,
+   "error": null
+  },
+  "1499": {
+   "query": "When was the song Ilamai Ennum Poonkaatru released?",
+   "composer": "ila",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_ila s1 WHERE s1.song LIKE '%Ilamai Ennum Poonkaatru%' LIMIT 1",
+   "values": {
+    "work_name": "Ilamai Ennum Poonkaatru"
+   },
+   "answer": "1979-12-31 00:00:00",
+   "gold": "1979-12-31 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1500": {
+   "query": "In what year did the song Poo Maalayae come out?",
+   "composer": "ila",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_ila s1 WHERE s1.song LIKE '%Poo Maalayae%' LIMIT 1",
+   "values": {
+    "work_name": "Poo Maalayae"
+   },
+   "answer": "1985-06-05 00:00:00",
+   "gold": "1985-06-05 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1504": {
+   "query": "In which year did Bhupinder Singh first sing for Ilaiyaraaja?",
+   "composer": "ila",
+   "sql": "SELECT MIN(substr(s1.release_date,1,4)) FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Bhupinder Singh%'",
+   "values": {},
+   "answer": "2009",
+   "gold": "2009",
+   "ok": true,
+   "error": null
+  },
+  "1515": {
+   "query": "Name every playback singer credited on the track O Bedardeya in Pritam's catalogue.",
+   "composer": "pri",
+   "sql": "SELECT DISTINCT s2.singer FROM songs_pri s1 JOIN singers_pri s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%O Bedardeya%' ORDER BY s2.singer ASC",
+   "values": {
+    "work_name": "O Bedardeya"
+   },
+   "answer": [
+    "Arijit Singh"
+   ],
+   "gold": [
+    "Arijit Singh"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "1516": {
+   "query": "How many artists performed the song Tera Hone Laga Hoon for Pritam?",
+   "composer": "pri",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_pri s1 JOIN singers_pri s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Tera Hone Laga Hoon%'",
+   "values": {
+    "work_name": "Tera Hone Laga Hoon"
+   },
+   "answer": 2,
+   "gold": 2,
+   "ok": true,
+   "error": null
+  },
+  "1517": {
+   "query": "When was the song Shiva Theme released?",
+   "composer": "pri",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_pri s1 WHERE s1.song LIKE '%Shiva Theme%' LIMIT 1",
+   "values": {
+    "work_name": "Shiva Theme"
+   },
+   "answer": "2022-09-28 00:00:00",
+   "gold": "2022-09-28 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1518": {
+   "query": "In what year did the song Banda come out?",
+   "composer": "pri",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_pri s1 WHERE s1.song LIKE '%Banda%' LIMIT 1",
+   "values": {
+    "work_name": "Banda"
+   },
+   "answer": "2023-12-20 00:00:00",
+   "gold": "2023-12-20 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1529": {
+   "query": "Find the vocalists on O Bedardeya from Pritam's album for the film containing it.",
+   "composer": "pri",
+   "sql": "SELECT DISTINCT s2.singer FROM songs_pri s1 JOIN singers_pri s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%O Bedardeya%' ORDER BY s2.singer ASC",
+   "values": {
+    "work_name": "O Bedardeya"
+   },
+   "answer": [
+    "Arijit Singh"
+   ],
+   "gold": [
+    "Arijit Singh"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "1531": {
+   "query": "When was the song O Bedardeya released?",
+   "composer": "pri",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_pri s1 WHERE s1.song LIKE '%O Bedardeya%' LIMIT 1",
+   "values": {
+    "work_name": "O Bedardeya"
+   },
+   "answer": "2023-02-10 00:00:00",
+   "gold": "2023-02-10 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1532": {
+   "query": "In what year did the song Tera Hone Laga Hoon come out?",
+   "composer": "pri",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_pri s1 WHERE s1.song LIKE '%Tera Hone Laga Hoon%' LIMIT 1",
+   "values": {
+    "work_name": "Tera Hone Laga Hoon"
+   },
+   "answer": "2009-11-09 00:00:00",
+   "gold": "2009-11-09 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1549": {
+   "query": "List the playback singers credited on the song Tera Hone Laga Hoon in Pritam's catalogue.",
+   "composer": "pri",
+   "sql": "SELECT DISTINCT s2.singer FROM songs_pri s1 JOIN singers_pri s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Tera Hone Laga Hoon%' ORDER BY s2.singer ASC",
+   "values": {
+    "work_name": "Tera Hone Laga Hoon"
+   },
+   "answer": [
+    "Alisha Chinai",
+    "Atif Aslam"
+   ],
+   "gold": [
+    "Alisha Chinai",
+    "Atif Aslam"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "1550": {
+   "query": "How many artists performed the song Banda for Pritam?",
+   "composer": "pri",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_pri s1 JOIN singers_pri s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Banda%'",
+   "values": {
+    "work_name": "Banda"
+   },
+   "answer": 1,
+   "gold": 1,
+   "ok": true,
+   "error": null
+  },
+  "1555": {
+   "query": "How many songs did Diljit Dosanjh sing for Pritam in 2023?",
+   "composer": "pri",
+   "sql": "SELECT COUNT(DISTINCT s1.song) FROM songs_pri s1 JOIN singers_pri s2 ON s1.song_id = s2.song_id WHERE substr(s1.release_date,1,4) LIKE '2023%' AND s2.singer LIKE '%Diljit Dosanjh%'",
+   "values": {
+    "year": "2023"
+   },
+   "answer": 2,
+   "gold": 2,
+   "ok": true,
+   "error": null
+  },
+  "1566": {
+   "query": "Who sang the song Tera Hone Laga Hoon for Pritam?",
+   "composer": "pri",
+   "sql": "SELECT DISTINCT s2.singer FROM songs_pri s1 JOIN singers_pri s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Tera Hone Laga Hoon%' ORDER BY s2.singer ASC",
+   "values": {
+    "work_name": "Tera Hone Laga Hoon"
+   },
+   "answer": [
+    "Alisha Chinai",
+    "Atif Aslam"
+   ],
+   "gold": [
+    "Alisha Chinai",
+    "Atif Aslam"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "1567": {
+   "query": "Which vocalists performed the song O Bedardeya for Pritam?",
+   "composer": "pri",
+   "sql": "SELECT DISTINCT s2.singer FROM songs_pri s1 JOIN singers_pri s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%O Bedardeya%' ORDER BY s2.singer ASC",
+   "values": {
+    "work_name": "O Bedardeya"
+   },
+   "answer": [
+    "Arijit Singh"
+   ],
+   "gold": [
+    "Arijit Singh"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "1570": {
+   "query": "When was the song Dheemey Dheemey released?",
+   "composer": "pri",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_pri s1 WHERE s1.song LIKE '%Dheemey Dheemey%' LIMIT 1",
+   "values": {
+    "work_name": "Dheemey Dheemey"
+   },
+   "answer": "2006-09-15 00:00:00",
+   "gold": "2006-09-15 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1571": {
+   "query": "When did Pritam's song Utth Ja Ziddi Re come out?",
+   "composer": "pri",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_pri s1 WHERE s1.song LIKE '%Utth Ja Ziddi Re%' LIMIT 1",
+   "values": {
+    "work_name": "Utth Ja Ziddi Re"
+   },
+   "answer": "2021-12-23 00:00:00",
+   "gold": "2021-12-23 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1584": {
+   "query": "How many artists performed the song Bol Na Halke Halke for Shankar-Ehsaan-Loy?",
+   "composer": "sel",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_sel s1 JOIN singers_sel s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Bol Na Halke Halke%'",
+   "values": {
+    "work_name": "Bol Na Halke Halke"
+   },
+   "answer": 2,
+   "gold": 2,
+   "ok": true,
+   "error": null
+  },
+  "1586": {
+   "query": "When was the song Tu Hi Bata Zindagi (male) released?",
+   "composer": "sel",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_sel s1 JOIN singers_sel s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Tu Hi Bata Zindagi (male)%' LIMIT 1",
+   "values": {
+    "work_name": "Tu Hi Bata Zindagi (male)"
+   },
+   "answer": "2003-01-01 00:00:00",
+   "gold": "2003-01-01 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1587": {
+   "query": "In which year did the song Chedkhaniyaan by Shankar-Ehsaan-Loy come out?",
+   "composer": "sel",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_sel s1 WHERE s1.song LIKE '%Chedkhaniyaan%' LIMIT 1",
+   "values": {
+    "work_name": "Chedkhaniyaan"
+   },
+   "answer": "2020-07-27 00:00:00",
+   "gold": "2020-07-27 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1592": {
+   "query": "When was the song Bol Na Halke Halke released?",
+   "composer": "sel",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_sel s1 WHERE s1.song LIKE '%Bol Na Halke Halke%' LIMIT 1",
+   "values": {
+    "work_name": "Bol Na Halke Halke"
+   },
+   "answer": "2007-01-01 00:00:00",
+   "gold": "2007-01-01 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1596": {
+   "query": "In which year did Hariharan first sing for Shankar-Ehsaan-Loy?",
+   "composer": "sel",
+   "sql": "SELECT MIN(substr(s1.release_date,1,4)) FROM songs_sel s1 JOIN singers_sel s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Hariharan%'",
+   "values": {},
+   "answer": "2004",
+   "gold": "2004",
+   "ok": true,
+   "error": null
+  },
+  "1598": {
+   "query": "In what year did the song Panga (Title Track) come out?",
+   "composer": "sel",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_sel s1 WHERE s1.song LIKE '%Panga (Title Track)%' LIMIT 1",
+   "values": {
+    "work_name": "Panga (Title Track)"
+   },
+   "answer": "2020-01-21 00:00:00",
+   "gold": "2020-01-21 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1602": {
+   "query": "What year did Harshdeep Kaur first work as a singer for Shankar-Ehsaan-Loy?",
+   "composer": "sel",
+   "sql": "SELECT MIN(substr(s1.release_date,1,4)) FROM songs_sel s1 JOIN singers_sel s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Harshdeep Kaur%'",
+   "values": {},
+   "answer": "2018",
+   "gold": "2018",
+   "ok": true,
+   "error": null
+  },
+  "1614": {
+   "query": "When was the song Panga (Title Track) released?",
+   "composer": "sel",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_sel s1 WHERE s1.song LIKE '%Panga (Title Track)%' LIMIT 1",
+   "values": {
+    "work_name": "Panga (Title Track)"
+   },
+   "answer": "2020-01-21 00:00:00",
+   "gold": "2020-01-21 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1615": {
+   "query": "In which year did the song Chedkhaniyaan come out?",
+   "composer": "sel",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_sel s1 WHERE s1.song LIKE '%Chedkhaniyaan%' LIMIT 1",
+   "values": {
+    "work_name": "Chedkhaniyaan"
+   },
+   "answer": "2020-07-27 00:00:00",
+   "gold": "2020-07-27 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1624": {
+   "query": "How many artists performed the song Prey for Sushin Shyam?",
+   "composer": "sus",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_sus s1 JOIN singers_sus s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Prey%' AND s2.singer LIKE '%Sushin Shyam%'",
+   "values": {
+    "work_name": "Prey"
+   },
+   "answer": 1,
+   "gold": 1,
+   "ok": true,
+   "error": null
+  },
+  "1625": {
+   "query": "When was the song Broken Things released?",
+   "composer": "sus",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_sus s1 WHERE s1.song LIKE '%Broken Things%' LIMIT 1",
+   "values": {
+    "work_name": "Broken Things"
+   },
+   "answer": "2024-11-30 00:00:00",
+   "gold": "2024-11-30 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1626": {
+   "query": "In which year did the song Virus come out?",
+   "composer": "sus",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_sus s1 WHERE s1.song LIKE '%Virus%' LIMIT 1",
+   "values": {
+    "work_name": "Virus"
+   },
+   "answer": "2019-06-12 00:00:00",
+   "gold": "2019-06-12 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1633": {
+   "query": "How many vocalists are credited on The Last Dance from Sushin Shyam's filmography?",
+   "composer": "sus",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_sus s1 JOIN singers_sus s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%The Last Dance%' AND s2.singer LIKE '%Sushin Shyam%'",
+   "values": {
+    "work_name": "The Last Dance"
+   },
+   "answer": 0,
+   "gold": 1,
+   "ok": false,
+   "error": null
+  },
+  "1634": {
+   "query": "When was the song Prey released?",
+   "composer": "sus",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_sus s1 WHERE s1.song LIKE '%Prey%' LIMIT 1",
+   "values": {
+    "work_name": "Prey"
+   },
+   "answer": "2020-04-09 00:00:00",
+   "gold": "2020-04-09 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1635": {
+   "query": "In what year did the song Kisa Paathiyil come out?",
+   "composer": "sus",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_sus s1 WHERE s1.song LIKE '%Kisa Paathiyil%' LIMIT 1",
+   "values": {
+    "work_name": "Kisa Paathiyil"
+   },
+   "answer": "2016-07-22 00:00:00",
+   "gold": "2016-07-22 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1646": {
+   "query": "When was the song The Last Dance released?",
+   "composer": "sus",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_sus s1 WHERE s1.song LIKE '%The Last Dance%' LIMIT 1",
+   "values": {
+    "work_name": "The Last Dance"
+   },
+   "answer": "2024-04-19 00:00:00",
+   "gold": "2024-04-19 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1660": {
+   "query": "How many artists performed the song Tooh for Vishal-Shekhar?",
+   "composer": "vsh",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_vsh s1 JOIN singers_vsh s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Tooh%'",
+   "values": {
+    "work_name": "Tooh"
+   },
+   "answer": 4,
+   "gold": 4,
+   "ok": true,
+   "error": null
+  },
+  "1661": {
+   "query": "When was the song Jabraa Fan (Marathi) released?",
+   "composer": "vsh",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_vsh s1 WHERE s1.song LIKE '%Jabraa Fan (Marathi)%' LIMIT 1",
+   "values": {
+    "work_name": "Jabraa Fan (Marathi)"
+   },
+   "answer": "2016-04-07 00:00:00",
+   "gold": "2016-04-07 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1687": {
+   "query": "In what year did the song Subah Subah come out?",
+   "composer": "vsh",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_vsh s1 WHERE s1.song LIKE '%Subah Subah%' LIMIT 1",
+   "values": {
+    "work_name": "Subah Subah"
+   },
+   "answer": "2006-01-01 00:00:00",
+   "gold": "2006-01-01 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1714": {
+   "query": "How many vocalists are credited on Mukkala Mukkabala from A. R. Rahman's filmography?",
+   "composer": "arr",
+   "sql": "SELECT COUNT(DISTINCT s2.name) FROM songs s1 JOIN singers s2 ON s1.song_id = s2.song_id WHERE s1.title LIKE '%Mukkala Mukkabala%'",
+   "values": {
+    "work_name": "Mukkala Mukkabala"
+   },
+   "answer": 3,
+   "gold": 3,
+   "ok": true,
+   "error": null
+  },
+  "1722": {
+   "query": "When was the song Mukkala Mukkabala released?",
+   "composer": "arr",
+   "sql": "SELECT MIN(s1.date) FROM songs s1 WHERE s1.title LIKE '%Mukkala Mukkabala%' LIMIT 1",
+   "values": {
+    "work_name": "Mukkala Mukkabala"
+   },
+   "answer": "1994-01-01",
+   "gold": "1994-01-01",
+   "ok": true,
+   "error": null
+  },
+  "1723": {
+   "query": "In what year did the song Chanda Re come out?",
+   "composer": "arr",
+   "sql": "SELECT MIN(s1.date) FROM songs s1 WHERE s1.title LIKE '%Chanda Re%' LIMIT 1",
+   "values": {
+    "work_name": "Chanda Re"
+   },
+   "answer": "1997-01-01",
+   "gold": "1997-01-01",
+   "ok": true,
+   "error": null
+  },
+  "1731": {
+   "query": "In which year did Hema Sardesai first sing for A. R. Rahman?",
+   "composer": "arr",
+   "sql": "SELECT MIN(substr(s1.date,1,4)) FROM songs s1 JOIN singers s2 ON s1.song_id = s2.song_id WHERE s2.name LIKE '%Hema Sardesai%'",
+   "values": {},
+   "answer": "1997",
+   "gold": "1997",
+   "ok": true,
+   "error": null
+  },
+  "1732": {
+   "query": "When did Kavita Krishnamurthy first sing for A. R. Rahman?",
+   "composer": "arr",
+   "sql": "SELECT MIN(substr(s1.date,1,4)) FROM songs s1 JOIN singers s2 ON s1.song_id = s2.song_id WHERE s2.name LIKE '%Kavita Krishnamurthy%'",
+   "values": {},
+   "answer": "1992",
+   "gold": "1992",
+   "ok": true,
+   "error": null
+  },
+  "1754": {
+   "query": "How many artists performed the song Naan Sonnal for Ilaiyaraaja?",
+   "composer": "ila",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Naan Sonnal%'",
+   "values": {
+    "work_name": "Naan Sonnal"
+   },
+   "answer": 2,
+   "gold": 2,
+   "ok": true,
+   "error": null
+  },
+  "1755": {
+   "query": "When was the song Ithu Oru Pon Malai released?",
+   "composer": "ila",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_ila s1 WHERE s1.song LIKE '%Ithu Oru Pon Malai%' LIMIT 1",
+   "values": {
+    "work_name": "Ithu Oru Pon Malai"
+   },
+   "answer": "1980-11-06 00:00:00",
+   "gold": "1980-11-06 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1759": {
+   "query": "In which year did Karthik first sing for Ilaiyaraaja?",
+   "composer": "ila",
+   "sql": "SELECT MIN(substr(s1.release_date,1,4)) FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Karthik%'",
+   "values": {},
+   "answer": "1990",
+   "gold": "1990",
+   "ok": true,
+   "error": null
+  },
+  "1762": {
+   "query": "When did the song Maasi Maasam come out?",
+   "composer": "ila",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_ila s1 WHERE s1.song LIKE '%Maasi Maasam%' LIMIT 1",
+   "values": {
+    "work_name": "Maasi Maasam"
+   },
+   "answer": "1991-01-01 00:00:00",
+   "gold": "1991-01-01 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1788": {
+   "query": "Who sang the song Maasi Maasam composed by Ilaiyaraaja?",
+   "composer": "ila",
+   "sql": "SELECT DISTINCT s2.singer FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Maasi Maasam%' ORDER BY s2.singer ASC",
+   "values": {
+    "work_name": "Maasi Maasam"
+   },
+   "answer": [
+    "K. J. Yesudas",
+    "Swarnalatha"
+   ],
+   "gold": [
+    "K. J. Yesudas",
+    "Swarnalatha"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "1790": {
+   "query": "When was the song Naan Sonnal released?",
+   "composer": "ila",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_ila s1 WHERE s1.song LIKE '%Naan Sonnal%' LIMIT 1",
+   "values": {
+    "work_name": "Naan Sonnal"
+   },
+   "answer": "1990-10-17 00:00:00",
+   "gold": "1990-10-17 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1791": {
+   "query": "In which year did Ilaiyaraaja's song Ithu Oru Pon Malai come out?",
+   "composer": "ila",
+   "sql": "SELECT DISTINCT s1.release_date FROM songs_ila s1 WHERE s1.song LIKE '%Ithu Oru Pon Malai%' LIMIT 1",
+   "values": {
+    "work_name": "Ithu Oru Pon Malai"
+   },
+   "answer": "1980-11-06 00:00:00",
+   "gold": "1980-11-06 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1792": {
+   "query": "How many tracks in Ilaiyaraaja's catalogue feature Karthik as a vocalist?",
+   "composer": "ila",
+   "sql": "SELECT COUNT(DISTINCT s1.song) FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Karthik%'",
+   "values": {},
+   "answer": 26,
+   "gold": 26,
+   "ok": true,
+   "error": null
+  },
+  "1800": {
+   "query": "Name every playback singer credited on the track Maasi Maasam in Ilaiyaraaja's catalogue.",
+   "composer": "ila",
+   "sql": "SELECT DISTINCT s2.singer FROM songs_ila s1 JOIN singers_ila s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Maasi Maasam%' ORDER BY s2.singer ASC",
+   "values": {
+    "work_name": "Maasi Maasam"
+   },
+   "answer": [
+    "K. J. Yesudas",
+    "Swarnalatha"
+   ],
+   "gold": [
+    "K. J. Yesudas",
+    "Swarnalatha"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "1803": {
+   "query": "When was the song The Journey released?",
+   "composer": "ila",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_ila s1 WHERE s1.song LIKE '%The Journey%' LIMIT 1",
+   "values": {
+    "work_name": "The Journey"
+   },
+   "answer": "2026-06-01 00:00:00",
+   "gold": "2026-06-01 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1808": {
+   "query": "When was the song Tum Mile (Remix) released?",
+   "composer": "pri",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_pri s1 WHERE s1.song LIKE '%Tum Mile (Remix)%' LIMIT 1",
+   "values": {
+    "work_name": "Tum Mile (Remix)"
+   },
+   "answer": "2007-12-20 00:00:00",
+   "gold": "2007-12-20 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1812": {
+   "query": "In which year did DJ Akbar Sami first sing for Pritam?",
+   "composer": "pri",
+   "sql": "SELECT MIN(substr(s1.release_date,1,4)) FROM songs_pri s1 JOIN singers_pri s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%DJ Akbar Sami%'",
+   "values": {},
+   "answer": "2006",
+   "gold": "2006",
+   "ok": true,
+   "error": null
+  },
+  "1815": {
+   "query": "In what year did the song Phurrr (film version) come out?",
+   "composer": "pri",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_pri s1 WHERE s1.song LIKE '%Phurrr (film version)%' LIMIT 1",
+   "values": {
+    "work_name": "Phurrr (film version)"
+   },
+   "answer": "2017-08-04 00:00:00",
+   "gold": "2017-08-04 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1832": {
+   "query": "When was the song Obsession released?",
+   "composer": "pri",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_pri s1 WHERE s1.song LIKE '%Obsession%' LIMIT 1",
+   "values": {
+    "work_name": "Obsession"
+   },
+   "answer": "2015-12-14 00:00:00",
+   "gold": "2015-12-14 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1833": {
+   "query": "In what year did Pritam's track Phurrr (film version) come out?",
+   "composer": "pri",
+   "sql": "SELECT DISTINCT s1.release_date FROM songs_pri s1 WHERE s1.song LIKE '%Phurrr (film version)%' LIMIT 1",
+   "values": {
+    "work_name": "Phurrr (film version)"
+   },
+   "answer": "2017-08-04 00:00:00",
+   "gold": "2017-08-04 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1840": {
+   "query": "In which year did Snoop Dogg first sing for Pritam?",
+   "composer": "pri",
+   "sql": "SELECT MIN(substr(s1.release_date,1,4)) FROM songs_pri s1 JOIN singers_pri s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Snoop Dogg%'",
+   "values": {},
+   "answer": "2008",
+   "gold": "2008",
+   "ok": true,
+   "error": null
+  },
+  "1847": {
+   "query": "How many vocalists are credited on Tum Mile (Remix) from Pritam's filmography?",
+   "composer": "pri",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_pri s1 JOIN singers_pri s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Tum Mile (Remix)%'",
+   "values": {
+    "work_name": "Tum Mile (Remix)"
+   },
+   "answer": 2,
+   "gold": 2,
+   "ok": true,
+   "error": null
+  },
+  "1849": {
+   "query": "When was the song Lehra Do (film version) released?",
+   "composer": "pri",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_pri s1 WHERE s1.song LIKE '%Lehra Do (film version)%' LIMIT 1",
+   "values": {
+    "work_name": "Lehra Do (film version)"
+   },
+   "answer": "2021-12-23 00:00:00",
+   "gold": "2021-12-23 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1850": {
+   "query": "In which year did Phurrr (film version) come out?",
+   "composer": "pri",
+   "sql": "SELECT DISTINCT s1.release_date FROM songs_pri s1 WHERE s1.movie LIKE '%Shayad (film version) [from \"Love Aaj Kal\"]%'",
+   "values": {
+    "work_name": "Shayad (film version) [from \"Love Aaj Kal\"]"
+   },
+   "answer": "2021-03-26 00:00:00",
+   "gold": "2017-08-04 00:00:00",
+   "ok": false,
+   "error": null
+  },
+  "1863": {
+   "query": "On Tum Mile (Remix) from Pritam's filmography, how many vocalists receive credit?",
+   "composer": "pri",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_pri s1 JOIN singers_pri s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Tum Mile (Remix)%'",
+   "values": {
+    "work_name": "Tum Mile (Remix)"
+   },
+   "answer": 2,
+   "gold": 2,
+   "ok": true,
+   "error": null
+  },
+  "1864": {
+   "query": "When was the song Phurrr (film version) released?",
+   "composer": "pri",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_pri s1 WHERE s1.song LIKE '%Phurrr (film version)%' LIMIT 1",
+   "values": {
+    "work_name": "Phurrr (film version)"
+   },
+   "answer": "2017-08-04 00:00:00",
+   "gold": "2017-08-04 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1874": {
+   "query": "For the song Mourya Re by Shankar-Ehsaan-Loy, how many performers were credited?",
+   "composer": "sel",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_sel s1 JOIN singers_sel s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Mourya Re%'",
+   "values": {
+    "work_name": "Mourya Re"
+   },
+   "answer": 1,
+   "gold": 1,
+   "ok": true,
+   "error": null
+  },
+  "1875": {
+   "query": "When was the song Dekh Toofaan Aaya Hai released?",
+   "composer": "sel",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_sel s1 WHERE s1.song LIKE '%Dekh Toofaan Aaya Hai%' LIMIT 1",
+   "values": {
+    "work_name": "Dekh Toofaan Aaya Hai"
+   },
+   "answer": "2021-07-02 00:00:00",
+   "gold": "2021-07-02 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1876": {
+   "query": "In which year did the song Chhapaak (Title Track) come out?",
+   "composer": "sel",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_sel s1 WHERE s1.song LIKE '%Chhapaak (Title Track)%' LIMIT 1",
+   "values": {
+    "work_name": "Chhapaak (Title Track)"
+   },
+   "answer": "2020-01-14 00:00:00",
+   "gold": "2020-01-14 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1879": {
+   "query": "Which songs did KK record for Shankar-Ehsaan-Loy in 2003? List them.",
+   "composer": "sel",
+   "sql": "SELECT DISTINCT s1.song FROM songs_sel s1 JOIN singers_sel s2 ON s1.song_id = s2.song_id WHERE substr(s1.release_date,1,4) LIKE '2003%' AND s2.singer LIKE '%KK%' ORDER BY s1.song ASC",
+   "values": {
+    "year": "2003"
+   },
+   "answer": [
+    "Beimaan Mohabbat",
+    "It's The Time To Disco",
+    "It's the Time to Disco"
+   ],
+   "gold": [
+    "Beimaan Mohabbat",
+    "It's The Time To Disco",
+    "It's the Time to Disco"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "1883": {
+   "query": "In which year did Kamal Haasan first sing for Shankar-Ehsaan-Loy?",
+   "composer": "sel",
+   "sql": "SELECT MIN(substr(s1.release_date,1,4)) FROM songs_sel s1 JOIN singers_sel s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%Kamal Haasan%'",
+   "values": {},
+   "answer": "2012",
+   "gold": "2012",
+   "ok": true,
+   "error": null
+  },
+  "1888": {
+   "query": "Who are the singers in the movie Taare Zameen Par by Shankar-Ehsaan-Loy?",
+   "composer": "sel",
+   "sql": "SELECT DISTINCT s2.singer FROM songs_sel s1 JOIN singers_sel s2 ON s1.song_id = s2.song_id WHERE s1.movie LIKE '%Taare Zameen Par%' ORDER BY s2.singer ASC",
+   "values": {
+    "work_name": "Taare Zameen Par"
+   },
+   "answer": [
+    "Aamir Khan",
+    "Adnan Sami",
+    "Amitabh Bhattacharya",
+    "Amole Gupte",
+    "Ananya Wadkar",
+    "Auriel Cordo",
+    "Bugs Bhargava",
+    "Divya Kumar",
+    "Dominique Cerejo",
+    "Kiran Rao",
+    "Loy Mendonsa",
+    "Raaj Gopal Iyer",
+    "Ram Madhvani",
+    "Raman Mahadevan",
+    "Ravi Khanwilker",
+    "Shaan",
+    "Shankar Mahadevan",
+    "Shankar Sachdev",
+    "Shankar–Ehsaan–Loy",
+    "Siddharth Mahadevan",
+    "Vishal Dadlani",
+    "Vivienne Pocha"
+   ],
+   "gold": [
+    "Aamir Khan",
+    "Adnan Sami",
+    "Amitabh Bhattacharya",
+    "Amole Gupte",
+    "Ananya Wadkar",
+    "Auriel Cordo",
+    "Bugs Bhargava",
+    "Divya Kumar",
+    "Dominique Cerejo",
+    "Kiran Rao",
+    "Loy Mendonsa",
+    "Raaj Gopal Iyer",
+    "Ram Madhvani",
+    "Raman Mahadevan",
+    "Ravi Khanwilker",
+    "Shaan",
+    "Shankar Mahadevan",
+    "Shankar Sachdev",
+    "Shankar–Ehsaan–Loy",
+    "Siddharth Mahadevan",
+    "Vishal Dadlani",
+    "Vivienne Pocha"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "1892": {
+   "query": "Who were the playback singers on Shankar-Ehsaan-Loy's soundtrack for Taare Zameen Par?",
+   "composer": "sel",
+   "sql": "SELECT DISTINCT s2.singer FROM songs_sel s1 JOIN singers_sel s2 ON s1.song_id = s2.song_id WHERE s1.movie LIKE '%Taare Zameen Par%' ORDER BY s2.singer ASC",
+   "values": {
+    "work_name": "Taare Zameen Par"
+   },
+   "answer": [
+    "Aamir Khan",
+    "Adnan Sami",
+    "Amitabh Bhattacharya",
+    "Amole Gupte",
+    "Ananya Wadkar",
+    "Auriel Cordo",
+    "Bugs Bhargava",
+    "Divya Kumar",
+    "Dominique Cerejo",
+    "Kiran Rao",
+    "Loy Mendonsa",
+    "Raaj Gopal Iyer",
+    "Ram Madhvani",
+    "Raman Mahadevan",
+    "Ravi Khanwilker",
+    "Shaan",
+    "Shankar Mahadevan",
+    "Shankar Sachdev",
+    "Shankar–Ehsaan–Loy",
+    "Siddharth Mahadevan",
+    "Vishal Dadlani",
+    "Vivienne Pocha"
+   ],
+   "gold": [
+    "Aamir Khan",
+    "Adnan Sami",
+    "Amitabh Bhattacharya",
+    "Amole Gupte",
+    "Ananya Wadkar",
+    "Auriel Cordo",
+    "Bugs Bhargava",
+    "Divya Kumar",
+    "Dominique Cerejo",
+    "Kiran Rao",
+    "Loy Mendonsa",
+    "Raaj Gopal Iyer",
+    "Ram Madhvani",
+    "Raman Mahadevan",
+    "Ravi Khanwilker",
+    "Shaan",
+    "Shankar Mahadevan",
+    "Shankar Sachdev",
+    "Shankar–Ehsaan–Loy",
+    "Siddharth Mahadevan",
+    "Vishal Dadlani",
+    "Vivienne Pocha"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "1895": {
+   "query": "How many artists performed the song Dekh Toofaan Aaya Hai for Shankar-Ehsaan-Loy?",
+   "composer": "sel",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_sel s1 JOIN singers_sel s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Dekh Toofaan Aaya Hai%'",
+   "values": {
+    "work_name": "Dekh Toofaan Aaya Hai"
+   },
+   "answer": 1,
+   "gold": 1,
+   "ok": true,
+   "error": null
+  },
+  "1896": {
+   "query": "How many vocalists performed Chhapaak (Title Track) for Shankar-Ehsaan-Loy?",
+   "composer": "sel",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_sel s1 JOIN singers_sel s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Chhapaak (Title Track)%'",
+   "values": {
+    "work_name": "Chhapaak (Title Track)"
+   },
+   "answer": 1,
+   "gold": 1,
+   "ok": true,
+   "error": null
+  },
+  "1897": {
+   "query": "When was the song Dhuaan released?",
+   "composer": "sel",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_sel s1 WHERE s1.song LIKE '%Dhuaan%' LIMIT 1",
+   "values": {
+    "work_name": "Dhuaan"
+   },
+   "answer": "2013-06-28 00:00:00",
+   "gold": "2013-06-28 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1898": {
+   "query": "In which year did Toh Zinda Ho Tum come out?",
+   "composer": "sel",
+   "sql": "SELECT DISTINCT s1.release_date FROM songs_sel s1 WHERE s1.song LIKE '%Toh Zinda Ho Tum%'",
+   "values": {
+    "work_name": "Toh Zinda Ho Tum"
+   },
+   "answer": "2011-06-06 00:00:00",
+   "gold": "2011-06-06 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1904": {
+   "query": "Could you list the songs from Shankar-Ehsaan-Loy's score for Taare Zameen Par?",
+   "composer": "sel",
+   "sql": "SELECT DISTINCT s1.song FROM songs_sel s1 WHERE s1.movie LIKE '%Taare Zameen Par%' ORDER BY s1.song ASC",
+   "values": {
+    "work_name": "Taare Zameen Par"
+   },
+   "answer": [
+    "Bheja Kum",
+    "Bum Bum Bole",
+    "Good for Nothing",
+    "Ishan's Theme",
+    "Jame Raho",
+    "Kholo Kholo",
+    "Maa",
+    "Mera Jahan",
+    "Shubh Mangalam",
+    "Sitaare Zameen Par Title Track",
+    "Taare Zameen Par"
+   ],
+   "gold": [
+    "Bheja Kum",
+    "Bum Bum Bole",
+    "Good for Nothing",
+    "Ishan's Theme",
+    "Jame Raho",
+    "Kholo Kholo",
+    "Maa",
+    "Mera Jahan",
+    "Shubh Mangalam",
+    "Sitaare Zameen Par Title Track",
+    "Taare Zameen Par"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "1908": {
+   "query": "How many artists performed the song Mourya Re for Shankar-Ehsaan-Loy?",
+   "composer": "sel",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_sel s1 JOIN singers_sel s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Mourya Re%'",
+   "values": {
+    "work_name": "Mourya Re"
+   },
+   "answer": 1,
+   "gold": 1,
+   "ok": true,
+   "error": null
+  },
+  "1909": {
+   "query": "What year did the song Chhapaak (Title Track) come out?",
+   "composer": "sel",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_sel s1 WHERE s1.song LIKE '%Chhapaak (Title Track)%' LIMIT 1",
+   "values": {
+    "work_name": "Chhapaak (Title Track)"
+   },
+   "answer": "2020-01-14 00:00:00",
+   "gold": "2020-01-14 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1912": {
+   "query": "How many songs did Shaan sing for Shankar-Ehsaan-Loy in 2007?",
+   "composer": "sel",
+   "sql": "SELECT COUNT(DISTINCT s1.song) FROM songs_sel s1 JOIN singers_sel s2 ON s1.song_id = s2.song_id WHERE substr(s1.release_date,1,4) LIKE '2007%' AND s2.singer LIKE '%Shaan%'",
+   "values": {
+    "year": "2007"
+   },
+   "answer": 1,
+   "gold": 1,
+   "ok": true,
+   "error": null
+  },
+  "1919": {
+   "query": "Which artists performed the song Dekh Toofaan Aaya Hai for Shankar-Ehsaan-Loy?",
+   "composer": "sel",
+   "sql": "SELECT DISTINCT s2.singer FROM songs_sel s1 JOIN singers_sel s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Dekh Toofaan Aaya Hai%' ORDER BY s2.singer ASC",
+   "values": {
+    "work_name": "Dekh Toofaan Aaya Hai"
+   },
+   "answer": [
+    "D'evil"
+   ],
+   "gold": [
+    "D'evil"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "1921": {
+   "query": "How many vocalists performed the song Chhapaak (Title Track) for Shankar-Ehsaan-Loy?",
+   "composer": "sel",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_sel s1 JOIN singers_sel s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Chhapaak (Title Track)%'",
+   "values": {
+    "work_name": "Chhapaak (Title Track)"
+   },
+   "answer": 1,
+   "gold": 1,
+   "ok": true,
+   "error": null
+  },
+  "1922": {
+   "query": "When was the song Mourya Re released?",
+   "composer": "sel",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_sel s1 WHERE s1.song LIKE '%Mourya Re%' LIMIT 1",
+   "values": {
+    "work_name": "Mourya Re"
+   },
+   "answer": "2006-08-31 00:00:00",
+   "gold": "2006-08-31 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1923": {
+   "query": "In what year did the song Dhuaan come out?",
+   "composer": "sel",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_sel s1 WHERE s1.song LIKE '%Dhuaan%' LIMIT 1",
+   "values": {
+    "work_name": "Dhuaan"
+   },
+   "answer": "2013-06-28 00:00:00",
+   "gold": "2013-06-28 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1934": {
+   "query": "How many vocalists are credited on The Mumbai Infinity from Sushin Shyam's filmography?",
+   "composer": "sus",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_sus s1 JOIN singers_sus s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%The Mumbai Infinity%' AND s2.singer LIKE '%Sushin Shyam%'",
+   "values": {
+    "work_name": "The Mumbai Infinity"
+   },
+   "answer": 1,
+   "gold": 1,
+   "ok": true,
+   "error": null
+  },
+  "1936": {
+   "query": "When was the song Kuthanthram - Extended released?",
+   "composer": "sus",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_sus s1 WHERE s1.song LIKE '%Kuthanthram - Extended%' LIMIT 1",
+   "values": {
+    "work_name": "Kuthanthram - Extended"
+   },
+   "answer": "2024-03-04 00:00:00",
+   "gold": "2024-03-04 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1937": {
+   "query": "What year did Broken Things come out?",
+   "composer": "sus",
+   "sql": "SELECT COUNT(DISTINCT s1.release_date) FROM songs_sus s1 LIMIT 1",
+   "values": {},
+   "answer": 24,
+   "gold": "2024-11-30 00:00:00",
+   "ok": false,
+   "error": null
+  },
+  "1948": {
+   "query": "How many artists performed the song Broken Things for Sushin Shyam?",
+   "composer": "sus",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_sus s1 JOIN singers_sus s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Broken Things%' AND s2.singer LIKE '%Sushin Shyam%'",
+   "values": {
+    "work_name": "Broken Things"
+   },
+   "answer": 1,
+   "gold": 1,
+   "ok": true,
+   "error": null
+  },
+  "1956": {
+   "query": "Name every playback singer credited on the track Lungi Dance in Vishal-Shekhar's catalogue.",
+   "composer": "vsh",
+   "sql": "SELECT DISTINCT s2.singer FROM songs_vsh s1 JOIN singers_vsh s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Lungi Dance%' ORDER BY s2.singer ASC",
+   "values": {
+    "work_name": "Lungi Dance"
+   },
+   "answer": [
+    "Yo Yo Honey Singh"
+   ],
+   "gold": [
+    "Yo Yo Honey Singh"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "1958": {
+   "query": "When did the song Tore Bina come out?",
+   "composer": "vsh",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_vsh s1 WHERE s1.song LIKE '%Tore Bina%' LIMIT 1",
+   "values": {
+    "work_name": "Tore Bina"
+   },
+   "answer": "2012-02-14 00:00:00",
+   "gold": "2012-02-14 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1965": {
+   "query": "Who sang the track Ajab Si composed by Vishal-Shekhar? List all the playback singers.",
+   "composer": "vsh",
+   "sql": "SELECT DISTINCT s2.singer FROM songs_vsh s1 JOIN singers_vsh s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Ajab Si%' ORDER BY s2.singer ASC",
+   "values": {
+    "work_name": "Ajab Si"
+   },
+   "answer": [
+    "KK",
+    "Vishal-Shekhar"
+   ],
+   "gold": [
+    "KK",
+    "Vishal-Shekhar"
+   ],
+   "ok": true,
+   "error": null
+  },
+  "1967": {
+   "query": "How many artists performed the song Haule Haule for Vishal-Shekhar?",
+   "composer": "vsh",
+   "sql": "SELECT COUNT(DISTINCT s2.singer) FROM songs_vsh s1 JOIN singers_vsh s2 ON s1.song_id = s2.song_id WHERE s1.song LIKE '%Haule Haule%'",
+   "values": {
+    "work_name": "Haule Haule"
+   },
+   "answer": 1,
+   "gold": 1,
+   "ok": true,
+   "error": null
+  },
+  "1968": {
+   "query": "When was the song Tore Bina released?",
+   "composer": "vsh",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_vsh s1 WHERE s1.song LIKE '%Tore Bina%' LIMIT 1",
+   "values": {
+    "work_name": "Tore Bina"
+   },
+   "answer": "2012-02-14 00:00:00",
+   "gold": "2012-02-14 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1969": {
+   "query": "In what year did the song Bhankas come out?",
+   "composer": "vsh",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_vsh s1 WHERE s1.song LIKE '%Bhankas%' LIMIT 1",
+   "values": {
+    "work_name": "Bhankas"
+   },
+   "answer": "2020-03-07 00:00:00",
+   "gold": "2020-03-07 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1971": {
+   "query": "How many songs did KK sing for Vishal-Shekhar?",
+   "composer": "vsh",
+   "sql": "SELECT COUNT(DISTINCT s1.song) FROM songs_vsh s1 JOIN singers_vsh s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%KK%'",
+   "values": {},
+   "answer": 24,
+   "gold": 24,
+   "ok": true,
+   "error": null
+  },
+  "1977": {
+   "query": "In which year did KK first sing for Vishal-Shekhar?",
+   "composer": "vsh",
+   "sql": "SELECT MIN(substr(s1.release_date,1,4)) FROM songs_vsh s1 JOIN singers_vsh s2 ON s1.song_id = s2.song_id WHERE s2.singer LIKE '%KK%'",
+   "values": {},
+   "answer": "2003",
+   "gold": "2003",
+   "ok": true,
+   "error": null
+  },
+  "1985": {
+   "query": "When was the song Lungi Dance released?",
+   "composer": "vsh",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_vsh s1 WHERE s1.song LIKE '%Lungi Dance%' LIMIT 1",
+   "values": {
+    "work_name": "Lungi Dance"
+   },
+   "answer": "2013-07-01 00:00:00",
+   "gold": "2013-07-01 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1986": {
+   "query": "When did the song Haule Haule come out?",
+   "composer": "vsh",
+   "sql": "SELECT MIN(s1.release_date) FROM songs_vsh s1 WHERE s1.song LIKE '%Haule Haule%' LIMIT 1",
+   "values": {
+    "work_name": "Haule Haule"
+   },
+   "answer": "2016-04-07 00:00:00",
+   "gold": "2016-04-07 00:00:00",
+   "ok": true,
+   "error": null
+  },
+  "1996": {
+   "query": "How many artists performed the song Kaise Mujhe (instrumental) for A. R. Rahman?",
+   "composer": "arr",
+   "sql": "SELECT COUNT(DISTINCT s2.name) FROM songs s1 JOIN singers s2 ON s1.song_id = s2.song_id WHERE s1.title LIKE '%Kaise Mujhe (instrumental)%'",
+   "values": {
+    "work_name": "Kaise Mujhe (instrumental)"
+   },
+   "answer": 1,
+   "gold": 1,
+   "ok": true,
+   "error": null
+  },
+  "1997": {
+   "query": "How many artists performed the song Jumbalaka for A. R. Rahman?",
+   "composer": "arr",
+   "sql": "SELECT COUNT(DISTINCT s2.name) FROM songs s1 JOIN singers s2 ON s1.song_id = s2.song_id WHERE s1.title LIKE '%Jumbalaka%'",
+   "values": {
+    "work_name": "Jumbalaka"
+   },
+   "answer": 1,
+   "gold": 1,
+   "ok": true,
+   "error": null
+  },
+  "1998": {
+   "query": "When was the song Warriors of Heaven and Earth released?",
+   "composer": "arr",
+   "sql": "SELECT MIN(s1.date) FROM songs s1 WHERE s1.title LIKE '%Warriors of Heaven and Earth%' LIMIT 1",
+   "values": {
+    "work_name": "Warriors of Heaven and Earth"
+   },
+   "answer": "2004-05-04",
+   "gold": "2004-05-04",
+   "ok": true,
+   "error": null
+  },
+  "1999": {
+   "query": "In which year did the song Munnerudhan come out?",
+   "composer": "arr",
+   "sql": "SELECT MIN(s1.date) FROM songs s1 WHERE s1.title LIKE '%Munnerudhan%' LIMIT 1",
+   "values": {
+    "work_name": "Munnerudhan"
+   },
+   "answer": "1995-05-11",
+   "gold": "1995-05-11",
+   "ok": true,
+   "error": null
+  },
+  "2001": {
+   "query": "How many songs has KK sung for A. R. Rahman?",
+   "composer": "arr",
+   "sql": "SELECT COUNT(DISTINCT s1.title) FROM songs s1 JOIN singers s2 ON s1.song_id = s2.song_id WHERE s2.name LIKE '%KK%'",
+   "values": {},
+   "answer": 11,
+   "gold": 11,
+   "ok": true,
+   "error": null
+  },
+  "2012": {
+   "query": "How many singers performed the track Jumbalaka for A. R. Rahman?",
+   "composer": "arr",
+   "sql": "SELECT COUNT(DISTINCT s2.name) FROM songs s1 JOIN singers s2 ON s1.song_id = s2.song_id WHERE s1.title LIKE '%Jumbalaka%'",
+   "values": {
+    "work_name": "Jumbalaka"
+   },
+   "answer": 1,
+   "gold": 1,
+   "ok": true,
+   "error": null
+  },
+  "2013": {
+   "query": "When was the song Chinna Chinna Aasai (Bit) released?",
+   "composer": "arr",
+   "sql": "SELECT MIN(s1.date) FROM songs s1 WHERE s1.title LIKE '%Chinna Chinna Aasai (Bit)%' LIMIT 1",
+   "values": {
+    "work_name": "Chinna Chinna Aasai (Bit)"
+   },
+   "answer": "1992-01-01",
+   "gold": "1992-01-01",
+   "ok": true,
+   "error": null
+  },
+  "2014": {
+   "query": "In which year did the song The Giant Emerges come out?",
+   "composer": "arr",
+   "sql": "SELECT MIN(s1.date) FROM songs s1 WHERE s1.title LIKE '%The Giant Emerges%' LIMIT 1",
+   "values": {
+    "work_name": "The Giant Emerges"
+   },
+   "answer": "2018-11-28",
+   "gold": "2018-11-28",
+   "ok": true,
+   "error": null
+  },
+  "2016": {
+   "query": "How many songs in A. R. Rahman's catalogue have KK as a vocalist?",
+   "composer": "arr",
+   "sql": "SELECT COUNT(DISTINCT s1.title) FROM songs s1 JOIN singers s2 ON s1.song_id = s2.song_id WHERE s2.name LIKE '%KK%'",
+   "values": {},
+   "answer": 11,
+   "gold": 11,
+   "ok": true,
+   "error": null
+  },
+  "2020": {
+   "query": "In which year did P. Susheela first sing for A. R. Rahman?",
+   "composer": "arr",
+   "sql": "SELECT MIN(substr(s1.date,1,4)) FROM songs s1 JOIN singers s2 ON s1.song_id = s2.song_id WHERE s2.name LIKE '%P. Susheela%'",
+   "values": {},
+   "answer": "1993",
+   "gold": "1993",
+   "ok": true,
+   "error": null
+  },
+  "2032": {
+   "query": "How many vocalists are credited on Kaise Mujhe (instrumental) from A. R. Rahman's filmography?",
+   "composer": "arr",
+   "sql": "SELECT COUNT(DISTINCT s2.name) FROM songs s1 JOIN singers s2 ON s1.song_id = s2.song_id WHERE s1.title LIKE '%Kaise Mujhe (instrumental)%'",
+   "values": {
+    "work_name": "Kaise Mujhe (instrumental)"
+   },
+   "answer": 1,
+   "gold": 1,
+   "ok": true,
+   "error": null
+  },
+  "2033": {
+   "query": "When was the song Jumbalaka released?",
+   "composer": "arr",
+   "sql": "SELECT MIN(s1.date) FROM songs s1 WHERE s1.title LIKE '%Jumbalaka%' LIMIT 1",
+   "values": {
+    "work_name": "Jumbalaka"
+   },
+   "answer": "1998-01-01",
+   "gold": "1998-01-01",
+   "ok": true,
+   "error": null
+  },
+  "2034": {
+   "query": "In which year did Chinna Chinna Aasai (Bit) come out?",
+   "composer": "arr",
+   "sql": "SELECT DISTINCT s1.date FROM songs s1 WHERE s1.title LIKE '%Chinna Chinna Aasai (Bit)%'",
+   "values": {
+    "work_name": "Chinna Chinna Aasai (Bit)"
+   },
+   "answer": "1992-01-01",
+   "gold": "1992-01-01",
+   "ok": true,
+   "error": null
+  },
+  "2043": {
+   "query": "When was the song Kaise Mujhe (instrumental) released?",
+   "composer": "arr",
+   "sql": "SELECT MIN(s1.date) FROM songs s1 WHERE s1.title LIKE '%Kaise Mujhe (instrumental)%' LIMIT 1",
+   "values": {
+    "work_name": "Kaise Mujhe (instrumental)"
+   },
+   "answer": "2008-01-01",
+   "gold": "2008-01-01",
+   "ok": true,
+   "error": null
+  },
+  "2044": {
+   "query": "In what year did Chinna Chinna Aasai (Bit) come out?",
+   "composer": "arr",
+   "sql": "SELECT DISTINCT s1.date FROM songs s1 WHERE s1.title LIKE '%Chinna Chinna Aasai (Bit)%'",
+   "values": {
+    "work_name": "Chinna Chinna Aasai (Bit)"
+   },
+   "answer": "1992-01-01",
+   "gold": "1992-01-01",
+   "ok": true,
+   "error": null
+  },
+  "2050": {
+   "query": "How many films did KK contribute vocals to in A. R. Rahman's discography?",
+   "composer": "arr",
+   "sql": "SELECT COUNT(DISTINCT s1.movie_name) FROM songs s1 JOIN singers s2 ON s1.song_id = s2.song_id WHERE s2.name LIKE '%KK%'",
+   "values": {},
+   "answer": 10,
+   "gold": 10,
+   "ok": true,
+   "error": null
+  },
+  "2051": {
+   "query": "In which year did Alphonse first sing for A. R. Rahman?",
+   "composer": "arr",
+   "sql": "SELECT MIN(substr(s1.date,1,4)) FROM songs s1 JOIN singers s2 ON s1.song_id = s2.song_id WHERE s2.name LIKE '%Alphonse%'",
+   "values": {},
+   "answer": "2012",
+   "gold": "2012",
+   "ok": true,
+   "error": null
+  },
+  "2052": {
+   "query": "When did Kamaal Khan first collaborate with A. R. Rahman as a singer?",
+   "composer": "arr",
+   "sql": "SELECT MIN(substr(s1.date,1,4)) FROM songs s1 JOIN singers s2 ON s1.song_id = s2.song_id WHERE s2.name LIKE '%Kamaal Khan%'",
+   "values": {},
+   "answer": "2004",
+   "gold": "2004",
+   "ok": true,
+   "error": null
+  },
+  "2060": {
+   "query": "For the track Chinna Chinna Aasai (Bit), how many artists performed it for A. R. Rahman?",
+   "composer": "arr",
+   "sql": "SELECT COUNT(DISTINCT s2.name) FROM songs s1 JOIN singers s2 ON s1.song_id = s2.song_id WHERE s1.title LIKE '%Chinna Chinna Aasai (Bit)%'",
+   "values": {
+    "work_name": "Chinna Chinna Aasai (Bit)"
+   },
+   "answer": 1,
+   "gold": 1,
+   "ok": true,
+   "error": null
+  },
+  "2061": {
+   "query": "When did the song Warriors of Heaven and Earth come out?",
+   "composer": "arr",
+   "sql": "SELECT MIN(s1.date) FROM songs s1 WHERE s1.title LIKE '%Warriors of Heaven and Earth%' LIMIT 1",
+   "values": {
+    "work_name": "Warriors of Heaven and Earth"
+   },
+   "answer": "2004-05-04",
+   "gold": "2004-05-04",
+   "ok": true,
+   "error": null
+  }
+ }
+}
