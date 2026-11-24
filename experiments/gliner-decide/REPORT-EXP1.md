@@ -81,14 +81,14 @@ Reading the table:
   --grad-accum/--fp16/--metrics-out` and a 5s poller writing
   `results/exp1/metrics.jsonl`; `gpu-jobs/watch_curves.py` tails it over ssh into a
   live SVG. MLflow was considered and rejected (single run; a local server that the
-  GPU box pushes to is fragile; file-on-vidura + ssh tail survives disconnects).
-- **Training run** (vidura, GTX 1070, job `exp1-lora`): 8 epochs, batch 1 +
+  GPU box pushes to is fragile; file-on-GPU + ssh tail survives disconnects).
+- **Training run** (GTX 1070, job `exp1-lora`): 8 epochs, batch 1 +
   grad-accum 16, fp16, task-lr 5e-4 — 856 steps in 51 min, GPU 91%. Loss curves and
   all per-epoch checkpoints collected under `results/exp1/`.
 
 ## What failed — the filter head did not generalize
 
-Test-set accuracy (373 held-out questions; scored by `run_exp1_eval.py` on vidura):
+Test-set accuracy (373 held-out questions; scored by `run_exp1_eval.py` on GPU):
 
 | Head | acc | | Head | acc |
 |---|---|---|---|---|
@@ -181,12 +181,12 @@ Per-head loss instrumentation in `finetune.py` (`instrument_head_losses`):
 a signature-agnostic wrapper on `SpanExtractorModel._compute_sample_loss`
 re-evaluates the classifier per classification schema under `no_grad` and
 accumulates per-head BCE means, flushed to metrics JSONL every 5 s + a final
-flush after training. (First vidura attempt crashed: gliner2 passes
+flush after training. (First GPU attempt crashed: gliner2 passes
 `span_scores_per_schema` that the wrapper rejected → every sample errored →
 fp16 scaler asserted "No inf checks recorded". Fixed by `*args/**kw`.)
 
 Training: 3 epochs @ task-lr 2e-4, batch 1 × grad-accum 16, fp16 (job
-`exp1-retrain2`, 1633 s on vidura). Filter-col loss 0.42 → 3e-5; no divergence.
+`exp1-retrain2`, 1633 s on GPU). Filter-col loss 0.42 → 3e-5; no divergence.
 
 Eval on the untouched 373-question test split (`pred_exp1_retrain.json`),
 corrected constraints:
@@ -231,7 +231,7 @@ descriptions so embeddings match; see the next section.
 
 ## A2-proper — trained WITH label descriptions (2026-11-21, positive result)
 
-Adapter `exp1-a2desc` on vidura: 8 epochs @ 5e-4, batch 1 × grad-accum 16,
+Adapter `exp1-a2desc` on GPU: 8 epochs @ 5e-4, batch 1 × grad-accum 16,
 fp16, on the unbalanced 1703-entry scaled train, `finetune.py --descriptions`.
 Label maps ride in gliner2's separate `label_descriptions` field (labels stay a
 list — dict labels crash the trainer's random.sample label-dropout; that cost
@@ -488,7 +488,7 @@ fixable by more training on the same data.
 1. ~~**Fix the constraint/gold contradiction first (~1 h).**~~ **DONE 2026-11-20
    — A1-redo, see the section above.** The corrected set lifts the filter decision
    to 0.979.
-2. **Filter-head-focused retrain (~25 min on vidura).** Cap year-filter templates
+2. **Filter-head-focused retrain (~25 min on GPU).** Cap year-filter templates
    at ~150 in the train split, oversample title/movie_name `like` examples, and add
    contrastive pairs — identical phrasing frame with the slot type swapped
    ("song X" / "movie X" / "in 2013") — so the col decision must read slot type
@@ -514,18 +514,18 @@ fixable by more training on the same data.
 | corpus scale-up | 12 filter-heavy phrasings → 2,076 verified entries | local (glm-5.3-flashx) | ~100 min | `gold-multi-scaled.jsonl`, `verify_gold.py` 0 mismatches |
 | split | 1,703 / 373 leakage-safe | local | minutes | `results/exp1_split.json` |
 | error baseline | 13 misses analyzed on the 25-example model | local | minutes | `results/exp1/filter_error_baseline.txt` |
-| `exp1-lora` | 8 epochs, 1,703 train, 5e-4 | vidura GTX 1070 | 51 min (856 steps) | `best/best` (ep-1), `best/final` (ep-8), `metrics.jsonl`, curves |
-| eval, ep-8 + constraints | 373-question test set | vidura CPU | ~15 min | `pred_exp1_final.json` — filter 0.231 |
-| A1-redo re-score | corrected constraint set, same adapter | vidura CPU | 894 s | `pred_exp1_a1redo.json` — filter **0.979** |
-| `exp1-retrain2` | 3 epochs @ 2e-4, 1,954 rebalanced train (per-head losses live) | vidura | 1,633 s | `metrics_retrain.jsonl`, retrain ckpt |
-| retrain eval | same 373 test set | vidura CPU | ~15 min | `pred_exp1_retrain.json` — filter 0.952, skeleton 0.694 |
-| A2 inference-only | descriptions at inference on the retrain adapter | vidura CPU | 624 s | `pred_exp1_retrain_a2.json` — negative (skeleton 0.343) |
+| `exp1-lora` | 8 epochs, 1,703 train, 5e-4 | GPU GTX 1070 | 51 min (856 steps) | `best/best` (ep-1), `best/final` (ep-8), `metrics.jsonl`, curves |
+| eval, ep-8 + constraints | 373-question test set | CPU | ~15 min | `pred_exp1_final.json` — filter 0.231 |
+| A1-redo re-score | corrected constraint set, same adapter | CPU | 894 s | `pred_exp1_a1redo.json` — filter **0.979** |
+| `exp1-retrain2` | 3 epochs @ 2e-4, 1,954 rebalanced train (per-head losses live) | GPU | 1,633 s | `metrics_retrain.jsonl`, retrain ckpt |
+| retrain eval | same 373 test set | CPU | ~15 min | `pred_exp1_retrain.json` — filter 0.952, skeleton 0.694 |
+| A2 inference-only | descriptions at inference on the retrain adapter | CPU | 624 s | `pred_exp1_retrain_a2.json` — negative (skeleton 0.343) |
 | EA scoring + A3 | `run_exp1_ea.py` EA over 354 renderable test entries, 4 configs incl. fuzzy-off | local | 140 s/run | `ea_*.json` — a1redo 0.828, retrain 0.794, a2desc **0.831**; A3 fuzzy-off 0.808; sanity (gold heads+values) 354/354 |
 | bind_value fix + EA re-score | score-first tie-break, normalized-exact tier, `Title (Qualifier)` spans, word-aligned containment; 5 EA runs | local | 300–500 s/run | `ea_*.json` (re-scored) — a1redo **0.867**, retrain **0.825**, a2desc **0.870**; A3 fuzzy-off 0.870 (fuzzy now ≈ free to drop); sanity 354/354; 0 regressions |
-| exp1-a2desc (A2-proper) | 8 epochs @ 5e-4 trained WITH descriptions (`finetune.py --descriptions`, `label_descriptions` field) | vidura GTX 1070 | 3118 s | `results/exp1/a2desc/{best,final}`, `metrics_a2desc.jsonl` |
-| exp1-a2eval2 | `run_exp1_eval.py --descriptions` on the a2desc adapter | vidura CPU | 622 s | `pred_exp1_a2desc.json` — filter 0.979, skeleton **0.845** |
-| exp1-aggfirst (v1) | 8 epochs @ 5e-4, 1,907 train (1,703 + 204 synth first-family, heads w/o singer filter) | vidura GTX 1070 | 4,186 s | `results/exp1/aggfirst/{best,final}`, `metrics_aggfirst.jsonl` — filter 0.686 (regression) |
-| exp1-aggv2 (v2) | same recipe, synth heads carry filter_col=singer/like | vidura GTX 1070 | ~4,100 s | `results/exp1/aggv2/{best,final}` — family learned (41/41 agg) but EA 0.796, net loss |
+| exp1-a2desc (A2-proper) | 8 epochs @ 5e-4 trained WITH descriptions (`finetune.py --descriptions`, `label_descriptions` field) | GPU GTX 1070 | 3118 s | `results/exp1/a2desc/{best,final}`, `metrics_a2desc.jsonl` |
+| exp1-a2eval2 | `run_exp1_eval.py --descriptions` on the a2desc adapter | CPU | 622 s | `pred_exp1_a2desc.json` — filter 0.979, skeleton **0.845** |
+| exp1-aggfirst (v1) | 8 epochs @ 5e-4, 1,907 train (1,703 + 204 synth first-family, heads w/o singer filter) | GPU GTX 1070 | 4,186 s | `results/exp1/aggfirst/{best,final}`, `metrics_aggfirst.jsonl` — filter 0.686 (regression) |
+| exp1-aggv2 (v2) | same recipe, synth heads carry filter_col=singer/like | GPU GTX 1070 | ~4,100 s | `results/exp1/aggv2/{best,final}` — family learned (41/41 agg) but EA 0.796, net loss |
 | first-family scorer rule | FIRST_RE template rule + bind_singer_exact DB-value/punct-normalized return + gold-head scalar normalization | local | ~500 s/EA run | `ea_exp1_{a2desc,a1redo}_firstfix.json` — a2desc **0.966**, a1redo **0.966**; sanity 354/354 |
 
 All planned exp1 runs are complete (EA, A2 inference-only, A2-proper, A3).
@@ -537,4 +537,4 @@ All planned exp1 runs are complete (EA, A2 inference-only, A2-proper, A3).
   pred_exp1_final.json, best/best (epoch-1 ckpt), best/final (epoch-8)
 - `experiments/multi-composer-qa/` — gold-multi-scaled.jsonl, verify_gold.py,
   make_split.py, results/exp1_split.json, canonicalize_heads.py
-- Remote: vidura `~/exp/gliner-decide/` (code + data synced from this repo)
+- Remote: GPU `~/exp/gliner-decide/` (code + data synced from this repo)
