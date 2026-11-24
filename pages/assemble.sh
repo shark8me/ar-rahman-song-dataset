@@ -9,7 +9,7 @@ GD=experiments/gliner-decide
 rm -rf "$DEST"
 mkdir -p "$DEST"
 cp pages/_config.yml "$DEST/"
-cp -r pages/_layouts pages/assets "$DEST/"
+cp -r pages/_layouts pages/_includes "$DEST/"
 
 # copy <src.md> <dest/index.md> <title> <description>
 copy() {
