@@ -13,11 +13,11 @@
 <body>
   <main>
     <nav class="site-nav">
-      <a href="/">{{ site.title }}</a>
-      <a href="/blog/text-to-sql-finetuning/">Blog: 0% → 96.6% routing signal</a>
-      <a href="/blog/25-questions/">Blog: 25-question fine-tune</a>
-      <a href="/report/filter-generalization/">Report: filter head at scale</a>
-      <a href="/report/zero-shot-lora/">Report: zero-shot &amp; LoRA</a>
+      <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+      <a href="{{ site.baseurl }}/blog/text-to-sql-finetuning/">Blog: 0% → 96.6% routing signal</a>
+      <a href="{{ site.baseurl }}/blog/25-questions/">Blog: 25-question fine-tune</a>
+      <a href="{{ site.baseurl }}/report/filter-generalization/">Report: filter head at scale</a>
+      <a href="{{ site.baseurl }}/report/zero-shot-lora/">Report: zero-shot &amp; LoRA</a>
     </nav>
     <article>
       {{ content }}

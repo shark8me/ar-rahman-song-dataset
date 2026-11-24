@@ -51,10 +51,10 @@ cp -r "$GD/diagrams" "$DEST/blog/25-questions/diagrams"
 # rewrite in-document .md links to their site URLs
 while IFS= read -r f; do
   sed -i \
-    -e 's#](gliner2-decide-text-to-sql-finetuning\.md)#](/blog/text-to-sql-finetuning/)#g' \
-    -e 's#](gliner2-decide-filter-generalization-report\.md)#](/report/filter-generalization/)#g' \
-    -e 's#](REPORT\.md)#](/report/zero-shot-lora/)#g' \
-    -e 's#](BLOGPOST\.md)#](/blog/25-questions/)#g' \
+    -e 's#](gliner2-decide-text-to-sql-finetuning\.md)#]({{ site.baseurl }}/blog/text-to-sql-finetuning/)#g' \
+    -e 's#](gliner2-decide-filter-generalization-report\.md)#]({{ site.baseurl }}/report/filter-generalization/)#g' \
+    -e 's#](REPORT\.md)#]({{ site.baseurl }}/report/zero-shot-lora/)#g' \
+    -e 's#](BLOGPOST\.md)#]({{ site.baseurl }}/blog/25-questions/)#g' \
     "$f"
 done < <(find "$DEST" -name '*.md')
 

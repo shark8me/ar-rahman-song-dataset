@@ -140,11 +140,11 @@ than the other heads.
 ## Training: data and curves
 
 "Scaled" refers to the corpus scale-up: the seed set was 25 hand-written
-training questions ([`gold.jsonl`](gold.jsonl)), which we grew to **2,076
+training questions ([`gold.jsonl`](https://github.com/shark8me/ar-rahman-song-dataset/blob/main/experiments/gliner-decide/gold.jsonl)), which we grew to **2,076
 machine-generated, DB-verified entries** across 6 composers
-([`gold-multi-scaled.jsonl`](../multi-composer-qa/gold-multi-scaled.jsonl)),
+([`gold-multi-scaled.jsonl`](https://github.com/shark8me/ar-rahman-song-dataset/blob/main/experiments/multi-composer-qa/gold-multi-scaled.jsonl)),
 split 1,703 train / 373 test by a leakage-safe entity-grouped split
-([`exp1_split.json`](../multi-composer-qa/results/exp1_split.json)). Every
+([`exp1_split.json`](https://github.com/shark8me/ar-rahman-song-dataset/blob/main/experiments/multi-composer-qa/results/exp1_split.json)). Every
 generated query's reference SQL was executed against the real database to
 confirm the stored answer is correct. The multiplier mattered: 25 examples
 taught the model the *mechanism* of classification but left the filter
