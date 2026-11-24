@@ -292,6 +292,74 @@ a qualified yes, with a precise shape:
   is the trigger for escalation. That was the deliverable this experiment
   set out to validate.
 
+## Limitations — and why the per-head table is really a distribution story
+
+The per-head table above reads like a difficulty ranking, but re-examining
+the data behind it shows the variance across heads is driven less by how
+*hard* each decision is and more by **how the train and test label
+distributions differ**:
+
+- The test set is dominated by the two deliberately held-out templates:
+  171× `song_year` and 41× `singer_first_year_c` — 57% of it demands
+  `agg=min`, a label value that appears only **11 times in the entire
+  1,703-example training set** (10 `min`, 1 `max`). The label distribution
+  flips between train and test precisely on the head that scores worst.
+- The "perfect" heads are partly trivially saturated: the test set contains
+  *zero* minority-label examples for `group_by` and `limit`, so their 1.000
+  scores are unfalsified rather than proven — an upper bound, not evidence
+  of mastery.
+- The confusion structure confirms it: re-scoring the a2desc predictions
+  per head, **every single `agg` error (53/373) is `min → none`**, and 51 of
+  them sit on those two held-out templates. There is no diffuse confusion —
+  all errors live in 2 of the 29 templates. Within the held-out templates
+  the model still got `min` right ~75% of the time: partial generalization
+  from 10 examples, not zero.
+- The rebalancing result corroborates the mechanism: oversampling fixed
+  `limit` and dropped `agg` 0.847 → 0.697 — moving supervision between
+  labels trades which head is starved; it doesn't add capability.
+- The per-head loss traces agree. Late in training, `group_by`'s loss is
+  flat at ~0.0003 while `agg`'s keeps erupting to ~0.7 whenever a batch
+  contains one of the ~10 rare `min` examples — the signature of a class
+  too rare to consolidate.
+
+Conversely, the filter heads are *semantically* hard (slot-type reading)
+but distributionally kind: every `filter_col` label has 16–38% support in
+train. The better predictor of per-head accuracy is **label support ×
+train/test shift**, not semantic difficulty — the blog's earlier framing
+("agg stays the hardest") is really "the only label value whose
+distribution shifted lives on the agg head."
+
+Note this is not a split bug: the two templates were held out on purpose
+as a generalization probe, and the probe returned a clean answer — 10
+examples don't teach `min`.
+
+### Future work: an exp2 split
+
+A follow-up experiment would separate **head mastery** from **unseen-shape
+generalization**, which the current split conflates:
+
+1. Keep the entity-grouped, leak-closure split machinery, but move
+   min-bearing templates into training (~150–200 DB-verified entries with
+   entities disjoint from test) so `min` gets real support rather than
+   oversampled copies.
+2. Hold out a *different* phrasing family as the new generalization probe
+   (e.g. a `max`/"latest" family), so an unseen shape is still measured.
+3. Report two test sets separately: a stratified in-distribution test
+   (minority labels represented — this also makes the `group_by`/`limit`
+   1.000 rows falsifiable) for "mastery", and the held-out probe for
+   "unseen-shape behavior". Never mix them into one per-head table.
+4. Retrain with the a2desc recipe (label descriptions) — the two earlier
+   retrains that regressed other heads changed sampling, so change only
+   the data.
+5. Keep the first-family override regardless: production traffic will
+   always contain phrasings no split anticipated; the rule is the safety
+   net, and exp2 should verify it covers whatever the new probe fails.
+
+Expected outcome: `agg` → ~0.98 on the mastery set; the new probe probably
+fails the same way, which would confirm the routing finding — one unseen
+template family costs ~14% EA, unseen shapes must escalate — now backed by
+both an in-distribution and an out-of-distribution number.
+
 ## Glossary
 
 Every term used above, alphabetically. Each linked term in the post points
