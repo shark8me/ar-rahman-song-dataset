@@ -33,7 +33,8 @@ confidence real.
 
 This post is self-contained: every technical term is explained at first
 use, and again in the [glossary](#glossary) at the bottom, which each term
-links to. If you've read the raw reports (`REPORT.md`, `REPORT-EXP1.md`)
+links to. If you've read the raw reports ([the zero-shot / 25-question experiment](REPORT.md),
+[the scaled filter-head experiment](gliner2-decide-filter-generalization-report.md))
 you've seen the numbers; here we unpack what they mean.
 
 ## The architecture
@@ -408,5 +409,5 @@ leakage-safe split), used for all scaled-stage numbers.
 Run names: a1redo = scaled training with bare labels; a2desc = scaled
 training with label descriptions.
 
-Full details: `REPORT.md` (zero-shot and 25-example stages) and
-`REPORT-EXP1.md` (scaled stages, ablations, failure attributions).
+Full details: [REPORT.md](REPORT.md) (zero-shot and 25-example stages) and
+[gliner2-decide-filter-generalization-report.md](gliner2-decide-filter-generalization-report.md) (scaled stages, ablations, failure attributions).

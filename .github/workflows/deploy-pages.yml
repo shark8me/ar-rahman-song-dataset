@@ -1,0 +1,48 @@
+name: Deploy experiment write-ups to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "pages/**"
+      - ".github/workflows/deploy-pages.yml"
+      - "experiments/gliner-decide/gliner2-decide-*.md"
+      - "experiments/gliner-decide/REPORT.md"
+      - "experiments/gliner-decide/BLOGPOST.md"
+      - "experiments/gliner-decide/diagrams/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Assemble Jekyll site from experiment write-ups
+        run: bash pages/assemble.sh _site-src
+      - uses: actions/configure-pages@v5
+      - uses: actions/jekyll-build-pages@v1
+        with:
+          source: _site-src
+          destination: ./_site
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

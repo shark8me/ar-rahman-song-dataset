@@ -1,0 +1,16 @@
+:root { color-scheme: light dark; }
+body {
+  margin: 0;
+  font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  max-width: 46rem;
+  margin-inline: auto;
+  padding: 1rem 1.25rem 3rem;
+}
+.site-nav { display: flex; flex-wrap: wrap; gap: .75rem; margin-bottom: 2rem; font-size: .85rem; }
+.site-nav a { text-decoration: none; }
+h1, h2, h3 { line-height: 1.25; }
+img, svg { max-width: 100%; height: auto; }
+table { border-collapse: collapse; display: block; overflow-x: auto; }
+th, td { border: 1px solid currentColor; padding: .3rem .5rem; text-align: left; }
+code, pre { font-size: .9em; overflow-x: auto; }
+blockquote { margin-inline: 0; padding-inline: 1rem; border-inline-start: 3px solid currentColor; opacity: .85; }

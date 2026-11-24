@@ -390,7 +390,7 @@ Rate limiting: every call already goes through `wait-till` (random 0–5 s sleep
 # Experiment 1: GLiNER filter-decision head at scale (2026-11-20)
 
 Plan: `.hermes/plans/2026-11-19_185959-exp1-gliner-filter-generalization.md`.
-Full write-up: `experiments/gliner-decide/REPORT-EXP1.md`.
+Full write-up: `experiments/gliner-decide/gliner2-decide-filter-generalization-report.md`.
 
 - [x] Task 1 — baseline filter-error analysis — DONE `experiments/gliner-decide/analyze_filter_errors.py`
       → `results/exp1/filter_error_baseline.txt` (13 misses, all year/year_eq collapse).
@@ -427,7 +427,7 @@ Full write-up: `experiments/gliner-decide/REPORT-EXP1.md`.
       `instrument_head_losses` (signature-agnostic wrapper, per-head BCE means
       flushed every 5 s + final flush). First vidura run crashed on
       `span_scores_per_schema` kwarg → fixed; dry-run verified all 8 heads.
-- [x] Task 6 — fold verdict + epoch-1/8 comparison into REPORT-EXP1.md — DONE
+- [x] Task 6 — fold verdict + epoch-1/8 comparison into gliner2-decide-filter-generalization-report.md — DONE
       2026-11-21 (retrain + A2 sections added to the report).
 - [x] EA scoring for multi-composer DBs — DONE 2026-11-21.
       `experiments/gliner-decide/run_exp1_ea.py`: per-composer registry +
@@ -456,7 +456,7 @@ same data made the filter head WORSE (0.962→0.915 held-out), and 100× raw dat
 volume alone fixed nothing. Do NOT spend more epochs or bulk-scale the corpus.
 
 Failure decomposition (60 EA failures on a2desc, re-attributed 2026-11-21 —
-see "Prediction examples" in REPORT-EXP1.md; the earlier "agg dominant" note
+see "Prediction examples" in gliner2-decide-filter-generalization-report.md; the earlier "agg dominant" note
 was imprecise):
 
 | family | count | nature |

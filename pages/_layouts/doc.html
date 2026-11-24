@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ page.description }}">
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:type" content="article">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <main>
+    <nav class="site-nav">
+      <a href="/">{{ site.title }}</a>
+      <a href="/blog/text-to-sql-finetuning/">Blog: 0% → 96.6% routing signal</a>
+      <a href="/blog/25-questions/">Blog: 25-question fine-tune</a>
+      <a href="/report/filter-generalization/">Report: filter head at scale</a>
+      <a href="/report/zero-shot-lora/">Report: zero-shot &amp; LoRA</a>
+    </nav>
+    <article>
+      {{ content }}
+    </article>
+  </main>
+</body>
+</html>

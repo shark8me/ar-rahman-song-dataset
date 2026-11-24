@@ -112,7 +112,10 @@ The same "what counts as a song" rules apply to every composer: the unit is a Mu
 
 ## Asking questions of the data
 
-The dataset is small enough that plain SQL answers most questions. To explore how far you can get from natural language to SQL, `experiments/gliner-decide/` contains a QA benchmark: 31 hand-written questions (`gold.jsonl`), each with a "SQL skeleton" spec (select columns, filter, aggregation, join, order...) and reference SQL (`ref_results.json`). These feed a fine-tuning experiment with GLiNER2.5-Decide that maps a question to a SQL skeleton — see `experiments/gliner-decide/REPORT.md` for that story.
+The dataset is small enough that plain SQL answers most questions. To explore how far you can get from natural language to SQL, `experiments/gliner-decide/` contains a QA benchmark: 31 hand-written questions (`gold.jsonl`), each with a "SQL skeleton" spec (select columns, filter, aggregation, join, order...) and reference SQL (`ref_results.json`). These feed a fine-tuning experiment with GLiNER2.5-Decide that maps a question to a SQL skeleton. Write-ups:
+
+- Blog: [Why we taught a 300M-parameter model to route SQL questions](experiments/gliner-decide/gliner2-decide-text-to-sql-finetuning.md) — what each fine-tuning stage (zero-shot → 25 examples → 1,703) bought.
+- Reports: [experiment 1 (25 → 1,703 questions, filter head at scale)](experiments/gliner-decide/gliner2-decide-filter-generalization-report.md), [zero-shot + 25-question LoRA experiment](experiments/gliner-decide/REPORT.md).
 
 A few of the gold questions, with their reference answers:
 

@@ -95,7 +95,7 @@ generalize — the bottleneck is data, not optimization.
 ## Conclusion / recommendation
 
 > **2026-11-20 update:** Experiment 1 (100× scaled corpus) is reported in
-> `REPORT-EXP1.md` — non-filter heads 0.85–1.00 on the 373-question leakage-safe
+> `gliner2-decide-filter-generalization-report.md` — non-filter heads 0.85–1.00 on the 373-question leakage-safe
 > test split, but the filter decision head remains collapsed (0.231). See that
 > file for the current verdict and next steps.
 - Zero-shot GLiNER2.5-Decide does not work for this text→SQL-skeleton mapping (skeleton 0%, EA ≤3%).

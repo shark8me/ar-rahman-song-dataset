@@ -1,6 +1,7 @@
-# Experiment 1 — GLiNER filter-decision head at scale: CURRENT STATE
+# Report: scaling GLiNER2.5-Decide from 25 to 1,703 training questions — what each fine-tuning stage buys, and where it still fails
 
 Plan: `.hermes/plans/2026-11-19_185959-exp1-gliner-filter-generalization.md` (2026-11-20).
+Companion blog post: [why we taught a 300M-parameter model to route SQL questions — and what each fine-tuning stage bought](gliner2-decide-text-to-sql-finetuning.md).
 
 **Verdict up front:** scaling the verified QA set 25 → 1,703 train examples fixed
 everything except the one head the experiment targeted. Per-head skeleton accuracy
@@ -496,7 +497,7 @@ fixable by more training on the same data.
    past epoch 1 at 5e-4).
 3. **Per-head loss instrumentation in finetune.py.** Cheap; will show whether
    filter_col loss ever decreases or is swamped by the other seven heads.
-4. **Write the negative result into REPORT-EXP1.md** (plan Task 6): main table
+4. **Write the negative result into gliner2-decide-filter-generalization-report.md** (plan Task 6): main table
    (zero-shot / 25-example LoRA / scaled LoRA), the epoch-1/epoch-8 comparison,
    the constraint contradiction, and the verdict split by unseen-template vs
    unseen-entity (they did not diverge here — both fail).

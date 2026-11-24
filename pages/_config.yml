@@ -1,0 +1,8 @@
+title: ARR-QA text-to-SQL experiments
+markdown: kramdown
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: doc
+exclude: [README.md]
